@@ -5,6 +5,7 @@ body {
   color: #333;
   padding: 20px;
   text-align: center;
+  margin: 0; /* Removes default body margin */
 }
 
 /* Container */
@@ -22,6 +23,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   color: #0044cc;
   margin-bottom: 20px;
+  font-size: 2rem; /* Scales well on mobile */
 }
 
 /* Tabs */
@@ -30,6 +32,7 @@ h1 {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Allows tabs to wrap on small screens */
 }
 
 button {
@@ -38,9 +41,10 @@ button {
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  margin: 5px 0; /* Some spacing if tabs wrap */
 }
 
 button:hover {
@@ -53,12 +57,13 @@ button:hover {
   display: none;
   font-size: 18px;
   color: #666;
+  margin: 10px 0;
 }
 
 /* Team Grid Layout */
 #team-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  /* 4 teams per row on all devices */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
@@ -71,8 +76,8 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;  /* Ensure each team card takes up full width of its container */
-  box-sizing: border-box;  /* Prevents padding from making cards too wide */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .team:hover {
@@ -83,15 +88,17 @@ button:hover {
 .team h2 {
   color: #0044cc;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .team ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .team ul li {
-  font-size: 16px;
+  font-size: 0.95rem;
   padding: 4px 0;
 }
 
@@ -104,7 +111,8 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.monthly-table th, .monthly-table td {
+.monthly-table th,
+.monthly-table td {
   padding: 12px;
   text-align: center;
   border: 1px solid #ddd;
@@ -116,6 +124,7 @@ button:hover {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
 .monthly-table th:hover {
@@ -123,7 +132,7 @@ button:hover {
 }
 
 .monthly-table td {
-  font-size: 16px;
+  font-size: 0.95rem;
 }
 
 .monthly-table tbody tr:nth-child(even) {
@@ -148,7 +157,56 @@ button:hover {
 
 /* Last Updated Text */
 #last-update {
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-top: 10px;
   color: #666;
+}
+
+/* Responsive Breakpoints ---------------------------------------- */
+
+/* Medium devices (e.g., tablets): 768px and below */
+@media (max-width: 768px) {
+  #team-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
+  }
+  
+  .team h2 {
+    font-size: 1.1rem;
+  }
+  
+  .team ul li {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small devices (e.g., phones): 480px and below */
+@media (max-width: 480px) {
+  #team-container {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .team h2 {
+    font-size: 1rem;
+  }
+
+  .team ul li {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
