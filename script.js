@@ -377,11 +377,10 @@ async function fetchSeasonHomeRuns(playerId) {
 
 
 async function fetchPlayerStats() {
-  setTimeout(() => {
-    document.getElementById("loading-indicator").style.display = "flex";
-  }, 100); // ✅ Delay for a smoother user experience
-  
-document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>"; // Show something right away
+  document.getElementById("loading-indicator").style.display = "none"; // Hide the extra message
+
+  document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>"; // Show only "Loading teams..."
+
 
   try {
     let cachedPlayerIds = {}; // Store player IDs in memory
@@ -425,13 +424,35 @@ function displayFantasyTeams() {
   let teamsHtml = "";
   sortedTeams.forEach((team, index) => {  // Use index for ranking
     let playersHtml = "";
-    team.players.forEach(player => {
-      const hr = playerHomeRuns[player.id] || 0;
-      playersHtml += `<li>${player.name} - ${hr}</li>`;
+    
+    // Sort players within the team by home runs (most to least)
+    let sortedPlayers = team.players.slice().sort((a, b) => {
+      return (playerHomeRuns[b.id] || 0) - (playerHomeRuns[a.id] || 0);
     });
+
+    sortedPlayers.forEach(player => {
+      const hr = playerHomeRuns[player.id] || 0;
+      const playerImageUrl = `https://midfield.mlbstatic.com/v1/people/${player.id}/headshot/60x60.jpg`;
+
+    
+      playersHtml += `
+        <li>
+          <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
+          ${player.name} - ${hr}
+        </li>
+      `;
+    });
+
     const top4 = topFourTotal(team);
+
+    // Assign class for top 3 teams (gold, silver, bronze)
+    let teamClass = "";
+    if (index === 0) teamClass = "gold"; // 🏆 1st Place
+    else if (index === 1) teamClass = "silver"; // 🥈 2nd Place
+    else if (index === 2) teamClass = "bronze"; // 🥉 3rd Place
+
     teamsHtml += `
-      <div class="team">
+      <div class="team ${teamClass}">
         <h2>${index + 1}. ${team.name}</h2>  <!-- Ranking added here -->
         <ul>${playersHtml}</ul>
         <div class="total-home-runs">
@@ -440,12 +461,14 @@ function displayFantasyTeams() {
       </div>
     `;
   });
-  const container = document.getElementById("team-container");
-container.style.visibility = "hidden"; // Hide container while updating
-container.innerHTML = teamsHtml;
-container.style.visibility = "visible"; // Show container after update
 
+  const container = document.getElementById("team-container");
+  container.style.visibility = "hidden"; // Hide container while updating
+  container.innerHTML = teamsHtml;
+  container.style.visibility = "visible"; // Show container after update
 }
+
+
 
 function topFourTotal(team) {
   return team.players
@@ -562,11 +585,29 @@ function handleMobileMonthChange() {
   mobileContainer.style.display = "block";
   document.getElementById("mobile-month-select").style.display = "block";
 
+  // Array to store team totals
+  let teamStats = [];
 
-  // Ensure the container is visible when a month is selected
-  mobileContainer.style.display = "block";
+  // Loop through teams and calculate their top 5 HR totals for this month
+  fantasyTeams.forEach(team => {
+    let totals = team.players.map(player => {
+      let monthlyData = playerMonthlyStats[player.id] || {};
+      return monthlyData[selectedMonth] || 0;
+    });
 
-  // Start building a mini-table
+    totals.sort((a, b) => b - a);
+    const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
+
+    teamStats.push({ name: team.name, total: top5Sum });
+  });
+
+  // Sort teams in descending order (highest HRs first)
+  teamStats.sort((a, b) => b.total - a.total);
+
+  // Find the highest total for highlighting
+  let maxTotal = teamStats.length > 0 ? teamStats[0].total : 0;
+
+  // Build the mini-table
   let html = `
     <h3>${selectedMonth} Home Run Totals</h3>
     <table class="monthly-table-mobile" style="margin: 0 auto;">
@@ -579,27 +620,20 @@ function handleMobileMonthChange() {
       <tbody>
   `;
 
-  // Loop through teams and calculate their top 5 HR totals for this month
-  fantasyTeams.forEach(team => {
-    let totals = team.players.map(player => {
-      let monthlyData = playerMonthlyStats[player.id] || {};
-      return monthlyData[selectedMonth] || 0;
-    });
-
-    totals.sort((a, b) => b - a);
-    const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
-
+  teamStats.forEach(team => {
+    let highlightStyle = team.total === maxTotal ? 'style="background-color: yellow; font-weight: bold;"' : '';
     html += `
-      <tr>
+      <tr ${highlightStyle}>
         <td>${team.name}</td>
-        <td>${top5Sum}</td>
+        <td>${team.total}</td>
       </tr>
     `;
   });
 
   html += `</tbody></table>`;
-  mobileContainer.innerHTML = html; // Inject the new table into the page
+  mobileContainer.innerHTML = html; // Inject the sorted and highlighted table
 }
+
 
 // In the monthly totals, for each team and for each month,
 // only the top 5 players' home run totals are summed.
@@ -680,34 +714,38 @@ function displayMonthlyStats() {
 function sortMonthlyTable(columnIndex) {
   let table = document.querySelector(".monthly-table tbody");
   let rows = Array.from(table.rows);
-  let isAscending = table.getAttribute("data-sort") !== columnIndex.toString();
   
+  // Check current sorting state for this column
+  let currentSort = table.getAttribute("data-sort");
+  let isDescending = currentSort !== columnIndex.toString(); // Default to descending on first click
+
   rows.sort((rowA, rowB) => {
     let a = parseInt(rowA.cells[columnIndex].textContent) || 0;
     let b = parseInt(rowB.cells[columnIndex].textContent) || 0;
-    return isAscending ? a - b : b - a;
+    return isDescending ? b - a : a - b;
   });
 
   table.innerHTML = "";
   rows.forEach(row => table.appendChild(row));
 
-  table.setAttribute("data-sort", isAscending ? columnIndex.toString() : "");
+  // Update sorting state
+  table.setAttribute("data-sort", isDescending ? columnIndex.toString() : "");
 }
+
 
 
 // --- Tab Switching Logic ---
 document.getElementById("season-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
+  document.getElementById("mobile-month-select").style.display = "none"; // Hides dropdown
 });
+
 document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "block";
+  document.getElementById("mobile-month-select").style.display = "block"; // Shows dropdown only in Monthly Totals tab
 
-  // Ensure dropdown is visible
-  document.getElementById("mobile-month-select").style.display = "block";
-
-  // Fetch stats and update the monthly table
   fetchMonthlyStats();
 });
 
