@@ -192,9 +192,10 @@ button:hover {
    Mobile Dropdown for Months
    -------------------------- */
 
-/* By default, hide the dropdown in desktop view */
+
+/* By default, hide the dropdown */
 #mobile-month-select {
-  display: none;
+  display: none !important; /* Forces it to be hidden */
   margin: 10px auto;
   font-size: 16px;
   padding: 10px;
@@ -205,6 +206,15 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Show dropdown only on smaller screens (mobile/tablet) */
+@media (max-width: 768px) {
+  #mobile-month-select {
+    display: block !important; /* Forces it to be visible on mobile */
+  }
+}
+
+
 
 /* Ensure dropdown is properly aligned */
 #mobile-month-select:focus {
