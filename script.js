@@ -524,18 +524,12 @@ async function fetchMonthlyStats() {
     document.getElementById("loading-indicator").style.display = "none";
   }
 }
-
-// In the monthly totals, for each team and for each month,
-// only the top 5 players' home run totals are summed.
-function displayMonthlyStats() {
-  const months = ["March/April", "May", "June", "July", "August", "September"];
-  
-  // Function to populate the dropdown menu with available months
+// Function to populate the dropdown menu with available months
 function populateMobileMonthDropdown() {
   const months = ["March/April", "May", "June", "July", "August", "September"];
   const selectEl = document.getElementById("mobile-month-select");
 
-  // Clear existing options
+  // Clear existing options (in case this is called again)
   selectEl.innerHTML = '<option value="">-- Select a Month --</option>';
 
   months.forEach(month => {
@@ -544,21 +538,28 @@ function populateMobileMonthDropdown() {
     opt.textContent = month;
     selectEl.appendChild(opt);
   });
-}
 
-// Function to display a selected month’s HR totals on mobile
+  console.log("Mobile dropdown populated!"); // Debugging
+}
+  // Function to populate the dropdown menu with available months
+// Function to handle mobile month selection
 function handleMobileMonthChange() {
   const selectedMonth = document.getElementById("mobile-month-select").value;
   const mobileContainer = document.getElementById("monthly-container");
 
-  // If no selection, clear the container
+  // If no selection, clear the container and hide the section
   if (!selectedMonth) {
     mobileContainer.innerHTML = "";
+    mobileContainer.style.display = "none";  // Hide if no month is selected
     return;
   }
 
+  // Ensure the container is visible when a month is selected
+  mobileContainer.style.display = "block";
+
+  // Start building a mini-table
   let html = `
-    <h3>${selectedMonth}</h3>
+    <h3>${selectedMonth} Home Run Totals</h3>
     <table class="monthly-table-mobile" style="margin: 0 auto;">
       <thead>
         <tr>
@@ -569,7 +570,7 @@ function handleMobileMonthChange() {
       <tbody>
   `;
 
-  // Populate the table for the selected month
+  // Loop through teams and calculate their top 5 HR totals for this month
   fantasyTeams.forEach(team => {
     let totals = team.players.map(player => {
       let monthlyData = playerMonthlyStats[player.id] || {};
@@ -588,13 +589,14 @@ function handleMobileMonthChange() {
   });
 
   html += `</tbody></table>`;
-  mobileContainer.innerHTML = html;
-
-  populateMobileMonthDropdown();
-document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
+  mobileContainer.innerHTML = html; // Inject the new table into the page
 }
 
-
+// In the monthly totals, for each team and for each month,
+// only the top 5 players' home run totals are summed.
+function displayMonthlyStats() {
+  const months = ["March/April", "May", "June", "July", "August", "September"];
+  
   let maxTotals = {};
   months.forEach(month => { maxTotals[month] = 0; });
 
@@ -694,6 +696,8 @@ document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("monthly-container").style.display = "block";
   fetchMonthlyStats();
 });
+
+populateMobileMonthDropdown();  // Ensure dropdown appears immediately
 
 // Initial fetch on load
 fetchPlayerStats();
