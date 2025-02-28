@@ -1,12 +1,23 @@
 /* General Page Styling */
+/* 🎨 Define a modern MLB-style color palette */
+:root {
+  --primary-color: #0044cc;  /* Deep MLB blue */
+  --secondary-color: #ffcc00; /* Gold accent */
+  --background-light: #f4f4f4; /* Light background */
+  --background-dark: #121212; /* Dark mode */
+  --text-dark: #333;
+  --text-light: #ffffff;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background: var(--background-light);
+  color: var(--text-dark);
   padding: 20px;
   text-align: center;
-  margin: 0; /* Removes default browser margin */
+  margin: 0;
 }
+
 
 /* Container */
 .container {
@@ -35,21 +46,23 @@ h1 {
 }
 
 button {
-  background-color: #0044cc;
-  color: white;
+  background: linear-gradient(135deg, var(--primary-color), #0033aa);
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--text-light);
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-  margin: 5px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #0033aa;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #0033aa, #002288);
+  transform: scale(1.08);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Loading Indicator */
 .loading {
@@ -138,12 +151,39 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.monthly-table th,
-.monthly-table td {
-  padding: 12px;
-  text-align: center;
-  border: 1px solid #ddd;
+.monthly-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+.monthly-table th {
+  background: var(--primary-color);
+  color: var(--text-light);
+  padding: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.monthly-table th:hover {
+  background: #0033aa;
+}
+
+.monthly-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.monthly-table tbody tr:hover {
+  background: var(--secondary-color);
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
 
 .monthly-table th {
   background-color: #0044cc;
