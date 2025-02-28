@@ -78,6 +78,36 @@ button:hover {
   box-sizing: border-box;
 }
 
+.player-headshot {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  border-radius: 50%; /* Makes images circular */
+  margin-right: 8px; /* Adds spacing between image and text */
+  vertical-align: middle; /* Aligns image with text */
+  object-fit: cover; /* Ensures the image is properly cropped */
+}
+
+
+/* Top 3 Team Colors */
+.gold {
+  background-color: gold !important;
+  color: black;
+  font-weight: bold;
+}
+
+.silver {
+  background-color: silver !important;
+  color: black;
+  font-weight: bold;
+}
+
+.bronze {
+  background-color: #cd7f32 !important;
+  color: white;
+  font-weight: bold;
+}
+
+
 .team:hover {
   transform: scale(1.02);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
@@ -206,18 +236,26 @@ button:hover {
     display: none;
   }
 
-  /* Show dropdown only on mobile */
   #mobile-month-select {
-    display: block;
+    display: none; /* Hide by default */
+  }
   }
 
     /* Ensure the selected month’s mini-table is visible */
     .monthly-table-mobile {
       display: block !important;
-      width: 100%;
-      margin-top: 10px;
+      width: 90%; /* Adjust width for better centering */
+      margin: 10px auto; /* Centers the table */
       border: 1px solid #ddd;
+      text-align: center; /* Centers all text */
     }
+    
+    .monthly-table-mobile th,
+    .monthly-table-mobile td {
+      padding: 10px;
+      text-align: center; /* Ensures all text inside is centered */
+    }
+    
   }
 
   h1 {
