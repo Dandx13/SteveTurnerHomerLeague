@@ -530,6 +530,71 @@ async function fetchMonthlyStats() {
 function displayMonthlyStats() {
   const months = ["March/April", "May", "June", "July", "August", "September"];
   
+  // Function to populate the dropdown menu with available months
+function populateMobileMonthDropdown() {
+  const months = ["March/April", "May", "June", "July", "August", "September"];
+  const selectEl = document.getElementById("mobile-month-select");
+
+  // Clear existing options
+  selectEl.innerHTML = '<option value="">-- Select a Month --</option>';
+
+  months.forEach(month => {
+    const opt = document.createElement("option");
+    opt.value = month;
+    opt.textContent = month;
+    selectEl.appendChild(opt);
+  });
+}
+
+// Function to display a selected month’s HR totals on mobile
+function handleMobileMonthChange() {
+  const selectedMonth = document.getElementById("mobile-month-select").value;
+  const mobileContainer = document.getElementById("monthly-container");
+
+  // If no selection, clear the container
+  if (!selectedMonth) {
+    mobileContainer.innerHTML = "";
+    return;
+  }
+
+  let html = `
+    <h3>${selectedMonth}</h3>
+    <table class="monthly-table-mobile" style="margin: 0 auto;">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Top 5 HR</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  // Populate the table for the selected month
+  fantasyTeams.forEach(team => {
+    let totals = team.players.map(player => {
+      let monthlyData = playerMonthlyStats[player.id] || {};
+      return monthlyData[selectedMonth] || 0;
+    });
+
+    totals.sort((a, b) => b - a);
+    const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
+
+    html += `
+      <tr>
+        <td>${team.name}</td>
+        <td>${top5Sum}</td>
+      </tr>
+    `;
+  });
+
+  html += `</tbody></table>`;
+  mobileContainer.innerHTML = html;
+
+  populateMobileMonthDropdown();
+document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
+}
+
+
   let maxTotals = {};
   months.forEach(month => { maxTotals[month] = 0; });
 
