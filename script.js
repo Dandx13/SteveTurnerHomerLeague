@@ -508,6 +508,10 @@ const monthName = monthMapping[gameDate.getUTCMonth()]; // ✅ Use getUTCMonth()
 
 async function fetchMonthlyStats() {
   document.getElementById("loading-indicator").style.display = "flex";
+
+  // Ensure dropdown appears before fetching stats
+  populateMobileMonthDropdown(); 
+
   try {
     await Promise.all(fantasyTeams.flatMap(team =>
       team.players.map(async player => {
@@ -516,7 +520,7 @@ async function fetchMonthlyStats() {
         }
       })
     ));
-    
+
     displayMonthlyStats();
   } catch (error) {
     console.error("Error fetching monthly stats:", error);
@@ -524,6 +528,7 @@ async function fetchMonthlyStats() {
     document.getElementById("loading-indicator").style.display = "none";
   }
 }
+
 // Function to populate the dropdown menu with available months
 function populateMobileMonthDropdown() {
   const months = ["March/April", "May", "June", "July", "August", "September"];
@@ -547,12 +552,16 @@ function handleMobileMonthChange() {
   const selectedMonth = document.getElementById("mobile-month-select").value;
   const mobileContainer = document.getElementById("monthly-container");
 
-  // If no selection, clear the container and hide the section
   if (!selectedMonth) {
     mobileContainer.innerHTML = "";
-    mobileContainer.style.display = "none";  // Hide if no month is selected
+    mobileContainer.style.display = "none";
     return;
   }
+
+  // Ensure container and dropdown are visible
+  mobileContainer.style.display = "block";
+  document.getElementById("mobile-month-select").style.display = "block";
+
 
   // Ensure the container is visible when a month is selected
   mobileContainer.style.display = "block";
@@ -694,10 +703,19 @@ document.getElementById("season-tab").addEventListener("click", () => {
 document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "block";
+
+  // Ensure dropdown is visible
+  document.getElementById("mobile-month-select").style.display = "block";
+
+  // Fetch stats and update the monthly table
   fetchMonthlyStats();
 });
 
+
 populateMobileMonthDropdown();  // Ensure dropdown appears immediately
+document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
+
+
 
 // Initial fetch on load
 fetchPlayerStats();
