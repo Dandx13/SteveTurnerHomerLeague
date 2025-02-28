@@ -732,13 +732,120 @@ function sortMonthlyTable(columnIndex) {
   table.setAttribute("data-sort", isDescending ? columnIndex.toString() : "");
 }
 
+let feedDataLoaded = false; // Flag to track if feed data is loaded
+
+async function fetchHomeRunFeed() {
+  try {
+      // Show the loading spinner and reset the percentage
+      document.getElementById("loading-spinner").style.display = "block";
+      let percentage = 0;
+      const percentageElement = document.getElementById("spinner-percentage");
+      percentageElement.textContent = `${percentage}%`; // Start at 0%
+
+      let homeRuns = JSON.parse(sessionStorage.getItem("homeRunFeedData")) || [];
+      const maxDays = 30; // Limit to 30 days for faster loading
+
+      if (homeRuns.length === 0) {
+          let daysBack = 0;
+          const totalRequests = maxDays; // Number of days you are fetching
+
+          while (homeRuns.length < 25 && daysBack < maxDays) {
+              let date = new Date();
+              date.setDate(date.getDate() - daysBack);
+              let formattedDate = date.toISOString().split("T")[0];
+
+              // Simulate progress
+              percentage = Math.floor((daysBack / totalRequests) * 100);
+              percentageElement.textContent = `${percentage}%`; // Update the percentage text
+
+              const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDate}`);
+              const scheduleData = await scheduleResponse.json();
+
+              if (!scheduleData.dates || scheduleData.dates.length === 0) {
+                  daysBack++;
+                  continue;
+              }
+
+              for (const game of scheduleData.dates[0].games) {
+                  const gameId = game.gamePk;
+
+                  const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
+                  const gameData = await gameDataResponse.json();
+
+                  if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
+
+                  gameData.allPlays.forEach(play => {
+                      if (play.result.eventType === "home_run") {
+                          const playerName = play.matchup.batter.fullName;
+
+                          const isFantasyPlayer = fantasyTeams.some(team =>
+                              team.players.some(player => player.name === playerName)
+                          );
+
+                          if (isFantasyPlayer) {
+                              const fantasyTeamName = fantasyTeams.find(team =>
+                                  team.players.some(player => player.name === playerName)
+                              )?.name;
+
+                              homeRuns.push({
+                                  team: fantasyTeamName,
+                                  player: playerName,
+                                  date: formattedDate,
+                              });
+                          }
+                      }
+                  });
+
+                  if (homeRuns.length >= 25) break;
+              }
+
+              if (homeRuns.length >= 25) break;
+              daysBack++;
+          }
+
+          homeRuns = homeRuns.slice(0, 25);
+          sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
+      }
+
+      // Hide the loading spinner after data is fetched
+      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+
+      const feedBody = document.getElementById("feed-body");
+      feedBody.innerHTML = "";
+
+      homeRuns.forEach(hr => {
+          const row = `<tr>
+              <td>${hr.team}</td>
+              <td>${hr.player}</td>
+              <td>${hr.date}</td>
+          </tr>`;
+          feedBody.innerHTML += row;
+      });
+  } catch (error) {
+      console.error("🚨 Error fetching home run data:", error);
+      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
+  }
+}
+
+
+
+
+// 🔄 Auto-refresh the feed every 5 minutes
+setInterval(fetchHomeRunFeed, 300000); // Fetch every 5 minutes
+
+// Initially load the data when the page is loaded or when switching tabs
+fetchHomeRunFeed(); // Trigger on page load
+
+
+
 
 
 // --- Tab Switching Logic ---
 document.getElementById("season-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
-  
+  document.getElementById("feed-container").style.display = "none"; // Hide feed tab when switching
+
   // Hide dropdown only on mobile
   if (window.innerWidth <= 768) {
     document.getElementById("mobile-month-select").style.display = "none";
@@ -751,12 +858,36 @@ document.getElementById("season-tab").addEventListener("click", () => {
 document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "block";
+  document.getElementById("feed-container").style.display = "none"; // Hide feed tab when switching
 
   // ✅ Add active class so the dropdown appears
   document.body.classList.add("monthly-active");
 
   fetchMonthlyStats();
 });
+
+document.getElementById("feed-tab").addEventListener("click", () => {
+  // Hide other containers and show the feed container
+  document.getElementById("team-container").style.display = "none";
+  document.getElementById("monthly-container").style.display = "none";
+  document.getElementById("feed-container").style.display = "block"; // Show the feed container
+
+  // Hide dropdown only on mobile when viewing the feed
+  if (window.innerWidth <= 768) {
+    document.getElementById("mobile-month-select").style.display = "none";
+  }
+
+  // ✅ Ensure dropdown class is removed (so it doesn’t interfere)
+  document.body.classList.remove("monthly-active");
+
+  // Check if feed data is already loaded
+  if (!feedDataLoaded) {
+      console.log("Fetching Home Run Feed data...");
+      fetchHomeRunFeed(); // Fetch data if not preloaded
+  }
+});
+
+
 
 
 
