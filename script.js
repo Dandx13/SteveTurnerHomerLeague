@@ -579,18 +579,55 @@ function handleMobileMonthChange() {
       <tbody>
   `;
 
-  // Collect all teams and their top 5 HR sums
+ // Collect all teams and their top 5 HR sums
 let sortedTeams = fantasyTeams.map(team => {
   let totals = team.players.map(player => {
     let monthlyData = playerMonthlyStats[player.id] || {};
     return monthlyData[selectedMonth] || 0;
   });
 
+  // Sort player HR totals (highest first) and sum the top 5
   totals.sort((a, b) => b - a);
   const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
 
   return { name: team.name, hrTotal: top5Sum };
 });
+
+// **Sort the array from highest to lowest HR total**
+sortedTeams.sort((a, b) => b.hrTotal - a.hrTotal);
+
+// **Ensure debug output to confirm sorting works**
+console.log("Sorted Teams:", sortedTeams);
+
+// Build the table with sorted teams
+let html = `
+  <h3>${selectedMonth} Home Run Totals</h3>
+  <table class="monthly-table-mobile" style="margin: 0 auto;">
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>Top 5 HR</th>
+      </tr>
+    </thead>
+    <tbody>
+`;
+
+sortedTeams.forEach(team => {
+  html += `
+    <tr>
+      <td>${team.name}</td>
+      <td>${team.hrTotal}</td>
+    </tr>
+  `;
+});
+
+html += `</tbody></table>`;
+
+// Inject sorted table into the page
+const mobileContainer = document.getElementById("monthly-container");
+mobileContainer.innerHTML = html;
+mobileContainer.style.display = "block";
+
 
 // Sort teams in descending order by HR total
 sortedTeams.sort((a, b) => b.hrTotal - a.hrTotal);
@@ -730,3 +767,4 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 600000);
 setInterval(fetchMonthlyStats, 600000);
+
