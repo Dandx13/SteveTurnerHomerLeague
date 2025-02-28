@@ -13,18 +13,45 @@
         <div class="tabs">
             <button id="season-tab">Leaderboard</button>
             <button id="monthly-tab">Monthly Totals</button>
-        </div>        
+            <button id="feed-tab">Feed</button> <!-- New Feed Tab -->
+        </div>
+                
         <div id="loading-indicator" class="loading"></div> <!-- Empty div so it doesn't display -->
 
         <div id="team-container"></div>
-        <!-- Dropdown stays below the tabs -->
+
+<!-- Dropdown stays below the tabs -->
 <select id="mobile-month-select">
     <option value="">-- Select a Month --</option>
-  </select>
-  
-  <!-- Monthly data goes here -->
-  <div id="monthly-container" style="display: none;"></div>
-  
+</select>
+
+<!-- Monthly data goes here -->
+<div id="monthly-container" style="display: none;"></div>
+
+<!-- 🔥 New Feed Container (Initially Hidden) -->
+<div id="feed-container" style="display: none;">
+    <h2>Live Home Run Feed</h2>
+    <table class="feed-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Player</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="feed-body">
+            <!-- HRs will be inserted here dynamically -->
+        </tbody>
+    </table>
+    <div id="loading-spinner" style="display: none;">
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <div id="spinner-percentage" class="spinner-text">0%</div> <!-- Percentage text inside spinner -->
+        </div>
+    </div>
+    
+    
+
         <p id="last-update"></p>
     </div>
     <script src="script.js"></script>
