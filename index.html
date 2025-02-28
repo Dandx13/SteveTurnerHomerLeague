@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is the meta viewport tag -->
-    <title>Steve Turner Memorial Home Run League</title>
+    <title>Steve Turner Memorial Dinger League</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Steve Turner Memorial Home Run League</h1>
+        <h1>Steve Turner Memorial Dinger League</h1>
         <div class="tabs">
-            <button id="season-tab">Season Totals</button>
+            <button id="season-tab">Leaderboard</button>
             <button id="monthly-tab">Monthly Totals</button>
-        </div>
-        <div id="loading-indicator" class="loading">Fetching latest data...</div>
+        </div>        
+        <div id="loading-indicator" class="loading"></div> <!-- Empty div so it doesn't display -->
+
         <div id="team-container"></div>
-        <div id="monthly-container" style="display: none;"></div>
-        <!-- Mobile-only dropdown for month selection -->
+        <!-- Dropdown stays below the tabs -->
 <select id="mobile-month-select">
-    <!-- We'll dynamically populate these options in script.js -->
     <option value="">-- Select a Month --</option>
   </select>
+  
+  <!-- Monthly data goes here -->
+  <div id="monthly-container" style="display: none;"></div>
+  
         <p id="last-update"></p>
     </div>
     <script src="script.js"></script>
