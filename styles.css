@@ -5,7 +5,7 @@ body {
   color: #333;
   padding: 20px;
   text-align: center;
-  margin: 0; /* Removes default body margin */
+  margin: 0; /* Removes default browser margin */
 }
 
 /* Container */
@@ -23,7 +23,6 @@ h1 {
   font-family: 'Roboto', sans-serif;
   color: #0044cc;
   margin-bottom: 20px;
-  font-size: 2rem; /* Scales well on mobile */
 }
 
 /* Tabs */
@@ -32,7 +31,7 @@ h1 {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  flex-wrap: wrap; /* Allows tabs to wrap on small screens */
+  flex-wrap: wrap; /* So tabs can wrap on smaller screens */
 }
 
 button {
@@ -41,10 +40,10 @@ button {
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-  margin: 5px 0; /* Some spacing if tabs wrap */
+  margin: 5px 0;
 }
 
 button:hover {
@@ -57,7 +56,6 @@ button:hover {
   display: none;
   font-size: 18px;
   color: #666;
-  margin: 10px 0;
 }
 
 /* Team Grid Layout */
@@ -88,7 +86,6 @@ button:hover {
 .team h2 {
   color: #0044cc;
   margin-bottom: 10px;
-  font-size: 1.2rem;
 }
 
 .team ul {
@@ -98,7 +95,7 @@ button:hover {
 }
 
 .team ul li {
-  font-size: 0.95rem;
+  font-size: 16px;
   padding: 4px 0;
 }
 
@@ -124,7 +121,6 @@ button:hover {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 1rem;
 }
 
 .monthly-table th:hover {
@@ -132,7 +128,7 @@ button:hover {
 }
 
 .monthly-table td {
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
 .monthly-table tbody tr:nth-child(even) {
@@ -157,29 +153,37 @@ button:hover {
 
 /* Last Updated Text */
 #last-update {
-  font-size: 0.9rem;
+  font-size: 14px;
   margin-top: 10px;
   color: #666;
 }
 
-/* Responsive Breakpoints ---------------------------------------- */
+/* --------------------------
+   Mobile Dropdown for Months
+   -------------------------- */
+
+/* By default, hide the dropdown in desktop view */
+#mobile-month-select {
+  display: none;
+  margin: 10px auto;
+  font-size: 16px;
+  padding: 8px 10px;
+  width: 80%;
+  border-radius: 6px;
+}
+
+/* ------------
+   Media Queries
+   ------------ */
 
 /* Medium devices (e.g., tablets): 768px and below */
 @media (max-width: 768px) {
   #team-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
-  }
-  
-  .team h2 {
-    font-size: 1.1rem;
-  }
-  
-  .team ul li {
-    font-size: 0.9rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 
-  h1 {
-    font-size: 1.8rem;
+  .team ul li {
+    font-size: 14px;
   }
 }
 
@@ -189,24 +193,21 @@ button:hover {
     grid-template-columns: 1fr; /* Single column on very small screens */
   }
 
-  .container {
-    padding: 15px;
+  /* Hide the big monthly table on phone,
+     show the #mobile-month-select dropdown instead */
+  .monthly-table {
+    display: none;
   }
 
-  button {
-    font-size: 0.9rem;
-    padding: 8px 10px;
-  }
-
-  .team h2 {
-    font-size: 1rem;
-  }
-
-  .team ul li {
-    font-size: 0.85rem;
+  #mobile-month-select {
+    display: block;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .team ul li {
+    font-size: 14px;
   }
 }
