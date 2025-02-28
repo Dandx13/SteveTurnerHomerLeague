@@ -167,14 +167,22 @@ button:hover {
   display: none;
   margin: 10px auto;
   font-size: 16px;
-  padding: 8px 10px;
-  width: 80%;
+  padding: 10px;
+  width: 90%;
   border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* ------------
-   Media Queries
-   ------------ */
+/* Ensure dropdown is properly aligned */
+#mobile-month-select:focus {
+  outline: none;
+  border-color: #0044cc;
+}
+
+/* ------------ MEDIA QUERIES -------------- */
 
 /* Medium devices (e.g., tablets): 768px and below */
 @media (max-width: 768px) {
@@ -193,12 +201,12 @@ button:hover {
     grid-template-columns: 1fr; /* Single column on very small screens */
   }
 
-  /* Hide the big monthly table on phone,
-     show the #mobile-month-select dropdown instead */
+  /* Hide the big monthly table on phones */
   .monthly-table {
     display: none;
   }
 
+  /* Show dropdown only on mobile */
   #mobile-month-select {
     display: block;
   }
