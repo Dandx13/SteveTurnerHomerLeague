@@ -208,11 +208,42 @@ button:hover {
 }
 
 /* Show dropdown only on smaller screens (mobile/tablet) */
+/* By default, hide the dropdown */
+#mobile-month-select {
+  display: none !important; /* Ensures it's hidden everywhere initially */
+  margin: 10px auto;
+  font-size: 16px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Show dropdown only on mobile when Monthly Totals tab is selected */
+/* By default, hide the dropdown */
+#mobile-month-select {
+  display: none !important; /* Ensures it's hidden everywhere initially */
+  margin: 10px auto;
+  font-size: 16px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ✅ Show dropdown only on mobile when Monthly Totals is active */
 @media (max-width: 768px) {
-  #mobile-month-select {
-    display: block !important; /* Forces it to be visible on mobile */
+  body.monthly-active #mobile-month-select {
+    display: block !important;
   }
 }
+
 
 
 
