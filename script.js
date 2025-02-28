@@ -579,23 +579,32 @@ function handleMobileMonthChange() {
       <tbody>
   `;
 
-  // Loop through teams and calculate their top 5 HR totals for this month
-  fantasyTeams.forEach(team => {
-    let totals = team.players.map(player => {
-      let monthlyData = playerMonthlyStats[player.id] || {};
-      return monthlyData[selectedMonth] || 0;
-    });
-
-    totals.sort((a, b) => b - a);
-    const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
-
-    html += `
-      <tr>
-        <td>${team.name}</td>
-        <td>${top5Sum}</td>
-      </tr>
-    `;
+  // Collect all teams and their top 5 HR sums
+let sortedTeams = fantasyTeams.map(team => {
+  let totals = team.players.map(player => {
+    let monthlyData = playerMonthlyStats[player.id] || {};
+    return monthlyData[selectedMonth] || 0;
   });
+
+  totals.sort((a, b) => b - a);
+  const top5Sum = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
+
+  return { name: team.name, hrTotal: top5Sum };
+});
+
+// Sort teams in descending order by HR total
+sortedTeams.sort((a, b) => b.hrTotal - a.hrTotal);
+
+// Build the table with sorted teams
+sortedTeams.forEach(team => {
+  html += `
+    <tr>
+      <td>${team.name}</td>
+      <td>${team.hrTotal}</td>
+    </tr>
+  `;
+});
+
 
   html += `</tbody></table>`;
   mobileContainer.innerHTML = html; // Inject the new table into the page
