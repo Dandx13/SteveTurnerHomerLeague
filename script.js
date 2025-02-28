@@ -738,16 +738,28 @@ function sortMonthlyTable(columnIndex) {
 document.getElementById("season-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
-  document.getElementById("mobile-month-select").style.display = "none"; // Hides dropdown
+  
+  // Hide dropdown only on mobile
+  if (window.innerWidth <= 768) {
+    document.getElementById("mobile-month-select").style.display = "none";
+  }
+
+  // ✅ Remove active class to ensure dropdown hides
+  document.body.classList.remove("monthly-active");
 });
 
 document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "block";
-  document.getElementById("mobile-month-select").style.display = "block"; // Shows dropdown only in Monthly Totals tab
+
+  // ✅ Add active class so the dropdown appears
+  document.body.classList.add("monthly-active");
 
   fetchMonthlyStats();
 });
+
+
+
 
 
 populateMobileMonthDropdown();  // Ensure dropdown appears immediately
