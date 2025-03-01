@@ -736,96 +736,118 @@ let feedDataLoaded = false; // Flag to track if feed data is loaded
 
 async function fetchHomeRunFeed() {
   try {
-      // Show the loading spinner and reset the percentage
-      document.getElementById("loading-spinner").style.display = "block";
-      let percentage = 0;
-      const percentageElement = document.getElementById("spinner-percentage");
-      percentageElement.textContent = `${percentage}%`; // Start at 0%
+    // Show the loading spinner and reset the percentage
+    document.getElementById("loading-spinner").style.display = "block";
+    let percentage = 0;
+    const percentageElement = document.getElementById("spinner-percentage");
+    percentageElement.textContent = `${percentage}%`; // Start at 0%
 
-      let homeRuns = JSON.parse(sessionStorage.getItem("homeRunFeedData")) || [];
-      const maxDays = 30; // Limit to 30 days for faster loading
+    let homeRuns = JSON.parse(sessionStorage.getItem("homeRunFeedData")) || [];
+    const maxDays = 30; // Limit to 30 days for faster loading
 
-      if (homeRuns.length === 0) {
-          let daysBack = 0;
-          const totalRequests = maxDays; // Number of days you are fetching
+    if (homeRuns.length === 0) {
+      let daysBack = 0;
+      const totalRequests = maxDays; // Number of days you are fetching
 
-          while (homeRuns.length < 25 && daysBack < maxDays) {
-              let date = new Date();
-              date.setDate(date.getDate() - daysBack);
-              let formattedDate = date.toISOString().split("T")[0];
+      while (homeRuns.length < 25 && daysBack < maxDays) {
+        let date = new Date();
+        date.setDate(date.getDate() - daysBack);
+        let formattedDate = date.toISOString().split("T")[0];  // Date without time
+        let formattedDateTime = date.toISOString();  // Full date-time with time
+        
+        // Simulate progress
+        percentage = Math.floor((daysBack / totalRequests) * 100);
+        percentageElement.textContent = `${percentage}%`; // Update the percentage text
 
-              // Simulate progress
-              percentage = Math.floor((daysBack / totalRequests) * 100);
-              percentageElement.textContent = `${percentage}%`; // Update the percentage text
+        const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDate}`);
+        const scheduleData = await scheduleResponse.json();
 
-              const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDate}`);
-              const scheduleData = await scheduleResponse.json();
+        if (!scheduleData.dates || scheduleData.dates.length === 0) {
+          daysBack++;
+          continue;
+        }
 
-              if (!scheduleData.dates || scheduleData.dates.length === 0) {
-                  daysBack++;
-                  continue;
+        for (const game of scheduleData.dates[0].games) {
+          const gameId = game.gamePk;
+
+          const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
+          const gameData = await gameDataResponse.json();
+
+          // Log the entire game data to inspect its structure
+          console.log("Game Data:", gameData);  // Log the full response for debugging
+
+          if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
+
+          gameData.allPlays.forEach(play => {
+            // Log each play to inspect available fields
+            console.log("Play Data:", play);  // Log each play for debugging
+
+            if (play.result.eventType === "home_run") {
+              const playerName = play.matchup.batter.fullName;
+              const playEndTime = play.playEndTime;  // Attempt to pull the play end time
+
+              const isFantasyPlayer = fantasyTeams.some(team =>
+                team.players.some(player => player.name === playerName)
+              );
+
+              if (isFantasyPlayer) {
+                const fantasyTeamName = fantasyTeams.find(team =>
+                  team.players.some(player => player.name === playerName)
+                )?.name;
+
+                // Convert playEndTime to UTC
+                let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
+
+                // Store the home run data with playEndTime in UTC format
+                homeRuns.push({
+                  team: fantasyTeamName,
+                  player: playerName,
+                  date: formattedDate,
+                  dateTime: utcPlayEndTime, // Use UTC playEndTime
+                });
+
+                // Log the home run event and its UTC playEndTime for debugging
+                const localEventTime = utcPlayEndTime ? new Date(utcPlayEndTime).toLocaleString() : 'No playEndTime available';
+                console.log(`Home Run: ${playerName} - Team: ${fantasyTeamName} - Event Time: ${localEventTime} (UTC)`);
               }
+            }
+          });
 
-              for (const game of scheduleData.dates[0].games) {
-                  const gameId = game.gamePk;
+          if (homeRuns.length >= 25) break;
+        }
 
-                  const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
-                  const gameData = await gameDataResponse.json();
-
-                  if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
-
-                  gameData.allPlays.forEach(play => {
-                      if (play.result.eventType === "home_run") {
-                          const playerName = play.matchup.batter.fullName;
-
-                          const isFantasyPlayer = fantasyTeams.some(team =>
-                              team.players.some(player => player.name === playerName)
-                          );
-
-                          if (isFantasyPlayer) {
-                              const fantasyTeamName = fantasyTeams.find(team =>
-                                  team.players.some(player => player.name === playerName)
-                              )?.name;
-
-                              homeRuns.push({
-                                  team: fantasyTeamName,
-                                  player: playerName,
-                                  date: formattedDate,
-                              });
-                          }
-                      }
-                  });
-
-                  if (homeRuns.length >= 25) break;
-              }
-
-              if (homeRuns.length >= 25) break;
-              daysBack++;
-          }
-
-          homeRuns = homeRuns.slice(0, 25);
-          sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
+        if (homeRuns.length >= 25) break;
+        daysBack++;
       }
 
-      // Hide the loading spinner after data is fetched
-      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+      homeRuns = homeRuns.slice(0, 25);
+      sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
+    }
 
-      const feedBody = document.getElementById("feed-body");
-      feedBody.innerHTML = "";
+    // Sort home runs by playEndTime in UTC (most recent first)
+    homeRuns.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
 
-      homeRuns.forEach(hr => {
-          const row = `<tr>
-              <td>${hr.team}</td>
-              <td>${hr.player}</td>
-              <td>${hr.date}</td>
-          </tr>`;
-          feedBody.innerHTML += row;
-      });
+    // Hide the loading spinner after data is fetched
+    document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+
+    const feedBody = document.getElementById("feed-body");
+    feedBody.innerHTML = "";
+
+    // Display home runs in sorted order (without displaying the time)
+    homeRuns.forEach(hr => {
+      const row = `<tr>
+          <td>${hr.team}</td>
+          <td>${hr.player}</td>
+          <td>${hr.date}</td> <!-- Only display the date -->
+      </tr>`;
+      feedBody.innerHTML += row;
+    });
   } catch (error) {
-      console.error("🚨 Error fetching home run data:", error);
-      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
+    console.error("🚨 Error fetching home run data:", error);
+    document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
   }
 }
+
 
 
 
