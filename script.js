@@ -359,11 +359,18 @@ function fetchPlayerId(playerName) {
   return playerIdLookup[playerName] || null;
 }
 
+// Disable all console logs
+console.log = function() {};
+
+// Your other script code here
+console.log("This will not appear in the console");
+
+// Other functions, variables, etc.
 
 
 async function fetchSeasonHomeRuns(playerId) {
   try {
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2024&group=hitting`);
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=S&group=hitting`);
     const data = await response.json();
     if (data.stats && data.stats[0].splits) {
       return data.stats[0].splits[0].stat.homeRuns || 0;
@@ -482,51 +489,48 @@ function topFourTotal(team) {
 // Updated month mapping: Combine March and April into "March/April"
 async function fetchMonthlyHomeRuns(playerId) {
   try {
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2024&group=hitting`);
+    // Fetch game log data for Spring Training games
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2025&gameType=S&group=hitting`);
     const data = await response.json();
-    let monthlyStats = {};
-    const monthMapping = {
-      2: "March/April",
-      3: "March/April",
-      4: "May",
-      5: "June",
-      6: "July",
-      7: "August",
-      8: "September"
+    
+    let monthlyStats = {
+      "March/April": 0,
+      "May": 0,
+      "June": 0,
+      "July": 0,
+      "August": 0,
+      "September": 0
     };
-    // Initialize monthlyStats to 0 for each column
-    Object.values(monthMapping).forEach(month => {
-      monthlyStats[month] = 0;
-    });
+    
     if (data.stats && data.stats[0].splits && data.stats[0].splits.length > 0) {
       data.stats[0].splits.forEach(split => {
         const gameDate = new Date(split.date);
-const monthName = monthMapping[gameDate.getUTCMonth()]; // ✅ Use getUTCMonth() to prevent time zone shift
-
-        let gameHR = parseInt(split.stat.homeRuns, 10) || 0;
-    
-        if (monthName) {
-          monthlyStats[monthName] += gameHR;
+        const month = gameDate.getUTCMonth(); // Use UTC month to avoid timezone shifts
         
-          // ✅ Log all players who hit at least 1 HR in a game
-          if (gameHR > 0) {  
-            console.log(`HR Game - Player ID: ${playerId}, Date: ${split.date}, Month: ${monthName}, HR: ${gameHR}`);
-          }
-        
-          // ✅ NEW: Log the updated total after adding this game's HRs
-          console.log(`Updating Monthly Stats - Player: ${playerId}, Month: ${monthName}, HR: ${gameHR}, Total in Month: ${monthlyStats[monthName]}`);
+        if (month === 2 || month === 3) { // March/April
+          const gameHR = parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["March/April"] += gameHR;
+        } else if (month === 4) { // May
+          monthlyStats["May"] += parseInt(split.stat.homeRuns, 10) || 0;
+        } else if (month === 5) { // June
+          monthlyStats["June"] += parseInt(split.stat.homeRuns, 10) || 0;
+        } else if (month === 6) { // July
+          monthlyStats["July"] += parseInt(split.stat.homeRuns, 10) || 0;
+        } else if (month === 7) { // August
+          monthlyStats["August"] += parseInt(split.stat.homeRuns, 10) || 0;
+        } else if (month === 8) { // September
+          monthlyStats["September"] += parseInt(split.stat.homeRuns, 10) || 0;
         }
-        
       });
     }
-    
-    
+
     return monthlyStats;
   } catch (error) {
     console.error(`Error fetching monthly home runs for player ${playerId}:`, error);
     return {};
   }
 }
+
 
 
 async function fetchMonthlyStats() {
