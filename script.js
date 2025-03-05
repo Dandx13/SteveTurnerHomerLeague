@@ -368,58 +368,101 @@ console.log("This will not appear in the console");
 // Other functions, variables, etc.
 
 
-async function fetchSeasonHomeRuns(playerId) {
-  try {
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=S&group=hitting`);
-    const data = await response.json();
-    if (data.stats && data.stats[0].splits) {
-      return data.stats[0].splits[0].stat.homeRuns || 0;
-    }
-    return 0;
-  } catch (error) {
-    console.error(`Error fetching season home runs for player ${playerId}:`, error);
-    return 0;
-  }
-}
-
-
 async function fetchPlayerStats() {
   document.getElementById("loading-indicator").style.display = "none"; // Hide the extra message
 
   document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>"; // Show only "Loading teams..."
 
-
   try {
-    let cachedPlayerIds = {}; // Store player IDs in memory
+    const batchSize = 5; // Size of each batch for requests
+    let playerRequests = [];
+    let batchResults = [];
+    
+    // Create batches of player stats requests
+    for (let i = 0; i < fantasyTeams.length; i++) {
+      const team = fantasyTeams[i];
 
-for (const team of fantasyTeams) {
-  for (const player of team.players) {
-    if (!cachedPlayerIds[player.name]) {
-      player.id = await fetchPlayerId(player.name);
-      cachedPlayerIds[player.name] = player.id; // Cache it
-    } else {
-      player.id = cachedPlayerIds[player.name]; // Use cached ID
-    }
-  }
-}
-
-    for (const team of fantasyTeams) {
-      for (const player of team.players) {
-        if (player.id) {
-          const totalHomeRuns = await fetchSeasonHomeRuns(player.id);
-          playerHomeRuns[player.id] = totalHomeRuns;
+      // Group players in batches of size 'batchSize'
+      const batch = [];
+      for (let j = 0; j < team.players.length; j++) {
+        const player = team.players[j];
+        
+        batch.push(fetchPlayerStatsForPlayer(player));
+        
+        // Process batch when reaching batchSize or last player
+        if (batch.length === batchSize || j === team.players.length - 1) {
+          playerRequests.push(batch);
+          batchResults.push(await processBatch(batch));
+          batch.length = 0; // Reset for the next batch
         }
       }
     }
-    displayFantasyTeams();
+
+    // Flatten the batch results and then continue processing
+    batchResults = batchResults.flat();
+    displayFantasyTeams(); // Now display the updated teams
     const now = new Date();
     document.getElementById("last-update").textContent = "Last updated: " + now.toLocaleString();
+
   } catch (error) {
     console.error("Error fetching player stats:", error);
   } finally {
     document.getElementById("loading-indicator").style.display = "none";
   }
 }
+
+async function fetchSeasonHomeRuns(playerId) {
+  try {
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=S&group=hitting`);
+    const data = await response.json();
+    
+    // Check if the data exists and has the correct structure
+    if (data.stats && data.stats[0] && data.stats[0].splits && data.stats[0].splits.length > 0) {
+      return data.stats[0].splits[0].stat.homeRuns || 0;
+    }
+    
+    // If no data or stats are found, return 0
+    return 0;
+  } catch (error) {
+    console.error(`Error fetching season home runs for player ${playerId}:`, error);
+    return 0; // Return 0 in case of any error
+  }
+}
+
+
+// Helper function to fetch stats for a single player
+async function fetchPlayerStatsForPlayer(player) {
+  try {
+    const playerId = await fetchPlayerId(player.name);
+    if (!playerId) {
+      throw new Error(`Player ID for ${player.name} not found.`);
+    }
+
+    // Fetch the season home runs for the player
+    const totalHomeRuns = await fetchSeasonHomeRuns(playerId);
+    playerHomeRuns[playerId] = totalHomeRuns;
+
+  } catch (error) {
+    console.error(`Error fetching stats for player ${player.name}:`, error);
+  }
+}
+
+
+
+// Process each batch using `Promise.allSettled` for error resilience
+async function processBatch(batch) {
+  const batchResults = await Promise.allSettled(batch);
+  // Handle each batch result: successes and failures
+  return batchResults.map(result => {
+    if (result.status === 'fulfilled') {
+      return result.value; // Successfully fetched stats
+    } else {
+      console.error(`Failed to fetch data for player: ${result.reason}`);
+      return null; // Return null for failed requests to prevent breaking the app
+    }
+  });
+}
+
 
 function displayFantasyTeams() {
   const sortedTeams = fantasyTeams.slice().sort((teamA, teamB) => {
@@ -492,7 +535,7 @@ async function fetchMonthlyHomeRuns(playerId) {
     // Fetch game log data for Spring Training games
     const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2025&gameType=S&group=hitting`);
     const data = await response.json();
-    
+
     let monthlyStats = {
       "March/April": 0,
       "May": 0,
@@ -501,35 +544,41 @@ async function fetchMonthlyHomeRuns(playerId) {
       "August": 0,
       "September": 0
     };
-    
-    if (data.stats && data.stats[0].splits && data.stats[0].splits.length > 0) {
+
+    // Check if the data is in the expected format
+    if (data.stats && data.stats[0] && data.stats[0].splits && data.stats[0].splits.length > 0) {
       data.stats[0].splits.forEach(split => {
         const gameDate = new Date(split.date);
         const month = gameDate.getUTCMonth(); // Use UTC month to avoid timezone shifts
         
+        // Aggregate home runs per month
+        const gameHR = parseInt(split.stat.homeRuns, 10) || 0;
+
         if (month === 2 || month === 3) { // March/April
-          const gameHR = parseInt(split.stat.homeRuns, 10) || 0;
           monthlyStats["March/April"] += gameHR;
         } else if (month === 4) { // May
-          monthlyStats["May"] += parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["May"] += gameHR;
         } else if (month === 5) { // June
-          monthlyStats["June"] += parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["June"] += gameHR;
         } else if (month === 6) { // July
-          monthlyStats["July"] += parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["July"] += gameHR;
         } else if (month === 7) { // August
-          monthlyStats["August"] += parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["August"] += gameHR;
         } else if (month === 8) { // September
-          monthlyStats["September"] += parseInt(split.stat.homeRuns, 10) || 0;
+          monthlyStats["September"] += gameHR;
         }
       });
+    } else {
+      console.warn(`No game log data available for player ${playerId}.`);
     }
 
     return monthlyStats;
   } catch (error) {
     console.error(`Error fetching monthly home runs for player ${playerId}:`, error);
-    return {};
+    return {}; // Return empty object if error occurs
   }
 }
+
 
 
 
