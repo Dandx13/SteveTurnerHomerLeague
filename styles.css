@@ -31,34 +31,10 @@ body {
 
 /* Header */
 h1 {
-  font-family: 'Poppins', sans-serif; /* Modern font */
-  font-size: 2.5rem;  /* Default size for desktop */
-  color: #2e3a59;   /* Dark blue for the text */
-  font-weight: 500;  /* Semi-bold */
-  text-align: center; /* Center the title */
-  margin-bottom: 20px; /* Margin beneath the header */
-  padding: 10px 30px; /* Padding for spacing */
-  background: transparent; /* Transparent background */
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  border-radius: 8px; /* Rounded corners */
-  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  color: #0044cc;
+  margin-bottom: 20px;
 }
-
-h1:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-/* Mobile Adjustment */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;  /* Smaller font size for mobile */
-    padding: 10px 20px; /* Adjust padding on smaller screens */
-    margin-bottom: 15px; /* Adjust margin */
-  }
-}
-
-
 
 /* Tabs */
 .tabs {
@@ -158,13 +134,14 @@ button:hover {
 .team ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: left; /* Aligns all text left */
 }
 
 .team ul li {
-  font-size: 16px;
-  padding: 4px 0;
-}
+  display: flex; /* Allows image + text alignment */
+  align-items: center; /* Keeps text vertically aligned with image */
+  text-align: left; /* Ensures text aligns left */
+  gap: 10px; /* Adds spacing between image and text */
 
 /* Tables */
 .monthly-table {
