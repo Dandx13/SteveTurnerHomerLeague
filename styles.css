@@ -134,14 +134,18 @@ button:hover {
 .team ul {
   list-style: none;
   padding: 0;
-  text-align: left; /* Aligns all text left */
+  margin: 0;
 }
 
 .team ul li {
-  display: flex; /* Allows image + text alignment */
-  align-items: center; /* Keeps text vertically aligned with image */
-  text-align: left; /* Ensures text aligns left */
-  gap: 10px; /* Adds spacing between image and text */
+  font-size: 16px;
+  padding: 4px 0;
+  display: flex; /* Align image & text in one row */
+  align-items: center; /* Keep text aligned with image */
+  text-align: left; /* Aligns text to the left */
+  gap: 8px; /* Adds spacing between image & text */
+}
+
 
 /* Tables */
 .monthly-table {
