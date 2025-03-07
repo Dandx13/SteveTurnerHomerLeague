@@ -19,11 +19,11 @@ body {
 }
 
 
-/* Container */
+/* Container around all of the team cards*/
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -75,7 +75,7 @@ button:hover {
 #team-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -83,7 +83,7 @@ button:hover {
 /* Fantasy Team Cards */
 .team {
   background: white;
-  padding: 16px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -92,8 +92,8 @@ button:hover {
 }
 
 .player-headshot {
-  width: 30px; /* Adjust size as needed */
-  height: 30px;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
   border-radius: 50%; /* Makes images circular */
   margin-right: 8px; /* Adds spacing between image and text */
   vertical-align: middle; /* Aligns image with text */
@@ -373,17 +373,20 @@ button:hover {
     .monthly-table-mobile {
       display: block !important;
       width: 90%; /* Adjust width for better centering */
+      max-width: 500px; /* Set a max-width to ensure it doesn't stretch too much */
       margin: 10px auto; /* Centers the table */
       border: 1px solid #ddd;
       text-align: center; /* Centers all text */
+      table-layout: fixed; /* Ensures columns take equal width */
     }
     
     .monthly-table-mobile th,
     .monthly-table-mobile td {
       padding: 10px;
-      text-align: center; /* Ensures all text inside is centered */
+      text-align: center;
+      width:50%; /* Adjust width of each column */
+      box-sizing: border-box; /* Ensures padding doesn't affect column width */
     }
-    
   }
 
   h1 {
