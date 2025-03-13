@@ -29,6 +29,15 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.team-rank {
+  font-size: 20px;  /* Adjust the font size to your preference */
+  color: var(--primary-color); /* Use your primary color or change this to any color */
+  margin-bottom: 5px; /* Add some space between the rank and team name */
+  text-decoration: underline; /* Underline the rank */
+}
+
+
 /* Header */
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -129,6 +138,7 @@ button:hover {
 .team h2 {
   color: #0044cc;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .team ul {
