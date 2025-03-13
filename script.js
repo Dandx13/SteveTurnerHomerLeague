@@ -3,221 +3,276 @@ let fantasyTeams = [
   {
     name: "Adam",
     players: [
-      { name: "Brandon Lowe", id: 664040 },
+      { name: "Fernando Tatis Jr.", id: 665487 },
+      { name: "Julio Rodríguez", id: 677594 },
       { name: "Ronald Acuña Jr.", id: 660670 },
-      { name: "Alex Bregman", id: 608324 },
-      { name: "Trevor Story", id: 596115 },
-      { name: "Francisco Lindor", id: 596019 },
-      { name: "Bryce Harper", id: 547180 }
+      { name: "Trea Turner", id: 607208 },
+      { name: "Jesús Sánchez", id: 660821 },
+      { name: "Carlos Santana", id: 467793 }
     ]
   },
   {
     name: "Antonio",
     players: [
-      { name: "Seiya Suzuki", id: 673548 },
-      { name: "Seth Brown", id: 664913 },
-      { name: "Kyle Tucker", id: 663656 },
+      { name: "Anthony Santander", id: 623993 },
+      { name: "Tyler O'Neill", id: 641933 },
       { name: "Cody Bellinger", id: 641355 },
-      { name: "Salvador Perez", id: 521692 },
-      { name: "Freddie Freeman", id: 518692 }
+      { name: "Seiya Suzuki", id: 673548 },
+      { name: "Andrew Vaughn", id: 683734 },
+      { name: "Yandy Díaz", id: 650490 }
+    ]
+  },
+  {
+    name: "Austin T",
+    players: [
+      { name: "Kyle Tucker", id: 663656 },
+      { name: "Mark Vientos", id: 668901 },
+      { name: "Isaac Paredes", id: 670623 },
+      { name: "Marcus Semien", id: 543760 },
+      { name: "Daulton Varsho", id: 662139 },
+      { name: "Jasson Domínguez", id: 691176 }
     ]
   },
   {
     name: "Dan/Connor",
     players: [
+      { name: "Shohei Ohtani", id: 660271 },
+      { name: "Paul Goldschmidt", id: 502671 },
+      { name: "Riley Greene", id: 682985 },
+      { name: "Taylor Ward", id: 621493 },
       { name: "Josh Jung", id: 673962 },
-      { name: "Yainer Diaz", id: 673237 },
-      { name: "Nolan Jones", id: 666134 },
-      { name: "William Contreras", id: 661388 },
-      { name: "Nolan Arenado", id: 571448 },
-      { name: "Mike Trout", id: 545361 }
+      { name: "Jeremy Peña", id: 665161 }
+    ]
+  },
+  {
+    name: "Dan/Connor (2)",
+    players: [
+      { name: "Cal Raleigh", id: 663728 },
+      { name: "Corey Seager", id: 608369 },
+      { name: "Jordan Westburg", id: 676059 },
+      { name: "Matt Wallner", id: 670242 },
+      { name: "Carlos Correa", id: 621043 },
+      { name: "MJ Melendez", id: 669004 }
     ]
   },
   {
     name: "Dan/Joe",
     players: [
-      { name: "Joey Gallo", id: 608336 },
-      { name: "Christian Encarnacion-Strand", id: 687952 },
-      { name: "Rafael Devers", id: 646240 },
-      { name: "Jorge Soler", id: 624585 },
-      { name: "Byron Buxton", id: 621439 },
-      { name: "Hunter Renfroe", id: 592669 }
+      { name: "Matt Olson", id: 621566 },
+      { name: "Michael Toglia", id: 669911 },
+      { name: "Jazz Chisholm Jr.", id: 665862 },
+      { name: "Christian Yelich", id: 592885 },
+      { name: "Nolan Arenado", id: 571448 },
+      { name: "Jeimer Candelario", id: 600869 }
+    ]
+  },
+  {
+    name: "Dan/Joe (2)",
+    players: [
+      { name: "Yordan Alvarez", id: 670541 },
+      { name: "Oneil Cruz", id: 665833 },
+      { name: "Vinnie Pasquantino", id: 686469 },
+      { name: "William Contreras", id: 661388 },
+      { name: "Tyler Soderstrom", id: 691016 },
+      { name: "Pete Crow-Armstrong", id: 691718 }
     ]
   },
   {
     name: "Dan/Larry",
     players: [
-      { name: "Andrew Vaughn", id: 683734 },
-      { name: "Francisco Alvarez", id: 682626 },
-      { name: "Spencer Torkelson", id: 679529 },
-      { name: "Ryan Noda", id: 676116 },
-      { name: "Fernando Tatis Jr.", id: 665487 },
-      { name: "Max Kepler", id: 596146 }
+      { name: "Aaron Judge", id: 592450 },
+      { name: "Royce Lewis", id: 668904 },
+      { name: "Shea Langeliers", id: 669127 },
+      { name: "Nolan Gorman", id: 669357 },
+      { name: "Ryan McMahon", id: 641857 },
+      { name: "Jurickson Profar", id: 595777 }
     ]
   },
   {
-    name: "Joe/Dan",
+    name: "Dan/Larry (2)",
     players: [
-      { name: "Eloy Jiménez", id: 650391 },
-      { name: "Rowdy Tellez", id: 642133 },
-      { name: "Vinnie Pasquantino", id: 686469 },
-      { name: "Juan Soto", id: 665742 },
-      { name: "Christian Yelich", id: 592885 },
-      { name: "Giancarlo Stanton", id: 519317 }
+      { name: "Kyle Schwarber", id: 656941 },
+      { name: "Luis Robert Jr.", id: 673357 },
+      { name: "Byron Buxton", id: 621439 },
+      { name: "Randy Arozarena", id: 668227 },
+      { name: "Yainer Diaz", id: 673237 },
+      { name: "Kris Bryant", id: 592178 }
     ]
   },
   {
     name: "John Eames",
     players: [
-      { name: "James Outman", id: 681546 },
-      { name: "Zack Gelof", id: 680869 },
-      { name: "Spencer Steer", id: 668715 },
-      { name: "Oneil Cruz", id: 665833 },
-      { name: "Teoscar Hernández", id: 606192 },
-      { name: "Aaron Judge", id: 592450 }
+      { name: "Mike Trout", id: 545361 },
+      { name: "Elly De La Cruz", id: 682829 },
+      { name: "Colton Cowser", id: 681297 },
+      { name: "Ian Happ", id: 664023 },
+      { name: "Michael Busch", id: 683737 },
+      { name: "Connor Norby", id: 681393 }
     ]
   },
   {
     name: "John Fournier",
     players: [
-      { name: "Shohei Ohtani", id: 660271 },
+      { name: "Jake Burger", id: 669394 },
+      { name: "Francisco Lindor", id: 596019 },
+      { name: "James Wood", id: 695578 },
+      { name: "Max Kepler", id: 596146 },
+      { name: "Brenton Doyle", id: 686668 },
+      { name: "Luke Raley", id: 670042 }
+    ]
+  },
+  {
+    name: "Mike/Nick/Evan",
+    players: [
+      { name: "Juan Soto", id: 665742 },
+      { name: "Eugenio Suárez", id: 553993 },
+      { name: "Joc Pederson", id: 592626 },
+      { name: "JJ Bleday", id: 668709 },
+      { name: "Spencer Torkelson", id: 679529 },
+      { name: "Jake Cronenworth", id: 630105 }
+    ]
+  },
+  {
+    name: "Mike/Nick/Evan (2)",
+    players: [
+      { name: "Kerry Carpenter", id: 681481 },
       { name: "Rhys Hoskins", id: 656555 },
-      { name: "Gleyber Torres", id: 650402 },
-      { name: "Tyler O'Neill", id: 641933 },
-      { name: "Mitch Haniger", id: 571745 },
-      { name: "Marcus Semien", id: 543760 }
+      { name: "Max Muncy", id: 571970 },
+      { name: "Christian Encarnacion-Strand", id: 687952 },
+      { name: "Kyle Manzardo", id: 700932 },
+      { name: "Lourdes Gurriel Jr.", id: 666971 }
     ]
   },
   {
-    name: "Larry/Dan",
+    name: "Nate",
     players: [
-      { name: "Jordan Walker", id: 691023 },
-      { name: "Anthony Volpe", id: 683011 },
-      { name: "Julio Rodríguez", id: 677594 },
-      { name: "Bryan Reynolds", id: 668804 },
-      { name: "Christopher Morel", id: 666624 },
-      { name: "Ozzie Albies", id: 645277 }
+      { name: "Brent Rooker", id: 667670 },
+      { name: "Triston Casas", id: 671213 },
+      { name: "Jackson Chourio", id: 694192 },
+      { name: "Ozzie Albies", id: 645277 },
+      { name: "Jhonkensy Noel", id: 678877 },
+      { name: "Deyvison De Los Santos", id: 691277 }
     ]
   },
   {
-    name: "Mike/Evan/Nick",
+    name: "Nate (2)",
     players: [
-      { name: "Brandon Drury", id: 592273 },
-      { name: "Chas McCormick", id: 676801 },
-      { name: "Nelson Velázquez", id: 676369 },
-      { name: "Isaac Paredes", id: 670623 },
-      { name: "Jack Suwinski", id: 669261 },
-      { name: "Marcell Ozuna", id: 542303 }
-    ]
-  },
-  {
-    name: "Nate/Steve",
-    players: [
-      { name: "Wyatt Langford", id: 694671 },
-      { name: "Yordan Alvarez", id: 670541 },
-      { name: "Nolan Gorman", id: 669357 },
-      { name: "Jazz Chisholm Jr.", id: 665862 },
-      { name: "Daulton Varsho", id: 662139 },
-      { name: "Christian Walker", id: 572233 }
+      { name: "Gunnar Henderson", id: 683002 },
+      { name: "Teoscar Hernández", id: 606192 },
+      { name: "Heliot Ramos", id: 671218 },
+      { name: "Matt McLain", id: 680574 },
+      { name: "CJ Abrams", id: 682928 },
+      { name: "Matt Shaw", id: 807713 }
     ]
   },
   {
     name: "Nick",
     players: [
+      { name: "Marcell Ozuna", id: 542303 },
+      { name: "Willy Adames", id: 642715 },
+      { name: "Brandon Lowe", id: 664040 },
       { name: "Logan O'Hoppe", id: 681351 },
-      { name: "Jake Burger", id: 669394 },
-      { name: "Jose Siri", id: 642350 },
-      { name: "Matt Olson", id: 621566 },
-      { name: "Dansby Swanson", id: 621020 },
-      { name: "Paul Goldschmidt", id: 502671 }
+      { name: "Bo Bichette", id: 666182 },
+      { name: "Tyler Fitzgerald", id: 666149 }
     ]
   },
   {
     name: "Pat T",
     players: [
-      { name: "Bobby Witt Jr.", id: 677951 },
-      { name: "Kerry Carpenter", id: 681481 },
-      { name: "Triston Casas", id: 671213 },
-      { name: "Will Smith", id: 669257 },
-      { name: "Royce Lewis", id: 668904 },
-      { name: "Brent Rooker", id: 667670 }
-    ]
-  },
-  {
-    name: "Paul/Ryan",
-    players: [
-      { name: "Bo Bichette", id: 666182 },
-      { name: "Cal Raleigh", id: 663728 },
-      { name: "Kyle Schwarber", id: 656941 },
-      { name: "Yandy Díaz", id: 650490 },
-      { name: "Josh Bell", id: 605137 },
-      { name: "Nick Castellanos", id: 592206 }
+      { name: "Rafael Devers", id: 646240 },
+      { name: "Christian Walker", id: 572233 },
+      { name: "Salvador Perez", id: 521692 },
+      { name: "Michael Harris II", id: 671739 },
+      { name: "George Springer", id: 543807 },
+      { name: "Zack Gelof", id: 680869 }
     ]
   },
   {
     name: "Payton/Matt",
     players: [
-      { name: "Daniel Vogelbach", id: 596129 },
-      { name: "Elly De La Cruz", id: 682829 },
-      { name: "Randy Arozarena", id: 668227 },
-      { name: "Austin Riley", id: 663586 },
-      { name: "Trea Turner", id: 607208 },
-      { name: "Manny Machado", id: 592518 }
+      { name: "José Ramírez", id: 608070 },
+      { name: "Adolis García", id: 666969 },
+      { name: "Nick Castellanos", id: 592206 },
+      { name: "Gleyber Torres", id: 650402 },
+      { name: "Jose Altuve", id: 514888 },
+      { name: "Kristian Campbell", id: 692225 }
+    ]
+  },
+  {
+    name: "Pete/Zack",
+    players: [
+      { name: "Pete Alonso", id: 624413 },
+      { name: "Josh Naylor", id: 647304 },
+      { name: "Corbin Carroll", id: 682998 },
+      { name: "Austin Wells", id: 669224 },
+      { name: "Adley Rutschman", id: 668939 },
+      { name: "Anthony Volpe", id: 683011 }
+    ]
+  },
+  {
+    name: "Peyton B",
+    players: [
+      { name: "Bryce Harper", id: 547180 },
+      { name: "Lawrence Butler", id: 671732 },
+      { name: "Willson Contreras", id: 575929 },
+      { name: "Ezequiel Tovar", id: 678662 },
+      { name: "Jo Adell", id: 666176 },
+      { name: "Ryan Jeffers", id: 680777 }
     ]
   },
   {
     name: "Ryan/Paul",
     players: [
-      { name: "Adolis García", id: 666969 },
-      { name: "Ryan Mountcastle", id: 663624 },
-      { name: "Brandon Nimmo", id: 607043 },
+      { name: "Austin Riley", id: 663586 },
       { name: "Ketel Marte", id: 606466 },
-      { name: "Max Muncy", id: 571970 },
-      { name: "George Springer", id: 543807 }
+      { name: "Junior Caminero", id: 691406 },
+      { name: "Jose Siri", id: 642350 },
+      { name: "Ryan Mountcastle", id: 663624 },
+      { name: "Cedric Mullins", id: 656775 }
     ]
   },
   {
-    name: "Steve/Nate",
+    name: "Ryan/Paul (2)",
     players: [
-      { name: "James Wood", id: 695578 },
       { name: "Matt Chapman", id: 656305 },
-      { name: "Willy Adames", id: 642715 },
-      { name: "Ryan McMahon", id: 641857 },
-      { name: "Pete Alonso", id: 624413 },
-      { name: "José Ramírez", id: 608070 }
+      { name: "Jorge Soler", id: 624585 },
+      { name: "Christopher Morel", id: 666624 },
+      { name: "Bryan Reynolds", id: 668804 },
+      { name: "Alec Bohm", id: 664761 },
+      { name: "Josh Bell", id: 605137 }
     ]
   },
   {
-    name: "Tom",
+    name: "Tom/Ryan",
     players: [
-      { name: "Gunnar Henderson", id: 683002 },
-      { name: "Corbin Carroll", id: 682998 },
-      { name: "Michael Harris II", id: 671739 },
-      { name: "Adley Rutschman", id: 668939 },
-      { name: "Alec Bohm", id: 664761 },
-      { name: "Mookie Betts", id: 605141 }
+      { name: "Bobby Witt Jr.", id: 677951 },
+      { name: "Jackson Merrill", id: 701538 },
+      { name: "Freddie Freeman", id: 518692 },
+      { name: "Brandon Nimmo", id: 607043 },
+      { name: "Lane Thomas", id: 657041 },
+      { name: "Nathaniel Lowe", id: 663993 }
+    ]
+  },
+  {
+    name: "Tom/Ryan (2)",
+    players: [
+      { name: "Mookie Betts", id: 605141 },
+      { name: "Alex Bregman", id: 608324 },
+      { name: "Wyatt Langford", id: 694671 },
+      { name: "Michael Conforto", id: 624424 },
+      { name: "Dansby Swanson", id: 621020 },
+      { name: "Zach Neto", id: 687263 }
     ]
   },
   {
     name: "Tyler",
     players: [
-      { name: "MJ Melendez", id: 669004 },
       { name: "Vladimir Guerrero Jr.", id: 665489 },
-      { name: "Lane Thomas", id: 657041 },
-      { name: "Anthony Santander", id: 623993 },
-      { name: "Carlos Correa", id: 621043 },
-      { name: "Jose Altuve", id: 514888 }
-    ]
-  },
-  {
-    name: "Zack/Pete",
-    players: [
-      { name: "J.D. Martinez", id: 502110 },
-      { name: "Luis Robert Jr.", id: 673357 },
-      { name: "Anthony Rizzo", id: 519203 },
-      { name: "Corey Seager", id: 608369 },
-      { name: "J.T. Realmuto", id: 592663 },
-      { name: "Eugenio Suárez", id: 553993 }
+      { name: "Manny Machado", id: 592518 },
+      { name: "Trevor Story", id: 596115 },
+      { name: "Jarren Duran", id: 680776 },
+      { name: "Will Smith", id: 669257 },
+      { name: "Wilyer Abreu", id: 677800 }
     ]
   }
 ];
@@ -228,131 +283,159 @@ let playerHomeRuns = {};
 // Object to store monthly home run data (season 2024) by player
 let playerMonthlyStats = {};
 
-
 // --- Season Totals Functions (Homepage) ---
 const playerIdLookup = {
-  "Brandon Lowe": 664040,
-  "Ronald Acuña Jr.": 660670,
-  "Alex Bregman": 608324,
-  "Trevor Story": 596115,
-  "Francisco Lindor": 596019,
-  "Bryce Harper": 547180,
-  "Seiya Suzuki": 673548,
-  "Seth Brown": 664913,
-  "Kyle Tucker": 663656,
-  "Cody Bellinger": 641355,
-  "Salvador Perez": 521692,
-  "Freddie Freeman": 518692,
-  "Josh Jung": 673962,
-  "Yainer Diaz": 673237,
-  "Nolan Jones": 666134,
-  "William Contreras": 661388,
-  "Nolan Arenado": 571448,
-  "Mike Trout": 545361,
-  "Joey Gallo": 608336,
-  "Christian Encarnacion-Strand": 687952,
-  "Rafael Devers": 646240,
-  "Jorge Soler": 624585,
-  "Byron Buxton": 621439,
-  "Hunter Renfroe": 592669,
-  "Andrew Vaughn": 683734,
-  "Francisco Alvarez": 682626,
-  "Spencer Torkelson": 679529,
-  "Ryan Noda": 676116,
   "Fernando Tatis Jr.": 665487,
-  "Max Kepler": 596146,
-  "Eloy Jiménez": 650391,
-  "Rowdy Tellez": 642133,
-  "Vinnie Pasquantino": 686469,
-  "Juan Soto": 665742,
-  "Christian Yelich": 592885,
-  "Giancarlo Stanton": 519317,
-  "James Outman": 681546,
-  "Zack Gelof": 680869,
-  "Spencer Steer": 668715,
-  "Oneil Cruz": 665833,
-  "Teoscar Hernández": 606192,
-  "Aaron Judge": 592450,
-  "Shohei Ohtani": 660271,
-  "Rhys Hoskins": 656555,
-  "Gleyber Torres": 650402,
-  "Tyler O'Neill": 641933,
-  "Mitch Haniger": 571745,
-  "Marcus Semien": 543760,
-  "Jordan Walker": 691023,
-  "Anthony Volpe": 683011,
   "Julio Rodríguez": 677594,
-  "Bryan Reynolds": 668804,
-  "Christopher Morel": 666624,
-  "Ozzie Albies": 645277,
-  "Brandon Drury": 592273,
-  "Chas McCormick": 676801,
-  "Nelson Velázquez": 676369,
-  "Isaac Paredes": 670623,
-  "Jack Suwinski": 669261,
-  "Marcell Ozuna": 542303,
-  "Wyatt Langford": 694671,
-  "Yordan Alvarez": 670541,
-  "Nolan Gorman": 669357,
-  "Jazz Chisholm Jr.": 665862,
-  "Daulton Varsho": 662139,
-  "Christian Walker": 572233,
-  "Logan O'Hoppe": 681351,
-  "Jake Burger": 669394,
-  "Jose Siri": 642350,
-  "Matt Olson": 621566,
-  "Dansby Swanson": 621020,
-  "Paul Goldschmidt": 502671,
-  "Bobby Witt Jr.": 677951,
-  "Kerry Carpenter": 681481,
-  "Triston Casas": 671213,
-  "Will Smith": 669257,
-  "Royce Lewis": 668904,
-  "Brent Rooker": 667670,
-  "Bo Bichette": 666182,
-  "Cal Raleigh": 663728,
-  "Kyle Schwarber": 656941,
-  "Yandy Díaz": 650490,
-  "Josh Bell": 605137,
-  "Nick Castellanos": 592206,
-  "Daniel Vogelbach": 596129,
-  "Elly De La Cruz": 682829,
-  "Randy Arozarena": 668227,
-  "Austin Riley": 663586,
+  "Ronald Acuña Jr.": 660670,
   "Trea Turner": 607208,
-  "Manny Machado": 592518,
-  "Adolis García": 666969,
-  "Ryan Mountcastle": 663624,
-  "Brandon Nimmo": 607043,
-  "Ketel Marte": 606466,
-  "Max Muncy": 571970,
-  "George Springer": 543807,
-  "James Wood": 695578,
-  "Matt Chapman": 656305,
-  "Willy Adames": 642715,
-  "Ryan McMahon": 641857,
-  "Pete Alonso": 624413,
-  "José Ramírez": 608070,
-  "Gunnar Henderson": 683002,
-  "Corbin Carroll": 682998,
-  "Michael Harris II": 671739,
-  "Adley Rutschman": 668939,
-  "Alec Bohm": 664761,
-  "Mookie Betts": 605141,
-  "MJ Melendez": 669004,
-  "Vladimir Guerrero Jr.": 665489,
-  "Lane Thomas": 657041,
+  "Jesús Sánchez": 660821,
+  "Carlos Santana": 467793,
   "Anthony Santander": 623993,
-  "Carlos Correa": 621043,
-  "Jose Altuve": 514888,
-  "J.D. Martinez": 502110,
-  "Luis Robert Jr.": 673357,
-  "Anthony Rizzo": 519203,
+  "Tyler O'Neill": 641933,
+  "Cody Bellinger": 641355,
+  "Seiya Suzuki": 673548,
+  "Andrew Vaughn": 683734,
+  "Yandy Díaz": 650490,
+  "Kyle Tucker": 663656,
+  "Mark Vientos": 668901,
+  "Isaac Paredes": 670623,
+  "Marcus Semien": 543760,
+  "Daulton Varsho": 662139,
+  "Jasson Domínguez": 691176,
+  "Shohei Ohtani": 660271,
+  "Paul Goldschmidt": 502671,
+  "Riley Greene": 682985,
+  "Taylor Ward": 621493,
+  "Josh Jung": 673962,
+  "Jeremy Peña": 665161,
+  "Cal Raleigh": 663728,
   "Corey Seager": 608369,
-  "J.T. Realmuto": 592663,
-  "Eugenio Suárez": 553993
+  "Jordan Westburg": 676059,
+  "Matt Wallner": 670242,
+  "Carlos Correa": 621043,
+  "MJ Melendez": 669004,
+  "Matt Olson": 621566,
+  "Michael Toglia": 669911,
+  "Jazz Chisholm Jr.": 665862,
+  "Christian Yelich": 592885,
+  "Nolan Arenado": 571448,
+  "Jeimer Candelario": 600869,
+  "Yordan Alvarez": 670541,
+  "Oneil Cruz": 665833,
+  "Vinnie Pasquantino": 686469,
+  "William Contreras": 661388,
+  "Tyler Soderstrom": 691016,
+  "Pete Crow-Armstrong": 691718,
+  "Aaron Judge": 592450,
+  "Royce Lewis": 668904,
+  "Shea Langeliers": 669127,
+  "Nolan Gorman": 669357,
+  "Ryan McMahon": 641857,
+  "Jurickson Profar": 595777,
+  "Kyle Schwarber": 656941,
+  "Luis Robert Jr.": 673357,
+  "Byron Buxton": 621439,
+  "Randy Arozarena": 668227,
+  "Yainer Diaz": 673237,
+  "Kris Bryant": 592178,
+  "Mike Trout": 545361,
+  "Elly De La Cruz": 682829,
+  "Colton Cowser": 681297,
+  "Ian Happ": 664023,
+  "Michael Busch": 683737,
+  "Connor Norby": 681393,
+  "Jake Burger": 669394,
+  "Francisco Lindor": 596019,
+  "James Wood": 695578,
+  "Max Kepler": 596146,
+  "Brenton Doyle": 686668,
+  "Luke Raley": 670042,
+  "Juan Soto": 665742,
+  "Eugenio Suárez": 553993,
+  "Joc Pederson": 592626,
+  "JJ Bleday": 668709,
+  "Spencer Torkelson": 679529,
+  "Jake Cronenworth": 630105,
+  "Kerry Carpenter": 681481,
+  "Rhys Hoskins": 656555,
+  "Max Muncy": 571970,
+  "Christian Encarnacion-Strand": 687952,
+  "Kyle Manzardo": 700932,
+  "Lourdes Gurriel Jr.": 666971,
+  "Brent Rooker": 667670,
+  "Triston Casas": 671213,
+  "Jackson Chourio": 694192,
+  "Ozzie Albies": 645277,
+  "Jhonkensy Noel": 678877,
+  "Deyvison De Los Santos": 691277,
+  "Gunnar Henderson": 683002,
+  "Teoscar Hernández": 606192,
+  "Heliot Ramos": 671218,
+  "Matt McLain": 680574,
+  "CJ Abrams": 682928,
+  "Matt Shaw": 807713,
+  "Marcell Ozuna": 542303,
+  "Willy Adames": 642715,
+  "Brandon Lowe": 664040,
+  "Logan O'Hoppe": 681351,
+  "Bo Bichette": 666182,
+  "Tyler Fitzgerald": 666149,
+  "Rafael Devers": 646240,
+  "Christian Walker": 572233,
+  "Salvador Perez": 521692,
+  "Michael Harris II": 671739,
+  "George Springer": 543807,
+  "Zack Gelof": 680869,
+  "José Ramírez": 608070,
+  "Adolis García": 666969,
+  "Nick Castellanos": 592206,
+  "Gleyber Torres": 650402,
+  "Jose Altuve": 514888,
+  "Kristian Campbell": 692225,
+  "Pete Alonso": 624413,
+  "Josh Naylor": 647304,
+  "Corbin Carroll": 682998,
+  "Austin Wells": 669224,
+  "Adley Rutschman": 668939,
+  "Anthony Volpe": 683011,
+  "Bryce Harper": 547180,
+  "Lawrence Butler": 671732,
+  "Willson Contreras": 575929,
+  "Ezequiel Tovar": 678662,
+  "Jo Adell": 666176,
+  "Ryan Jeffers": 680777,
+  "Austin Riley": 663586,
+  "Ketel Marte": 606466,
+  "Junior Caminero": 691406,
+  "Jose Siri": 642350,
+  "Ryan Mountcastle": 663624,
+  "Cedric Mullins": 656775,
+  "Matt Chapman": 656305,
+  "Jorge Soler": 624585,
+  "Christopher Morel": 666624,
+  "Bryan Reynolds": 668804,
+  "Alec Bohm": 664761,
+  "Josh Bell": 605137,
+  "Bobby Witt Jr.": 677951,
+  "Jackson Merrill": 701538,
+  "Freddie Freeman": 518692,
+  "Brandon Nimmo": 607043,
+  "Lane Thomas": 657041,
+  "Nathaniel Lowe": 663993,
+  "Mookie Betts": 605141,
+  "Alex Bregman": 608324,
+  "Wyatt Langford": 694671,
+  "Michael Conforto": 624424,
+  "Dansby Swanson": 621020,
+  "Zach Neto": 687263,
+  "Vladimir Guerrero Jr.": 665489,
+  "Manny Machado": 592518,
+  "Trevor Story": 596115,
+  "Jarren Duran": 680776,
+  "Will Smith": 669257,
+  "Wilyer Abreu": 677800
 };
-
 
 
 function fetchPlayerId(playerName) {
@@ -501,15 +584,28 @@ function displayFantasyTeams() {
     else if (index === 1) teamClass = "silver"; // 🥈 2nd Place
     else if (index === 2) teamClass = "bronze"; // 🥉 3rd Place
 
-    teamsHtml += `
-      <div class="team ${teamClass}">
-        <h2>${index + 1}. ${team.name}</h2>  <!-- Ranking added here -->
-        <ul>${playersHtml}</ul>
-        <div class="total-home-runs">
-          <strong>Top 4 Total: ${top4}</strong>
+    // Function to get the suffix for the rank
+function getRankSuffix(rank) {
+  if (rank === 1) return 'st';
+  if (rank === 2) return 'nd';
+  if (rank === 3) return 'rd';
+  return 'th';
+}
+
+teamsHtml += `
+    <div class="col-md-3 col-6">
+        <div class="team ${teamClass}">
+            <h3 class="team-rank">${index + 1}${getRankSuffix(index + 1)}</h3> <!-- Ranking displayed here -->
+            <h2>${team.name}</h2> <!-- Team name below the ranking -->
+            <ul>${playersHtml}</ul>
+            <div class="total-home-runs">
+                <strong>Top 4 Total: ${top4}</strong>
+            </div>
         </div>
-      </div>
-    `;
+    </div>
+`;
+
+
   });
 
   const container = document.getElementById("team-container");
