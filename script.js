@@ -584,13 +584,24 @@ function displayFantasyTeams() {
     else if (index === 1) teamClass = "silver"; // 🥈 2nd Place
     else if (index === 2) teamClass = "bronze"; // 🥉 3rd Place
 
-    // Function to get the suffix for the rank
+// Function to get the suffix for the rank
 function getRankSuffix(rank) {
-  if (rank === 1) return 'st';
-  if (rank === 2) return 'nd';
-  if (rank === 3) return 'rd';
-  return 'th';
+  const lastDigit = rank % 10;
+  const lastTwoDigits = rank % 100;
+
+  // Special cases for 11th, 12th, 13th
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
+    return 'th';
+  }
+
+  // Handle general cases for 1st, 2nd, 3rd
+  if (lastDigit === 1) return 'st';
+  if (lastDigit === 2) return 'nd';
+  if (lastDigit === 3) return 'rd';
+
+  return 'th';  // Default to "th"
 }
+
 
 teamsHtml += `
     <div class="col-md-3 col-6">
