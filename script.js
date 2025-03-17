@@ -496,7 +496,7 @@ async function fetchPlayerStats() {
 
 async function fetchSeasonHomeRuns(playerId) {
   try {
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=S&group=hitting`);
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=R&group=hitting`);
     const data = await response.json();
     
     // Check if the data exists and has the correct structure
@@ -640,7 +640,7 @@ function topFourTotal(team) {
 async function fetchMonthlyHomeRuns(playerId) {
   try {
     // Fetch game log data for Spring Training games
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2025&gameType=S&group=hitting`);
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2025&gameType=R&group=hitting`);
     const data = await response.json();
 
     let monthlyStats = {
