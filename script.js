@@ -184,7 +184,7 @@ let fantasyTeams = [
       { name: "Salvador Perez", id: 521692 },
       { name: "Michael Harris II", id: 671739 },
       { name: "George Springer", id: 543807 },
-      { name: "Zack Gelof", id: 680869 }
+      { name: "Lars Nootbaar", id: 663457 }
     ]
   },
   {
@@ -386,7 +386,7 @@ const playerIdLookup = {
   "Salvador Perez": 521692,
   "Michael Harris II": 671739,
   "George Springer": 543807,
-  "Zack Gelof": 680869,
+  "Lars Nootbaar": 663457,
   "José Ramírez": 608070,
   "Adolis García": 666969,
   "Nick Castellanos": 592206,
