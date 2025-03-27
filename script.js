@@ -452,15 +452,18 @@ console.log("This will not appear in the console");
 
 
 async function fetchPlayerStats() {
-  document.getElementById("loading-indicator").style.display = "none"; // Hide the extra message
+  // Clear previous player stats to fetch new data
+  playerHomeRuns = {};  // Reset the player home run data
 
-  document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>"; // Show only "Loading teams..."
+  // Hide the loading indicator
+  document.getElementById("loading-indicator").style.display = "none"; 
+  document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>";  // Show loading message
 
   try {
     const batchSize = 5; // Size of each batch for requests
     let playerRequests = [];
     let batchResults = [];
-    
+
     // Create batches of player stats requests
     for (let i = 0; i < fantasyTeams.length; i++) {
       const team = fantasyTeams[i];
@@ -469,21 +472,21 @@ async function fetchPlayerStats() {
       const batch = [];
       for (let j = 0; j < team.players.length; j++) {
         const player = team.players[j];
-        
+
         batch.push(fetchPlayerStatsForPlayer(player));
-        
+
         // Process batch when reaching batchSize or last player
         if (batch.length === batchSize || j === team.players.length - 1) {
           playerRequests.push(batch);
           batchResults.push(await processBatch(batch));
-          batch.length = 0; // Reset for the next batch
+          batch.length = 0;  // Reset for the next batch
         }
       }
     }
 
     // Flatten the batch results and then continue processing
     batchResults = batchResults.flat();
-    displayFantasyTeams(); // Now display the updated teams
+    displayFantasyTeams();  // Now display the updated teams
     const now = new Date();
     document.getElementById("last-update").textContent = "Last updated: " + now.toLocaleString();
 
@@ -493,6 +496,7 @@ async function fetchPlayerStats() {
     document.getElementById("loading-indicator").style.display = "none";
   }
 }
+
 
 async function fetchSeasonHomeRuns(playerId) {
   try {
@@ -896,6 +900,9 @@ let feedDataLoaded = false; // Flag to track if feed data is loaded
 
 async function fetchHomeRunFeed() {
   try {
+    // Clear any existing cached feed data
+    sessionStorage.removeItem("homeRunFeedData");
+
     // Show the loading spinner and reset the percentage
     document.getElementById("loading-spinner").style.display = "block";
     let percentage = 0;
@@ -933,18 +940,12 @@ async function fetchHomeRunFeed() {
           const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
           const gameData = await gameDataResponse.json();
 
-          // Log the entire game data to inspect its structure
-          console.log("Game Data:", gameData);  // Log the full response for debugging
-
           if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
 
           gameData.allPlays.forEach(play => {
-            // Log each play to inspect available fields
-            console.log("Play Data:", play);  // Log each play for debugging
-
             if (play.result.eventType === "home_run") {
               const playerName = play.matchup.batter.fullName;
-              const playEndTime = play.playEndTime;  // Attempt to pull the play end time
+              const playEndTime = play.playEndTime;
 
               const isFantasyPlayer = fantasyTeams.some(team =>
                 team.players.some(player => player.name === playerName)
@@ -955,20 +956,14 @@ async function fetchHomeRunFeed() {
                   team.players.some(player => player.name === playerName)
                 )?.name;
 
-                // Convert playEndTime to UTC
                 let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
 
-                // Store the home run data with playEndTime in UTC format
                 homeRuns.push({
                   team: fantasyTeamName,
                   player: playerName,
                   date: formattedDate,
-                  dateTime: utcPlayEndTime, // Use UTC playEndTime
+                  dateTime: utcPlayEndTime,
                 });
-
-                // Log the home run event and its UTC playEndTime for debugging
-                const localEventTime = utcPlayEndTime ? new Date(utcPlayEndTime).toLocaleString() : 'No playEndTime available';
-                console.log(`Home Run: ${playerName} - Team: ${fantasyTeamName} - Event Time: ${localEventTime} (UTC)`);
               }
             }
           });
@@ -987,13 +982,12 @@ async function fetchHomeRunFeed() {
     // Sort home runs by playEndTime in UTC (most recent first)
     homeRuns.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
 
-    // Hide the loading spinner after data is fetched
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
 
     const feedBody = document.getElementById("feed-body");
     feedBody.innerHTML = "";
 
-    // Display home runs in sorted order (without displaying the time)
+    // Display home runs in sorted order
     homeRuns.forEach(hr => {
       const row = `<tr>
           <td>${hr.team}</td>
@@ -1024,18 +1018,23 @@ fetchHomeRunFeed(); // Trigger on page load
 
 // --- Tab Switching Logic ---
 document.getElementById("season-tab").addEventListener("click", () => {
+  // Show the team container (leaderboard) and hide the other containers
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
-  document.getElementById("feed-container").style.display = "none"; // Hide feed tab when switching
+  document.getElementById("feed-container").style.display = "none";  // Hide feed tab when switching
 
   // Hide dropdown only on mobile
   if (window.innerWidth <= 768) {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ Remove active class to ensure dropdown hides
+  // Remove the active class to ensure dropdown hides
   document.body.classList.remove("monthly-active");
+
+  // Fetch fresh player stats when the "Leaderboard" tab is clicked
+  fetchPlayerStats();  // Trigger the fetching of player stats
 });
+
 
 document.getElementById("monthly-tab").addEventListener("click", () => {
   document.getElementById("team-container").style.display = "none";
