@@ -916,7 +916,7 @@ async function fetchHomeRunFeed() {
       let daysBack = 0;
       const totalRequests = maxDays; // Number of days you are fetching
 
-      while (homeRuns.length < 25 && daysBack < maxDays) {
+      while (homeRuns.length < 35 && daysBack < maxDays) {
         let date = new Date();
         date.setDate(date.getDate() - daysBack);
         let formattedDate = date.toISOString().split("T")[0];  // Date without time
@@ -968,14 +968,14 @@ async function fetchHomeRunFeed() {
             }
           });
 
-          if (homeRuns.length >= 25) break;
+          if (homeRuns.length >= 35) break;
         }
 
-        if (homeRuns.length >= 25) break;
+        if (homeRuns.length >= 35) break;
         daysBack++;
       }
 
-      homeRuns = homeRuns.slice(0, 25);
+      homeRuns = homeRuns.slice(0, 35);
       sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
     }
 
