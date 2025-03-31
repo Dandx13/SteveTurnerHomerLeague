@@ -1170,3 +1170,4 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 300000);
 setInterval(fetchMonthlyStats, 300000);
+
