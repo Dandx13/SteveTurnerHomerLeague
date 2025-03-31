@@ -456,7 +456,7 @@ async function fetchPlayerStats() {
   playerHomeRuns = {};  // Reset the player home run data
 
   // Hide the loading indicator
-  document.getElementById("loading-indicator").style.display = "none"; 
+  document.getElementById("loading-indicator").style.display = "none";
   document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>";  // Show loading message
 
   try {
@@ -502,12 +502,12 @@ async function fetchSeasonHomeRuns(playerId) {
   try {
     const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=R&group=hitting`);
     const data = await response.json();
-    
+
     // Check if the data exists and has the correct structure
     if (data.stats && data.stats[0] && data.stats[0].splits && data.stats[0].splits.length > 0) {
       return data.stats[0].splits[0].stat.homeRuns || 0;
     }
-    
+
     // If no data or stats are found, return 0
     return 0;
   } catch (error) {
@@ -566,56 +566,56 @@ function getRankSuffix(rank) {
 
 function displayFantasyTeams() {
 
-// Step 1: Calculate top 4 totals and sort
-let teamsWithTotals = fantasyTeams.slice().map(team => ({
-  ...team,
-  top4: topFourTotal(team)
-}));
+  // Step 1: Calculate top 4 totals and sort
+  let teamsWithTotals = fantasyTeams.slice().map(team => ({
+    ...team,
+    top4: topFourTotal(team)
+  }));
 
-teamsWithTotals.sort((a, b) => b.top4 - a.top4);
+  teamsWithTotals.sort((a, b) => b.top4 - a.top4);
 
-// Step 2: Assign rank labels and numeric ranks
-let sortedTeams = [];
-let actualRanks = [];
-let rankLabels = [];
+  // Step 2: Assign rank labels and numeric ranks
+  let sortedTeams = [];
+  let actualRanks = [];
+  let rankLabels = [];
 
-let currentRank = 1;
-let i = 0;
+  let currentRank = 1;
+  let i = 0;
 
-while (i < teamsWithTotals.length) {
-  const currentTeam = teamsWithTotals[i];
-  const tiedTeams = [currentTeam];
+  while (i < teamsWithTotals.length) {
+    const currentTeam = teamsWithTotals[i];
+    const tiedTeams = [currentTeam];
 
-  let j = i + 1;
-  while (
-    j < teamsWithTotals.length &&
-    teamsWithTotals[j].top4 === currentTeam.top4
-  ) {
-    tiedTeams.push(teamsWithTotals[j]);
-    j++;
+    let j = i + 1;
+    while (
+      j < teamsWithTotals.length &&
+      teamsWithTotals[j].top4 === currentTeam.top4
+    ) {
+      tiedTeams.push(teamsWithTotals[j]);
+      j++;
+    }
+
+    const suffix = getRankSuffix(currentRank);
+    const isTied = tiedTeams.length > 1;
+    const label = isTied
+      ? `T-${currentRank}${suffix}`
+      : `${currentRank}${suffix}`;
+
+    tiedTeams.forEach(() => {
+      actualRanks.push(currentRank);
+      rankLabels.push(label);
+    });
+
+    sortedTeams.push(...tiedTeams);
+    currentRank += tiedTeams.length;
+    i = j;
   }
-
-  const suffix = getRankSuffix(currentRank);
-  const isTied = tiedTeams.length > 1;
-  const label = isTied
-    ? `T-${currentRank}${suffix}`
-    : `${currentRank}${suffix}`;
-
-  tiedTeams.forEach(() => {
-    actualRanks.push(currentRank);
-    rankLabels.push(label);
-  });
-
-  sortedTeams.push(...tiedTeams);
-  currentRank += tiedTeams.length;
-  i = j;
-}
 
 
   let teamsHtml = "";
   sortedTeams.forEach((team, index) => {  // Use index for ranking
     let playersHtml = "";
-    
+
     // Sort players within the team by home runs (most to least)
     let sortedPlayers = team.players.slice().sort((a, b) => {
       return (playerHomeRuns[b.id] || 0) - (playerHomeRuns[a.id] || 0);
@@ -625,7 +625,7 @@ while (i < teamsWithTotals.length) {
       const hr = playerHomeRuns[player.id] || 0;
       const playerImageUrl = `https://midfield.mlbstatic.com/v1/people/${player.id}/headshot/60x60.jpg`;
 
-    
+
       playersHtml += `
         <li>
           <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
@@ -642,7 +642,7 @@ while (i < teamsWithTotals.length) {
     if (actualRank === 1) teamClass = "gold";
     else if (actualRank === 2) teamClass = "silver";
     else if (actualRank === 3) teamClass = "bronze";
-    
+
 
 
 
@@ -701,7 +701,7 @@ async function fetchMonthlyHomeRuns(playerId) {
       data.stats[0].splits.forEach(split => {
         const gameDate = new Date(split.date);
         const month = gameDate.getUTCMonth(); // Use UTC month to avoid timezone shifts
-        
+
         // Aggregate home runs per month
         const gameHR = parseInt(split.stat.homeRuns, 10) || 0;
 
@@ -737,7 +737,7 @@ async function fetchMonthlyStats() {
   document.getElementById("loading-indicator").style.display = "flex";
 
   // Ensure dropdown appears before fetching stats
-  populateMobileMonthDropdown(); 
+  populateMobileMonthDropdown();
 
   try {
     await Promise.all(fantasyTeams.flatMap(team =>
@@ -773,7 +773,7 @@ function populateMobileMonthDropdown() {
 
   console.log("Mobile dropdown populated!"); // Debugging
 }
-  // Function to populate the dropdown menu with available months
+// Function to populate the dropdown menu with available months
 // Function to handle mobile month selection
 function handleMobileMonthChange() {
   const selectedMonth = document.getElementById("mobile-month-select").value;
@@ -843,7 +843,7 @@ function handleMobileMonthChange() {
 // only the top 5 players' home run totals are summed.
 function displayMonthlyStats() {
   const months = ["March/April", "May", "June", "July", "August", "September"];
-  
+
   let maxTotals = {};
   months.forEach(month => { maxTotals[month] = 0; });
 
@@ -859,7 +859,7 @@ function displayMonthlyStats() {
       console.log(`Before sorting - ${team.name} (${month}):`, totals);
 
       // Ensure all values are valid numbers
-      totals = totals.filter(num => typeof num === "number" && !isNaN(num)); 
+      totals = totals.filter(num => typeof num === "number" && !isNaN(num));
 
       // Sort from highest to lowest
       totals.sort((a, b) => b - a);
@@ -918,7 +918,7 @@ function displayMonthlyStats() {
 function sortMonthlyTable(columnIndex) {
   let table = document.querySelector(".monthly-table tbody");
   let rows = Array.from(table.rows);
-  
+
   // Check current sorting state for this column
   let currentSort = table.getAttribute("data-sort");
   let isDescending = currentSort !== columnIndex.toString(); // Default to descending on first click
@@ -942,10 +942,10 @@ let feedDataLoaded = false; // Flag to track if feed data is loaded
 function convertUTCToET(utcDateString) {
   const utcDate = new Date(utcDateString); // Create Date object from UTC string
   const timezoneOffset = 4 * 60; // Eastern Daylight Time (EDT) is UTC-4 in hours (adjust for DST)
-  
+
   // Adjust for the Eastern Time Zone
   const etDate = new Date(utcDate.getTime() - (timezoneOffset * 60 * 1000)); // Convert by offset
-  
+
   return etDate;
 }
 
@@ -966,19 +966,22 @@ async function fetchHomeRunFeed() {
 
     if (homeRuns.length === 0) {
       let daysBack = 0;
-      const totalRequests = 30; // We can query a wider range of dates for all recent home runs
+      const totalRequests = 30;
 
       while (homeRuns.length < maxHomeRuns && daysBack < totalRequests) {
         let date = new Date();
         date.setDate(date.getDate() - daysBack);
-        let formattedDate = date.toISOString().split("T")[0];  // Date without time
+        const formattedDateForAPI = date.toISOString().split("T")[0]; // used in API call
+        const formattedDate = `${date.getMonth() + 1}-${date.getDate()}`; // used in UI
+
+
         let formattedDateTime = date.toISOString();  // Full date-time with time
-        
+
         // Simulate progress
         percentage = Math.floor((daysBack / totalRequests) * 100);
         percentageElement.textContent = `${percentage}%`; // Update the percentage text
 
-        const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDate}`);
+        const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDateForAPI}`);
         const scheduleData = await scheduleResponse.json();
 
         if (!scheduleData.dates || scheduleData.dates.length === 0) {
@@ -1018,15 +1021,22 @@ async function fetchHomeRunFeed() {
 
                 let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
 
+                const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
+                const hitData = hitEvent.hitData || {};
+
                 homeRuns.push({
                   team: fantasyTeamName,
                   player: playerName,
                   date: formattedDate,
                   dateTime: utcPlayEndTime,
+                  distance: hitData.totalDistance || null,
+                  launchSpeed: hitData.launchSpeed || null,
+                  launchAngle: hitData.launchAngle || null
                 });
               }
             }
           });
+
 
           if (homeRuns.length >= maxHomeRuns) break;
         }
@@ -1056,13 +1066,21 @@ async function fetchHomeRunFeed() {
 
     // Display home runs in sorted order
     homeRuns.forEach(hr => {
+      const details = hr.distance
+        ? `${hr.distance} ft<br><span class="ev">${hr.launchSpeed} mph</span>`
+        : "—";
+
+
       const row = `<tr>
-          <td>${hr.team}</td>
-          <td>${hr.player}</td>
-          <td>${hr.date}</td> <!-- Only display the date -->
-      </tr>`;
+    <td>${hr.team}</td>
+    <td><strong>${hr.player}</strong></td>
+    <td>${details}</td>
+    <td>${hr.date}</td>
+</tr>`;
+
       feedBody.innerHTML += row;
     });
+
   } catch (error) {
     console.error("🚨 Error fetching home run data:", error);
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
@@ -1132,8 +1150,8 @@ document.getElementById("feed-tab").addEventListener("click", () => {
 
   // Check if feed data is already loaded
   if (!feedDataLoaded) {
-      console.log("Fetching Home Run Feed data...");
-      fetchHomeRunFeed(); // Fetch data if not preloaded
+    console.log("Fetching Home Run Feed data...");
+    fetchHomeRunFeed(); // Fetch data if not preloaded
   }
 });
 
@@ -1150,5 +1168,5 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 
 // Initial fetch on load
 fetchPlayerStats();
-setInterval(fetchPlayerStats, 600000);
-setInterval(fetchMonthlyStats, 600000);
+setInterval(fetchPlayerStats, 300000);
+setInterval(fetchMonthlyStats, 300000);
