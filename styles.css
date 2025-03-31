@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--background-light);
   color: var(--text-dark);
-  padding: 20px;
+  padding: 2.5x;
   text-align: center;
   margin: 0;
 }
@@ -24,7 +24,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   background: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -101,10 +101,10 @@ button:hover {
 }
 
 .player-headshot {
-  width: 40px; /* Adjust size as needed */
-  height: 40px;
+  width: 25px; /* Adjust size as needed */
+  height: 25px;
   border-radius: 50%; /* Makes images circular */
-  margin-right: 8px; /* Adds spacing between image and text */
+  margin-right: 2px; /* Adds spacing between image and text */
   vertical-align: middle; /* Aligns image with text */
   object-fit: cover; /* Ensures the image is properly cropped */
 }
@@ -114,19 +114,16 @@ button:hover {
 .gold {
   background-color: gold !important;
   color: black;
-  font-weight: bold;
 }
 
 .silver {
   background-color: silver !important;
   color: black;
-  font-weight: bold;
 }
 
 .bronze {
   background-color: #cd7f32 !important;
   color: white;
-  font-weight: bold;
 }
 
 
@@ -366,7 +363,9 @@ button:hover {
 /* Small devices (e.g., phones): 480px and below */
 @media (max-width: 480px) {
   #team-container {
-    grid-template-columns: 1fr; /* Single column on very small screens */
+    grid-template-columns: repeat(2, 1fr); /* Single column on very small screens */
+    margin-top: 5px; /* Reduced top margin */
+    padding-top: 1px; /* Reduced top padding */
   }
 
   /* Hide the big monthly table on phones */
@@ -377,36 +376,46 @@ button:hover {
   #mobile-month-select {
     display: none; /* Hide by default */
   }
+
+  /* Ensure the selected month’s mini-table is visible */
+  .monthly-table-mobile {
+    display: block !important;
+    width: 90%; /* Adjust width for better centering */
+    max-width: 500px; /* Set a max-width to ensure it doesn't stretch too much */
+    margin: 10px auto; /* Centers the table */
+    border: 1px solid #ddd;
+    text-align: center; /* Centers all text */
+    table-layout: fixed; /* Ensures columns take equal width */
   }
 
-    /* Ensure the selected month’s mini-table is visible */
-    .monthly-table-mobile {
-      display: block !important;
-      width: 90%; /* Adjust width for better centering */
-      max-width: 500px; /* Set a max-width to ensure it doesn't stretch too much */
-      margin: 10px auto; /* Centers the table */
-      border: 1px solid #ddd;
-      text-align: center; /* Centers all text */
-      table-layout: fixed; /* Ensures columns take equal width */
-    }
-    
-    .monthly-table-mobile th,
-    .monthly-table-mobile td {
-      padding: 10px;
-      text-align: center;
-      width:50%; /* Adjust width of each column */
-      box-sizing: border-box; /* Ensures padding doesn't affect column width */
-    }
+  .monthly-table-mobile th,
+  .monthly-table-mobile td {
+    padding: 10px;
+    text-align: center;
+    width: 50%; /* Adjust width of each column */
+    box-sizing: border-box; /* Ensures padding doesn't affect column width */
   }
 
+  /* Adjust team name font size */
   h1 {
     font-size: 1.5rem;
   }
 
+  /* Adjust font size for list items under teams */
   .team ul li {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  /* Reduce the size of the team name and rank */
+  .team h2 {
+    font-size: 14px; /* Smaller team name font size */
+  }
+
+  .team-rank {
+    font-size: 16px; /* Smaller rank font size */
   }
 }
+
 
 /* CSS Spinner */
 #loading-spinner {
