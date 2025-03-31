@@ -13,8 +13,10 @@
         <div class="tabs">
             <button id="season-tab">Leaderboard</button>
             <button id="monthly-tab">Monthly Totals</button>
-            <button id="feed-tab">Feed</button> <!-- New Feed Tab -->
+            <button id="feed-tab">Live Feed</button>
+            <button id="winnings-tab">Winnings</button> <!-- 💰 New Winnings Tab -->
         </div>
+        
                 
         <div id="loading-indicator" class="loading"></div> <!-- Empty div so it doesn't display -->
 
@@ -57,5 +59,25 @@
         <p id="last-update"></p>
     </div>
     <script src="script.js"></script>
+<!-- 💰 New Winnings Container (Initially Hidden) -->
+<div id="winnings-container" style="display: none;">
+    <h2>Winnings</h2>
+    <table class="feed-table">
+        <thead>
+            <tr>
+                <th>Finish</th>
+                <th>Team</th>
+                <th>Payout</th>
+            </tr>
+        </thead>
+        <tbody id="winnings-body">
+            <!-- Rows will be populated dynamically -->
+        </tbody>
+    </table>
+</div>
+
+</div> <!-- 👈 closes the .container -->
+<script src="script.js"></script>
 </body>
 </html>
+

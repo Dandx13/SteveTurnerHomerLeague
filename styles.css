@@ -378,22 +378,54 @@ button:hover {
   }
 
   /* Ensure the selected month’s mini-table is visible */
-  .monthly-table-mobile {
-    display: block !important;
-    width: 90%; /* Adjust width for better centering */
-    max-width: 500px; /* Set a max-width to ensure it doesn't stretch too much */
-    margin: 10px auto; /* Centers the table */
-    border: 1px solid #ddd;
-    text-align: center; /* Centers all text */
-    table-layout: fixed; /* Ensures columns take equal width */
-  }
+  /* ✅ Polished Mobile Monthly Table Style */
+.monthly-table-mobile {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+}
 
-  .monthly-table-mobile th,
-  .monthly-table-mobile td {
-    padding: 10px;
-    text-align: center;
-    width: 50%; /* Adjust width of each column */
-    box-sizing: border-box; /* Ensures padding doesn't affect column width */
+.monthly-table-mobile th {
+  background: #0044cc;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.monthly-table-mobile td {
+  padding: 12px 8px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.monthly-table-mobile tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.monthly-table-mobile tr:hover {
+  background-color: #ffcc00;
+  color: black;
+  transition: 0.3s;
+}
+
+/* 🔶 Keep top row highlight style */
+.monthly-table-mobile td[style*="background-color: yellow"] {
+  background-color: #ffeb3b !important;
+  font-weight: bold;
+  color: #333;
+}
+
   }
 
   /* Adjust team name font size */
@@ -517,13 +549,86 @@ button:hover {
     font-weight: bold;
   }
 
-  .feed-table tr {
+  #feed-container .feed-table tr {
     display: grid;
     grid-template-columns: 25% 25% 30% 20%;
     text-align: center;
   }
+  #feed-container .feed-table td {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
 }
 .ev {
   font-size: 12px;
   color: #555;
+}
+
+/* ---------------------
+   Mobile-specific fixes
+---------------------- */
+@media (max-width: 768px) {
+
+  /* 🛠 Fix Winnings Table Layout + Overflow */
+  #winnings-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .feed-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .feed-table th,
+  .feed-table td {
+    padding: 10px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Remove any horizontal scroll for body */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* 🛠 Fix Tab Layout: 2 per row */
+  .tabs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 0 10px;
+  }
+
+  .tabs button {
+    width: 100%;
+    text-align: center;
+  }
+  #feed-container .feed-table td:nth-child(3) {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Keep launch speed smaller */
+  .ev {
+    font-size: 12px;
+    color: #555;
+  }
+}
+.feed-table {
+  border-radius: 0 !important; /* Mobile: remove rounded corners */
+  box-shadow: none !important; /* Remove drop shadow on mobile */
 }

@@ -761,7 +761,7 @@ function populateMobileMonthDropdown() {
   const months = ["March/April", "May", "June", "July", "August", "September"];
   const selectEl = document.getElementById("mobile-month-select");
 
-  // Clear existing options (in case this is called again)
+  // Clear options
   selectEl.innerHTML = '<option value="">-- Select a Month --</option>';
 
   months.forEach(month => {
@@ -771,8 +771,24 @@ function populateMobileMonthDropdown() {
     selectEl.appendChild(opt);
   });
 
-  console.log("Mobile dropdown populated!"); // Debugging
+  // Detect current month and set as default
+  const now = new Date();
+  const currentMonthIndex = now.getMonth();
+
+  let defaultLabel = "";
+  if (currentMonthIndex === 2 || currentMonthIndex === 3) defaultLabel = "March/April";
+  else if (currentMonthIndex === 4) defaultLabel = "May";
+  else if (currentMonthIndex === 5) defaultLabel = "June";
+  else if (currentMonthIndex === 6) defaultLabel = "July";
+  else if (currentMonthIndex === 7) defaultLabel = "August";
+  else if (currentMonthIndex === 8) defaultLabel = "September";
+
+  if (defaultLabel) {
+    selectEl.value = defaultLabel; // Prefill the dropdown
+  }
 }
+
+
 // Function to populate the dropdown menu with available months
 // Function to handle mobile month selection
 function handleMobileMonthChange() {
@@ -1087,12 +1103,6 @@ async function fetchHomeRunFeed() {
   }
 }
 
-
-
-
-
-
-
 // 🔄 Auto-refresh the feed every 5 minutes
 setInterval(fetchHomeRunFeed, 300000); // Fetch every 5 minutes
 
@@ -1101,6 +1111,62 @@ fetchHomeRunFeed(); // Trigger on page load
 
 
 
+function calculateAndDisplayWinnings() {
+  const payouts = [1100, 650, 450, 350, 300, 250, 200];
+
+  // Step 1: Calculate top 4 totals
+  let teams = fantasyTeams.map(team => ({
+    name: team.name,
+    top4: topFourTotal(team)
+  }));
+
+  // Step 2: Sort by total
+  teams.sort((a, b) => b.top4 - a.top4);
+
+  let results = [];
+  let i = 0;
+
+  while (i < teams.length && i < payouts.length) {
+    let tied = [teams[i]];
+    let j = i + 1;
+
+    while (j < teams.length && teams[j].top4 === teams[i].top4) {
+      tied.push(teams[j]);
+      j++;
+    }
+
+    const place = i + 1;
+    const label = tied.length > 1 ? `T-${place}` : `${place}`;
+
+    const payoutSlice = payouts.slice(i, i + tied.length);
+    const sum = payoutSlice.reduce((a, b) => a + b, 0);
+    const perTeam = (sum / tied.length).toFixed(2);
+
+    tied.forEach(team => {
+      results.push({
+        place: label,
+        name: team.name,
+        payout: `$${perTeam}`
+      });
+    });
+
+    i += tied.length;
+  }
+
+  // Inject into HTML
+  const tbody = document.getElementById("winnings-body");
+  tbody.innerHTML = "";
+
+  results.forEach(row => {
+    tbody.innerHTML += `
+      <tr>
+        <td>${row.place}</td>
+        <td>${row.name}</td>
+        <td>${row.payout}</td>
+      </tr>
+    `;
+  });
+}
 
 
 // --- Tab Switching Logic ---
@@ -1108,7 +1174,8 @@ document.getElementById("season-tab").addEventListener("click", () => {
   // Show the team container (leaderboard) and hide the other containers
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
-  document.getElementById("feed-container").style.display = "none";  // Hide feed tab when switching
+  document.getElementById("feed-container").style.display = "none";
+  document.getElementById("winnings-container").style.display = "none"; // Hide winnings
 
   // Hide dropdown only on mobile
   if (window.innerWidth <= 768) {
@@ -1119,41 +1186,71 @@ document.getElementById("season-tab").addEventListener("click", () => {
   document.body.classList.remove("monthly-active");
 
   // Fetch fresh player stats when the "Leaderboard" tab is clicked
-  fetchPlayerStats();  // Trigger the fetching of player stats
+  fetchPlayerStats();
 });
 
-
-document.getElementById("monthly-tab").addEventListener("click", () => {
+document.getElementById("monthly-tab").addEventListener("click", async () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "block";
-  document.getElementById("feed-container").style.display = "none"; // Hide feed tab when switching
+  document.getElementById("feed-container").style.display = "none";
+  document.getElementById("winnings-container").style.display = "none";
 
-  // ✅ Add active class so the dropdown appears
   document.body.classList.add("monthly-active");
 
-  fetchMonthlyStats();
+  await fetchMonthlyStats(); // ✅ Wait for stats to load fully
+
+  // ✅ Mobile only: show default month table after data is ready
+  if (window.innerWidth <= 768) {
+    const selectedMonth = document.getElementById("mobile-month-select").value;
+    if (selectedMonth) {
+      handleMobileMonthChange();
+    }
+  }
 });
+
+
 
 document.getElementById("feed-tab").addEventListener("click", () => {
   // Hide other containers and show the feed container
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "none";
-  document.getElementById("feed-container").style.display = "block"; // Show the feed container
+  document.getElementById("feed-container").style.display = "block";
+  document.getElementById("winnings-container").style.display = "none"; // Hide winnings
 
   // Hide dropdown only on mobile when viewing the feed
   if (window.innerWidth <= 768) {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ Ensure dropdown class is removed (so it doesn’t interfere)
+  // ✅ Ensure dropdown class is removed
   document.body.classList.remove("monthly-active");
 
   // Check if feed data is already loaded
   if (!feedDataLoaded) {
     console.log("Fetching Home Run Feed data...");
-    fetchHomeRunFeed(); // Fetch data if not preloaded
+    fetchHomeRunFeed();
   }
 });
+
+document.getElementById("winnings-tab").addEventListener("click", () => {
+  // Hide other containers and show the winnings container
+  document.getElementById("team-container").style.display = "none";
+  document.getElementById("monthly-container").style.display = "none";
+  document.getElementById("feed-container").style.display = "none";
+  document.getElementById("winnings-container").style.display = "block";
+
+  // Hide dropdown only on mobile when viewing the winnings tab
+  if (window.innerWidth <= 768) {
+    document.getElementById("mobile-month-select").style.display = "none";
+  }
+
+  // ✅ Remove the active class just in case
+  document.body.classList.remove("monthly-active");
+
+  // Run the logic to calculate and display winnings
+  calculateAndDisplayWinnings();
+});
+
 
 
 
@@ -1170,4 +1267,3 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 300000);
 setInterval(fetchMonthlyStats, 300000);
-
