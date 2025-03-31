@@ -443,7 +443,7 @@ function fetchPlayerId(playerName) {
 }
 
 // Disable all console logs
-console.log = function() {};
+//console.log = function() {};
 
 // Your other script code here
 console.log("This will not appear in the console");
@@ -551,12 +551,66 @@ async function processBatch(batch) {
 }
 
 
+function getRankSuffix(rank) {
+  const lastDigit = rank % 10;
+  const lastTwoDigits = rank % 100;
+
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) return 'th';
+  if (lastDigit === 1) return 'st';
+  if (lastDigit === 2) return 'nd';
+  if (lastDigit === 3) return 'rd';
+  return 'th';
+}
+
+
+
 function displayFantasyTeams() {
-  const sortedTeams = fantasyTeams.slice().sort((teamA, teamB) => {
-    const totalA = topFourTotal(teamA);
-    const totalB = topFourTotal(teamB);
-    return totalB - totalA;
+
+// Step 1: Calculate top 4 totals and sort
+let teamsWithTotals = fantasyTeams.slice().map(team => ({
+  ...team,
+  top4: topFourTotal(team)
+}));
+
+teamsWithTotals.sort((a, b) => b.top4 - a.top4);
+
+// Step 2: Assign rank labels and numeric ranks
+let sortedTeams = [];
+let actualRanks = [];
+let rankLabels = [];
+
+let currentRank = 1;
+let i = 0;
+
+while (i < teamsWithTotals.length) {
+  const currentTeam = teamsWithTotals[i];
+  const tiedTeams = [currentTeam];
+
+  let j = i + 1;
+  while (
+    j < teamsWithTotals.length &&
+    teamsWithTotals[j].top4 === currentTeam.top4
+  ) {
+    tiedTeams.push(teamsWithTotals[j]);
+    j++;
+  }
+
+  const suffix = getRankSuffix(currentRank);
+  const isTied = tiedTeams.length > 1;
+  const label = isTied
+    ? `T-${currentRank}${suffix}`
+    : `${currentRank}${suffix}`;
+
+  tiedTeams.forEach(() => {
+    actualRanks.push(currentRank);
+    rankLabels.push(label);
   });
+
+  sortedTeams.push(...tiedTeams);
+  currentRank += tiedTeams.length;
+  i = j;
+}
+
 
   let teamsHtml = "";
   sortedTeams.forEach((team, index) => {  // Use index for ranking
@@ -584,33 +638,18 @@ function displayFantasyTeams() {
 
     // Assign class for top 3 teams (gold, silver, bronze)
     let teamClass = "";
-    if (index === 0) teamClass = "gold"; // 🏆 1st Place
-    else if (index === 1) teamClass = "silver"; // 🥈 2nd Place
-    else if (index === 2) teamClass = "bronze"; // 🥉 3rd Place
-
-// Function to get the suffix for the rank
-function getRankSuffix(rank) {
-  const lastDigit = rank % 10;
-  const lastTwoDigits = rank % 100;
-
-  // Special cases for 11th, 12th, 13th
-  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
-    return 'th';
-  }
-
-  // Handle general cases for 1st, 2nd, 3rd
-  if (lastDigit === 1) return 'st';
-  if (lastDigit === 2) return 'nd';
-  if (lastDigit === 3) return 'rd';
-
-  return 'th';  // Default to "th"
-}
+    const actualRank = actualRanks[index];
+    if (actualRank === 1) teamClass = "gold";
+    else if (actualRank === 2) teamClass = "silver";
+    else if (actualRank === 3) teamClass = "bronze";
+    
 
 
-teamsHtml += `
+
+    teamsHtml += `
     <div class="col-md-3 col-6">
         <div class="team ${teamClass}">
-            <h3 class="team-rank">${index + 1}${getRankSuffix(index + 1)}</h3> <!-- Ranking displayed here -->
+            <h3 class="team-rank">${rankLabels[index]}</h3> <!-- Ranking displayed here -->
             <h2>${team.name}</h2> <!-- Team name below the ranking -->
             <ul>${playersHtml}</ul>
             <div class="total-home-runs">
@@ -619,6 +658,7 @@ teamsHtml += `
         </div>
     </div>
 `;
+
 
 
   });
@@ -898,6 +938,18 @@ function sortMonthlyTable(columnIndex) {
 
 let feedDataLoaded = false; // Flag to track if feed data is loaded
 
+// Convert UTC to Eastern Time (ET)
+function convertUTCToET(utcDateString) {
+  const utcDate = new Date(utcDateString); // Create Date object from UTC string
+  const timezoneOffset = 4 * 60; // Eastern Daylight Time (EDT) is UTC-4 in hours (adjust for DST)
+  
+  // Adjust for the Eastern Time Zone
+  const etDate = new Date(utcDate.getTime() - (timezoneOffset * 60 * 1000)); // Convert by offset
+  
+  return etDate;
+}
+
+
 async function fetchHomeRunFeed() {
   try {
     // Clear any existing cached feed data
@@ -910,13 +962,13 @@ async function fetchHomeRunFeed() {
     percentageElement.textContent = `${percentage}%`; // Start at 0%
 
     let homeRuns = JSON.parse(sessionStorage.getItem("homeRunFeedData")) || [];
-    const maxDays = 30; // Limit to 30 days for faster loading
+    const maxHomeRuns = 25; // Limit to the 25 most recent home runs
 
     if (homeRuns.length === 0) {
       let daysBack = 0;
-      const totalRequests = maxDays; // Number of days you are fetching
+      const totalRequests = 30; // We can query a wider range of dates for all recent home runs
 
-      while (homeRuns.length < 35 && daysBack < maxDays) {
+      while (homeRuns.length < maxHomeRuns && daysBack < totalRequests) {
         let date = new Date();
         date.setDate(date.getDate() - daysBack);
         let formattedDate = date.toISOString().split("T")[0];  // Date without time
@@ -936,14 +988,22 @@ async function fetchHomeRunFeed() {
 
         for (const game of scheduleData.dates[0].games) {
           const gameId = game.gamePk;
+          const gameDate = game.date;
+
+          // Convert the game date from UTC to Eastern Time
+          const gameDateET = convertUTCToET(gameDate);
+          console.log(`Game Date (Eastern Time): ${gameDateET.toLocaleString()}`); // Log converted date for debugging
 
           const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
           const gameData = await gameDataResponse.json();
 
           if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
 
+          // Log all home run events
           gameData.allPlays.forEach(play => {
             if (play.result.eventType === "home_run") {
+              console.log(`Home run: ${play.matchup.batter.fullName} at ${play.playEndTime}`);
+
               const playerName = play.matchup.batter.fullName;
               const playEndTime = play.playEndTime;
 
@@ -968,19 +1028,26 @@ async function fetchHomeRunFeed() {
             }
           });
 
-          if (homeRuns.length >= 35) break;
+          if (homeRuns.length >= maxHomeRuns) break;
         }
 
-        if (homeRuns.length >= 35) break;
+        if (homeRuns.length >= maxHomeRuns) break;
         daysBack++;
       }
 
-      homeRuns = homeRuns.slice(0, 35);
+      // Log home runs before sorting to see if all relevant home runs are fetched
+      console.log('Fetched home runs before sorting:', homeRuns);
+
+      // Sort home runs by playEndTime in UTC (most recent first)
+      homeRuns.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
+
+      // Ensure we only have the top 25 home runs
+      homeRuns = homeRuns.slice(0, maxHomeRuns);
       sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
     }
 
-    // Sort home runs by playEndTime in UTC (most recent first)
-    homeRuns.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
+    // Log sorted home runs
+    console.log('Sorted home runs:', homeRuns);
 
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
 
@@ -1001,6 +1068,8 @@ async function fetchHomeRunFeed() {
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
   }
 }
+
+
 
 
 
