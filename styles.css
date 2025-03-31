@@ -487,3 +487,34 @@ button:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.feed-table td:nth-child(2) {
+  font-weight: bold;
+}
+
+.feed-table td:nth-child(3) {
+  color: #333;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .feed-table td,
+  .feed-table th {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .feed-table td:nth-child(2) {
+    font-weight: bold;
+  }
+
+  .feed-table tr {
+    display: grid;
+    grid-template-columns: 25% 25% 30% 20%;
+    text-align: center;
+  }
+}
+.ev {
+  font-size: 12px;
+  color: #555;
+}
