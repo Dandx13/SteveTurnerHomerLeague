@@ -988,7 +988,8 @@ async function fetchHomeRunFeed() {
         let date = new Date();
         date.setDate(date.getDate() - daysBack);
         const formattedDateForAPI = date.toISOString().split("T")[0]; // used in API call
-        const formattedDate = `${date.getMonth() + 1}-${date.getDate()}`; // used in UI
+        ;
+
 
 
         let formattedDateTime = date.toISOString();  // Full date-time with time
@@ -1040,15 +1041,19 @@ async function fetchHomeRunFeed() {
                 const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
                 const hitData = hitEvent.hitData || {};
 
+                const etDate = convertUTCToET(utcPlayEndTime);
+                const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
+
                 homeRuns.push({
                   team: fantasyTeamName,
                   player: playerName,
-                  date: formattedDate,
+                  date: formattedETDate, // ✅ show actual ET date of HR
                   dateTime: utcPlayEndTime,
                   distance: hitData.totalDistance || null,
                   launchSpeed: hitData.launchSpeed || null,
                   launchAngle: hitData.launchAngle || null
                 });
+
               }
             }
           });
