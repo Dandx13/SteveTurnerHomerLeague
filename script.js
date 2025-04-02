@@ -1044,15 +1044,21 @@ async function fetchHomeRunFeed() {
                 const etDate = convertUTCToET(utcPlayEndTime);
                 const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
 
+                const description = play.result?.description || "";
+                let hrNumberMatch = description.match(/\((\d+)\)/);
+                const hrNumber = hrNumberMatch ? parseInt(hrNumberMatch[1], 10) : 1;
+
                 homeRuns.push({
                   team: fantasyTeamName,
                   player: playerName,
-                  date: formattedETDate, // ✅ show actual ET date of HR
+                  date: formattedETDate,
                   dateTime: utcPlayEndTime,
                   distance: hitData.totalDistance || null,
                   launchSpeed: hitData.launchSpeed || null,
-                  launchAngle: hitData.launchAngle || null
+                  launchAngle: hitData.launchAngle || null,
+                  hrNumber: hrNumber
                 });
+
 
               }
             }
@@ -1094,7 +1100,7 @@ async function fetchHomeRunFeed() {
 
       const row = `<tr>
     <td>${hr.team}</td>
-    <td><strong>${hr.player}</strong></td>
+    <td><strong>${hr.player} (${hr.hrNumber})</strong></td>
     <td>${details}</td>
     <td>${hr.date}</td>
 </tr>`;
