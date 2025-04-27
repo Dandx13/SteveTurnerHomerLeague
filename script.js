@@ -967,7 +967,10 @@ function convertUTCToET(utcDateString) {
 
 
 async function fetchHomeRunFeed() {
+
+  
   try {
+    const seenPlays = new Set();
     // Clear any existing cached feed data
     sessionStorage.removeItem("homeRunFeedData");
 
@@ -1020,49 +1023,57 @@ async function fetchHomeRunFeed() {
           if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
 
           // Log all home run events
-          gameData.allPlays.forEach(play => {
-            if (play.result.eventType === "home_run") {
-              console.log(`Home run: ${play.matchup.batter.fullName} at ${play.playEndTime}`);
+          // Put this near the top of fetchHomeRunFeed() before the while loop
 
-              const playerName = play.matchup.batter.fullName;
-              const playEndTime = play.playEndTime;
+gameData.allPlays.forEach(play => {
+    if (play.result.eventType === "home_run") {
+        const playerName = play.matchup.batter.fullName;
+        const playerId = play.matchup.batter.id;
+        const atBatIndex = play.about.atBatIndex;
+        const key = `${playerId}-${gameId}-${atBatIndex}`;
 
-              const isFantasyPlayer = fantasyTeams.some(team =>
+        if (seenPlays.has(key)) {
+            return; // 🛑 Already processed this homer
+        }
+        seenPlays.add(key); // ✅ Mark this play as processed
+
+        const playEndTime = play.playEndTime;
+
+        const isFantasyPlayer = fantasyTeams.some(team =>
+            team.players.some(player => player.name === playerName)
+        );
+
+        if (isFantasyPlayer) {
+            const fantasyTeamName = fantasyTeams.find(team =>
                 team.players.some(player => player.name === playerName)
-              );
+            )?.name;
 
-              if (isFantasyPlayer) {
-                const fantasyTeamName = fantasyTeams.find(team =>
-                  team.players.some(player => player.name === playerName)
-                )?.name;
+            let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
 
-                let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
+            const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
+            const hitData = hitEvent.hitData || {};
 
-                const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
-                const hitData = hitEvent.hitData || {};
+            const etDate = convertUTCToET(utcPlayEndTime);
+            const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
 
-                const etDate = convertUTCToET(utcPlayEndTime);
-                const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
+            const description = play.result?.description || "";
+            let hrNumberMatch = description.match(/\((\d+)\)/);
+            const hrNumber = hrNumberMatch ? parseInt(hrNumberMatch[1], 10) : 1;
 
-                const description = play.result?.description || "";
-                let hrNumberMatch = description.match(/\((\d+)\)/);
-                const hrNumber = hrNumberMatch ? parseInt(hrNumberMatch[1], 10) : 1;
+            homeRuns.push({
+                team: fantasyTeamName,
+                player: playerName,
+                date: formattedETDate,
+                dateTime: utcPlayEndTime,
+                distance: hitData.totalDistance || null,
+                launchSpeed: hitData.launchSpeed || null,
+                launchAngle: hitData.launchAngle || null,
+                hrNumber: hrNumber
+            });
+        }
+    }
+});
 
-                homeRuns.push({
-                  team: fantasyTeamName,
-                  player: playerName,
-                  date: formattedETDate,
-                  dateTime: utcPlayEndTime,
-                  distance: hitData.totalDistance || null,
-                  launchSpeed: hitData.launchSpeed || null,
-                  launchAngle: hitData.launchAngle || null,
-                  hrNumber: hrNumber
-                });
-
-
-              }
-            }
-          });
 
 
           if (homeRuns.length >= maxHomeRuns) break;
