@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is the meta viewport tag -->
-    <title>Steve Turner Memorial Dinger League</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Turner Memorial Dinger League</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Steve Turner Memorial Dinger League</h1>
+
+<body class="bg-slate-950 text-slate-100">
+  <div class="container">
+
+    <!-- Header / Title / Tabs (NOT sticky) -->
+    <header class="topbar">
+      <div class="title-area">
+        <h1 class="site-title">Steve Turner Memorial Dinger League</h1>
+        <div class="site-subtitle">2026 Season Leaderboard</div>
+      </div>
+
+      <nav class="tabs-bar" aria-label="Page navigation">
         <div class="tabs">
-            <button id="season-tab">Leaderboard</button>
-            <button id="monthly-tab">Monthly Totals</button>
-            <button id="feed-tab">Live Feed</button>
-            <button id="winnings-tab">Winnings</button> <!-- 💰 New Winnings Tab -->
+          <button id="season-tab" class="tab-btn" type="button">Leaderboard</button>
+          <button id="monthly-tab" class="tab-btn" type="button">Monthly Totals</button>
+          <button id="feed-tab" class="tab-btn" type="button">Live Feed</button>
+          <button id="winnings-tab" class="tab-btn" type="button">Winnings</button>
         </div>
-        
-                
-        <div id="loading-indicator" class="loading"></div> <!-- Empty div so it doesn't display -->
+      </nav>
+    </header>
 
-        <div id="team-container"></div>
+    <div id="loading-indicator" class="loading"></div>
 
-<!-- Dropdown stays below the tabs -->
-<select id="mobile-month-select">
-    <option value="">-- Select a Month --</option>
-</select>
+    <div id="team-container"></div>
 
-<!-- Monthly data goes here -->
-<div id="monthly-container" style="display: none;"></div>
+    <!-- Mobile month dropdown (mobile only; CSS will force-hide on desktop) -->
+    <select id="mobile-month-select">
+      <option value="">-- Select a Month --</option>
+    </select>
 
-<!-- 🔥 New Feed Container (Initially Hidden) -->
-<div id="feed-container" style="display: none;">
-    <h2>Live Home Run Feed</h2>
-    <table class="feed-table">
+    <div id="monthly-container" style="display:none;"></div>
+
+    <div id="feed-container" style="display:none;">
+      <h2>Live Home Run Feed</h2>
+
+      <table class="feed-table">
         <thead>
-            <tr>
-              <th>Team</th>
-              <th>Player</th>
-              <th>HR Details</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-                
-        <tbody id="feed-body">
-            <!-- HRs will be inserted here dynamically -->
-        </tbody>
-    </table>
-    <div id="loading-spinner" style="display: none;">
-        <div class="spinner-container">
-            <div class="spinner"></div>
-            <div id="spinner-percentage" class="spinner-text">0%</div> <!-- Percentage text inside spinner -->
-        </div>
-    </div>
-    
-    
-
-        <p id="last-update"></p>
-    </div>
-    <script src="script.js"></script>
-<!-- 💰 New Winnings Container (Initially Hidden) -->
-<div id="winnings-container" style="display: none;">
-    <h2>Winnings</h2>
-    <table class="feed-table">
-        <thead>
-            <tr>
-                <th>Finish</th>
-                <th>Team</th>
-                <th>Payout</th>
-            </tr>
+          <tr>
+            <th>Team</th>
+            <th>Player</th>
+            <th>HR Details</th>
+            <th>Date</th>
+          </tr>
         </thead>
-        <tbody id="winnings-body">
-            <!-- Rows will be populated dynamically -->
-        </tbody>
-    </table>
-</div>
+        <tbody id="feed-body"></tbody>
+      </table>
 
-</div> <!-- 👈 closes the .container -->
-<script src="script.js"></script>
+      <div id="loading-spinner" style="display:none;">
+        <div class="spinner-container">
+          <div class="spinner"></div>
+          <div id="spinner-percentage" class="spinner-text">0%</div>
+        </div>
+      </div>
+
+      <p id="last-update"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="winnings-container" style="display:none;">
+      <h2>Winnings</h2>
+
+      <table class="feed-table">
+        <thead>
+          <tr>
+            <th>Finish</th>
+            <th>Team</th>
+            <th>Payout</th>
+          </tr>
+        </thead>
+        <tbody id="winnings-body"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
