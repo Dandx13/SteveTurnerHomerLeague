@@ -543,13 +543,14 @@ function formatHRTodayBadge(count) {
   const mult = count >= 2 ? `${count}×` : "";
 
   return `
-    <span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today">
-      <video class="hr-firework-video" autoplay loop muted playsinline preload="metadata">
-        <source src="assets/firework.webm" type="video/webm">
-      </video>
-      ${mult}
-    </span>
-  `;
+  <span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today">
+    <video class="hr-firework-video" autoplay loop muted playsinline webkit-playsinline preload="metadata">
+  <source src="assets/firework.mp4" type="video/mp4">
+  <source src="assets/firework.webm" type="video/webm">
+</video>
+    ${mult}
+  </span>
+`;
 }
 
 // --- Season Totals Functions (Homepage) ---
@@ -1519,4 +1520,3 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 300000);
 setInterval(fetchMonthlyStats, 300000);
-
