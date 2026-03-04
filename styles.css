@@ -483,17 +483,17 @@ body.winnings-active #winnings-tab{
 .game-badge.off{ background: rgba(148,163,184,.55); }    /* gray */
 
 .game-badge[title]{ cursor: help; }
-/* Fireworks HR badge (replaces 💥) */
+
+/* Fireworks HR badge (clean – no red outline/pill) */
 .hr-firework-badge{
   display:inline-flex;
   align-items:center;
-  gap:6px;
-  margin-left:8px;
-  padding:2px 8px;
-  border-radius:999px;
-  border:1px solid rgba(239,68,68,.35);
-  background: rgba(239,68,68,.10);
-  color:#fecaca;
+  gap:4px;
+  margin-left:6px;
+  padding:0;
+  border:none;
+  background:transparent;
+  color:#e5e7eb; /* light text */
   font-weight:900;
   font-size:11px;
   line-height:1;
@@ -505,4 +505,5 @@ body.winnings-active #winnings-tab{
   object-fit:cover;
   border-radius:6px;
   display:block;
+}
 }
