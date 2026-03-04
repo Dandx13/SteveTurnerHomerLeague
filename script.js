@@ -283,6 +283,275 @@ let playerHomeRuns = {};
 // Object to store monthly home run data (season 2024) by player
 let playerMonthlyStats = {};
 
+// --- NEW: game status + caching (optimized) ---
+const TEAM_CACHE_KEY = "dl_playerTeamCache_v1";
+const TEAM_CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+const TEAM_FETCH_CONCURRENCY = 10;
+
+// Map playerId -> teamId
+let playerTeamIdByPlayerId = new Map();
+
+// Map teamId -> "live" | "final" | "today" | "off"
+let todaysTeamStatusByTeamId = new Map();
+
+// NEW: gamePks we consider "today" (sports-day), and HR counts in those games
+let todaysGamePks = new Set();          // gamePk set for S/R games in our schedule fetch
+let playerHRTodayCount = new Map();     // batterId -> HR count across todaysGamePks
+
+// Icons requested:
+// - plays today: baseball
+// - currently playing: green dot
+// - not playing today: sleepy
+// - game complete: red dot
+function statusToIcon(status) {
+  if (status === "live") return "🟢";
+  if (status === "final") return "🔴";
+  if (status === "today") return "⚾";
+  return "💤";
+}
+
+function statusToTitle(status) {
+  if (status === "live") return "Currently playing";
+  if (status === "final") return "Game complete";
+  if (status === "today") return "Plays today";
+  return "No game today";
+}
+
+function getTodayDateStrLocal() {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+function getSportsDateET(cutoffHourET = 3) {
+  // Current moment, interpreted in America/New_York
+  const etNow = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+
+  // Before cutoff? Use yesterday's date
+  if (etNow.getHours() < cutoffHourET) {
+    etNow.setDate(etNow.getDate() - 1);
+  }
+
+  // Return YYYY-MM-DD
+  const yyyy = etNow.getFullYear();
+  const mm = String(etNow.getMonth() + 1).padStart(2, "0");
+  const dd = String(etNow.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+function safeJsonParse(str) {
+  try { return JSON.parse(str); } catch { return null; }
+}
+
+function loadTeamCacheFromStorage() {
+  const raw = localStorage.getItem(TEAM_CACHE_KEY);
+  const parsed = safeJsonParse(raw);
+  if (!parsed || !parsed.ts || !parsed.map) return null;
+  if ((Date.now() - parsed.ts) > TEAM_CACHE_TTL_MS) return null;
+  return parsed.map;
+}
+
+function saveTeamCacheToStorage(mapObj) {
+  localStorage.setItem(TEAM_CACHE_KEY, JSON.stringify({
+    ts: Date.now(),
+    map: mapObj
+  }));
+}
+
+function getAllUniquePlayerIds() {
+  const ids = new Set();
+  fantasyTeams.forEach(t => t.players.forEach(p => ids.add(p.id)));
+  return Array.from(ids);
+}
+
+async function fetchPlayerCurrentTeamId(playerId) {
+  // hydrate=currentTeam returns currentTeam.id
+  const url = `https://statsapi.mlb.com/api/v1/people/${playerId}?hydrate=currentTeam`;
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`people/${playerId} failed: ${resp.status}`);
+  const data = await resp.json();
+  return data?.people?.[0]?.currentTeam?.id ?? null;
+}
+
+async function asyncPool(limit, items, iteratorFn) {
+  const ret = [];
+  const executing = [];
+  for (const item of items) {
+    const p = Promise.resolve().then(() => iteratorFn(item));
+    ret.push(p);
+    if (limit <= items.length) {
+      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+      executing.push(e);
+      if (executing.length >= limit) await Promise.race(executing);
+    }
+  }
+  return Promise.all(ret);
+}
+
+async function ensurePlayerTeamIdsLoaded() {
+  // 1) Try cached map from localStorage
+  const cached = loadTeamCacheFromStorage();
+  const ids = getAllUniquePlayerIds();
+
+  const mapObj = cached || {};
+  // Fill from cache first
+  playerTeamIdByPlayerId = new Map();
+  ids.forEach(pid => {
+    const teamId = mapObj[String(pid)];
+    if (teamId) playerTeamIdByPlayerId.set(pid, teamId);
+  });
+
+  // 2) Fetch missing
+  const missing = ids.filter(pid => !playerTeamIdByPlayerId.has(pid));
+  if (missing.length === 0) return;
+
+  await asyncPool(TEAM_FETCH_CONCURRENCY, missing, async (pid) => {
+    try {
+      const teamId = await fetchPlayerCurrentTeamId(pid);
+      if (teamId) {
+        playerTeamIdByPlayerId.set(pid, teamId);
+        mapObj[String(pid)] = teamId;
+      }
+    } catch (e) {
+      console.warn("TeamId fetch failed for", pid, e);
+    }
+  });
+
+  // 3) Save cache back
+  saveTeamCacheToStorage(mapObj);
+}
+
+function normalizeGameStatus(game) {
+  const abstract = game?.status?.abstractGameState; // "Preview" | "Live" | "Final"
+  const detailed = (game?.status?.detailedState || "").toLowerCase();
+
+  // Final-ish states
+  if (
+    abstract === "Final" ||
+    detailed.includes("final") ||
+    detailed.includes("game over") ||
+    detailed.includes("completed early")
+  ) return "final";
+
+  // Live-ish states
+  if (
+    abstract === "Live" ||
+    detailed.includes("in progress") ||
+    detailed.includes("warmup") ||
+    detailed.includes("manager challenge") ||
+    detailed.includes("delayed") ||
+    detailed.includes("suspended")
+  ) return "live";
+
+  // Otherwise if on schedule today, it's "today"
+  if (abstract === "Preview" || detailed.includes("scheduled") || detailed.includes("pregame")) return "today";
+
+  // Fallback
+  return "today";
+}
+
+async function fetchTodaysTeamStatuses() {
+  todaysTeamStatusByTeamId = new Map();
+  todaysGamePks = new Set(); // NEW
+
+  const sportsDateET = getSportsDateET(3);
+
+  const urls = [
+    `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${sportsDateET}&gameTypes=S,R`
+  ];
+
+  const rank = (s) => (s === "live" ? 3 : s === "final" ? 2 : s === "today" ? 1 : 0);
+
+  for (const url of urls) {
+    try {
+      const resp = await fetch(url);
+      if (!resp.ok) continue;
+      const data = await resp.json();
+      const games = (data?.dates?.[0]?.games) || [];
+
+      for (const g of games) {
+  // Only Spring Training or Regular Season
+  if (g.gameType !== "R" && g.gameType !== "S") continue;
+
+  // NEW: collect gamePk so we can count HRs in these games
+  if (g?.gamePk) todaysGamePks.add(g.gamePk);
+
+  const awayId = g?.teams?.away?.team?.id;
+  const homeId = g?.teams?.home?.team?.id;
+
+  const status = normalizeGameStatus(g);
+
+        const upsert = (teamId) => {
+          if (!teamId) return;
+          const prev = todaysTeamStatusByTeamId.get(teamId);
+          if (!prev || rank(status) > rank(prev)) {
+            todaysTeamStatusByTeamId.set(teamId, status);
+          }
+        };
+
+        upsert(awayId);
+        upsert(homeId);
+      }
+    } catch (e) {
+      console.warn("Schedule fetch failed:", url, e);
+    }
+  }
+}
+
+function getPlayerGameStatus(playerId) {
+  const teamId = playerTeamIdByPlayerId.get(playerId);
+  if (!teamId) return "off";
+  return todaysTeamStatusByTeamId.get(teamId) || "off";
+}
+
+// NEW: fetch HR counts for all today's games (S/R only) and map batterId -> HR count
+async function fetchTodaysHomeRunCounts() {
+  playerHRTodayCount = new Map();
+
+  const gamePks = Array.from(todaysGamePks);
+  if (gamePks.length === 0) return;
+
+  // Limit concurrency so we don’t hammer the API
+  const CONCURRENCY = 6;
+
+  await asyncPool(CONCURRENCY, gamePks, async (gamePk) => {
+    try {
+      const url = `https://statsapi.mlb.com/api/v1/game/${gamePk}/playByPlay?events=home_run`;
+      const resp = await fetch(url);
+      if (!resp.ok) return;
+
+      const data = await resp.json();
+      const plays = data?.allPlays || [];
+
+      for (const p of plays) {
+        if (p?.result?.eventType !== "home_run") continue;
+        const batterId = p?.matchup?.batter?.id;
+        if (!batterId) continue;
+
+        const prev = playerHRTodayCount.get(batterId) || 0;
+        playerHRTodayCount.set(batterId, prev + 1);
+      }
+    } catch (e) {
+      console.warn("HR playByPlay failed for gamePk", gamePk, e);
+    }
+  });
+}
+
+function formatHRTodayBadge(count) {
+  if (!count || count <= 0) return "";
+
+  const mult = count >= 2 ? `${count}×` : "";
+
+  return `
+    <span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today">
+      <video class="hr-firework-video" autoplay loop muted playsinline preload="metadata">
+        <source src="assets/firework.webm" type="video/webm">
+      </video>
+      ${mult}
+    </span>
+  `;
+}
+
 // --- Season Totals Functions (Homepage) ---
 const playerIdLookup = {
   "Fernando Tatis Jr.": 665487,
@@ -437,7 +706,6 @@ const playerIdLookup = {
   "Wilyer Abreu": 677800
 };
 
-
 function fetchPlayerId(playerName) {
   return playerIdLookup[playerName] || null;
 }
@@ -450,7 +718,6 @@ console.log("This will not appear in the console");
 
 // Other functions, variables, etc.
 
-
 async function fetchPlayerStats() {
   // Clear previous player stats to fetch new data
   playerHomeRuns = {};  // Reset the player home run data
@@ -460,6 +727,14 @@ async function fetchPlayerStats() {
   document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>";  // Show loading message
 
   try {
+    // --- NEW: preload (optimized) ---
+    // 1) team ids (cached)
+    await ensurePlayerTeamIdsLoaded();
+    // 2) today's schedule statuses (single call)
+    await fetchTodaysTeamStatuses();
+    // 3) NEW: HR counts across today's schedule games (doubleheaders included)
+    await fetchTodaysHomeRunCounts();
+
     const batchSize = 5; // Size of each batch for requests
     let playerRequests = [];
     let batchResults = [];
@@ -497,7 +772,6 @@ async function fetchPlayerStats() {
   }
 }
 
-
 async function fetchSeasonHomeRuns(playerId) {
   try {
     const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=R&group=hitting`);
@@ -516,7 +790,6 @@ async function fetchSeasonHomeRuns(playerId) {
   }
 }
 
-
 // Helper function to fetch stats for a single player
 async function fetchPlayerStatsForPlayer(player) {
   try {
@@ -534,8 +807,6 @@ async function fetchPlayerStatsForPlayer(player) {
   }
 }
 
-
-
 // Process each batch using `Promise.allSettled` for error resilience
 async function processBatch(batch) {
   const batchResults = await Promise.allSettled(batch);
@@ -550,7 +821,6 @@ async function processBatch(batch) {
   });
 }
 
-
 function getRankSuffix(rank) {
   const lastDigit = rank % 10;
   const lastTwoDigits = rank % 100;
@@ -561,8 +831,6 @@ function getRankSuffix(rank) {
   if (lastDigit === 3) return 'rd';
   return 'th';
 }
-
-
 
 function displayFantasyTeams() {
 
@@ -611,7 +879,6 @@ function displayFantasyTeams() {
     i = j;
   }
 
-
   let teamsHtml = "";
   sortedTeams.forEach((team, index) => {  // Use index for ranking
     let playersHtml = "";
@@ -625,13 +892,24 @@ function displayFantasyTeams() {
       const hr = playerHomeRuns[player.id] || 0;
       const playerImageUrl = `https://midfield.mlbstatic.com/v1/people/${player.id}/headshot/60x60.jpg`;
 
-
-      playersHtml += `
-        <li>
-          <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
-          ${player.name} - ${hr}
-        </li>
-      `;
+           // game status icon
+           const status = getPlayerGameStatus(player.id);
+           const icon = statusToIcon(status);
+           const title = statusToTitle(status);
+     
+           // NEW: HR today badge (counts across all todaysGamePks, including doubleheaders)
+           const hrTodayCount = playerHRTodayCount.get(player.id) || 0;
+           const hrTodayBadge = formatHRTodayBadge(hrTodayCount);
+           const hrTodayTitle = hrTodayCount === 1 ? "1 HR today" : `${hrTodayCount} HR today`;
+     
+           playersHtml += `
+             <li>
+               <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
+               ${player.name} - ${hr}
+               <span title="${title}" aria-label="${title}">${icon}</span>
+               ${hrTodayBadge || ""}
+             </li>
+           `;
     });
 
     const top4 = topFourTotal(team);
@@ -642,9 +920,6 @@ function displayFantasyTeams() {
     if (actualRank === 1) teamClass = "gold";
     else if (actualRank === 2) teamClass = "silver";
     else if (actualRank === 3) teamClass = "bronze";
-
-
-
 
     teamsHtml += `
     <div class="col-md-3 col-6">
@@ -658,9 +933,6 @@ function displayFantasyTeams() {
         </div>
     </div>
 `;
-
-
-
   });
 
   const container = document.getElementById("team-container");
@@ -668,8 +940,6 @@ function displayFantasyTeams() {
   container.innerHTML = teamsHtml;
   container.style.visibility = "visible"; // Show container after update
 }
-
-
 
 function topFourTotal(team) {
   return team.players
@@ -730,9 +1000,6 @@ async function fetchMonthlyHomeRuns(playerId) {
   }
 }
 
-
-
-
 async function fetchMonthlyStats() {
   document.getElementById("loading-indicator").style.display = "flex";
 
@@ -788,8 +1055,6 @@ function populateMobileMonthDropdown() {
   }
 }
 
-
-// Function to populate the dropdown menu with available months
 // Function to handle mobile month selection
 function handleMobileMonthChange() {
   const selectedMonth = document.getElementById("mobile-month-select").value;
@@ -854,7 +1119,6 @@ function handleMobileMonthChange() {
   mobileContainer.innerHTML = html; // Inject the sorted and highlighted table
 }
 
-
 // In the monthly totals, for each team and for each month,
 // only the top 5 players' home run totals are summed.
 function displayMonthlyStats() {
@@ -871,23 +1135,14 @@ function displayMonthlyStats() {
         return monthly[month] || 0;
       });
 
-      // Log the HR totals before sorting
-      console.log(`Before sorting - ${team.name} (${month}):`, totals);
-
       // Ensure all values are valid numbers
       totals = totals.filter(num => typeof num === "number" && !isNaN(num));
 
       // Sort from highest to lowest
       totals.sort((a, b) => b - a);
 
-      // Log the sorted values
-      console.log(`After sorting - ${team.name} (${month}):`, totals);
-
       // Sum only the top 5 values
       let teamTotal = totals.slice(0, 5).reduce((sum, val) => sum + val, 0);
-
-      // Log the final computed total
-      console.log(`Final total - ${team.name} (${month}):`, teamTotal);
 
       if (teamTotal > maxTotals[month]) {
         maxTotals[month] = teamTotal;
@@ -965,10 +1220,7 @@ function convertUTCToET(utcDateString) {
   return etDate;
 }
 
-
 async function fetchHomeRunFeed() {
-
-  
   try {
     const seenPlays = new Set();
     // Clear any existing cached feed data
@@ -991,9 +1243,6 @@ async function fetchHomeRunFeed() {
         let date = new Date();
         date.setDate(date.getDate() - daysBack);
         const formattedDateForAPI = date.toISOString().split("T")[0]; // used in API call
-        ;
-
-
 
         let formattedDateTime = date.toISOString();  // Full date-time with time
 
@@ -1001,7 +1250,7 @@ async function fetchHomeRunFeed() {
         percentage = Math.floor((daysBack / totalRequests) * 100);
         percentageElement.textContent = `${percentage}%`; // Update the percentage text
 
-        const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDateForAPI}`);
+        const scheduleResponse = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${formattedDateForAPI}&gameTypes=S,R`);
         const scheduleData = await scheduleResponse.json();
 
         if (!scheduleData.dates || scheduleData.dates.length === 0) {
@@ -1010,71 +1259,67 @@ async function fetchHomeRunFeed() {
         }
 
         for (const game of scheduleData.dates[0].games) {
+
+          // Only allow Spring Training (S) and Regular Season (R) games — skip exhibitions, etc.
+          if (game.gameType !== "R" && game.gameType !== "S") continue;
+        
           const gameId = game.gamePk;
           const gameDate = game.date;
 
           // Convert the game date from UTC to Eastern Time
           const gameDateET = convertUTCToET(gameDate);
-          console.log(`Game Date (Eastern Time): ${gameDateET.toLocaleString()}`); // Log converted date for debugging
 
           const gameDataResponse = await fetch(`https://statsapi.mlb.com/api/v1/game/${gameId}/playByPlay?events=home_run`);
           const gameData = await gameDataResponse.json();
 
           if (!gameData.allPlays || gameData.allPlays.length === 0) continue;
 
-          // Log all home run events
-          // Put this near the top of fetchHomeRunFeed() before the while loop
+          gameData.allPlays.forEach(play => {
+            if (play.result.eventType === "home_run") {
+              const playerName = play.matchup.batter.fullName;
+              const playerId = play.matchup.batter.id;
+              const atBatIndex = play.about.atBatIndex;
+              const key = `${playerId}-${gameId}-${atBatIndex}`;
 
-gameData.allPlays.forEach(play => {
-    if (play.result.eventType === "home_run") {
-        const playerName = play.matchup.batter.fullName;
-        const playerId = play.matchup.batter.id;
-        const atBatIndex = play.about.atBatIndex;
-        const key = `${playerId}-${gameId}-${atBatIndex}`;
+              if (seenPlays.has(key)) return;
+              seenPlays.add(key);
 
-        if (seenPlays.has(key)) {
-            return; // 🛑 Already processed this homer
-        }
-        seenPlays.add(key); // ✅ Mark this play as processed
+              const playEndTime = play.playEndTime;
 
-        const playEndTime = play.playEndTime;
-
-        const isFantasyPlayer = fantasyTeams.some(team =>
-            team.players.some(player => player.name === playerName)
-        );
-
-        if (isFantasyPlayer) {
-            const fantasyTeamName = fantasyTeams.find(team =>
+              const isFantasyPlayer = fantasyTeams.some(team =>
                 team.players.some(player => player.name === playerName)
-            )?.name;
+              );
 
-            let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
+              if (isFantasyPlayer) {
+                const fantasyTeamName = fantasyTeams.find(team =>
+                  team.players.some(player => player.name === playerName)
+                )?.name;
 
-            const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
-            const hitData = hitEvent.hitData || {};
+                let utcPlayEndTime = playEndTime ? new Date(playEndTime).toISOString() : formattedDateTime;
 
-            const etDate = convertUTCToET(utcPlayEndTime);
-            const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
+                const hitEvent = play.playEvents?.find(event => event?.hitData) || {};
+                const hitData = hitEvent.hitData || {};
 
-            const description = play.result?.description || "";
-            let hrNumberMatch = description.match(/\((\d+)\)/);
-            const hrNumber = hrNumberMatch ? parseInt(hrNumberMatch[1], 10) : 1;
+                const etDate = convertUTCToET(utcPlayEndTime);
+                const formattedETDate = `${etDate.getMonth() + 1}/${etDate.getDate()}`;
 
-            homeRuns.push({
-                team: fantasyTeamName,
-                player: playerName,
-                date: formattedETDate,
-                dateTime: utcPlayEndTime,
-                distance: hitData.totalDistance || null,
-                launchSpeed: hitData.launchSpeed || null,
-                launchAngle: hitData.launchAngle || null,
-                hrNumber: hrNumber
-            });
-        }
-    }
-});
+                const description = play.result?.description || "";
+                let hrNumberMatch = description.match(/\((\d+)\)/);
+                const hrNumber = hrNumberMatch ? parseInt(hrNumberMatch[1], 10) : 1;
 
-
+                homeRuns.push({
+                  team: fantasyTeamName,
+                  player: playerName,
+                  date: formattedETDate,
+                  dateTime: utcPlayEndTime,
+                  distance: hitData.totalDistance || null,
+                  launchSpeed: hitData.launchSpeed || null,
+                  launchAngle: hitData.launchAngle || null,
+                  hrNumber: hrNumber
+                });
+              }
+            }
+          });
 
           if (homeRuns.length >= maxHomeRuns) break;
         }
@@ -1083,9 +1328,6 @@ gameData.allPlays.forEach(play => {
         daysBack++;
       }
 
-      // Log home runs before sorting to see if all relevant home runs are fetched
-      console.log('Fetched home runs before sorting:', homeRuns);
-
       // Sort home runs by playEndTime in UTC (most recent first)
       homeRuns.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
 
@@ -1093,9 +1335,6 @@ gameData.allPlays.forEach(play => {
       homeRuns = homeRuns.slice(0, maxHomeRuns);
       sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
     }
-
-    // Log sorted home runs
-    console.log('Sorted home runs:', homeRuns);
 
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
 
@@ -1108,13 +1347,12 @@ gameData.allPlays.forEach(play => {
         ? `${hr.distance} ft<br><span class="ev">${hr.launchSpeed} mph</span>`
         : "—";
 
-
       const row = `<tr>
-    <td>${hr.team}</td>
-    <td><strong>${hr.player} (${hr.hrNumber})</strong></td>
-    <td>${details}</td>
-    <td>${hr.date}</td>
-</tr>`;
+        <td>${hr.team}</td>
+        <td><strong>${hr.player} (${hr.hrNumber})</strong></td>
+        <td>${details}</td>
+        <td>${hr.date}</td>
+      </tr>`;
 
       feedBody.innerHTML += row;
     });
@@ -1130,8 +1368,6 @@ setInterval(fetchHomeRunFeed, 300000); // Fetch every 5 minutes
 
 // Initially load the data when the page is loaded or when switching tabs
 fetchHomeRunFeed(); // Trigger on page load
-
-
 
 function calculateAndDisplayWinnings() {
   const payouts = [1100, 650, 450, 350, 300, 250, 200];
@@ -1190,6 +1426,10 @@ function calculateAndDisplayWinnings() {
   });
 }
 
+function setActiveTabClass(tab) {
+  document.body.classList.remove("monthly-active", "feed-active", "winnings-active");
+  if (tab) document.body.classList.add(tab);
+}
 
 // --- Tab Switching Logic ---
 document.getElementById("season-tab").addEventListener("click", () => {
@@ -1204,8 +1444,8 @@ document.getElementById("season-tab").addEventListener("click", () => {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // Remove the active class to ensure dropdown hides
-  document.body.classList.remove("monthly-active");
+  // ✅ set active tab state (leaderboard = none)
+  setActiveTabClass("");
 
   // Fetch fresh player stats when the "Leaderboard" tab is clicked
   fetchPlayerStats();
@@ -1217,7 +1457,8 @@ document.getElementById("monthly-tab").addEventListener("click", async () => {
   document.getElementById("feed-container").style.display = "none";
   document.getElementById("winnings-container").style.display = "none";
 
-  document.body.classList.add("monthly-active");
+  // ✅ set active tab state
+  setActiveTabClass("monthly-active");
 
   await fetchMonthlyStats(); // ✅ Wait for stats to load fully
 
@@ -1229,8 +1470,6 @@ document.getElementById("monthly-tab").addEventListener("click", async () => {
     }
   }
 });
-
-
 
 document.getElementById("feed-tab").addEventListener("click", () => {
   // Hide other containers and show the feed container
@@ -1244,8 +1483,8 @@ document.getElementById("feed-tab").addEventListener("click", () => {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ Ensure dropdown class is removed
-  document.body.classList.remove("monthly-active");
+  // ✅ set active tab state
+  setActiveTabClass("feed-active");
 
   // Check if feed data is already loaded
   if (!feedDataLoaded) {
@@ -1266,26 +1505,18 @@ document.getElementById("winnings-tab").addEventListener("click", () => {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ Remove the active class just in case
-  document.body.classList.remove("monthly-active");
+  // ✅ set active tab state
+  setActiveTabClass("winnings-active");
 
   // Run the logic to calculate and display winnings
   calculateAndDisplayWinnings();
 });
 
-
-
-
-
-
-
-
 populateMobileMonthDropdown();  // Ensure dropdown appears immediately
 document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
-
-
 
 // Initial fetch on load
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 300000);
 setInterval(fetchMonthlyStats, 300000);
+
