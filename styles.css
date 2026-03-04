@@ -1,634 +1,508 @@
-/* General Page Styling */
-/* 🎨 Define a modern MLB-style color palette */
-:root {
-  --primary-color: #0044cc;  /* Deep MLB blue */
-  --secondary-color: #ffcc00; /* Gold accent */
-  --background-light: #f4f4f4; /* Light background */
-  --background-dark: #121212; /* Dark mode */
-  --text-dark: #333;
-  --text-light: #ffffff;
+:root{
+  --bg:#020617;               /* slate-950 */
+  --panel:#0b1220;            /* deep slate/navy */
+  --panel2:#0f172a;           /* slate-900 */
+  --text:#e5e7eb;             /* gray-200 */
+  --muted:#94a3b8;            /* slate-400 */
+  --border:rgba(255,255,255,.08);
+  --border2:rgba(255,255,255,.12);
+  --accent:#22c55e;           /* green-500 */
+  --accentSoft:rgba(34,197,94,.16);
+  --shadow:0 18px 55px rgba(0,0,0,.45);
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--background-light);
-  color: var(--text-dark);
-  padding: 2.5x;
-  text-align: center;
-  margin: 0;
+*{box-sizing:border-box;}
+
+body{
+  font-family:'Roboto',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  margin:0;
+  padding:22px;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 700px at 20% 0%, rgba(34,197,94,.08), transparent 60%),
+    radial-gradient(1200px 700px at 80% 0%, rgba(59,130,246,.08), transparent 60%),
+    var(--bg);
+  text-align:center;
+  position:relative;
+
+  /* ✅ helps native controls (select, scrollbars) render in dark mode on supported browsers */
+  color-scheme: dark;
 }
 
+/* subtle dark texture layer */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.08;
 
-/* Container around all of the team cards*/
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,.10) 0px,
+      rgba(255,255,255,.10) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.06) 0px,
+      rgba(255,255,255,.06) 1px,
+      transparent 1px,
+      transparent 18px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,.06) 0px,
+      rgba(255,255,255,.06) 1px,
+      transparent 1px,
+      transparent 18px
+    );
+  mix-blend-mode:overlay;
 }
 
-
-.team-rank {
-  font-size: 20px;  /* Adjust the font size to your preference */
-  color: var(--primary-color); /* Use your primary color or change this to any color */
-  margin-bottom: 5px; /* Add some space between the rank and team name */
-  text-decoration: underline; /* Underline the rank */
+/* main container */
+.container{
+  max-width:1180px;
+  margin:0 auto;
+  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)), var(--panel);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px 18px 26px;
+  box-shadow:var(--shadow);
 }
 
-
-/* Header */
-h1 {
-  font-family: 'Roboto', sans-serif;
-  color: #0044cc;
-  margin-bottom: 20px;
+/* header (NOT sticky) */
+.topbar{
+  position:relative;
+  background:rgba(2,6,23,.60);
+  border-radius:16px;
+  padding:18px;
+  margin-bottom:18px;
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:0 16px 45px rgba(0,0,0,.35);
+  text-align:center;
 }
 
-/* Tabs */
-.tabs {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* So tabs can wrap on smaller screens */
+.title-area{
+  text-align:center;
+  margin-bottom:12px;
 }
 
-button {
-  background: linear-gradient(135deg, var(--primary-color), #0033aa);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  color: var(--text-light);
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+.site-title{
+  font-weight:900;
+  letter-spacing:-0.03em;
+  line-height:1.05;
+  margin:0;
+  font-size:clamp(30px, 3.8vw, 54px);
 }
 
-button:hover {
-  background: linear-gradient(135deg, #0033aa, #002288);
-  transform: scale(1.08);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+.site-subtitle{
+  font-size:14px;
+  color:var(--muted);
+  margin-top:8px;
 }
 
-
-/* Loading Indicator */
-.loading {
-  display: none;
-  font-size: 18px;
-  color: #666;
+/* tabs bar */
+.tabs-bar{
+  background:rgba(255,255,255,.03);
+  padding:10px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.06);
 }
 
-/* Team Grid Layout */
-#team-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
+.tabs{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-/* Fantasy Team Cards */
-.team {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
-  box-sizing: border-box;
+.tab-btn{
+  flex:1 1 200px;
+  min-width:180px;
+  padding:13px 18px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:15px;
+  color:var(--text);
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.02);
+  cursor:pointer;
+  transition:transform .08s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+  text-align:center;
+  white-space:nowrap;
 }
 
-.player-headshot {
-  width: 25px; /* Adjust size as needed */
-  height: 25px;
-  border-radius: 50%; /* Makes images circular */
-  margin-right: 2px; /* Adds spacing between image and text */
-  vertical-align: middle; /* Aligns image with text */
-  object-fit: cover; /* Ensures the image is properly cropped */
+.tab-btn:hover{
+  border-color:rgba(34,197,94,.55);
+  background:rgba(34,197,94,.10);
 }
 
-
-/* Top 3 Team Colors */
-.gold {
-  background-color: gold !important;
-  color: black;
+.tab-btn:focus,
+.tab-btn:focus-visible{
+  outline:none;
+  border-color:rgba(34,197,94,.80);
+  background:var(--accentSoft);
+  box-shadow:0 0 0 3px rgba(34,197,94,.14);
 }
 
-.silver {
-  background-color: silver !important;
-  color: black;
+/* Default highlight for Leaderboard on first load */
+body:not(.monthly-active):not(.feed-active):not(.winnings-active) #season-tab{
+  border-color:rgba(34,197,94,.65);
+  background:rgba(34,197,94,.14);
 }
 
-.bronze {
-  background-color: #cd7f32 !important;
-  color: white;
+/* If your JS already adds these body classes, tabs will highlight correctly */
+body.monthly-active #monthly-tab,
+body.feed-active #feed-tab,
+body.winnings-active #winnings-tab{
+  border-color:rgba(34,197,94,.80);
+  background:var(--accentSoft);
 }
 
+/* Loading */
+.loading{display:none;}
 
-.team:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+/* grid */
+#team-container{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:16px;
+  justify-content:center;
 }
 
-.team h2 {
-  color: #0044cc;
-  margin-bottom: 10px;
-  font-size: 18px;
+/* card */
+.team{
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), var(--panel2);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  padding:14px;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
 }
 
-.team ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Podium: top 3 special */
+.team.gold::before,
+.team.silver::before,
+.team.bronze::before{
+  content:"";
+  position:absolute;
+  inset:-60px -60px auto auto;
+  width:220px;
+  height:220px;
+  border-radius:999px;
+  opacity:.22;
+  transform:rotate(18deg);
 }
 
-.team ul li {
-  font-size: 16px;
-  padding: 4px 0;
-  display: flex; /* Align image & text in one row */
-  align-items: center; /* Keep text aligned with image */
-  text-align: left; /* Aligns text to the left */
-  gap: 8px; /* Adds spacing between image & text */
+.team.gold::after,
+.team.silver::after,
+.team.bronze::after{
+  position:absolute;
+  top:10px;
+  right:12px;
+  font-size:18px;
+  opacity:.95;
 }
 
+.team.gold{
+  border-color:rgba(245,158,11,.70) !important;
+  box-shadow:0 0 22px rgba(245,158,11,.14);
+  transform:translateY(-2px);
+}
+.team.gold::before{ background:radial-gradient(circle at 30% 30%, rgba(245,158,11,.85), transparent 60%); }
+.team.gold::after{ content:"🏆"; }
 
-/* Tables */
-.monthly-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.team.silver{
+  border-color:rgba(148,163,184,.62) !important;
+  box-shadow:0 0 18px rgba(148,163,184,.10);
+}
+.team.silver::before{ background:radial-gradient(circle at 30% 30%, rgba(148,163,184,.85), transparent 60%); }
+.team.silver::after{ content:"🥈"; }
+
+.team.bronze{
+  border-color:rgba(194,65,12,.62) !important;
+  box-shadow:0 0 18px rgba(194,65,12,.10);
+}
+.team.bronze::before{ background:radial-gradient(circle at 30% 30%, rgba(194,65,12,.85), transparent 60%); }
+.team.bronze::after{ content:"🥉"; }
+
+/* hover */
+.team:hover{
+  transform:translateY(-4px);
+  border-color:rgba(34,197,94,.38);
+  box-shadow:0 18px 45px rgba(0,0,0,.45);
 }
 
-/* 📌 Feed Table Styling */
-.feed-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
+/* rank */
+.team-rank{
+  font-size:12px;
+  font-weight:900;
+  color:var(--accent);
+  letter-spacing:.10em;
+  margin-bottom:6px;
 }
 
-.feed-table th {
-  background: #0044cc; /* Primary blue */
-  color: white;
-  padding: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
+/* team name */
+.team h2{
+  margin:0 0 10px;
+  font-size:16px;
+  font-weight:900;
 }
 
-.feed-table td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+/* players */
+.team ul{
+  list-style:none;
+  margin:0;
+  padding:0;
 }
 
-.feed-table tbody tr:nth-child(even) {
-  background: #f9f9f9;
+.team ul li{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:9px 0;
+  border-top:1px solid rgba(255,255,255,.07);
+  font-size:13px;
+  position:relative;
+  text-align:center;
 }
 
-.feed-table tbody tr:hover {
-  background: #ffcc00;
-  color: black;
-  transition: 0.3s;
+.team ul li:first-child{border-top:none;}
+
+.player-headshot{
+  width:26px;
+  height:26px;
+  border-radius:999px;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,.10);
 }
 
-/* 📌 Center Feed Table in the Page */
-#feed-container {
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;
+/* total */
+.total-home-runs{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.07);
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
 }
 
-.monthly-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
+/* tables (dark) */
+.feed-table,
+.monthly-table,
+.monthly-table-mobile{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:14px;
+  background:var(--panel2);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  overflow:hidden;
+  text-align:center;
 }
 
-.monthly-table th {
-  background: var(--primary-color);
-  color: var(--text-light);
-  padding: 14px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
+.feed-table th,
+.monthly-table th,
+.monthly-table-mobile th{
+  padding:12px 10px;
+  background:rgba(255,255,255,.04);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#cbd5e1;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.monthly-table th:hover {
-  background: #0033aa;
+.feed-table td,
+.monthly-table td,
+.monthly-table-mobile td{
+  padding:10px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  font-size:13px;
+  color:var(--text);
 }
 
-.monthly-table tbody tr:nth-child(even) {
-  background: #f9f9f9;
+.feed-table tbody tr:nth-child(even),
+.monthly-table tbody tr:nth-child(even),
+.monthly-table-mobile tbody tr:nth-child(even){
+  background:rgba(255,255,255,.02);
 }
 
-.monthly-table tbody tr:hover {
-  background: var(--secondary-color);
-  color: var(--text-dark);
-  transition: 0.3s;
+.feed-table tbody tr:hover,
+.monthly-table tbody tr:hover,
+.monthly-table-mobile tbody tr:hover{
+  background:rgba(34,197,94,.08);
 }
 
-
-.monthly-table th {
-  background-color: #0044cc;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* ✅ FIX #2: Month leader highlight readability (override inline yellow)
+   - Make background a warm yellow/amber
+   - Force text + numbers to DARK so it’s readable
+*/
+.monthly-table td[style*="background-color: yellow"],
+.monthly-table-mobile td[style*="background-color: yellow"]{
+  background: #fbbf24 !important;
+  color: #0b1220 !important;
+  font-weight: 900 !important;
 }
 
-.monthly-table th:hover {
-  background-color: #0033aa;
+.monthly-table td[style*="background-color: yellow"] *,
+.monthly-table-mobile td[style*="background-color: yellow"] *{
+  color:#0b1220 !important;         /* ensure children inherit dark */
 }
 
-.monthly-table td {
-  font-size: 16px;
+/* ✅ Month dropdown (MOBILE ONLY) */
+#mobile-month-select{
+  display:none !important;
+  margin:12px auto 0;
+  width:min(520px,96%);
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+  text-align:center;
+  cursor:pointer;
 }
 
-.monthly-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+/* ✅ FIX #1: Make the opened month list readable on mobile
+   Many browsers style <option> separately — we style it too.
+*/
+#mobile-month-select option{
+  background-color:#0b1220;  /* dark */
+  color:#e5e7eb;             /* light text */
 }
 
-.monthly-table tbody tr:hover {
-  background-color: #f1f1f1;
+#mobile-month-select optgroup{
+  background-color:#0b1220;
+  color:#e5e7eb;
 }
 
-/* Highlighted Yellow Cell */
-.monthly-table td[style*="background-color: yellow"] {
-  background-color: #ffeb3b !important;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Table Sorting Icon */
-.sortable:hover {
-  text-decoration: underline;
-}
-
-/* Last Updated Text */
-#last-update {
-  font-size: 14px;
-  margin-top: 10px;
-  color: #666;
-}
-
-/* --------------------------
-   Mobile Dropdown for Months
-   -------------------------- */
-
-
-/* By default, hide the dropdown */
-#mobile-month-select {
-  display: none !important; /* Forces it to be hidden */
-  margin: 10px auto;
-  font-size: 16px;
-  padding: 10px;
-  width: 90%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* Show dropdown only on smaller screens (mobile/tablet) */
-/* By default, hide the dropdown */
-#mobile-month-select {
-  display: none !important; /* Ensures it's hidden everywhere initially */
-  margin: 10px auto;
-  font-size: 16px;
-  padding: 10px;
-  width: 90%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* Show dropdown only on mobile when Monthly Totals tab is selected */
-/* By default, hide the dropdown */
-#mobile-month-select {
-  display: none !important; /* Ensures it's hidden everywhere initially */
-  margin: 10px auto;
-  font-size: 16px;
-  padding: 10px;
-  width: 90%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* ✅ Show dropdown only on mobile when Monthly Totals is active */
-@media (max-width: 768px) {
-  body.monthly-active #mobile-month-select {
-    display: block !important;
+@media (max-width:768px){
+  body.monthly-active #mobile-month-select{
+    display:block !important;
   }
 }
 
-
-
-
-/* Ensure dropdown is properly aligned */
-#mobile-month-select:focus {
-  outline: none;
-  border-color: #0044cc;
+/* responsive */
+@media (max-width:1024px){
+  #team-container{grid-template-columns:repeat(3,1fr);}
 }
 
-/* ------------ MEDIA QUERIES -------------- */
+@media (max-width:768px){
+  body{padding:14px;}
+  .container{padding:14px;}
+  #team-container{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .tab-btn{min-width:0;flex:1 1 160px;}
+}
 
-/* Medium devices (e.g., tablets): 768px and below */
-@media (max-width: 768px) {
-  #team-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+@media (max-width:480px){
+  .team h2{font-size:14px;}
+  .team ul li{font-size:12px;}
+  .monthly-table{display:none;}
+}
+
+/* spinner */
+#loading-spinner{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:50px;
+  height:50px;
+  z-index:1;
+}
+
+.spinner-container{position:relative;width:40px;height:40px;}
+
+.spinner{
+  position:absolute;
+  border:4px solid rgba(255,255,255,.10);
+  border-top:4px solid var(--accent);
+  border-radius:50%;
+  width:100%;
+  height:100%;
+  animation:spin 1.3s linear infinite;
+}
+
+.spinner-text{
+  position:absolute;
+  font-size:12px;
+  color:var(--text);
+  font-weight:900;
+  text-align:center;
+  width:100%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+}
+
+@keyframes spin{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+/* Mobile-only monthly leader color override */
+@media (max-width:768px){
+
+  .monthly-table-mobile tr[style*="background-color: yellow"],
+  .monthly-table-mobile td[style*="background-color: yellow"]{
+  
+    background: rgba(34,197,94,.25) !important;
+    color: #e5e7eb !important;
+    font-weight: 900 !important;
+  
   }
-
-  .team ul li {
-    font-size: 14px;
+  
   }
+  /* Player game status badge */
+.game-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  margin-left:8px;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 0 0 2px rgba(0,0,0,.15) inset;
 }
 
-/* Small devices (e.g., phones): 480px and below */
-@media (max-width: 480px) {
-  #team-container {
-    grid-template-columns: repeat(2, 1fr); /* Single column on very small screens */
-    margin-top: 5px; /* Reduced top margin */
-    padding-top: 1px; /* Reduced top padding */
-  }
+.game-badge.live{ background: rgba(34,197,94,.85); }     /* green */
+.game-badge.today{ background: rgba(59,130,246,.85); }   /* blue */
+.game-badge.off{ background: rgba(148,163,184,.55); }    /* gray */
 
-  /* Hide the big monthly table on phones */
-  .monthly-table {
-    display: none;
-  }
-
-  #mobile-month-select {
-    display: none; /* Hide by default */
-  }
-
-  /* Ensure the selected month’s mini-table is visible */
-  /* ✅ Polished Mobile Monthly Table Style */
-.monthly-table-mobile {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  table-layout: fixed;
+.game-badge[title]{ cursor: help; }
+/* Fireworks HR badge (replaces 💥) */
+.hr-firework-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-left:8px;
+  padding:2px 8px;
+  border-radius:999px;
+  border:1px solid rgba(239,68,68,.35);
+  background: rgba(239,68,68,.10);
+  color:#fecaca;
+  font-weight:900;
+  font-size:11px;
+  line-height:1;
 }
 
-.monthly-table-mobile th {
-  background: #0044cc;
-  color: white;
-  padding: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.monthly-table-mobile td {
-  padding: 12px 8px;
-  font-size: 14px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.monthly-table-mobile tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.monthly-table-mobile tr:hover {
-  background-color: #ffcc00;
-  color: black;
-  transition: 0.3s;
-}
-
-/* 🔶 Keep top row highlight style */
-.monthly-table-mobile td[style*="background-color: yellow"] {
-  background-color: #ffeb3b !important;
-  font-weight: bold;
-  color: #333;
-}
-
-  }
-
-  /* Adjust team name font size */
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  /* Adjust font size for list items under teams */
-  .team ul li {
-    font-size: 12px;
-  }
-
-  /* Reduce the size of the team name and rank */
-  .team h2 {
-    font-size: 14px; /* Smaller team name font size */
-  }
-
-  .team-rank {
-    font-size: 16px; /* Smaller rank font size */
-  }
-}
-
-
-/* CSS Spinner */
-#loading-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-}
-
-/* Ensure the feed container has relative positioning */
-#feed-container {
-  position: relative;
-}
-
-/* CSS Spinner - Centered inside the Feed Container */
-#loading-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  z-index: 1;
-}
-
-/* Spinner container - it will hold both spinner and percentage text */
-.spinner-container {
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-
-/* Spinner animation */
-.spinner {
-  position: absolute;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db; /* Blue color */
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  animation: spin 2s linear infinite;
-}
-
-/* Percentage text inside the spinner - stays upright */
-.spinner-text {
-  position: absolute;
-  font-size: 12px;
-  color: black; /* Black color */
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
-  z-index: 2; /* Ensure it's above the spinner */
-}
-
-/* Spin animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Optional Fade-In Effect */
-#loading-spinner {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.feed-table td:nth-child(2) {
-  font-weight: bold;
-}
-
-.feed-table td:nth-child(3) {
-  color: #333;
-  font-size: 14px;
-}
-
-@media (max-width: 768px) {
-  .feed-table td,
-  .feed-table th {
-    font-size: 12px;
-    padding: 8px;
-  }
-
-  .feed-table td:nth-child(2) {
-    font-weight: bold;
-  }
-
-  #feed-container .feed-table tr {
-    display: grid;
-    grid-template-columns: 25% 25% 30% 20%;
-    text-align: center;
-  }
-  #feed-container .feed-table td {
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-}
-}
-.ev {
-  font-size: 12px;
-  color: #555;
-}
-
-/* ---------------------
-   Mobile-specific fixes
----------------------- */
-@media (max-width: 768px) {
-
-  /* 🛠 Fix Winnings Table Layout + Overflow */
-  #winnings-container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .feed-table {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    table-layout: fixed;
-    border-spacing: 0;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-
-  .feed-table th,
-  .feed-table td {
-    padding: 10px 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* Remove any horizontal scroll for body */
-  body {
-    overflow-x: hidden;
-  }
-
-  /* 🛠 Fix Tab Layout: 2 per row */
-  .tabs {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-items: center;
-    padding: 0 10px;
-  }
-
-  .tabs button {
-    width: 100%;
-    text-align: center;
-  }
-  #feed-container .feed-table td:nth-child(3) {
-    color: #333;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  /* Keep launch speed smaller */
-  .ev {
-    font-size: 12px;
-    color: #555;
-  }
-}
-.feed-table {
-  border-radius: 0 !important; /* Mobile: remove rounded corners */
-  box-shadow: none !important; /* Remove drop shadow on mobile */
+.hr-firework-video{
+  width:18px;
+  height:18px;
+  object-fit:cover;
+  border-radius:6px;
+  display:block;
 }
