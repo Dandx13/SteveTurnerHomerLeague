@@ -709,20 +709,27 @@ body.teamstats-active #teamstats-tab{
   align-items:center;
 }
 .ts-avatar{
-  width:34px;
-  height:34px;
-  border-radius:12px;
+  width:42px;
+  height:42px;
+  border-radius:999px;
   background:rgba(34,197,94,.12);
-  border:1px solid rgba(34,197,94,.20);
+  border:1px solid rgba(255,255,255,.12);
   display:flex;
   align-items:center;
   justify-content:center;
   font-weight:900;
   color: rgba(231,238,252,.95);
   flex:0 0 auto;
+  overflow:hidden;
+}
+.ts-headshot{
+  object-fit:cover;
+  background:rgba(255,255,255,.03);
+}
+.ts-avatar-fallback{
+  font-size:13px;
 }
 .ts-name{ font-weight:900; }
-.ts-meta2{ font-size:12px; color: rgba(148,163,184,1); font-weight:700; }
 
 .ts-spark{
   height:10px;

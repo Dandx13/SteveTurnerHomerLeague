@@ -661,7 +661,7 @@ async function fetchTodaysHomeRunCounts() {
 function formatHRTodayBadge(count) {
   if (!count || count <= 0) return "";
   const mult = count >= 2 ? `<span class="hr-firework-mult">${count}×</span>` : "";
-  return `<span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today"><span class="hr-firework-emoji">🚀</span>${mult}</span>`;
+  return `<span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today"><span class="hr-firework-emoji">💥</span>${mult}</span>`;
 }
 
 // --- Season Totals Functions (Homepage) ---
@@ -1701,6 +1701,13 @@ function initTeamStatsUI() {
   });
   teamStatsUIInitialized = true;
 }
+
+function tsHeadshotUrl(playerId) {
+  return playerId
+    ? `https://midfield.mlbstatic.com/v1/people/${playerId}/headshot/120x120.jpg`
+    : '';
+}
+
 function tsInitials(name) {
   const parts = String(name || "").replace(".", "").split(" ").filter(Boolean);
   const a = parts[0]?.[0] || "P";
@@ -1853,10 +1860,10 @@ function renderTeamStats() {
       <tr>
         <td>
           <div class="ts-player">
-            <div class="ts-avatar">${tsInitials(r.name)}</div>
+            <img class="ts-avatar ts-headshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="ts-avatar ts-avatar-fallback" style="display:none;">${tsInitials(r.name)}</div>
             <div>
               <div class="ts-name">${r.name}</div>
-              <div class="ts-meta2">MLBAM: ${r.playerId || "—"}</div>
             </div>
           </div>
         </td>
