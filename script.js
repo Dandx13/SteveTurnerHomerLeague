@@ -288,6 +288,8 @@ let playerMonthlyStats = {};
 // =========================
 const CURRENT_SEASON = 2025;
 const playerSeasonStats = {};
+let hrEventDataByPlayer = {};
+let hrEventDataLoadPromise = null;
 const IL_CACHE_KEY = "dl_il_status_cache_v2";
 const IL_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 let playerILByPlayerId = new Map();
@@ -1785,6 +1787,66 @@ function tsHrPace(r) {
   return r.hr + projectedAdditionalHr;
 }
 
+
+async function ensureHrEventDataLoaded() {
+  if (Object.keys(hrEventDataByPlayer).length > 0) return;
+  if (hrEventDataLoadPromise) {
+    await hrEventDataLoadPromise;
+    return;
+  }
+
+  hrEventDataLoadPromise = (async () => {
+    try {
+      const response = await fetch(`data/hr-events-${CURRENT_SEASON}.json`, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load hr-events JSON: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const events = Array.isArray(data?.events) ? data.events : [];
+      const byPlayer = {};
+
+      for (const ev of events) {
+        const playerId = Number(ev?.playerId);
+        if (!Number.isFinite(playerId)) continue;
+
+        if (!byPlayer[playerId]) {
+          byPlayer[playerId] = {
+            maxEV: null,
+            longestHR: null
+          };
+        }
+
+        const launchSpeed = Number(ev?.launchSpeed);
+        const distance = Number(ev?.distance);
+
+        if (Number.isFinite(launchSpeed)) {
+          byPlayer[playerId].maxEV =
+            byPlayer[playerId].maxEV === null
+              ? launchSpeed
+              : Math.max(byPlayer[playerId].maxEV, launchSpeed);
+        }
+
+        if (Number.isFinite(distance)) {
+          byPlayer[playerId].longestHR =
+            byPlayer[playerId].longestHR === null
+              ? distance
+              : Math.max(byPlayer[playerId].longestHR, distance);
+        }
+      }
+
+      hrEventDataByPlayer = byPlayer;
+    } catch (error) {
+      console.error("Error loading HR event data:", error);
+      hrEventDataByPlayer = {};
+    } finally {
+      hrEventDataLoadPromise = null;
+    }
+  })();
+
+  await hrEventDataLoadPromise;
+}
+
 function tsOrdinal(n) {
   const mod10 = n % 10;
   const mod100 = n % 100;
@@ -1855,6 +1917,7 @@ function renderTeamStats() {
   let rows = team.players.map(p => {
     const playerId = p.id || p.playerId || null;
     const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
+    const hrx = playerId ? (hrEventDataByPlayer[playerId] || {}) : {};
     return {
       name: p.name,
       playerId,
@@ -1866,7 +1929,9 @@ function renderTeamStats() {
       slg: Number(s.slg || 0),
       ops: Number(s.ops || 0),
       gamesPlayed: Number(s.gamesPlayed || 0),
-      atBats: Number(s.atBats || 0)
+      atBats: Number(s.atBats || 0),
+      longestHR: Number.isFinite(hrx.longestHR) ? hrx.longestHR : null,
+      maxEV: Number.isFinite(hrx.maxEV) ? hrx.maxEV : null
     };
   });
   if (q) rows = rows.filter(r => r.name.toLowerCase().includes(q));
@@ -1931,8 +1996,10 @@ function renderTeamStats() {
         <td>${tsFmt3(r.obp)}</td>
         <td>${tsFmt3(r.slg)}</td>
         <td style="font-weight:900;">${tsFmt3(r.ops)}</td>
-        <td>${abPerHr ? tsFmt1(abPerHr) : "—"}</td>
-        <td>${hrPace ? tsFmt1(hrPace) : "—"}</td>
+        <td>${r.longestHR !== null ? `${tsFmtInt(r.longestHR)} ft` : "—"}</td>
+        <td>${r.maxEV !== null ? `${tsFmt1(r.maxEV)} MPH` : "—"}</td>
+        <td>${abPerHr !== null ? tsFmt1(abPerHr) : "—"}</td>
+        <td>${hrPace !== null ? tsFmt1(hrPace) : "—"}</td>
       </tr>`;
   }).join("");
 
@@ -1943,12 +2010,29 @@ function renderTeamStats() {
   const opsLeader = maxBy(rows, r => r.ops);
   const abhrLeaderPool = rows.filter(r => tsAbPerHr(r) !== null);
   const paceLeaderPool = rows.filter(r => tsHrPace(r) !== null);
+  const longestLeaderPool = rows.filter(r => r.longestHR !== null);
+  const maxEVLeaderPool = rows.filter(r => r.maxEV !== null);
   const abhrLeader = abhrLeaderPool.length ? abhrLeaderPool.reduce((best, cur) => tsAbPerHr(cur) < tsAbPerHr(best) ? cur : best, abhrLeaderPool[0]) : null;
   const paceLeader = paceLeaderPool.length ? maxBy(paceLeaderPool, r => tsHrPace(r)) : null;
-  const line = (title, r, value) => r ? `<div class="ts-leaderItem"><div class="left"><div style="font-weight:900;">${title}</div><div class="ts-small">${r.name}</div></div><div class="right">${value}</div></div>` : '';
+  const longestLeader = longestLeaderPool.length ? maxBy(longestLeaderPool, r => r.longestHR) : null;
+  const maxEVLeader = maxEVLeaderPool.length ? maxBy(maxEVLeaderPool, r => r.maxEV) : null;
+  const line = (title, r, value) => r ? `
+    <div class="ts-leaderItem">
+      <div class="ts-leaderLeft">
+        <img class="ts-leaderHeadshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="ts-leaderHeadshot ts-leaderHeadshotFallback" style="display:none;">${tsInitials(r.name)}</div>
+        <div class="left">
+          <div class="ts-leaderTitle">${title}</div>
+          <div class="ts-small">${r.name}</div>
+        </div>
+      </div>
+      <div class="right">${value}</div>
+    </div>` : '';
   leadersBox.innerHTML = [
     line('HR Leader', hrLeader, `${hrLeader.hr}`),
     line('OPS Leader', opsLeader, opsLeader.ops ? opsLeader.ops.toFixed(3) : '—'),
+    line('Longest HR', longestLeader, longestLeader ? `${tsFmtInt(longestLeader.longestHR)} ft` : '—'),
+    line('Max EV', maxEVLeader, maxEVLeader ? `${tsFmt1(maxEVLeader.maxEV)} MPH` : '—'),
     line('Best AB/HR', abhrLeader, abhrLeader && tsAbPerHr(abhrLeader) ? tsAbPerHr(abhrLeader).toFixed(1) : '—'),
     line('HR Pace Leader', paceLeader, paceLeader && tsHrPace(paceLeader) ? tsHrPace(paceLeader).toFixed(1) : '—')
   ].join('');
@@ -1969,6 +2053,7 @@ document.getElementById("teamstats-tab")?.addEventListener("click", async () => 
   }
   await ensurePlayerTeamIdsLoaded();
   await ensureTeamGamesPlayedLoaded();
+  await ensureHrEventDataLoaded();
   initTeamStatsUI();
   renderTeamStats();
 });
