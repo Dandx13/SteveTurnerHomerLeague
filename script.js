@@ -1813,7 +1813,13 @@ async function ensureHrEventDataLoaded() {
         if (!byPlayer[playerId]) {
           byPlayer[playerId] = {
             maxEV: null,
-            longestHR: null
+            longestHR: null,
+            avgEV: null,
+            avgDistance: null,
+            _evTotal: 0,
+            _evCount: 0,
+            _distTotal: 0,
+            _distCount: 0
           };
         }
 
@@ -1825,6 +1831,8 @@ async function ensureHrEventDataLoaded() {
             byPlayer[playerId].maxEV === null
               ? launchSpeed
               : Math.max(byPlayer[playerId].maxEV, launchSpeed);
+          byPlayer[playerId]._evTotal += launchSpeed;
+          byPlayer[playerId]._evCount += 1;
         }
 
         if (Number.isFinite(distance)) {
@@ -1832,8 +1840,19 @@ async function ensureHrEventDataLoaded() {
             byPlayer[playerId].longestHR === null
               ? distance
               : Math.max(byPlayer[playerId].longestHR, distance);
+          byPlayer[playerId]._distTotal += distance;
+          byPlayer[playerId]._distCount += 1;
         }
       }
+
+      Object.values(byPlayer).forEach(stats => {
+        stats.avgEV = stats._evCount ? (stats._evTotal / stats._evCount) : null;
+        stats.avgDistance = stats._distCount ? (stats._distTotal / stats._distCount) : null;
+        delete stats._evTotal;
+        delete stats._evCount;
+        delete stats._distTotal;
+        delete stats._distCount;
+      });
 
       hrEventDataByPlayer = byPlayer;
     } catch (error) {
@@ -1855,16 +1874,54 @@ function tsOrdinal(n) {
   if (mod10 === 3 && mod100 !== 13) return `${n}rd`;
   return `${n}th`;
 }
+function tsCurrentPlaceLabel(teamName) {
+  let teamsWithTotals = fantasyTeams.slice().map(team => ({
+    ...team,
+    top4: topFourTotal(team)
+  }));
+
+  teamsWithTotals.sort((a, b) => b.top4 - a.top4);
+
+  let currentRank = 1;
+  let i = 0;
+
+  while (i < teamsWithTotals.length) {
+    const currentTeam = teamsWithTotals[i];
+    const tiedTeams = [currentTeam];
+    let j = i + 1;
+
+    while (j < teamsWithTotals.length && teamsWithTotals[j].top4 === currentTeam.top4) {
+      tiedTeams.push(teamsWithTotals[j]);
+      j++;
+    }
+
+    const suffix = getRankSuffix(currentRank);
+    const label = tiedTeams.length > 1 ? `T-${currentRank}${suffix}` : `${currentRank}${suffix}`;
+
+    if (tiedTeams.some(t => t.name === teamName)) {
+      return label;
+    }
+
+    currentRank += tiedTeams.length;
+    i = j;
+  }
+
+  return '—';
+}
+
 function tsLeagueRankText(metricKey, teamValue) {
   const summaries = fantasyTeams.map(team => {
     const roster = team.players.map(p => {
       const playerId = p.id || p.playerId || null;
       const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
+      const hrx = playerId ? (hrEventDataByPlayer[playerId] || {}) : {};
       return {
         hr: Number(s.homeRuns || 0),
         rbi: Number(s.rbi || 0),
         avg: Number(s.avg || 0),
-        ops: Number(s.ops || 0)
+        ops: Number(s.ops || 0),
+        avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
+        avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null
       };
     });
     const teamHR = roster.reduce((sum, r) => sum + r.hr, 0);
@@ -1872,7 +1929,9 @@ function tsLeagueRankText(metricKey, teamValue) {
     const teamRbi = roster.reduce((sum, r) => sum + r.rbi, 0);
     const avgOps = tsAvg(roster.map(r => r.ops));
     const avgAvg = tsAvg(roster.map(r => r.avg));
-    return { teamHR, top4, teamRbi, avgOps, avgAvg };
+    const avgTeamEV = tsAvg(roster.map(r => r.avgEV));
+    const avgTeamDistance = tsAvg(roster.map(r => r.avgDistance));
+    return { teamHR, top4, teamRbi, avgOps, avgAvg, avgTeamEV, avgTeamDistance };
   });
 
   const valueMap = {
@@ -1880,7 +1939,9 @@ function tsLeagueRankText(metricKey, teamValue) {
     top4: 'top4',
     teamRbi: 'teamRbi',
     avgOps: 'avgOps',
-    avgAvg: 'avgAvg'
+    avgAvg: 'avgAvg',
+    avgTeamEV: 'avgTeamEV',
+    avgTeamDistance: 'avgTeamDistance'
   };
   const key = valueMap[metricKey];
   const values = summaries.map(x => Number(x[key] || 0));
@@ -1930,6 +1991,8 @@ function renderTeamStats() {
       ops: Number(s.ops || 0),
       gamesPlayed: Number(s.gamesPlayed || 0),
       atBats: Number(s.atBats || 0),
+      avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null,
+      avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
       longestHR: Number.isFinite(hrx.longestHR) ? hrx.longestHR : null,
       maxEV: Number.isFinite(hrx.maxEV) ? hrx.maxEV : null
     };
@@ -1956,18 +2019,19 @@ function renderTeamStats() {
   const teamRbi = rows.reduce((s,r)=>s+r.rbi,0);
   const avgOps = tsAvg(rows.map(r=>r.ops));
   const avgAvg = tsAvg(rows.map(r=>r.avg));
+  const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
+  const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
 
+  document.getElementById("ts-kpi-place").textContent = tsCurrentPlaceLabel(team.name);
   document.getElementById("ts-kpi-team-hr").textContent = teamHR;
   document.getElementById("ts-kpi-top4-hr").textContent = top4;
-  document.getElementById("ts-kpi-rbi").textContent = teamRbi;
-  document.getElementById("ts-kpi-ops").textContent = avgOps ? avgOps.toFixed(3) : "—";
-  document.getElementById("ts-kpi-avg").textContent = avgAvg ? avgAvg.toFixed(3) : "—";
+  document.getElementById("ts-kpi-avg-ev").textContent = avgTeamEV !== null ? `${avgTeamEV.toFixed(1)} MPH` : "—";
+  document.getElementById("ts-kpi-avg-dist").textContent = avgTeamDistance !== null ? `${Math.round(avgTeamDistance)} ft` : "—";
 
   document.getElementById("ts-kpi-team-hr-rank").textContent = tsLeagueRankText("teamHR", teamHR);
   document.getElementById("ts-kpi-top4-hr-rank").textContent = tsLeagueRankText("top4", top4);
-  document.getElementById("ts-kpi-rbi-rank").textContent = tsLeagueRankText("teamRbi", teamRbi);
-  document.getElementById("ts-kpi-ops-rank").textContent = tsLeagueRankText("avgOps", avgOps);
-  document.getElementById("ts-kpi-avg-rank").textContent = tsLeagueRankText("avgAvg", avgAvg);
+  document.getElementById("ts-kpi-avg-ev-rank").textContent = avgTeamEV !== null ? tsLeagueRankText("avgTeamEV", avgTeamEV) : "—";
+  document.getElementById("ts-kpi-avg-dist-rank").textContent = avgTeamDistance !== null ? tsLeagueRankText("avgTeamDistance", avgTeamDistance) : "—";
 
   document.getElementById("ts-player-count").textContent = rows.length;
   updateTeamStatsSortHeaders();
@@ -1996,6 +2060,8 @@ function renderTeamStats() {
         <td>${tsFmt3(r.obp)}</td>
         <td>${tsFmt3(r.slg)}</td>
         <td style="font-weight:900;">${tsFmt3(r.ops)}</td>
+        <td>${r.avgDistance !== null ? `${tsFmtInt(Math.round(r.avgDistance))} ft` : "—"}</td>
+        <td>${r.avgEV !== null ? `${tsFmt1(r.avgEV)} MPH` : "—"}</td>
         <td>${r.longestHR !== null ? `${tsFmtInt(r.longestHR)} ft` : "—"}</td>
         <td>${r.maxEV !== null ? `${tsFmt1(r.maxEV)} MPH` : "—"}</td>
         <td>${abPerHr !== null ? tsFmt1(abPerHr) : "—"}</td>
@@ -2023,7 +2089,7 @@ function renderTeamStats() {
         <div class="ts-leaderHeadshot ts-leaderHeadshotFallback" style="display:none;">${tsInitials(r.name)}</div>
         <div class="left">
           <div class="ts-leaderTitle">${title}</div>
-          <div class="ts-small">${r.name}</div>
+          <div class="ts-small ts-leaderName">${r.name}</div>
         </div>
       </div>
       <div class="right">${value}</div>

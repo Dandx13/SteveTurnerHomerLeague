@@ -63,7 +63,12 @@
 
           <div class="ts-kpis">
             <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Team HR</div>
+              <div class="ts-kpi-lbl">Current Place</div>
+              <div class="ts-kpi-val" id="ts-kpi-place">—</div>
+              <div class="ts-kpi-sub">League Standing</div>
+            </div>
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">Total Team HR</div>
               <div class="ts-kpi-val" id="ts-kpi-team-hr">—</div>
               <div class="ts-kpi-sub" id="ts-kpi-team-hr-rank">—</div>
             </div>
@@ -73,19 +78,14 @@
               <div class="ts-kpi-sub" id="ts-kpi-top4-hr-rank">—</div>
             </div>
             <div class="ts-kpi">
-              <div class="ts-kpi-lbl">OPS</div>
-              <div class="ts-kpi-val" id="ts-kpi-ops">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-ops-rank">—</div>
+              <div class="ts-kpi-lbl">Avg EV</div>
+              <div class="ts-kpi-val" id="ts-kpi-avg-ev">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-avg-ev-rank">—</div>
             </div>
             <div class="ts-kpi">
-              <div class="ts-kpi-lbl">AVG</div>
-              <div class="ts-kpi-val" id="ts-kpi-avg">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-avg-rank">—</div>
-            </div>
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">RBI</div>
-              <div class="ts-kpi-val" id="ts-kpi-rbi">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-rbi-rank">—</div>
+              <div class="ts-kpi-lbl">Avg Distance</div>
+              <div class="ts-kpi-val" id="ts-kpi-avg-dist">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-avg-dist-rank">—</div>
             </div>
           </div>
 
@@ -110,6 +110,8 @@
                       <th class="ts-sortable" data-sort="obp">OBP</th>
                       <th class="ts-sortable" data-sort="slg">SLG</th>
                       <th class="ts-sortable" data-sort="ops">OPS</th>
+                      <th class="ts-sortable" data-sort="avgDistance">Avg Dist</th>
+                      <th class="ts-sortable" data-sort="avgEV">Avg EV</th>
                       <th class="ts-sortable" data-sort="longestHR">Longest HR</th>
                       <th class="ts-sortable" data-sort="maxEV">Max EV</th>
                       <th class="ts-sortable" data-sort="abPerHr">AB/HR</th>

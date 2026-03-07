@@ -608,6 +608,7 @@ body.teamstats-active #teamstats-tab{
   margin-top:6px;
   font-size:22px;
   font-weight:900;
+  line-height:1.15;
 }
 .ts-kpi-sub{
   margin-top:2px;
@@ -662,7 +663,7 @@ body.teamstats-active #teamstats-tab{
 .ts-table{
   width:100%;
   border-collapse:collapse;
-  min-width: 1040px; /* horizontal scroll on mobile */
+  min-width: 1260px; /* horizontal scroll on mobile */
 }
 .ts-table th,
 .ts-table td{
@@ -786,6 +787,7 @@ body.teamstats-active #teamstats-tab{
 .ts-leaderName{
   text-align:left;
 }
+
 .ts-leaderHeadshot{
   width:46px;
   height:46px;
