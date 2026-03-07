@@ -661,7 +661,7 @@ async function fetchTodaysHomeRunCounts() {
 function formatHRTodayBadge(count) {
   if (!count || count <= 0) return "";
   const mult = count >= 2 ? `<span class="hr-firework-mult">${count}×</span>` : "";
-  return `<span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today"><span class="hr-firework-emoji">💥</span>${mult}</span>`;
+  return `<span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today"><span class="hr-firework-emoji">🚀</span>${mult}</span>`;
 }
 
 // --- Season Totals Functions (Homepage) ---
