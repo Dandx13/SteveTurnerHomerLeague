@@ -19,7 +19,7 @@
     <header class="topbar">
       <div class="title-area">
         <h1 class="site-title">Steve Turner Memorial Dinger League</h1>
-        <div class="site-subtitle">2026 Season Leaderboard</div>
+        <div class="site-subtitle">2025 Season Leaderboard</div>
       </div>
 
       <nav class="tabs-bar" aria-label="Page navigation">
@@ -27,6 +27,7 @@
           <button id="season-tab" class="tab-btn" type="button">Leaderboard</button>
           <button id="monthly-tab" class="tab-btn" type="button">Monthly Totals</button>
           <button id="feed-tab" class="tab-btn" type="button">Live Feed</button>
+          <button id="teamstats-tab" class="tab-btn" type="button">Team Stats</button>
           <button id="winnings-tab" class="tab-btn" type="button">Winnings</button>
         </div>
       </nav>
@@ -35,6 +36,103 @@
     <div id="loading-indicator" class="loading"></div>
 
     <div id="team-container"></div>
+
+
+    <!-- Team Stats -->
+    <div id="team-stats-container" style="display:none;">
+      <div class="ts-card">
+        <div class="ts-hd">
+          <div class="ts-title">
+            <h2>Team Stats</h2>
+            <p>Season stats (2025 MLB API). Statcast metrics can slot in later.</p>
+          </div>
+
+          <div class="ts-controls">
+            <select id="ts-team-select" aria-label="Team dropdown"></select>
+            <input id="ts-search" type="text" placeholder="Search players…" aria-label="Search players">
+          </div>
+        </div>
+
+        <div class="ts-body">
+          <div class="ts-meta">
+            <div class="ts-pill"><span class="ts-dot ts-good"></span><span id="ts-selected-team">—</span></div>
+            <div class="ts-small" id="ts-updated">Updated: —</div>
+          </div>
+
+          <div class="ts-divider"></div>
+
+          <div class="ts-kpis">
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">Team HR</div>
+              <div class="ts-kpi-val" id="ts-kpi-team-hr">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-team-hr-rank">—</div>
+            </div>
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">Top 4 HR</div>
+              <div class="ts-kpi-val" id="ts-kpi-top4-hr">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-top4-hr-rank">—</div>
+            </div>
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">OPS</div>
+              <div class="ts-kpi-val" id="ts-kpi-ops">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-ops-rank">—</div>
+            </div>
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">AVG</div>
+              <div class="ts-kpi-val" id="ts-kpi-avg">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-avg-rank">—</div>
+            </div>
+            <div class="ts-kpi">
+              <div class="ts-kpi-lbl">RBI</div>
+              <div class="ts-kpi-val" id="ts-kpi-rbi">—</div>
+              <div class="ts-kpi-sub" id="ts-kpi-rbi-rank">—</div>
+            </div>
+          </div>
+
+          <div class="ts-split">
+            <div class="ts-section">
+              <div class="ts-shd">
+                <h3>Players</h3>
+                <div class="ts-small"><span id="ts-player-count">—</span> shown</div>
+              </div>
+
+              <div class="ts-tblwrap">
+                <table class="ts-table">
+                  <thead>
+                    <tr>
+                      <th class="ts-sortable active desc" data-sort="name" style="min-width:220px;">Player</th>
+                      <th class="ts-sortable" data-sort="gamesPlayed">G</th>
+                      <th class="ts-sortable" data-sort="atBats">AB</th>
+                      <th class="ts-sortable" data-sort="hr">HR</th>
+                      <th class="ts-sortable" data-sort="rbi">RBI</th>
+                      <th class="ts-sortable" data-sort="runs">R</th>
+                      <th class="ts-sortable" data-sort="avg">AVG</th>
+                      <th class="ts-sortable" data-sort="obp">OBP</th>
+                      <th class="ts-sortable" data-sort="slg">SLG</th>
+                      <th class="ts-sortable" data-sort="ops">OPS</th>
+                      <th class="ts-sortable" data-sort="abPerHr">AB/HR</th>
+                      <th class="ts-sortable" data-sort="hrPace">HR Pace</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ts-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="ts-section">
+              <div class="ts-shd">
+                <h3>Team Leaders</h3>
+                <div class="ts-tag">Quick glance</div>
+              </div>
+              <div class="ts-leader" id="ts-leaders"></div>
+              <div class="ts-small" style="padding:0 12px 12px;">
+                Click any column header to sort descending, then click again for ascending.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Mobile month dropdown (mobile only; CSS will force-hide on desktop) -->
     <select id="mobile-month-select">
@@ -67,10 +165,7 @@
 
       <p id="last-update"></p>
     </div>
-
-    <script src="script.js"></script>
-
-    <div id="winnings-container" style="display:none;">
+<div id="winnings-container" style="display:none;">
       <h2>Winnings</h2>
 
       <table class="feed-table">
@@ -86,7 +181,6 @@
     </div>
 
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>

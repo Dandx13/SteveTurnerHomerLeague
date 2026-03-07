@@ -283,8 +283,21 @@ let playerHomeRuns = {};
 // Object to store monthly home run data (season 2024) by player
 let playerMonthlyStats = {};
 
+// =========================
+// Season & Team Stats caches
+// =========================
+const CURRENT_SEASON = 2025;
+const playerSeasonStats = {};
+const IL_CACHE_KEY = "dl_il_status_cache_v2";
+const IL_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+let playerILByPlayerId = new Map();
+let lineupKnownByTeamId = new Map();
+let currentLineupByPlayerId = new Map();
+let appearedTodayByPlayerId = new Map();
+let teamGamePkByTeamId = new Map();
+
 // --- NEW: game status + caching (optimized) ---
-const TEAM_CACHE_KEY = "dl_playerTeamCache_v1";
+const TEAM_CACHE_KEY = "dl_playerTeamCache_v2";
 const TEAM_CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 const TEAM_FETCH_CONCURRENCY = 10;
 
@@ -298,23 +311,106 @@ let todaysTeamStatusByTeamId = new Map();
 let todaysGamePks = new Set();          // gamePk set for S/R games in our schedule fetch
 let playerHRTodayCount = new Map();     // batterId -> HR count across todaysGamePks
 
-// Icons requested:
-// - plays today: baseball
-// - currently playing: green dot
-// - not playing today: sleepy
-// - game complete: red dot
-function statusToIcon(status) {
-  if (status === "live") return "🟢";
-  if (status === "final") return "🔴";
-  if (status === "today") return "⚾";
-  return "💤";
+function loadILCacheFromStorage() {
+  const raw = localStorage.getItem(IL_CACHE_KEY);
+  const parsed = safeJsonParse(raw);
+  if (!parsed || !parsed.ts || !parsed.map) return null;
+  if ((Date.now() - parsed.ts) > IL_CACHE_TTL_MS) return null;
+  return parsed.map;
 }
-
-function statusToTitle(status) {
-  if (status === "live") return "Currently playing";
-  if (status === "final") return "Game complete";
-  if (status === "today") return "Plays today";
-  return "No game today";
+function saveILCacheToStorage(mapObj) {
+  localStorage.setItem(IL_CACHE_KEY, JSON.stringify({ ts: Date.now(), map: mapObj }));
+}
+function txDateValue(t) {
+  return new Date(t?.date || t?.effectiveDate || t?.resolutionDate || 0).getTime() || 0;
+}
+function evaluateTransactionsForIL(transactions) {
+  const tx = Array.isArray(transactions) ? [...transactions] : [];
+  tx.sort((a,b) => txDateValue(b) - txDateValue(a));
+  for (const t of tx) {
+    const desc = (t?.description || '').toLowerCase();
+    const typeDesc = (t?.typeDesc || '').toLowerCase();
+    const activated = desc.includes('activated from injured list') || desc.includes('returned from injured list') || desc.includes('reinstated from injured list') || desc.includes('activated') || typeDesc.includes('activated');
+    if (activated) return false;
+    const placedIL = (desc.includes('placed on') && desc.includes('injured list')) || desc.includes('transferred to the 60-day injured list') || desc.includes('10-day injured list') || desc.includes('15-day injured list') || desc.includes('60-day injured list') || typeDesc.includes('injured');
+    if (placedIL) return true;
+  }
+  return false;
+}
+async function fetchPlayerILStatus(playerId) {
+  try {
+    const resp = await fetch(`https://statsapi.mlb.com/api/v1/transactions?playerId=${playerId}`);
+    if (!resp.ok) return false;
+    const data = await resp.json();
+    return evaluateTransactionsForIL(data?.transactions || []);
+  } catch (e) {
+    console.warn('IL fetch failed for', playerId, e);
+    return false;
+  }
+}
+async function ensurePlayerILStatusesLoaded() {
+  const ids = getAllUniquePlayerIds();
+  const cached = loadILCacheFromStorage() || {};
+  playerILByPlayerId = new Map();
+  ids.forEach(pid => {
+    if (Object.prototype.hasOwnProperty.call(cached, String(pid))) {
+      playerILByPlayerId.set(pid, !!cached[String(pid)]);
+    }
+  });
+  const missing = ids.filter(pid => !playerILByPlayerId.has(pid));
+  if (missing.length) {
+    await asyncPool(TEAM_FETCH_CONCURRENCY, missing, async (pid) => {
+      const isIL = await fetchPlayerILStatus(pid);
+      playerILByPlayerId.set(pid, !!isIL);
+      cached[String(pid)] = !!isIL;
+    });
+    saveILCacheToStorage(cached);
+  }
+}
+function hasAnyPositiveStat(obj) {
+  if (!obj || typeof obj !== 'object') return false;
+  return Object.values(obj).some(v => {
+    const n = Number(v);
+    return Number.isFinite(n) && n > 0;
+  });
+}
+function getPlayerDisplayState(playerId) {
+  if (playerILByPlayerId.get(playerId)) {
+    return { key: 'il', html: '<span class="player-status-il" title="On Injured List" aria-label="On Injured List">IL</span>' };
+  }
+  const teamId = playerTeamIdByPlayerId.get(playerId);
+  if (!teamId) {
+    return { key: 'sleep', html: '<span class="player-status-wrap" title="No game today" aria-label="No game today"><span class="player-status-sleep">💤</span></span>' };
+  }
+  const status = todaysTeamStatusByTeamId.get(teamId) || 'off';
+  const lineupKnown = !!lineupKnownByTeamId.get(teamId);
+  const inCurrentLineup = !!currentLineupByPlayerId.get(playerId);
+  const appeared = !!appearedTodayByPlayerId.get(playerId);
+  if (status === 'off') {
+    return { key: 'sleep', html: '<span class="player-status-wrap" title="No game today" aria-label="No game today"><span class="player-status-sleep">💤</span></span>' };
+  }
+  if (status === 'today') {
+    if (!lineupKnown || inCurrentLineup) {
+      return { key: 'ball', html: '<span class="player-status-wrap" title="Starting / waiting on lineup" aria-label="Starting / waiting on lineup"><span class="player-status-ball">⚾</span></span>' };
+    }
+    return { key: 'sleep', html: '<span class="player-status-wrap" title="Not in today\'s starting lineup" aria-label="Not in today\'s starting lineup"><span class="player-status-sleep">💤</span></span>' };
+  }
+  if (status === 'live') {
+    if (inCurrentLineup) {
+      return { key: 'live', html: '<span class="player-status-wrap" title="Currently in the game" aria-label="Currently in the game"><span class="player-status-dot live"></span></span>' };
+    }
+    if (appeared) {
+      return { key: 'out', html: '<span class="player-status-wrap" title="Played today, now out of the game" aria-label="Played today, now out of the game"><span class="player-status-dot out"></span></span>' };
+    }
+    return { key: 'sleep', html: '<span class="player-status-wrap" title="Bench / has not appeared" aria-label="Bench / has not appeared"><span class="player-status-sleep">💤</span></span>' };
+  }
+  if (status === 'final') {
+    if (appeared) {
+      return { key: 'out', html: '<span class="player-status-wrap" title="Played today" aria-label="Played today"><span class="player-status-dot out"></span></span>' };
+    }
+    return { key: 'sleep', html: '<span class="player-status-wrap" title="Did not play today" aria-label="Did not play today"><span class="player-status-sleep">💤</span></span>' };
+  }
+  return { key: 'sleep', html: '<span class="player-status-wrap" title="No game today" aria-label="No game today"><span class="player-status-sleep">💤</span></span>' };
 }
 
 function getTodayDateStrLocal() {
@@ -452,50 +548,75 @@ function normalizeGameStatus(game) {
 
 async function fetchTodaysTeamStatuses() {
   todaysTeamStatusByTeamId = new Map();
-  todaysGamePks = new Set(); // NEW
+  todaysGamePks = new Set();
+  teamGamePkByTeamId = new Map();
 
   const sportsDateET = getSportsDateET(3);
-
-  const urls = [
-    `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${sportsDateET}&gameTypes=S,R`
-  ];
-
+  const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${sportsDateET}&gameTypes=S,R`;
   const rank = (s) => (s === "live" ? 3 : s === "final" ? 2 : s === "today" ? 1 : 0);
 
-  for (const url of urls) {
-    try {
-      const resp = await fetch(url);
-      if (!resp.ok) continue;
-      const data = await resp.json();
-      const games = (data?.dates?.[0]?.games) || [];
-
-      for (const g of games) {
-  // Only Spring Training or Regular Season
-  if (g.gameType !== "R" && g.gameType !== "S") continue;
-
-  // NEW: collect gamePk so we can count HRs in these games
-  if (g?.gamePk) todaysGamePks.add(g.gamePk);
-
-  const awayId = g?.teams?.away?.team?.id;
-  const homeId = g?.teams?.home?.team?.id;
-
-  const status = normalizeGameStatus(g);
-
-        const upsert = (teamId) => {
-          if (!teamId) return;
-          const prev = todaysTeamStatusByTeamId.get(teamId);
-          if (!prev || rank(status) > rank(prev)) {
-            todaysTeamStatusByTeamId.set(teamId, status);
-          }
-        };
-
-        upsert(awayId);
-        upsert(homeId);
-      }
-    } catch (e) {
-      console.warn("Schedule fetch failed:", url, e);
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const games = (data?.dates?.[0]?.games) || [];
+    for (const g of games) {
+      if (g.gameType !== "R" && g.gameType !== "S") continue;
+      if (g?.gamePk) todaysGamePks.add(g.gamePk);
+      const awayId = g?.teams?.away?.team?.id;
+      const homeId = g?.teams?.home?.team?.id;
+      const status = normalizeGameStatus(g);
+      const upsert = (teamId) => {
+        if (!teamId) return;
+        const prev = todaysTeamStatusByTeamId.get(teamId);
+        if (!prev || rank(status) > rank(prev)) {
+          todaysTeamStatusByTeamId.set(teamId, status);
+          if (g?.gamePk) teamGamePkByTeamId.set(teamId, g.gamePk);
+        }
+      };
+      upsert(awayId);
+      upsert(homeId);
     }
+  } catch (e) {
+    console.warn("Schedule fetch failed:", url, e);
   }
+}
+
+async function fetchTodaysParticipationData() {
+  lineupKnownByTeamId = new Map();
+  currentLineupByPlayerId = new Map();
+  appearedTodayByPlayerId = new Map();
+
+  const gamePks = Array.from(todaysGamePks);
+  if (!gamePks.length) return;
+
+  await asyncPool(6, gamePks, async (gamePk) => {
+    try {
+      const resp = await fetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      const processSide = (side, teamId) => {
+        if (!side || !teamId) return;
+        const battingOrder = Array.isArray(side.battingOrder) ? side.battingOrder : [];
+        if (battingOrder.length > 0) lineupKnownByTeamId.set(teamId, true);
+        battingOrder.forEach(pid => currentLineupByPlayerId.set(Number(pid), true));
+        const players = side.players || {};
+        Object.values(players).forEach(p => {
+          const pid = p?.person?.id;
+          if (!pid) return;
+          const batting = p?.stats?.batting || {};
+          const fielding = p?.stats?.fielding || {};
+          if (hasAnyPositiveStat(batting) || hasAnyPositiveStat(fielding)) {
+            appearedTodayByPlayerId.set(Number(pid), true);
+          }
+        });
+      };
+      processSide(data?.liveData?.boxscore?.teams?.away, data?.gameData?.teams?.away?.id);
+      processSide(data?.liveData?.boxscore?.teams?.home, data?.gameData?.teams?.home?.id);
+    } catch (e) {
+      console.warn('Participation fetch failed for gamePk', gamePk, e);
+    }
+  });
 }
 
 function getPlayerGameStatus(playerId) {
@@ -539,18 +660,8 @@ async function fetchTodaysHomeRunCounts() {
 
 function formatHRTodayBadge(count) {
   if (!count || count <= 0) return "";
-
-  const mult = count >= 2 ? `${count}×` : "";
-
-  return `
-  <span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today">
-    <video class="hr-firework-video" autoplay loop muted playsinline webkit-playsinline preload="metadata">
-  <source src="assets/firework.mp4" type="video/mp4">
-  <source src="assets/firework.webm" type="video/webm">
-</video>
-    ${mult}
-  </span>
-`;
+  const mult = count >= 2 ? `<span class="hr-firework-mult">${count}×</span>` : "";
+  return `<span class="hr-firework-badge" title="${count} HR today" aria-label="${count} HR today"><span class="hr-firework-emoji">🚀</span>${mult}</span>`;
 }
 
 // --- Season Totals Functions (Homepage) ---
@@ -733,7 +844,11 @@ async function fetchPlayerStats() {
     await ensurePlayerTeamIdsLoaded();
     // 2) today's schedule statuses (single call)
     await fetchTodaysTeamStatuses();
-    // 3) NEW: HR counts across today's schedule games (doubleheaders included)
+    // 3) lineup / participation context for today
+    await fetchTodaysParticipationData();
+    // 4) injured list statuses
+    await ensurePlayerILStatusesLoaded();
+    // 5) NEW: HR counts across today's schedule games (doubleheaders included)
     await fetchTodaysHomeRunCounts();
 
     const batchSize = 5; // Size of each batch for requests
@@ -773,9 +888,53 @@ async function fetchPlayerStats() {
   }
 }
 
+async function fetchSeasonHittingStats(playerId) {
+  if (playerSeasonStats[playerId]) return playerSeasonStats[playerId];
+
+  try {
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=${CURRENT_SEASON}&gameType=R&group=hitting`);
+    const data = await response.json();
+    const split = data?.stats?.[0]?.splits?.[0];
+    const s = split?.stat || {};
+
+    const normalized = {
+      homeRuns: Number(s.homeRuns || 0),
+      rbi: Number(s.rbi || 0),
+      runs: Number(s.runs || 0),
+      avg: Number(s.avg || 0),
+      obp: Number(s.obp || 0),
+      slg: Number(s.slg || 0),
+      ops: Number(s.ops || 0),
+      gamesPlayed: Number(s.gamesPlayed || s.games || 0),
+      atBats: Number(s.atBats || 0),
+      plateAppearances: Number(s.plateAppearances || 0),
+      hits: Number(s.hits || 0),
+      baseOnBalls: Number(s.baseOnBalls || 0),
+      strikeOuts: Number(s.strikeOuts || 0),
+      doubles: Number(s.doubles || 0),
+      triples: Number(s.triples || 0),
+      stolenBases: Number(s.stolenBases || 0)
+    };
+
+    playerSeasonStats[playerId] = normalized;
+    return normalized;
+  } catch (error) {
+    console.error(`Error fetching season hitting stats for player ${playerId}:`, error);
+    const fallback = {
+      homeRuns: 0, rbi: 0, runs: 0,
+      avg: 0, obp: 0, slg: 0, ops: 0,
+      gamesPlayed: 0, atBats: 0, plateAppearances: 0, hits: 0,
+      baseOnBalls: 0, strikeOuts: 0,
+      doubles: 0, triples: 0, stolenBases: 0
+    };
+    playerSeasonStats[playerId] = fallback;
+    return fallback;
+  }
+}
+
 async function fetchSeasonHomeRuns(playerId) {
   try {
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=2025&gameType=R&group=hitting`);
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=season&season=${CURRENT_SEASON}&gameType=R&group=hitting`);
     const data = await response.json();
 
     // Check if the data exists and has the correct structure
@@ -794,17 +953,17 @@ async function fetchSeasonHomeRuns(playerId) {
 // Helper function to fetch stats for a single player
 async function fetchPlayerStatsForPlayer(player) {
   try {
-    const playerId = await fetchPlayerId(player.name);
+    const playerId = player.id || player.playerId || fetchPlayerId(player.name);
     if (!playerId) {
       throw new Error(`Player ID for ${player.name} not found.`);
     }
-
-    // Fetch the season home runs for the player
-    const totalHomeRuns = await fetchSeasonHomeRuns(playerId);
-    playerHomeRuns[playerId] = totalHomeRuns;
-
+    const seasonStats = await fetchSeasonHittingStats(playerId);
+    playerSeasonStats[playerId] = seasonStats;
+    playerHomeRuns[playerId] = seasonStats.homeRuns || 0;
+    return seasonStats;
   } catch (error) {
     console.error(`Error fetching stats for player ${player.name}:`, error);
+    return null;
   }
 }
 
@@ -893,21 +1052,15 @@ function displayFantasyTeams() {
       const hr = playerHomeRuns[player.id] || 0;
       const playerImageUrl = `https://midfield.mlbstatic.com/v1/people/${player.id}/headshot/60x60.jpg`;
 
-           // game status icon
-           const status = getPlayerGameStatus(player.id);
-           const icon = statusToIcon(status);
-           const title = statusToTitle(status);
-     
-           // NEW: HR today badge (counts across all todaysGamePks, including doubleheaders)
+           const displayState = getPlayerDisplayState(player.id);
            const hrTodayCount = playerHRTodayCount.get(player.id) || 0;
            const hrTodayBadge = formatHRTodayBadge(hrTodayCount);
-           const hrTodayTitle = hrTodayCount === 1 ? "1 HR today" : `${hrTodayCount} HR today`;
-     
+
            playersHtml += `
              <li>
                <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
                ${player.name} - ${hr}
-               <span title="${title}" aria-label="${title}">${icon}</span>
+               ${displayState.html}
                ${hrTodayBadge || ""}
              </li>
            `;
@@ -955,7 +1108,7 @@ function topFourTotal(team) {
 async function fetchMonthlyHomeRuns(playerId) {
   try {
     // Fetch game log data for Spring Training games
-    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=2025&gameType=R&group=hitting`);
+    const response = await fetch(`https://statsapi.mlb.com/api/v1/people/${playerId}/stats?stats=gameLog&season=${CURRENT_SEASON}&gameType=R&group=hitting`);
     const data = await response.json();
 
     let monthlyStats = {
@@ -1428,7 +1581,7 @@ function calculateAndDisplayWinnings() {
 }
 
 function setActiveTabClass(tab) {
-  document.body.classList.remove("monthly-active", "feed-active", "winnings-active");
+  document.body.classList.remove("monthly-active", "feed-active", "winnings-active", "teamstats-active");
   if (tab) document.body.classList.add(tab);
 }
 
@@ -1439,6 +1592,7 @@ document.getElementById("season-tab").addEventListener("click", () => {
   document.getElementById("monthly-container").style.display = "none";
   document.getElementById("feed-container").style.display = "none";
   document.getElementById("winnings-container").style.display = "none"; // Hide winnings
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none")
 
   // Hide dropdown only on mobile
   if (window.innerWidth <= 768) {
@@ -1457,6 +1611,7 @@ document.getElementById("monthly-tab").addEventListener("click", async () => {
   document.getElementById("monthly-container").style.display = "block";
   document.getElementById("feed-container").style.display = "none";
   document.getElementById("winnings-container").style.display = "none";
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none");
 
   // ✅ set active tab state
   setActiveTabClass("monthly-active");
@@ -1478,6 +1633,7 @@ document.getElementById("feed-tab").addEventListener("click", () => {
   document.getElementById("monthly-container").style.display = "none";
   document.getElementById("feed-container").style.display = "block";
   document.getElementById("winnings-container").style.display = "none"; // Hide winnings
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none")
 
   // Hide dropdown only on mobile when viewing the feed
   if (window.innerWidth <= 768) {
@@ -1500,6 +1656,7 @@ document.getElementById("winnings-tab").addEventListener("click", () => {
   document.getElementById("monthly-container").style.display = "none";
   document.getElementById("feed-container").style.display = "none";
   document.getElementById("winnings-container").style.display = "block";
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none");
 
   // Hide dropdown only on mobile when viewing the winnings tab
   if (window.innerWidth <= 768) {
@@ -1513,6 +1670,244 @@ document.getElementById("winnings-tab").addEventListener("click", () => {
   calculateAndDisplayWinnings();
 });
 
+
+
+// =========================
+// Team Stats tab
+// =========================
+let teamStatsUIInitialized = false;
+let teamStatsSort = { key: "hr", dir: "desc" };
+
+function initTeamStatsUI() {
+  if (teamStatsUIInitialized) return;
+  const sel = document.getElementById("ts-team-select");
+  if (!sel) return;
+  sel.innerHTML = fantasyTeams.map((t, i) => `<option value="${i}">${t.name}</option>`).join("");
+  sel.value = "0";
+  sel.addEventListener("change", renderTeamStats);
+  document.getElementById("ts-search")?.addEventListener("input", renderTeamStats);
+  document.querySelectorAll(".ts-sortable").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+      if (!key) return;
+      if (teamStatsSort.key === key) {
+        teamStatsSort.dir = teamStatsSort.dir === "desc" ? "asc" : "desc";
+      } else {
+        teamStatsSort.key = key;
+        teamStatsSort.dir = key === "name" ? "asc" : "desc";
+      }
+      renderTeamStats();
+    });
+  });
+  teamStatsUIInitialized = true;
+}
+function tsInitials(name) {
+  const parts = String(name || "").replace(".", "").split(" ").filter(Boolean);
+  const a = parts[0]?.[0] || "P";
+  const b = parts[parts.length - 1]?.[0] || "X";
+  return (a + b).toUpperCase();
+}
+function tsAvg(arr) {
+  const nums = arr.filter(n => Number.isFinite(n));
+  return nums.length ? nums.reduce((a,b)=>a+b,0)/nums.length : 0;
+}
+function tsFmt3(n) { return Number.isFinite(n) && n !== 0 ? n.toFixed(3) : "—"; }
+function tsFmt1(n) { return Number.isFinite(n) ? n.toFixed(1) : "—"; }
+function tsFmtInt(n) { return Number.isFinite(n) ? String(Math.trunc(n)) : "—"; }
+function tsAbPerHr(r) {
+  if (!r.hr || !r.atBats) return null;
+  return r.atBats / r.hr;
+}
+function tsHrPace(r) {
+  if (!r.gamesPlayed || !r.hr) return null;
+  return (r.hr / r.gamesPlayed) * 162;
+}
+
+function tsOrdinal(n) {
+  const mod10 = n % 10;
+  const mod100 = n % 100;
+  if (mod10 === 1 && mod100 !== 11) return `${n}st`;
+  if (mod10 === 2 && mod100 !== 12) return `${n}nd`;
+  if (mod10 === 3 && mod100 !== 13) return `${n}rd`;
+  return `${n}th`;
+}
+function tsLeagueRankText(metricKey, teamValue) {
+  const summaries = fantasyTeams.map(team => {
+    const roster = team.players.map(p => {
+      const playerId = p.id || p.playerId || null;
+      const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
+      return {
+        hr: Number(s.homeRuns || 0),
+        rbi: Number(s.rbi || 0),
+        avg: Number(s.avg || 0),
+        ops: Number(s.ops || 0)
+      };
+    });
+    const teamHR = roster.reduce((sum, r) => sum + r.hr, 0);
+    const top4 = roster.map(r => r.hr).sort((a,b)=>b-a).slice(0,4).reduce((sum, x) => sum + x, 0);
+    const teamRbi = roster.reduce((sum, r) => sum + r.rbi, 0);
+    const avgOps = tsAvg(roster.map(r => r.ops));
+    const avgAvg = tsAvg(roster.map(r => r.avg));
+    return { teamHR, top4, teamRbi, avgOps, avgAvg };
+  });
+
+  const valueMap = {
+    teamHR: 'teamHR',
+    top4: 'top4',
+    teamRbi: 'teamRbi',
+    avgOps: 'avgOps',
+    avgAvg: 'avgAvg'
+  };
+  const key = valueMap[metricKey];
+  const values = summaries.map(x => Number(x[key] || 0));
+  const greaterCount = values.filter(v => v > teamValue).length;
+  const tieCount = values.filter(v => v === teamValue).length;
+  const rank = greaterCount + 1;
+  return `${tieCount > 1 ? 'T-' : ''}${tsOrdinal(rank)} in League`;
+}
+
+function tsSortValue(row, key) {
+  if (key === "name") return row.name || "";
+  if (key === "abPerHr") return tsAbPerHr(row);
+  if (key === "hrPace") return tsHrPace(row);
+  return row[key];
+}
+function updateTeamStatsSortHeaders() {
+  document.querySelectorAll(".ts-sortable").forEach(th => {
+    th.classList.remove("active", "asc", "desc");
+    if (th.dataset.sort === teamStatsSort.key) {
+      th.classList.add("active", teamStatsSort.dir);
+    }
+  });
+}
+function renderTeamStats() {
+  initTeamStatsUI();
+  const sel = document.getElementById("ts-team-select");
+  const teamIdx = Number(sel?.value || 0);
+  const team = fantasyTeams[teamIdx];
+  if (!team) return;
+  document.getElementById("ts-selected-team").textContent = team.name;
+  document.getElementById("ts-updated").textContent = "Updated: " + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  const q = (document.getElementById("ts-search")?.value || "").trim().toLowerCase();
+
+  let rows = team.players.map(p => {
+    const playerId = p.id || p.playerId || null;
+    const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
+    return {
+      name: p.name,
+      playerId,
+      hr: Number(s.homeRuns || 0),
+      rbi: Number(s.rbi || 0),
+      runs: Number(s.runs || 0),
+      avg: Number(s.avg || 0),
+      obp: Number(s.obp || 0),
+      slg: Number(s.slg || 0),
+      ops: Number(s.ops || 0),
+      gamesPlayed: Number(s.gamesPlayed || 0),
+      atBats: Number(s.atBats || 0)
+    };
+  });
+  if (q) rows = rows.filter(r => r.name.toLowerCase().includes(q));
+
+  rows.sort((a, b) => {
+    const av = tsSortValue(a, teamStatsSort.key);
+    const bv = tsSortValue(b, teamStatsSort.key);
+    const dir = teamStatsSort.dir === "asc" ? 1 : -1;
+    if (teamStatsSort.key === "name") {
+      return String(av).localeCompare(String(bv)) * dir;
+    }
+    const aNull = av === null || av === undefined || Number.isNaN(av);
+    const bNull = bv === null || bv === undefined || Number.isNaN(bv);
+    if (aNull && bNull) return 0;
+    if (aNull) return 1;
+    if (bNull) return -1;
+    return (av - bv) * dir;
+  });
+
+  const teamHR = rows.reduce((s,r)=>s+r.hr,0);
+  const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
+  const teamRbi = rows.reduce((s,r)=>s+r.rbi,0);
+  const avgOps = tsAvg(rows.map(r=>r.ops));
+  const avgAvg = tsAvg(rows.map(r=>r.avg));
+
+  document.getElementById("ts-kpi-team-hr").textContent = teamHR;
+  document.getElementById("ts-kpi-top4-hr").textContent = top4;
+  document.getElementById("ts-kpi-rbi").textContent = teamRbi;
+  document.getElementById("ts-kpi-ops").textContent = avgOps ? avgOps.toFixed(3) : "—";
+  document.getElementById("ts-kpi-avg").textContent = avgAvg ? avgAvg.toFixed(3) : "—";
+
+  document.getElementById("ts-kpi-team-hr-rank").textContent = tsLeagueRankText("teamHR", teamHR);
+  document.getElementById("ts-kpi-top4-hr-rank").textContent = tsLeagueRankText("top4", top4);
+  document.getElementById("ts-kpi-rbi-rank").textContent = tsLeagueRankText("teamRbi", teamRbi);
+  document.getElementById("ts-kpi-ops-rank").textContent = tsLeagueRankText("avgOps", avgOps);
+  document.getElementById("ts-kpi-avg-rank").textContent = tsLeagueRankText("avgAvg", avgAvg);
+
+  document.getElementById("ts-player-count").textContent = rows.length;
+  updateTeamStatsSortHeaders();
+
+  const tbody = document.getElementById("ts-tbody");
+  tbody.innerHTML = rows.map(r => {
+    const abPerHr = tsAbPerHr(r);
+    const hrPace = tsHrPace(r);
+    return `
+      <tr>
+        <td>
+          <div class="ts-player">
+            <div class="ts-avatar">${tsInitials(r.name)}</div>
+            <div>
+              <div class="ts-name">${r.name}</div>
+              <div class="ts-meta2">MLBAM: ${r.playerId || "—"}</div>
+            </div>
+          </div>
+        </td>
+        <td>${tsFmtInt(r.gamesPlayed)}</td>
+        <td>${tsFmtInt(r.atBats)}</td>
+        <td style="font-weight:900;">${tsFmtInt(r.hr)}</td>
+        <td>${tsFmtInt(r.rbi)}</td>
+        <td>${tsFmtInt(r.runs)}</td>
+        <td>${tsFmt3(r.avg)}</td>
+        <td>${tsFmt3(r.obp)}</td>
+        <td>${tsFmt3(r.slg)}</td>
+        <td style="font-weight:900;">${tsFmt3(r.ops)}</td>
+        <td>${abPerHr ? tsFmt1(abPerHr) : "—"}</td>
+        <td>${hrPace ? tsFmt1(hrPace) : "—"}</td>
+      </tr>`;
+  }).join("");
+
+  const leadersBox = document.getElementById("ts-leaders");
+  const maxBy = (arr, fn) => arr.reduce((best, cur) => (fn(cur) > fn(best) ? cur : best), arr[0]);
+  if (!rows.length) { leadersBox.innerHTML = ''; return; }
+  const hrLeader = maxBy(rows, r => r.hr);
+  const opsLeader = maxBy(rows, r => r.ops);
+  const abhrLeaderPool = rows.filter(r => tsAbPerHr(r) !== null);
+  const paceLeaderPool = rows.filter(r => tsHrPace(r) !== null);
+  const abhrLeader = abhrLeaderPool.length ? abhrLeaderPool.reduce((best, cur) => tsAbPerHr(cur) < tsAbPerHr(best) ? cur : best, abhrLeaderPool[0]) : null;
+  const paceLeader = paceLeaderPool.length ? maxBy(paceLeaderPool, r => tsHrPace(r)) : null;
+  const line = (title, r, value) => r ? `<div class="ts-leaderItem"><div class="left"><div style="font-weight:900;">${title}</div><div class="ts-small">${r.name}</div></div><div class="right">${value}</div></div>` : '';
+  leadersBox.innerHTML = [
+    line('HR Leader', hrLeader, `${hrLeader.hr}`),
+    line('OPS Leader', opsLeader, opsLeader.ops ? opsLeader.ops.toFixed(3) : '—'),
+    line('Best AB/HR', abhrLeader, abhrLeader && tsAbPerHr(abhrLeader) ? tsAbPerHr(abhrLeader).toFixed(1) : '—'),
+    line('HR Pace Leader', paceLeader, paceLeader && tsHrPace(paceLeader) ? tsHrPace(paceLeader).toFixed(1) : '—')
+  ].join('');
+}
+
+document.getElementById("teamstats-tab")?.addEventListener("click", async () => {
+  document.getElementById("team-container").style.display = "none";
+  document.getElementById("monthly-container").style.display = "none";
+  document.getElementById("feed-container").style.display = "none";
+  document.getElementById("winnings-container").style.display = "none";
+  document.getElementById("team-stats-container").style.display = "block";
+  if (window.innerWidth <= 768) {
+    document.getElementById("mobile-month-select").style.display = "none";
+  }
+  setActiveTabClass("teamstats-active");
+  if (Object.keys(playerSeasonStats).length === 0) {
+    await fetchPlayerStats();
+  }
+  initTeamStatsUI();
+  renderTeamStats();
+});
 populateMobileMonthDropdown();  // Ensure dropdown appears immediately
 document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
 

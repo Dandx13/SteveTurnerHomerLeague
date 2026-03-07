@@ -151,7 +151,7 @@ body::before{
 }
 
 /* Default highlight for Leaderboard on first load */
-body:not(.monthly-active):not(.feed-active):not(.winnings-active) #season-tab{
+body:not(.monthly-active):not(.feed-active):not(.winnings-active):not(.teamstats-active) #season-tab{
   border-color:rgba(34,197,94,.65);
   background:rgba(34,197,94,.14);
 }
@@ -159,7 +159,8 @@ body:not(.monthly-active):not(.feed-active):not(.winnings-active) #season-tab{
 /* If your JS already adds these body classes, tabs will highlight correctly */
 body.monthly-active #monthly-tab,
 body.feed-active #feed-tab,
-body.winnings-active #winnings-tab{
+body.winnings-active #winnings-tab,
+body.teamstats-active #teamstats-tab{
   border-color:rgba(34,197,94,.80);
   background:var(--accentSoft);
 }
@@ -465,45 +466,314 @@ body.winnings-active #winnings-tab{
   }
   
   }
-  /* Player game status badge */
-.game-badge{
+  /* Player status UI */
+.player-status-wrap{display:inline-flex;align-items:center;margin-left:8px;}
+.player-status-dot{display:inline-flex;align-items:center;justify-content:center;width:12px;height:12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);box-shadow:0 0 0 2px rgba(0,0,0,.15) inset;}
+.player-status-dot.live{background:rgba(34,197,94,.90);}
+.player-status-dot.out{background:rgba(239,68,68,.92);}
+.player-status-ball{font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;}
+.player-status-sleep{font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;}
+.player-status-il{display:inline-flex;align-items:center;justify-content:center;margin-left:8px;padding:2px 6px;border-radius:999px;border:1px solid rgba(239,68,68,.35);background:rgba(239,68,68,.10);color:#f87171;font-size:11px;font-weight:900;letter-spacing:.04em;line-height:1;}
+
+/* HR today badge */
+.hr-firework-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:0;border:none;background:transparent;color:#fbbf24;font-weight:900;font-size:16px;line-height:1;}
+.hr-firework-video{display:none;}
+.hr-firework-emoji{font-size:16px;line-height:1;}
+.hr-firework-mult{font-size:12px;color:#fde68a;position:relative;top:-1px;}
+
+/* =========================
+   Team Stats (Season stats)
+   ========================= */
+#team-stats-container{ display:none; }
+
+.ts-card{
+  margin-top:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(15,23,42,.75);
+  border-radius:18px;
+  box-shadow:0 16px 45px rgba(0,0,0,.35);
+  overflow:hidden;
+}
+
+.ts-hd{
+  padding:14px 16px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.ts-title h2{
+  margin:0;
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:.2px;
+}
+.ts-title p{
+  margin:4px 0 0 0;
+  font-size:13px;
+  color: rgba(148,163,184,1);
+  font-weight:700;
+}
+
+.ts-controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.ts-controls select,
+.ts-controls input{
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(2,6,23,.55);
+  color: rgba(226,232,240,1);
+  padding:10px 12px;
+  border-radius:14px;
+  outline:none;
+  font-weight:800;
+}
+.ts-controls input{ min-width:220px; }
+
+.ts-body{ padding:14px 16px 16px; }
+
+.ts-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.ts-pill{
   display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04);
+  font-size:12px;
+  color: rgba(148,163,184,1);
+  font-weight:800;
+}
+.ts-dot{ width:8px; height:8px; border-radius:50%; }
+.ts-good{ background: rgba(34,197,94,1); }
+
+.ts-small{
+  font-size:12px;
+  color: rgba(148,163,184,1);
+  font-weight:700;
+}
+
+.ts-divider{
+  height:1px;
+  background:rgba(255,255,255,.10);
+  margin:12px 0;
+}
+
+.ts-kpis{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+}
+
+.ts-kpi{
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.14);
+  border-radius:16px;
+  padding:12px;
+  position:relative;
+  overflow:hidden;
+}
+.ts-kpi:before{
+  content:"";
+  position:absolute;
+  inset:-30px -40px auto auto;
+  width:120px;
+  height:120px;
+  border-radius:999px;
+  background:radial-gradient(circle at 30% 30%, rgba(34,197,94,.18), transparent 60%);
+  transform:rotate(18deg);
+}
+.ts-kpi-lbl{
+  font-size:12px;
+  color: rgba(148,163,184,1);
+  font-weight:900;
+  letter-spacing:.2px;
+  text-transform:uppercase;
+}
+.ts-kpi-val{
+  margin-top:6px;
+  font-size:22px;
+  font-weight:900;
+}
+.ts-kpi-sub{
+  margin-top:2px;
+  font-size:12px;
+  color: rgba(148,163,184,1);
+  font-weight:700;
+}
+
+.ts-split{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:14px;
+  margin-top:14px;
+}
+.ts-section{
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:16px;
+  background:rgba(0,0,0,.12);
+  overflow:hidden;
+}
+.ts-shd{
+  padding:10px 12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.ts-shd h3{
+  margin:0;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.2px;
+}
+
+.ts-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid rgba(34,197,94,.35);
+  background:rgba(34,197,94,.10);
+  font-size:12px;
+  font-weight:900;
+}
+
+.ts-tblwrap{
+  max-height:520px;
+  overflow:auto;
+}
+.ts-table{
+  width:100%;
+  border-collapse:collapse;
+  min-width: 860px; /* horizontal scroll on mobile */
+}
+.ts-table th,
+.ts-table td{
+  padding:10px 10px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  text-align:left;
+  font-size:13px;
+  vertical-align:middle;
+}
+.ts-table th{
+  position:sticky;
+  top:0;
+  background:rgba(15,23,42,.92);
+  backdrop-filter:blur(8px);
+  z-index:2;
+  font-size:12px;
+  letter-spacing:.2px;
+  color: rgba(148,163,184,1);
+  font-weight:900;
+  text-transform:uppercase;
+}
+.ts-table th.ts-sortable{
+  cursor:pointer;
+  user-select:none;
+  position:sticky;
+}
+.ts-table th.ts-sortable::after{
+  content:" ↕";
+  opacity:.45;
+  font-size:11px;
+}
+.ts-table th.ts-sortable.active.desc::after{
+  content:" ↓";
+  opacity:.95;
+}
+.ts-table th.ts-sortable.active.asc::after{
+  content:" ↑";
+  opacity:.95;
+}
+
+.ts-player{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.ts-avatar{
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  background:rgba(34,197,94,.12);
+  border:1px solid rgba(34,197,94,.20);
+  display:flex;
   align-items:center;
   justify-content:center;
-  width:12px;
-  height:12px;
-  border-radius:999px;
-  margin-left:8px;
-  border:1px solid rgba(255,255,255,.18);
-  box-shadow:0 0 0 2px rgba(0,0,0,.15) inset;
-}
-
-.game-badge.live{ background: rgba(34,197,94,.85); }     /* green */
-.game-badge.today{ background: rgba(59,130,246,.85); }   /* blue */
-.game-badge.off{ background: rgba(148,163,184,.55); }    /* gray */
-
-.game-badge[title]{ cursor: help; }
-
-/* Fireworks HR badge (clean – no red outline/pill) */
-.hr-firework-badge{
-  display:inline-flex;
-  align-items:center;
-  gap:4px;
-  margin-left:6px;
-  padding:0;
-  border:none;
-  background:transparent;
-  color:#e5e7eb; /* light text */
   font-weight:900;
-  font-size:11px;
-  line-height:1;
+  color: rgba(231,238,252,.95);
+  flex:0 0 auto;
+}
+.ts-name{ font-weight:900; }
+.ts-meta2{ font-size:12px; color: rgba(148,163,184,1); font-weight:700; }
+
+.ts-spark{
+  height:10px;
+  width:120px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  overflow:hidden;
+}
+.ts-spark > i{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg, rgba(34,197,94,.9), rgba(96,165,250,.9));
 }
 
-.hr-firework-video{
-  width:18px;
-  height:18px;
-  object-fit:cover;
-  border-radius:6px;
-  display:block;
+.ts-leader{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:12px;
 }
+.ts-leaderItem{
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04);
+  border-radius:14px;
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.ts-leaderItem .left{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.ts-leaderItem .right{
+  font-weight:900;
+  font-size:16px;
+}
+
+/* Mobile friendliness */
+@media (max-width: 980px){
+  .ts-split{ grid-template-columns:1fr; }
+}
+@media (max-width: 768px){
+  .ts-hd{ flex-direction:column; align-items:stretch; }
+  .ts-controls{ justify-content:flex-start; }
+  .ts-controls input{ min-width:0; width:100%; }
+  .ts-controls select{ width:100%; }
+  .ts-kpis{ grid-template-columns:repeat(2,1fr); }
+  .ts-tblwrap{ max-height: 420px; }
 }
