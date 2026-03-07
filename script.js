@@ -307,6 +307,10 @@ let playerTeamIdByPlayerId = new Map();
 // Map teamId -> "live" | "final" | "today" | "off"
 let todaysTeamStatusByTeamId = new Map();
 
+// Team season games played cache for HR pace
+let teamGamesPlayedByTeamId = new Map();
+let teamGamesPlayedLoadPromise = null;
+
 // NEW: gamePks we consider "today" (sports-day), and HR counts in those games
 let todaysGamePks = new Set();          // gamePk set for S/R games in our schedule fetch
 let playerHRTodayCount = new Map();     // batterId -> HR count across todaysGamePks
@@ -842,6 +846,8 @@ async function fetchPlayerStats() {
     // --- NEW: preload (optimized) ---
     // 1) team ids (cached)
     await ensurePlayerTeamIdsLoaded();
+    // 1b) team season games played (for HR pace projection)
+    await ensureTeamGamesPlayedLoaded();
     // 2) today's schedule statuses (single call)
     await fetchTodaysTeamStatuses();
     // 3) lineup / participation context for today
@@ -886,6 +892,49 @@ async function fetchPlayerStats() {
   } finally {
     document.getElementById("loading-indicator").style.display = "none";
   }
+}
+
+async function ensureTeamGamesPlayedLoaded() {
+  if (teamGamesPlayedByTeamId.size > 0) return;
+  if (teamGamesPlayedLoadPromise) {
+    await teamGamesPlayedLoadPromise;
+    return;
+  }
+
+  teamGamesPlayedLoadPromise = (async () => {
+    try {
+      const url = `https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=${CURRENT_SEASON}&standingsTypes=regularSeason`;
+      const response = await fetch(url);
+      const data = await response.json();
+      const records = data?.records || [];
+      const map = new Map();
+
+      for (const record of records) {
+        for (const tr of (record?.teamRecords || [])) {
+          const teamId = tr?.team?.id;
+          const gp = Number(tr?.gamesPlayed || 0);
+          if (teamId) map.set(teamId, gp);
+        }
+      }
+
+      teamGamesPlayedByTeamId = map;
+    } catch (error) {
+      console.warn('Failed to load team games played for HR pace:', error);
+      teamGamesPlayedByTeamId = new Map();
+    } finally {
+      teamGamesPlayedLoadPromise = null;
+    }
+  })();
+
+  await teamGamesPlayedLoadPromise;
+}
+
+function getTeamGamesRemainingForPlayer(playerId) {
+  const teamId = playerTeamIdByPlayerId.get(playerId);
+  if (!teamId) return null;
+  const gamesPlayed = Number(teamGamesPlayedByTeamId.get(teamId));
+  if (!Number.isFinite(gamesPlayed)) return null;
+  return Math.max(0, 162 - gamesPlayed);
 }
 
 async function fetchSeasonHittingStats(playerId) {
@@ -1727,7 +1776,13 @@ function tsAbPerHr(r) {
 }
 function tsHrPace(r) {
   if (!r.gamesPlayed || !r.hr) return null;
-  return (r.hr / r.gamesPlayed) * 162;
+  const gamesPerHr = r.gamesPlayed / r.hr;
+  const teamGamesRemaining = getTeamGamesRemainingForPlayer(r.playerId);
+  if (teamGamesRemaining === null) {
+    return (r.hr / r.gamesPlayed) * 162;
+  }
+  const projectedAdditionalHr = teamGamesRemaining / gamesPerHr;
+  return r.hr + projectedAdditionalHr;
 }
 
 function tsOrdinal(n) {
@@ -1912,6 +1967,8 @@ document.getElementById("teamstats-tab")?.addEventListener("click", async () => 
   if (Object.keys(playerSeasonStats).length === 0) {
     await fetchPlayerStats();
   }
+  await ensurePlayerTeamIdsLoaded();
+  await ensureTeamGamesPlayedLoaded();
   initTeamStatsUI();
   renderTeamStats();
 });
