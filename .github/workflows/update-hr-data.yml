@@ -1,1 +1,33 @@
+name: Update HR Data
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-hr-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run updater
+        run: node scripts/update-hr-data.js
+
+      - name: Commit updated HR data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hr-events-2026.json
+          git diff --cached --quiet || git commit -m "Update 2026 HR data"
+          git push
