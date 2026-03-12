@@ -1513,10 +1513,8 @@ body.winnings-active .leaderboard-tools{
     flex-wrap:nowrap;
   }
 
-  .team-mobile-card .total-home-runs{
-    font-size:20px;
-    width:100%;
-  }
+ .team-mobile-card .total-home-runs{
+  display:none;
 }
 
 
