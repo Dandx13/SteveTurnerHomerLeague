@@ -27,7 +27,7 @@
           <button id="season-tab" class="tab-btn" type="button">Leaderboard</button>
           <button id="monthly-tab" class="tab-btn" type="button">Monthly Totals</button>
           <button id="feed-tab" class="tab-btn" type="button">Live Feed</button>
-          <button id="teamstats-tab" class="tab-btn" type="button">Team Stats</button>
+          <button id="teamstats-tab" class="tab-btn" type="button">Stats</button>
           <button id="winnings-tab" class="tab-btn" type="button">Winnings</button>
         </div>
       </nav>
@@ -36,14 +36,12 @@
     <div id="loading-indicator" class="loading"></div>
 
     <div id="team-container"></div>
-
-
     <!-- Team Stats -->
     <div id="team-stats-container" style="display:none;">
       <div class="ts-card">
         <div class="ts-hd">
           <div class="ts-title">
-            <h2>Team Stats</h2>
+            <h2>Stats</h2>
             <p>Season Stats</p>
           </div>
 
@@ -62,37 +60,18 @@
           <div class="ts-divider"></div>
 
           <div class="ts-kpis">
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Current Place</div>
-              <div class="ts-kpi-val" id="ts-kpi-place">—</div>
-              <div class="ts-kpi-sub">League Standing</div>
-            </div>
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Total Team HR</div>
-              <div class="ts-kpi-val" id="ts-kpi-team-hr">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-team-hr-rank">—</div>
-            </div>
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Top 4 HR</div>
-              <div class="ts-kpi-val" id="ts-kpi-top4-hr">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-top4-hr-rank">—</div>
-            </div>
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Avg EV</div>
-              <div class="ts-kpi-val" id="ts-kpi-avg-ev">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-avg-ev-rank">—</div>
-            </div>
-            <div class="ts-kpi">
-              <div class="ts-kpi-lbl">Avg Distance</div>
-              <div class="ts-kpi-val" id="ts-kpi-avg-dist">—</div>
-              <div class="ts-kpi-sub" id="ts-kpi-avg-dist-rank">—</div>
-            </div>
+            <div class="ts-kpi" id="ts-kpi-1"></div>
+            <div class="ts-kpi" id="ts-kpi-2"></div>
+            <div class="ts-kpi" id="ts-kpi-3"></div>
+            <div class="ts-kpi" id="ts-kpi-4"></div>
+            <div class="ts-kpi" id="ts-kpi-5"></div>
+            <div class="ts-kpi" id="ts-kpi-6"></div>
           </div>
 
-          <div class="ts-split">
-            <div class="ts-section">
+          <div class="ts-split" id="ts-split">
+            <div class="ts-section ts-section-main" id="ts-section-main">
               <div class="ts-shd">
-                <h3>Players</h3>
+                <h3 id="ts-table-title">Players</h3>
                 <div class="ts-small"><span id="ts-player-count">—</span> shown</div>
               </div>
 
@@ -100,6 +79,7 @@
                 <table class="ts-table">
                   <thead>
                     <tr>
+                      <th id="ts-col-team" class="ts-sortable" data-sort="teamName" style="min-width:150px; display:none;">Team</th>
                       <th class="ts-sortable active desc" data-sort="name" style="min-width:220px;">Player</th>
                       <th class="ts-sortable" data-sort="gamesPlayed">G</th>
                       <th class="ts-sortable" data-sort="atBats">AB</th>
@@ -123,7 +103,7 @@
               </div>
             </div>
 
-            <div class="ts-section">
+            <div class="ts-section" id="ts-leaders-section">
               <div class="ts-shd">
                 <h3>Team Leaders</h3>
                 <div class="ts-tag">Quick glance</div>
@@ -183,6 +163,39 @@
         <tbody id="winnings-body"></tbody>
       </table>
     </div>
+
+    <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+      <button id="mobile-season-tab" class="mobile-nav-btn" type="button" aria-label="Leaderboard">
+        <span class="mobile-nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"></path><path d="M5 10v10h14V10"></path></svg>
+        </span>
+        <span class="mobile-nav-label">Leaderboard</span>
+      </button>
+      <button id="mobile-monthly-tab" class="mobile-nav-btn" type="button" aria-label="Monthly Totals">
+        <span class="mobile-nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+        </span>
+        <span class="mobile-nav-label">Monthly</span>
+      </button>
+      <button id="mobile-feed-tab" class="mobile-nav-btn" type="button" aria-label="Feed">
+        <span class="mobile-nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"></circle></svg>
+        </span>
+        <span class="mobile-nav-label">Feed</span>
+      </button>
+      <button id="mobile-teamstats-tab" class="mobile-nav-btn" type="button" aria-label="Stats">
+        <span class="mobile-nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14l3-3 3 2 4-5"></path></svg>
+        </span>
+        <span class="mobile-nav-label">Stats</span>
+      </button>
+      <button id="mobile-winnings-tab" class="mobile-nav-btn" type="button" aria-label="Winnings">
+        <span class="mobile-nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 10c0-1.1.9-2 2-2h4"></path><path d="M16 14c0 1.1-.9 2-2 2h-4"></path><path d="M12 7v10"></path></svg>
+        </span>
+        <span class="mobile-nav-label">Winnings</span>
+      </button>
+    </nav>
 
   </div>
   <script src="script.js"></script>

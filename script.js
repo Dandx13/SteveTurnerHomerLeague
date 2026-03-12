@@ -1723,6 +1723,32 @@ document.getElementById("winnings-tab").addEventListener("click", () => {
 
 
 
+function wireMobileBottomNav() {
+  const tabMap = [
+    ["mobile-season-tab", "season-tab"],
+    ["mobile-monthly-tab", "monthly-tab"],
+    ["mobile-feed-tab", "feed-tab"],
+    ["mobile-teamstats-tab", "teamstats-tab"],
+    ["mobile-winnings-tab", "winnings-tab"]
+  ];
+
+  tabMap.forEach(([mobileId, desktopId]) => {
+    const mobileBtn = document.getElementById(mobileId);
+    const desktopBtn = document.getElementById(desktopId);
+    if (!mobileBtn || !desktopBtn) return;
+
+    mobileBtn.addEventListener("click", () => {
+      desktopBtn.click();
+    });
+  });
+}
+
+wireMobileBottomNav();
+
+
+
+
+
 // =========================
 // Team Stats tab
 // =========================
@@ -1733,8 +1759,11 @@ function initTeamStatsUI() {
   if (teamStatsUIInitialized) return;
   const sel = document.getElementById("ts-team-select");
   if (!sel) return;
-  sel.innerHTML = fantasyTeams.map((t, i) => `<option value="${i}">${t.name}</option>`).join("");
-  sel.value = "0";
+  sel.innerHTML = [
+    `<option value="league">Select a Team</option>`,
+    ...fantasyTeams.map((t, i) => `<option value="${i}">${t.name}</option>`)
+  ].join("");
+  sel.value = "league";
   sel.addEventListener("change", renderTeamStats);
   document.getElementById("ts-search")?.addEventListener("input", renderTeamStats);
   document.querySelectorAll(".ts-sortable").forEach(th => {
@@ -1745,7 +1774,13 @@ function initTeamStatsUI() {
         teamStatsSort.dir = teamStatsSort.dir === "desc" ? "asc" : "desc";
       } else {
         teamStatsSort.key = key;
-        teamStatsSort.dir = key === "name" ? "asc" : "desc";
+        if (key === "name" || key === "teamName") {
+          teamStatsSort.dir = "asc";
+        } else if (key === "abPerHr") {
+          teamStatsSort.dir = "asc";
+        } else {
+          teamStatsSort.dir = "desc";
+        }
       }
       renderTeamStats();
     });
@@ -1767,7 +1802,8 @@ function tsInitials(name) {
 }
 function tsAvg(arr) {
   const nums = arr.filter(n => Number.isFinite(n));
-  return nums.length ? nums.reduce((a,b)=>a+b,0)/nums.length : 0;
+  if (!nums.length) return null;
+  return nums.reduce((a,b)=>a+b,0)/nums.length;
 }
 function tsFmt3(n) { return Number.isFinite(n) && n !== 0 ? n.toFixed(3) : "—"; }
 function tsFmt1(n) { return Number.isFinite(n) ? n.toFixed(1) : "—"; }
@@ -1786,7 +1822,6 @@ function tsHrPace(r) {
   const projectedAdditionalHr = teamGamesRemaining / gamesPerHr;
   return r.hr + projectedAdditionalHr;
 }
-
 
 async function ensureHrEventDataLoaded() {
   if (Object.keys(hrEventDataByPlayer).length > 0) return;
@@ -1874,14 +1909,49 @@ function tsOrdinal(n) {
   if (mod10 === 3 && mod100 !== 13) return `${n}rd`;
   return `${n}th`;
 }
+
+function tsBuildPlayerRow(teamName, p) {
+  const playerId = p.id || p.playerId || null;
+  const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
+  const hrx = playerId ? (hrEventDataByPlayer[playerId] || {}) : {};
+  return {
+    teamName,
+    name: p.name,
+    playerId,
+    hr: Number(s.homeRuns || 0),
+    rbi: Number(s.rbi || 0),
+    runs: Number(s.runs || 0),
+    avg: Number(s.avg || 0),
+    obp: Number(s.obp || 0),
+    slg: Number(s.slg || 0),
+    ops: Number(s.ops || 0),
+    gamesPlayed: Number(s.gamesPlayed || 0),
+    atBats: Number(s.atBats || 0),
+    avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null,
+    avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
+    longestHR: Number.isFinite(hrx.longestHR) ? hrx.longestHR : null,
+    maxEV: Number.isFinite(hrx.maxEV) ? hrx.maxEV : null
+  };
+}
+
+function tsGetAllRows() {
+  return fantasyTeams.flatMap(team => team.players.map(p => tsBuildPlayerRow(team.name, p)));
+}
+
+function tsGetTeamSummaries() {
+  return fantasyTeams.map(team => {
+    const rows = team.players.map(p => tsBuildPlayerRow(team.name, p));
+    const teamHR = rows.reduce((s,r)=>s+r.hr,0);
+    const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
+    const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
+    const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
+    const avgSlg = tsAvg(rows.map(r=>r.slg));
+    return { name: team.name, rows, teamHR, top4, avgTeamEV, avgTeamDistance, avgSlg };
+  });
+}
+
 function tsCurrentPlaceLabel(teamName) {
-  let teamsWithTotals = fantasyTeams.slice().map(team => ({
-    ...team,
-    top4: topFourTotal(team)
-  }));
-
-  teamsWithTotals.sort((a, b) => b.top4 - a.top4);
-
+  const teamsWithTotals = tsGetTeamSummaries().sort((a, b) => b.top4 - a.top4);
   let currentRank = 1;
   let i = 0;
 
@@ -1910,41 +1980,16 @@ function tsCurrentPlaceLabel(teamName) {
 }
 
 function tsLeagueRankText(metricKey, teamValue) {
-  const summaries = fantasyTeams.map(team => {
-    const roster = team.players.map(p => {
-      const playerId = p.id || p.playerId || null;
-      const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
-      const hrx = playerId ? (hrEventDataByPlayer[playerId] || {}) : {};
-      return {
-        hr: Number(s.homeRuns || 0),
-        rbi: Number(s.rbi || 0),
-        avg: Number(s.avg || 0),
-        ops: Number(s.ops || 0),
-        avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
-        avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null
-      };
-    });
-    const teamHR = roster.reduce((sum, r) => sum + r.hr, 0);
-    const top4 = roster.map(r => r.hr).sort((a,b)=>b-a).slice(0,4).reduce((sum, x) => sum + x, 0);
-    const teamRbi = roster.reduce((sum, r) => sum + r.rbi, 0);
-    const avgOps = tsAvg(roster.map(r => r.ops));
-    const avgAvg = tsAvg(roster.map(r => r.avg));
-    const avgTeamEV = tsAvg(roster.map(r => r.avgEV));
-    const avgTeamDistance = tsAvg(roster.map(r => r.avgDistance));
-    return { teamHR, top4, teamRbi, avgOps, avgAvg, avgTeamEV, avgTeamDistance };
-  });
-
+  const summaries = tsGetTeamSummaries();
   const valueMap = {
     teamHR: 'teamHR',
     top4: 'top4',
-    teamRbi: 'teamRbi',
-    avgOps: 'avgOps',
-    avgAvg: 'avgAvg',
     avgTeamEV: 'avgTeamEV',
-    avgTeamDistance: 'avgTeamDistance'
+    avgTeamDistance: 'avgTeamDistance',
+    avgSlg: 'avgSlg'
   };
   const key = valueMap[metricKey];
-  const values = summaries.map(x => Number(x[key] || 0));
+  const values = summaries.map(x => x[key]).filter(v => Number.isFinite(v));
   const greaterCount = values.filter(v => v > teamValue).length;
   const tieCount = values.filter(v => v === teamValue).length;
   const rank = greaterCount + 1;
@@ -1953,6 +1998,7 @@ function tsLeagueRankText(metricKey, teamValue) {
 
 function tsSortValue(row, key) {
   if (key === "name") return row.name || "";
+  if (key === "teamName") return row.teamName || "";
   if (key === "abPerHr") return tsAbPerHr(row);
   if (key === "hrPace") return tsHrPace(row);
   return row[key];
@@ -1965,45 +2011,83 @@ function updateTeamStatsSortHeaders() {
     }
   });
 }
+
+function tsRenderSimpleKpi(id, label, value, sub) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.innerHTML = `
+    <div class="ts-kpi-lbl">${label}</div>
+    <div class="ts-kpi-val">${value}</div>
+    <div class="ts-kpi-sub">${sub}</div>
+  `;
+}
+
+function tsRenderPlayerKpi(id, label, row, value, sub = "") {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (!row) {
+    el.innerHTML = `
+      <div class="ts-kpi-lbl">${label}</div>
+      <div class="ts-kpi-val">—</div>
+      <div class="ts-kpi-sub">—</div>
+    `;
+    return;
+  }
+  el.innerHTML = `
+    <div class="ts-kpi-lbl">${label}</div>
+    <div class="ts-kpi-player-wrap">
+      <img class="ts-kpi-headshot" src="${tsHeadshotUrl(row.playerId)}" alt="${row.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="ts-kpi-headshot ts-kpi-headshot-fallback" style="display:none;">${tsInitials(row.name)}</div>
+      <div class="ts-kpi-name">${row.name}</div>
+      <div class="ts-kpi-team">${row.teamName}</div>
+    </div>
+    <div class="ts-kpi-val">${value}</div>
+    <div class="ts-kpi-sub">${sub}</div>
+  `;
+}
+
 function renderTeamStats() {
   initTeamStatsUI();
   const sel = document.getElementById("ts-team-select");
-  const teamIdx = Number(sel?.value || 0);
-  const team = fantasyTeams[teamIdx];
-  if (!team) return;
-  document.getElementById("ts-selected-team").textContent = team.name;
-  document.getElementById("ts-updated").textContent = "Updated: " + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  const mode = sel?.value || "league";
+  const isLeague = mode === "league";
   const q = (document.getElementById("ts-search")?.value || "").trim().toLowerCase();
+  const split = document.getElementById("ts-split");
+  const leadersSection = document.getElementById("ts-leaders-section");
+  const teamCol = document.getElementById("ts-col-team");
+  const tableTitle = document.getElementById("ts-table-title");
 
-  let rows = team.players.map(p => {
-    const playerId = p.id || p.playerId || null;
-    const s = playerId ? (playerSeasonStats[playerId] || {}) : {};
-    const hrx = playerId ? (hrEventDataByPlayer[playerId] || {}) : {};
-    return {
-      name: p.name,
-      playerId,
-      hr: Number(s.homeRuns || 0),
-      rbi: Number(s.rbi || 0),
-      runs: Number(s.runs || 0),
-      avg: Number(s.avg || 0),
-      obp: Number(s.obp || 0),
-      slg: Number(s.slg || 0),
-      ops: Number(s.ops || 0),
-      gamesPlayed: Number(s.gamesPlayed || 0),
-      atBats: Number(s.atBats || 0),
-      avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null,
-      avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
-      longestHR: Number.isFinite(hrx.longestHR) ? hrx.longestHR : null,
-      maxEV: Number.isFinite(hrx.maxEV) ? hrx.maxEV : null
-    };
-  });
-  if (q) rows = rows.filter(r => r.name.toLowerCase().includes(q));
+  document.getElementById("ts-updated").textContent = "Updated: " + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+
+  let rows;
+  let selectedTeam = null;
+
+  if (isLeague) {
+    document.getElementById("ts-selected-team").textContent = "League-Wide Stats";
+    rows = tsGetAllRows();
+    split?.classList.add("league-mode");
+    if (leadersSection) leadersSection.style.display = "none";
+    if (teamCol) teamCol.style.display = "table-cell";
+    if (tableTitle) tableTitle.textContent = "League Players";
+  } else {
+    const teamIdx = Number(mode);
+    selectedTeam = fantasyTeams[teamIdx];
+    if (!selectedTeam) return;
+    document.getElementById("ts-selected-team").textContent = selectedTeam.name;
+    rows = selectedTeam.players.map(p => tsBuildPlayerRow(selectedTeam.name, p));
+    split?.classList.remove("league-mode");
+    if (leadersSection) leadersSection.style.display = "block";
+    if (teamCol) teamCol.style.display = "none";
+    if (tableTitle) tableTitle.textContent = "Players";
+  }
+
+  if (q) rows = rows.filter(r => r.name.toLowerCase().includes(q) || r.teamName.toLowerCase().includes(q));
 
   rows.sort((a, b) => {
     const av = tsSortValue(a, teamStatsSort.key);
     const bv = tsSortValue(b, teamStatsSort.key);
     const dir = teamStatsSort.dir === "asc" ? 1 : -1;
-    if (teamStatsSort.key === "name") {
+    if (teamStatsSort.key === "name" || teamStatsSort.key === "teamName") {
       return String(av).localeCompare(String(bv)) * dir;
     }
     const aNull = av === null || av === undefined || Number.isNaN(av);
@@ -2014,25 +2098,6 @@ function renderTeamStats() {
     return (av - bv) * dir;
   });
 
-  const teamHR = rows.reduce((s,r)=>s+r.hr,0);
-  const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
-  const teamRbi = rows.reduce((s,r)=>s+r.rbi,0);
-  const avgOps = tsAvg(rows.map(r=>r.ops));
-  const avgAvg = tsAvg(rows.map(r=>r.avg));
-  const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
-  const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
-
-  document.getElementById("ts-kpi-place").textContent = tsCurrentPlaceLabel(team.name);
-  document.getElementById("ts-kpi-team-hr").textContent = teamHR;
-  document.getElementById("ts-kpi-top4-hr").textContent = top4;
-  document.getElementById("ts-kpi-avg-ev").textContent = avgTeamEV !== null ? `${avgTeamEV.toFixed(1)} MPH` : "—";
-  document.getElementById("ts-kpi-avg-dist").textContent = avgTeamDistance !== null ? `${Math.round(avgTeamDistance)} ft` : "—";
-
-  document.getElementById("ts-kpi-team-hr-rank").textContent = tsLeagueRankText("teamHR", teamHR);
-  document.getElementById("ts-kpi-top4-hr-rank").textContent = tsLeagueRankText("top4", top4);
-  document.getElementById("ts-kpi-avg-ev-rank").textContent = avgTeamEV !== null ? tsLeagueRankText("avgTeamEV", avgTeamEV) : "—";
-  document.getElementById("ts-kpi-avg-dist-rank").textContent = avgTeamDistance !== null ? tsLeagueRankText("avgTeamDistance", avgTeamDistance) : "—";
-
   document.getElementById("ts-player-count").textContent = rows.length;
   updateTeamStatsSortHeaders();
 
@@ -2042,6 +2107,7 @@ function renderTeamStats() {
     const hrPace = tsHrPace(r);
     return `
       <tr>
+        ${isLeague ? `<td>${r.teamName}</td>` : ""}
         <td>
           <div class="ts-player">
             <img class="ts-avatar ts-headshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -2068,6 +2134,45 @@ function renderTeamStats() {
         <td>${hrPace !== null ? tsFmt1(hrPace) : "—"}</td>
       </tr>`;
   }).join("");
+
+  if (isLeague) {
+    const summaries = tsGetTeamSummaries();
+    const maxBy = (arr, fn) => arr.reduce((best, cur) => (fn(cur) > fn(best) ? cur : best), arr[0]);
+    const validLongest = rows.filter(r => r.longestHR !== null);
+    const validMaxEV = rows.filter(r => r.maxEV !== null);
+    const validAbhr = rows.filter(r => tsAbPerHr(r) !== null);
+    const validOps = rows.filter(r => Number.isFinite(r.ops) && r.ops > 0);
+    const leagueLeaderTeam = summaries.length ? summaries.reduce((best, cur) => cur.top4 > best.top4 ? cur : best, summaries[0]) : null;
+    const hrLeader = rows.length ? maxBy(rows, r => r.hr) : null;
+    const furthestLeader = validLongest.length ? maxBy(validLongest, r => r.longestHR) : null;
+    const maxEVLeader = validMaxEV.length ? maxBy(validMaxEV, r => r.maxEV) : null;
+    const opsLeader = validOps.length ? maxBy(validOps, r => r.ops) : null;
+    const abhrLeader = validAbhr.length ? validAbhr.reduce((best, cur) => tsAbPerHr(cur) < tsAbPerHr(best) ? cur : best, validAbhr[0]) : null;
+
+    tsRenderSimpleKpi("ts-kpi-1", "League Leader", leagueLeaderTeam ? leagueLeaderTeam.name : "—", leagueLeaderTeam ? `${leagueLeaderTeam.top4} top 4 HR` : "—");
+    tsRenderPlayerKpi("ts-kpi-2", "HR Leader", hrLeader, hrLeader ? `${tsFmtInt(hrLeader.hr)}` : "—", hrLeader ? `OPS ${tsFmt3(hrLeader.ops)}` : "—");
+    tsRenderPlayerKpi("ts-kpi-3", "Furthest HR", furthestLeader, furthestLeader ? `${tsFmtInt(furthestLeader.longestHR)} ft` : "—", furthestLeader && furthestLeader.maxEV !== null ? `${tsFmt1(furthestLeader.maxEV)} MPH` : "—");
+    tsRenderPlayerKpi("ts-kpi-4", "Highest EV HR", maxEVLeader, maxEVLeader ? `${tsFmt1(maxEVLeader.maxEV)} MPH` : "—", maxEVLeader && maxEVLeader.longestHR !== null ? `${tsFmtInt(maxEVLeader.longestHR)} ft` : "—");
+    tsRenderPlayerKpi("ts-kpi-5", "OPS Leader", opsLeader, opsLeader ? `${tsFmt3(opsLeader.ops)}` : "—", opsLeader ? `${tsFmt3(opsLeader.slg)} SLG` : "—");
+    tsRenderPlayerKpi("ts-kpi-6", "Best AB/HR", abhrLeader, abhrLeader ? `${tsFmt1(tsAbPerHr(abhrLeader))}` : "—", abhrLeader ? `${tsFmtInt(abhrLeader.hr)} HR` : "—");
+
+    const leadersBox = document.getElementById("ts-leaders");
+    if (leadersBox) leadersBox.innerHTML = "";
+    return;
+  }
+
+  const teamHR = rows.reduce((s,r)=>s+r.hr,0);
+  const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
+  const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
+  const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
+  const avgSlg = tsAvg(rows.map(r=>r.slg));
+
+  tsRenderSimpleKpi("ts-kpi-1", "Current Place", tsCurrentPlaceLabel(selectedTeam.name), "League Standing");
+  tsRenderSimpleKpi("ts-kpi-2", "Total Team HR", teamHR, tsLeagueRankText("teamHR", teamHR));
+  tsRenderSimpleKpi("ts-kpi-3", "Top 4 HR", top4, tsLeagueRankText("top4", top4));
+  tsRenderSimpleKpi("ts-kpi-4", "Avg EV", avgTeamEV !== null ? `${avgTeamEV.toFixed(1)} MPH` : "—", avgTeamEV !== null ? tsLeagueRankText("avgTeamEV", avgTeamEV) : "—");
+  tsRenderSimpleKpi("ts-kpi-5", "Avg Distance", avgTeamDistance !== null ? `${Math.round(avgTeamDistance)} ft` : "—", avgTeamDistance !== null ? tsLeagueRankText("avgTeamDistance", avgTeamDistance) : "—");
+  tsRenderSimpleKpi("ts-kpi-6", "Avg Slugging", avgSlg !== null ? avgSlg.toFixed(3) : "—", avgSlg !== null ? tsLeagueRankText("avgSlg", avgSlg) : "—");
 
   const leadersBox = document.getElementById("ts-leaders");
   const maxBy = (arr, fn) => arr.reduce((best, cur) => (fn(cur) > fn(best) ? cur : best), arr[0]);
@@ -2123,6 +2228,7 @@ document.getElementById("teamstats-tab")?.addEventListener("click", async () => 
   initTeamStatsUI();
   renderTeamStats();
 });
+
 populateMobileMonthDropdown();  // Ensure dropdown appears immediately
 document.getElementById("mobile-month-select").addEventListener("change", handleMobileMonthChange);
 

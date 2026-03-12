@@ -830,3 +830,191 @@ body.teamstats-active #teamstats-tab{
 .ts-table td:not(:first-child){
   text-align:center;
 }
+
+
+/* =========================
+   Mobile bottom app nav
+   ========================= */
+.mobile-bottom-nav{display:none;}
+
+@media (max-width:768px){
+  body{
+    padding:12px 12px 96px;
+  }
+
+  .container{
+    padding-bottom:18px;
+  }
+
+  .tabs-bar{
+    display:none;
+  }
+
+  .mobile-bottom-nav{
+    position:fixed;
+    left:12px;
+    right:12px;
+    bottom:calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index:1000;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:8px;
+    padding:8px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.10);
+    background:linear-gradient(180deg, rgba(15,23,42,.96), rgba(2,6,23,.96));
+    box-shadow:0 18px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.03) inset;
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+  }
+
+  .mobile-nav-btn{
+    appearance:none;
+    border:none;
+    background:transparent;
+    color:rgba(148,163,184,.95);
+    min-height:62px;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    padding:8px 4px;
+    font:inherit;
+    font-weight:800;
+    cursor:pointer;
+    transition:background-color .15s ease, color .15s ease, transform .1s ease, box-shadow .15s ease;
+  }
+
+  .mobile-nav-btn:active{
+    transform:translateY(1px);
+  }
+
+  .mobile-nav-btn:focus,
+  .mobile-nav-btn:focus-visible{
+    outline:none;
+    color:var(--text);
+    background:rgba(255,255,255,.05);
+    box-shadow:0 0 0 2px rgba(34,197,94,.22) inset;
+  }
+
+  .mobile-nav-icon{
+    width:22px;
+    height:22px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 auto;
+  }
+
+  .mobile-nav-icon svg{
+    width:22px;
+    height:22px;
+    display:block;
+  }
+
+  .mobile-nav-label{
+    font-size:11px;
+    line-height:1;
+    letter-spacing:.01em;
+    white-space:nowrap;
+  }
+
+  body:not(.monthly-active):not(.feed-active):not(.winnings-active):not(.teamstats-active) #mobile-season-tab,
+  body.monthly-active #mobile-monthly-tab,
+  body.feed-active #mobile-feed-tab,
+  body.teamstats-active #mobile-teamstats-tab,
+  body.winnings-active #mobile-winnings-tab{
+    color:var(--text);
+    background:linear-gradient(180deg, rgba(34,197,94,.18), rgba(34,197,94,.08));
+    box-shadow:0 0 0 1px rgba(34,197,94,.28) inset;
+  }
+
+  body.monthly-active #mobile-monthly-tab .mobile-nav-icon,
+  body.feed-active #mobile-feed-tab .mobile-nav-icon,
+  body.teamstats-active #mobile-teamstats-tab .mobile-nav-icon,
+  body.winnings-active #mobile-winnings-tab .mobile-nav-icon,
+  body:not(.monthly-active):not(.feed-active):not(.winnings-active):not(.teamstats-active) #mobile-season-tab .mobile-nav-icon{
+    color:#86efac;
+  }
+}
+
+
+/* =========================
+   Stats page upgrades
+   ========================= */
+#teamstats-tab{ white-space:nowrap; }
+.ts-kpis{
+  grid-template-columns:repeat(6,1fr);
+}
+.ts-kpi{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:186px;
+}
+.ts-kpi-lbl,
+.ts-kpi-val,
+.ts-kpi-sub,
+.ts-kpi-name,
+.ts-kpi-team{
+  width:100%;
+  text-align:center;
+}
+.ts-kpi-player-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  width:100%;
+  margin-top:6px;
+}
+.ts-kpi-headshot{
+  width:64px;
+  height:64px;
+  border-radius:999px;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04);
+}
+.ts-kpi-headshot-fallback{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  color:rgba(231,238,252,.95);
+}
+.ts-kpi-name{
+  font-size:14px;
+  font-weight:900;
+  line-height:1.15;
+  margin-top:2px;
+}
+.ts-kpi-team{
+  font-size:12px;
+  color:rgba(148,163,184,1);
+  font-weight:700;
+  line-height:1.15;
+}
+#ts-col-team,
+.ts-table td:first-child{
+  text-align:left;
+}
+.ts-split.league-mode{
+  grid-template-columns:1fr;
+}
+.ts-split.league-mode #ts-leaders-section{
+  display:none;
+}
+@media (max-width: 1200px){
+  .ts-kpis{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width: 768px){
+  .ts-kpis{ grid-template-columns:repeat(2,1fr); }
+  .ts-kpi{ min-height:170px; }
+  .ts-kpi-headshot{ width:56px; height:56px; }
+}
