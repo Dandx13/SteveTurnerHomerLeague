@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-slate-950 text-slate-100">
@@ -17,9 +17,25 @@
 
     <!-- Header / Title / Tabs (NOT sticky) -->
     <header class="topbar">
-      <div class="title-area">
-        <h1 class="site-title">Steve Turner Memorial Dinger League</h1>
-        <div class="site-subtitle">2025 Season Leaderboard</div>
+      <div class="hero-header">
+        <div class="hero-header-overlay" aria-hidden="true"></div>
+        <div class="hero-header-lights" aria-hidden="true"></div>
+
+        <div class="title-area">
+          <div class="hero-brand">
+            <img class="hero-logo-image" src="assets/images/logo.png" alt="League logo" loading="eager">
+
+            <div class="hero-copy">
+              <h1 class="site-title">Steve Turner Memorial Dinger League</h1>
+              <div class="site-subtitle">Fantasy Home Run Tracker</div>
+              <div class="hero-meta">
+                <span>Live Updates</span>
+                <span class="hero-meta-divider">|</span>
+                <span>2025 Season Leaderboard</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <nav class="tabs-bar" aria-label="Page navigation">
@@ -34,6 +50,20 @@
     </header>
 
     <div id="loading-indicator" class="loading"></div>
+
+    <div id="leaderboard-tools" class="leaderboard-tools">
+      <button id="symbol-key-toggle" class="symbol-key-toggle" type="button" aria-expanded="false" aria-controls="symbol-key-panel">Symbol Key</button>
+      <div id="symbol-key-panel" class="symbol-key-panel" hidden>
+        <div class="symbol-key-grid">
+          <div class="symbol-key-item"><span class="symbol-key-icon">⚾</span><span>Playing today</span></div>
+          <div class="symbol-key-item"><span class="symbol-key-icon">💤</span><span>Not playing today</span></div>
+          <div class="symbol-key-item"><span class="symbol-key-icon symbol-key-il">IL</span><span>Injured List</span></div>
+          <div class="symbol-key-item"><span class="symbol-key-icon"><span class="symbol-key-dot live"></span></span><span>In game now</span></div>
+          <div class="symbol-key-item"><span class="symbol-key-icon"><span class="symbol-key-dot out"></span></span><span>Played today</span></div>
+          <div class="symbol-key-item"><span class="symbol-key-icon">🚀</span><span>Home run today</span></div>
+        </div>
+      </div>
+    </div>
 
     <div id="team-container"></div>
     <!-- Team Stats -->
@@ -84,18 +114,18 @@
                       <th class="ts-sortable" data-sort="gamesPlayed">G</th>
                       <th class="ts-sortable" data-sort="atBats">AB</th>
                       <th class="ts-sortable" data-sort="hr">HR</th>
+                      <th class="ts-sortable" data-sort="abPerHr">AB/HR</th>
+                      <th class="ts-sortable" data-sort="hrPace">HR Pace</th>
+                      <th class="ts-sortable" data-sort="avgDistance">Avg Dist</th>
+                      <th class="ts-sortable" data-sort="longestHR">Longest HR</th>
+                      <th class="ts-sortable" data-sort="avgEV">Avg EV</th>
+                      <th class="ts-sortable" data-sort="maxEV">Max EV</th>
+                      <th class="ts-sortable" data-sort="avg">AVG</th>
                       <th class="ts-sortable" data-sort="rbi">RBI</th>
                       <th class="ts-sortable" data-sort="runs">R</th>
-                      <th class="ts-sortable" data-sort="avg">AVG</th>
                       <th class="ts-sortable" data-sort="obp">OBP</th>
                       <th class="ts-sortable" data-sort="slg">SLG</th>
                       <th class="ts-sortable" data-sort="ops">OPS</th>
-                      <th class="ts-sortable" data-sort="avgDistance">Avg Dist</th>
-                      <th class="ts-sortable" data-sort="avgEV">Avg EV</th>
-                      <th class="ts-sortable" data-sort="longestHR">Longest HR</th>
-                      <th class="ts-sortable" data-sort="maxEV">Max EV</th>
-                      <th class="ts-sortable" data-sort="abPerHr">AB/HR</th>
-                      <th class="ts-sortable" data-sort="hrPace">HR Pace</th>
                     </tr>
                   </thead>
                   <tbody id="ts-tbody"></tbody>

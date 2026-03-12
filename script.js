@@ -2120,18 +2120,18 @@ function renderTeamStats() {
         <td>${tsFmtInt(r.gamesPlayed)}</td>
         <td>${tsFmtInt(r.atBats)}</td>
         <td style="font-weight:900;">${tsFmtInt(r.hr)}</td>
+        <td>${abPerHr !== null ? tsFmt1(abPerHr) : "—"}</td>
+        <td>${hrPace !== null ? tsFmt1(hrPace) : "—"}</td>
+        <td>${r.avgDistance !== null ? `${tsFmtInt(Math.round(r.avgDistance))} ft` : "—"}</td>
+        <td>${r.longestHR !== null ? `${tsFmtInt(r.longestHR)} ft` : "—"}</td>
+        <td>${r.avgEV !== null ? `${tsFmt1(r.avgEV)} MPH` : "—"}</td>
+        <td>${r.maxEV !== null ? `${tsFmt1(r.maxEV)} MPH` : "—"}</td>
+        <td>${tsFmt3(r.avg)}</td>
         <td>${tsFmtInt(r.rbi)}</td>
         <td>${tsFmtInt(r.runs)}</td>
-        <td>${tsFmt3(r.avg)}</td>
         <td>${tsFmt3(r.obp)}</td>
         <td>${tsFmt3(r.slg)}</td>
         <td style="font-weight:900;">${tsFmt3(r.ops)}</td>
-        <td>${r.avgDistance !== null ? `${tsFmtInt(Math.round(r.avgDistance))} ft` : "—"}</td>
-        <td>${r.avgEV !== null ? `${tsFmt1(r.avgEV)} MPH` : "—"}</td>
-        <td>${r.longestHR !== null ? `${tsFmtInt(r.longestHR)} ft` : "—"}</td>
-        <td>${r.maxEV !== null ? `${tsFmt1(r.maxEV)} MPH` : "—"}</td>
-        <td>${abPerHr !== null ? tsFmt1(abPerHr) : "—"}</td>
-        <td>${hrPace !== null ? tsFmt1(hrPace) : "—"}</td>
       </tr>`;
   }).join("");
 
@@ -2236,3 +2236,38 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 fetchPlayerStats();
 setInterval(fetchPlayerStats, 300000);
 setInterval(fetchMonthlyStats, 300000);
+
+
+function initSymbolKeyToggle() {
+  const toggle = document.getElementById("symbol-key-toggle");
+  const panel = document.getElementById("symbol-key-panel");
+  const tools = document.getElementById("leaderboard-tools");
+  if (!toggle || !panel || !tools) return;
+
+  const closePanel = () => {
+    panel.hidden = true;
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  const openPanel = () => {
+    panel.hidden = false;
+    toggle.setAttribute("aria-expanded", "true");
+  };
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    if (isOpen) closePanel();
+    else openPanel();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!tools.contains(e.target)) closePanel();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closePanel();
+  });
+}
+
+initSymbolKeyToggle();
