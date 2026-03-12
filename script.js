@@ -1043,6 +1043,66 @@ function getRankSuffix(rank) {
   return 'th';
 }
 
+
+const MOBILE_LEADERBOARD_BREAKPOINT = 768;
+let mobileLeaderboardExpandedAll = false;
+let mobileExpandedTeams = new Set();
+
+function isMobileLeaderboardView() {
+  return window.innerWidth <= MOBILE_LEADERBOARD_BREAKPOINT;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function syncExpandAllTeamsButton() {
+  const btn = document.getElementById("expand-all-teams-btn");
+  if (!btn) return;
+  const shouldShow = isMobileLeaderboardView();
+  btn.hidden = !shouldShow;
+  btn.textContent = mobileLeaderboardExpandedAll ? "Collapse All Teams" : "Expand All Teams";
+  btn.setAttribute("aria-pressed", mobileLeaderboardExpandedAll ? "true" : "false");
+}
+
+function setAllMobileTeamsExpanded(expanded) {
+  mobileLeaderboardExpandedAll = !!expanded;
+  mobileExpandedTeams = expanded ? new Set(fantasyTeams.map(team => team.name)) : new Set();
+}
+
+function bindMobileLeaderboardInteractions(container) {
+  if (!container || !isMobileLeaderboardView()) return;
+
+  container.querySelectorAll(".team-mobile-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      const teamName = card.dataset.teamName;
+      if (!teamName) return;
+
+      if (mobileExpandedTeams.has(teamName)) {
+        mobileExpandedTeams.delete(teamName);
+      } else {
+        mobileExpandedTeams.add(teamName);
+      }
+
+      mobileLeaderboardExpandedAll = mobileExpandedTeams.size === fantasyTeams.length;
+      syncExpandAllTeamsButton();
+      displayFantasyTeams();
+    });
+
+    card.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      e.preventDefault();
+      card.click();
+    });
+  });
+}
+
+
 function displayFantasyTeams() {
 
   // Step 1: Calculate top 4 totals and sort
@@ -1090,11 +1150,12 @@ function displayFantasyTeams() {
     i = j;
   }
 
+  const isMobile = isMobileLeaderboardView();
   let teamsHtml = "";
-  sortedTeams.forEach((team, index) => {  // Use index for ranking
+
+  sortedTeams.forEach((team, index) => {
     let playersHtml = "";
 
-    // Sort players within the team by home runs (most to least)
     let sortedPlayers = team.players.slice().sort((a, b) => {
       return (playerHomeRuns[b.id] || 0) - (playerHomeRuns[a.id] || 0);
     });
@@ -1103,47 +1164,75 @@ function displayFantasyTeams() {
       const hr = playerHomeRuns[player.id] || 0;
       const playerImageUrl = `https://midfield.mlbstatic.com/v1/people/${player.id}/headshot/60x60.jpg`;
 
-           const displayState = getPlayerDisplayState(player.id);
-           const hrTodayCount = playerHRTodayCount.get(player.id) || 0;
-           const hrTodayBadge = formatHRTodayBadge(hrTodayCount);
+      const displayState = getPlayerDisplayState(player.id);
+      const hrTodayCount = playerHRTodayCount.get(player.id) || 0;
+      const hrTodayBadge = formatHRTodayBadge(hrTodayCount);
 
-           playersHtml += `
-             <li>
-               <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
-               ${player.name} - ${hr}
-               ${displayState.html}
-               ${hrTodayBadge || ""}
-             </li>
-           `;
+      playersHtml += `
+        <li>
+          <img src="${playerImageUrl}" alt="${player.name}" class="player-headshot">
+          ${player.name} - ${hr}
+          ${displayState.html}
+          ${hrTodayBadge || ""}
+        </li>
+      `;
     });
 
     const top4 = topFourTotal(team);
 
-    // Assign class for top 3 teams (gold, silver, bronze)
     let teamClass = "";
     const actualRank = actualRanks[index];
     if (actualRank === 1) teamClass = "gold";
     else if (actualRank === 2) teamClass = "silver";
     else if (actualRank === 3) teamClass = "bronze";
 
-    teamsHtml += `
-    <div class="col-md-3 col-6">
-        <div class="team ${teamClass}">
-            <h3 class="team-rank">${rankLabels[index]}</h3> <!-- Ranking displayed here -->
-            <h2>${team.name}</h2> <!-- Team name below the ranking -->
+    if (isMobile) {
+      const teamNameSafe = escapeHtml(team.name);
+      const panelId = `team-mobile-panel-${index}`;
+      const isExpanded = mobileExpandedTeams.has(team.name);
+
+      teamsHtml += `
+        <div class="team team-mobile-card ${teamClass} ${isExpanded ? "is-expanded" : ""}" data-team-name="${teamNameSafe}" data-rank="${rankLabels[index]}" role="button" tabindex="0" aria-expanded="${isExpanded ? "true" : "false"}" aria-controls="${panelId}">
+          <div class="team-mobile-toggle">
+            <div class="team-mobile-toggle-main">
+              <div class="team-mobile-rank-row">
+                <h3 class="team-rank">${rankLabels[index]}</h3>
+              </div>
+              <h2>${team.name}</h2>
+              <div class="team-mobile-total-preview">Top 4 Total: <span class="top4-total-number">${top4}</span></div>
+            </div>
+          </div>
+          <div id="${panelId}" class="team-mobile-panel" ${isExpanded ? "" : "hidden"}>
             <ul>${playersHtml}</ul>
             <div class="total-home-runs">
-                <strong>Top 4 Total: ${top4}</strong>
-            </div>
+            Top 4 Total: <span class="top4-total-number">${top4}</span>
+          </div>
+          </div>
         </div>
-    </div>
-`;
+      `;
+    } else {
+      teamsHtml += `
+      <div class="col-md-3 col-6">
+          <div class="team ${teamClass}">
+              <h3 class="team-rank">${rankLabels[index]}</h3>
+              <h2>${team.name}</h2>
+              <ul>${playersHtml}</ul>
+              <div class="total-home-runs">
+              Top 4 Total: <span class="top4-total-number">${top4}</span>
+            </div>
+          </div>
+      </div>
+      `;
+    }
   });
 
   const container = document.getElementById("team-container");
-  container.style.visibility = "hidden"; // Hide container while updating
+  container.style.visibility = "hidden";
   container.innerHTML = teamsHtml;
-  container.style.visibility = "visible"; // Show container after update
+  container.style.visibility = "visible";
+
+  syncExpandAllTeamsButton();
+  bindMobileLeaderboardInteractions(container);
 }
 
 function topFourTotal(team) {
@@ -2269,5 +2358,33 @@ function initSymbolKeyToggle() {
     if (e.key === "Escape") closePanel();
   });
 }
+
+
+function initExpandAllTeamsButton() {
+  const btn = document.getElementById("expand-all-teams-btn");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    const shouldExpand = !mobileLeaderboardExpandedAll;
+    setAllMobileTeamsExpanded(shouldExpand);
+    syncExpandAllTeamsButton();
+    displayFantasyTeams();
+  });
+
+  syncExpandAllTeamsButton();
+}
+
+let mobileLeaderboardResizeTimer = null;
+window.addEventListener("resize", () => {
+  clearTimeout(mobileLeaderboardResizeTimer);
+  mobileLeaderboardResizeTimer = setTimeout(() => {
+    syncExpandAllTeamsButton();
+    if (document.getElementById("team-container")?.style.display !== "none") {
+      displayFantasyTeams();
+    }
+  }, 120);
+});
+
+initExpandAllTeamsButton();
 
 initSymbolKeyToggle();

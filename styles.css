@@ -303,6 +303,10 @@ body.winnings-active .leaderboard-tools{
   box-shadow:0 10px 24px rgba(0,0,0,.22);
 }
 
+.expand-all-teams-btn{
+  display:none;
+}
+
 .symbol-key-toggle:hover,
 .symbol-key-toggle:focus,
 .symbol-key-toggle[aria-expanded="true"]{
@@ -441,34 +445,17 @@ body.winnings-active .leaderboard-tools{
   text-align:center;
   position:relative;
   overflow:hidden;
-
-  display:flex;
-  flex-direction:column;
-  height:100%;
 }
 
 /* Podium: top 3 special */
-.team.gold::before,
-.team.silver::before,
-.team.bronze::before{
-  content:"";
-  position:absolute;
-  inset:-60px -60px auto auto;
-  width:220px;
-  height:220px;
-  border-radius:999px;
-  opacity:.22;
-  transform:rotate(18deg);
-}
-
 .team.gold::after,
 .team.silver::after,
 .team.bronze::after{
   position:absolute;
-  top:10px;
-  right:12px;
-  font-size:18px;
-  opacity:.95;
+  top:12px;
+  right:14px;
+  font-size:40px;
+  opacity:1;
 }
 
 .team.gold{
@@ -526,13 +513,17 @@ body.winnings-active .leaderboard-tools{
 .team ul li{
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:space-between;
   gap:10px;
   padding:9px 0;
   border-top:1px solid rgba(255,255,255,.07);
   font-size:13px;
   position:relative;
-  text-align:center;
+
+  min-height:32px;        /* keeps rows equal height */
+  white-space:nowrap;     /* prevents name wrapping */
+  overflow:hidden;
+  text-overflow:ellipsis; /* adds ... for very long names */
 }
 
 .team ul li:first-child{border-top:none;}
@@ -547,12 +538,23 @@ body.winnings-active .leaderboard-tools{
 
 /* total */
 .total-home-runs{
-  margin-top:auto;
-  padding-top:10px;
-  border-top:1px solid rgba(255,255,255,.07);
-  font-size:13px;
-  color:var(--muted);
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.08);
+  font-size:16px;
+  font-weight:900;
+  color:#e5e7eb;
   text-align:center;
+  letter-spacing:.03em;
+}
+
+.top4-total-number{
+  color:#4ade80;
+  font-size:1.18em;
+  font-weight:900;
+  text-shadow:
+    0 0 6px rgba(34,197,94,.35),
+    0 0 12px rgba(34,197,94,.20);
 }
 
 /* tables (dark) */
@@ -659,7 +661,7 @@ body.winnings-active .leaderboard-tools{
 @media (max-width:768px){
   body{padding:14px;}
   .container{padding:14px;}
-  #team-container{grid-template-columns:repeat(2,1fr);gap:12px;}
+  #team-container{grid-template-columns:1fr;gap:12px;}
   .tab-btn{min-width:0;flex:1 1 160px;}
   .hero-header{padding:16px 14px 14px;border-radius:16px;background-position:center 70%;}
   .hero-brand{gap:12px;min-height:128px;}
@@ -667,6 +669,118 @@ body.winnings-active .leaderboard-tools{
   .site-title{font-size:clamp(26px, 8vw, 42px);line-height:.94;letter-spacing:.03em;}
   .site-subtitle{font-size:clamp(13px, 4vw, 18px);margin-top:2px;}
   .hero-meta{font-size:11px;gap:6px;margin-top:8px;}
+
+  .expand-all-teams-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .leaderboard-tools{
+    align-items:stretch;
+  }
+
+  .team-mobile-card{
+    height:auto;
+    padding:0;
+    text-align:center;
+    cursor:pointer;
+  }
+
+  .team-mobile-card .team-rank{
+    margin-bottom:0;
+  }
+
+  .team-mobile-card.gold::after,
+  .team-mobile-card.silver::after,
+  .team-mobile-card.bronze::after{
+    z-index:2;
+    right:12px;
+    top:10px;
+    pointer-events:none;
+  }
+
+  .team-mobile-toggle{
+    width:100%;
+    background:transparent;
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:16px 16px 14px;
+    text-align:center;
+  }
+
+  .team-mobile-card:focus,
+  .team-mobile-card:focus-visible{
+    outline:none;
+    box-shadow:inset 0 0 0 2px rgba(34,197,94,.28);
+  }
+
+  .team-mobile-toggle-main{
+    min-width:0;
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .team-mobile-rank-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:4px;
+  }
+
+  .team-mobile-card h2{
+    margin:0;
+    font-size:20px;
+    line-height:1.15;
+    text-align:center;
+  }
+
+ .team-mobile-total-preview{
+  margin-top:10px;
+  font-size:17px;
+  font-weight:900;
+  color:#cbd5e1;
+  text-align:center;
+}
+
+.team-mobile-total-preview .top4-total-number{
+  font-size:1.16em;
+}
+  
+
+  .team-mobile-panel{
+    padding:0 16px 14px;
+  }
+
+  .team-mobile-panel[hidden]{
+    display:none !important;
+  }
+
+  .team-mobile-card ul{
+    margin-top:4px;
+  }
+
+  .team-mobile-card ul li{
+    justify-content:center;
+    text-align:center;
+    flex-wrap:nowrap;
+  }
+
+  .team-mobile-card .player-status-wrap,
+  .team-mobile-card .player-status-il,
+  .team-mobile-card .hr-firework-badge{
+    margin-left:8px;
+  }
+
+  .team-mobile-card .total-home-runs{
+    margin-top:12px;
+  }
 }
 
 @media (max-width:520px){
@@ -1292,4 +1406,143 @@ body.winnings-active .leaderboard-tools{
   .ts-kpis{ grid-template-columns:repeat(2,1fr); }
   .ts-kpi{ min-height:170px; }
   .ts-kpi-headshot{ width:56px; height:56px; }
+}
+
+
+.expand-all-teams-btn[aria-pressed="true"]{
+  border-color:rgba(34,197,94,.55);
+  background:rgba(34,197,94,.10);
+}
+
+
+/* =========================
+   Mobile leaderboard rank panels
+   ========================= */
+@media (max-width:768px){
+  .team-mobile-card{
+    position:relative;
+    overflow:hidden;
+  }
+
+  .team-mobile-card::before{
+    content:attr(data-rank);
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:24%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 6px;
+    font-size:clamp(20px, 5.8vw, 30px);
+    font-weight:900;
+    letter-spacing:.01em;
+    line-height:1.05;
+    color:#86efac;
+    background:linear-gradient(180deg, rgba(34,197,94,.18), rgba(34,197,94,.07));
+    border-right:1px solid rgba(255,255,255,.10);
+    text-shadow:0 0 10px rgba(34,197,94,.18);
+    z-index:1;
+  }
+
+  .team-mobile-card.gold::before{
+    color:#fcd34d;
+    background:linear-gradient(180deg, rgba(245,158,11,.32), rgba(245,158,11,.12));
+    border-right-color:rgba(245,158,11,.38);
+    text-shadow:0 0 12px rgba(245,158,11,.24);
+  }
+
+  .team-mobile-card.silver::before{
+    color:#e2e8f0;
+    background:linear-gradient(180deg, rgba(148,163,184,.30), rgba(148,163,184,.12));
+    border-right-color:rgba(148,163,184,.34);
+    text-shadow:0 0 12px rgba(148,163,184,.20);
+  }
+
+  .team-mobile-card.bronze::before{
+    color:#fdba74;
+    background:linear-gradient(180deg, rgba(194,65,12,.30), rgba(194,65,12,.12));
+    border-right-color:rgba(194,65,12,.34);
+    text-shadow:0 0 12px rgba(194,65,12,.20);
+  }
+
+  .team-mobile-card .team-mobile-toggle{
+    min-height:96px;
+    padding:18px 18px 18px calc(24% + 14px);
+  }
+
+  .team-mobile-card .team-mobile-toggle-main{
+    width:100%;
+  }
+
+  .team-mobile-card .team-mobile-rank-row{
+    display:none;
+  }
+
+  .team-mobile-card h2{
+    margin:0;
+    font-size:20px;
+    line-height:1.08;
+    font-weight:900;
+    text-align:center;
+    padding-right:42px;
+  }
+
+  .team-mobile-total-preview{
+    margin-top:10px;
+    font-size:17px;
+    font-weight:900;
+    color:#cbd5e1;
+    text-align:center;
+    padding-right:42px;
+  }
+
+  .team-mobile-card .team-mobile-panel{
+    padding:0 16px 14px calc(24% + 14px);
+  }
+
+  .team-mobile-card ul{
+    width:100%;
+  }
+
+  .team-mobile-card ul li{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+    flex-wrap:nowrap;
+  }
+
+  .team-mobile-card .total-home-runs{
+    font-size:20px;
+    width:100%;
+  }
+}
+
+
+@media (max-width:520px){
+  .team-mobile-card::before{
+    width:25%;
+    font-size:clamp(18px, 5.4vw, 26px);
+    line-height:1.02;
+  }
+
+  .team-mobile-card .team-mobile-toggle{
+    min-height:92px;
+    padding:16px 14px 16px calc(25% + 12px);
+  }
+
+  .team-mobile-card .team-mobile-panel{
+    padding:0 14px 14px calc(25% + 12px);
+  }
+
+  .team-mobile-card h2{
+    font-size:18px;
+    padding-right:36px;
+  }
+
+  .team-mobile-total-preview{
+    font-size:16px;
+    padding-right:36px;
+  }
 }
