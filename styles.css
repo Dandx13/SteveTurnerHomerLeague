@@ -441,6 +441,10 @@ body.winnings-active .leaderboard-tools{
   text-align:center;
   position:relative;
   overflow:hidden;
+
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 
 /* Podium: top 3 special */
@@ -543,7 +547,7 @@ body.winnings-active .leaderboard-tools{
 
 /* total */
 .total-home-runs{
-  margin-top:10px;
+  margin-top:auto;
   padding-top:10px;
   border-top:1px solid rgba(255,255,255,.07);
   font-size:13px;
