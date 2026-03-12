@@ -361,6 +361,29 @@ body.winnings-active .leaderboard-tools{
   font-weight:900;
 }
 
+.symbol-key-dot{
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 0 0 2px rgba(0,0,0,.15) inset;
+}
+
+.symbol-key-dot.live{
+  background:rgba(34,197,94,.90);
+}
+
+.symbol-key-dot.out{
+  background:rgba(239,68,68,.92);
+}
+
+.symbol-key-icon{
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+}
+
 @media (max-width:768px){
   .leaderboard-tools{
     margin:4px 0 14px;
