@@ -3,8 +3,8 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 
-// For now, use 2025 rosters as the placeholder source.
-const ROSTER_FILE = path.join(ROOT, "data", "fantasy-rosters-2025.json");
+// For now, use 2026 rosters as the placeholder source.
+const ROSTER_FILE = path.join(ROOT, "data", "fantasy-rosters-2026.json");
 
 // 2026 HR output file
 const HR_DATA_FILE = path.join(ROOT, "data", "hr-events-2026.json");
