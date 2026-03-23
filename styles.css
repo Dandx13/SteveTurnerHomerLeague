@@ -1116,6 +1116,19 @@ body.winnings-active .leaderboard-tools{
   gap:10px;
   align-items:center;
 }
+
+.ts-name-wrap{
+  min-width:0;
+  max-width:150px;
+}
+
+.ts-name{
+  font-weight:900;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  line-height:1.15;
+}
 .ts-avatar{
   width:42px;
   height:42px;
@@ -1230,6 +1243,38 @@ body.winnings-active .leaderboard-tools{
   .ts-controls select{ width:100%; }
   .ts-kpis{ grid-template-columns:repeat(2,1fr); }
   .ts-tblwrap{ max-height: 420px; }
+
+  .ts-table th:first-child,
+  .ts-table td:first-child{
+    min-width:150px;
+    width:150px;
+  }
+
+  .ts-player-cell{
+    min-width:150px;
+    width:150px;
+    padding:8px 8px;
+  }
+
+  .ts-player{
+    gap:8px;
+    align-items:flex-start;
+  }
+
+  .ts-avatar{
+    width:32px;
+    height:32px;
+    flex:0 0 32px;
+  }
+
+  .ts-name-wrap{
+    max-width:96px;
+  }
+
+  .ts-name{
+    font-size:12px;
+    line-height:1.1;
+  }
 }
 
 

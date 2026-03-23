@@ -1970,7 +1970,7 @@ function renderTeamStats() {
           <div class="ts-player">
             <img class="ts-avatar ts-headshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="ts-avatar ts-avatar-fallback" style="display:none;">${tsInitials(r.name)}</div>
-            <div>
+            <div class="ts-name-wrap">
               <div class="ts-name">${r.name}</div>
             </div>
           </div>
