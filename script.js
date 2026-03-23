@@ -2002,7 +2002,9 @@ function renderTeamStats() {
     const validAbhr = rows.filter(r => tsAbPerHr(r) !== null);
     const validOps = rows.filter(r => Number.isFinite(r.ops) && r.ops > 0);
     const leagueLeaderTeam = summaries.length ? summaries.reduce((best, cur) => cur.top4 > best.top4 ? cur : best, summaries[0]) : null;
-    const hrLeader = rows.length ? maxBy(rows, r => r.hr) : null;
+    const hrLeader = rows.filter(r => r.hr > 0).length
+  ? maxBy(rows.filter(r => r.hr > 0), r => r.hr)
+  : null;
     const furthestLeader = validLongest.length ? maxBy(validLongest, r => r.longestHR) : null;
     const maxEVLeader = validMaxEV.length ? maxBy(validMaxEV, r => r.maxEV) : null;
     const opsLeader = validOps.length ? maxBy(validOps, r => r.ops) : null;
