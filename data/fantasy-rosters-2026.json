@@ -1,0 +1,613 @@
+{
+  "teams": [
+    {
+      "name": "Adam/Nick",
+      "players": [
+        {
+          "name": "Taylor Ward",
+          "id": 621493
+        },
+        {
+          "name": "Kyle Manzardo",
+          "id": 700932
+        },
+        {
+          "name": "Ezequiel Tovar",
+          "id": 678662
+        },
+        {
+          "name": "Cal Raleigh",
+          "id": 663728
+        },
+        {
+          "name": "Tyler Soderstrom",
+          "id": 691016
+        },
+        {
+          "name": "Jorge Polanco",
+          "id": 593871
+        }
+      ]
+    },
+    {
+      "name": "Austin",
+      "players": [
+        {
+          "name": "Kyle Schwarber",
+          "id": 656941
+        },
+        {
+          "name": "Wilyer Abreu",
+          "id": 677800
+        },
+        {
+          "name": "Michael Harris II",
+          "id": 671739
+        },
+        {
+          "name": "Ben Rice",
+          "id": 700250
+        },
+        {
+          "name": "Alex Bregman",
+          "id": 608324
+        },
+        {
+          "name": "Agustín Ramírez",
+          "id": 682663
+        }
+      ]
+    },
+    {
+      "name": "Dan/Connor",
+      "players": [
+        {
+          "name": "Bobby Witt Jr.",
+          "id": 677951
+        },
+        {
+          "name": "Mike Trout",
+          "id": 545361
+        },
+        {
+          "name": "Drake Baldwin",
+          "id": 686948
+        },
+        {
+          "name": "Matt Olson",
+          "id": 621566
+        },
+        {
+          "name": "Kyle Stowers",
+          "id": 669065
+        },
+        {
+          "name": "Yandy Díaz",
+          "id": 650490
+        }
+      ]
+    },
+    {
+      "name": "Dan/Connor (2)",
+      "players": [
+        {
+          "name": "José Ramírez",
+          "id": 608070
+        },
+        {
+          "name": "Pete Crow-Armstrong",
+          "id": 691718
+        },
+        {
+          "name": "William Contreras",
+          "id": 661388
+        },
+        {
+          "name": "Riley Greene",
+          "id": 682985
+        },
+        {
+          "name": "Christian Walker",
+          "id": 572233
+        },
+        {
+          "name": "Dansby Swanson",
+          "id": 621020
+        }
+      ]
+    },
+    {
+      "name": "Dan/Joe",
+      "players": [
+        {
+          "name": "Eugenio Suárez",
+          "id": 553993
+        },
+        {
+          "name": "George Springer",
+          "id": 543807
+        },
+        {
+          "name": "Yainer Diaz",
+          "id": 673237
+        },
+        {
+          "name": "Fernando Tatis Jr.",
+          "id": 665487
+        },
+        {
+          "name": "Adolis García",
+          "id": 666969
+        },
+        {
+          "name": "Bryan Reynolds",
+          "id": 668804
+        }
+      ]
+    },
+    {
+      "name": "Dan/Joe (2)",
+      "players": [
+        {
+          "name": "Bryce Harper",
+          "id": 547180
+        },
+        {
+          "name": "Trent Grisham",
+          "id": 663757
+        },
+        {
+          "name": "Bo Bichette",
+          "id": 666182
+        },
+        {
+          "name": "Vladimir Guerrero Jr.",
+          "id": 665489
+        },
+        {
+          "name": "Daulton Varsho",
+          "id": 662139
+        },
+        {
+          "name": "Jorge Soler",
+          "id": 624585
+        }
+      ]
+    },
+    {
+      "name": "Dan/Larry",
+      "players": [
+        {
+          "name": "Shea Langeliers",
+          "id": 669127
+        },
+        {
+          "name": "Heliot Ramos",
+          "id": 671218
+        },
+        {
+          "name": "Ozzie Albies",
+          "id": 645277
+        },
+        {
+          "name": "Munetaka Murakami",
+          "id": 808959
+        },
+        {
+          "name": "Zach Neto",
+          "id": 687263
+        },
+        {
+          "name": "Alec Burleson",
+          "id": 676475
+        }
+      ]
+    },
+    {
+      "name": "Dan/Larry (2)",
+      "players": [
+        {
+          "name": "Julio Rodríguez",
+          "id": 677594
+        },
+        {
+          "name": "Jackson Chourio",
+          "id": 694192
+        },
+        {
+          "name": "Josh Bell",
+          "id": 605137
+        },
+        {
+          "name": "Gunnar Henderson",
+          "id": 683002
+        },
+        {
+          "name": "Oneil Cruz",
+          "id": 665833
+        },
+        {
+          "name": "Mark Vientos",
+          "id": 668901
+        }
+      ]
+    },
+    {
+      "name": "John Eames",
+      "players": [
+        {
+          "name": "Jo Adell",
+          "id": 666176
+        },
+        {
+          "name": "Kerry Carpenter",
+          "id": 681481
+        },
+        {
+          "name": "Samuel Basallo",
+          "id": 694212
+        },
+        {
+          "name": "Jazz Chisholm Jr.",
+          "id": 665862
+        },
+        {
+          "name": "Jackson Merrill",
+          "id": 701538
+        },
+        {
+          "name": "Max Muncy",
+          "id": 571970
+        }
+      ]
+    },
+    {
+      "name": "John Fournier",
+      "players": [
+        {
+          "name": "Junior Caminero",
+          "id": 691406
+        },
+        {
+          "name": "Wyatt Langford",
+          "id": 694671
+        },
+        {
+          "name": "Max Muncy",
+          "id": 691777
+        },
+        {
+          "name": "Austin Riley",
+          "id": 663586
+        },
+        {
+          "name": "Matt Wallner",
+          "id": 670242
+        },
+        {
+          "name": "Matt McLain",
+          "id": 680574
+        }
+      ]
+    },
+    {
+      "name": "Mike/Nick/Evan",
+      "players": [
+        {
+          "name": "Corey Seager",
+          "id": 608369
+        },
+        {
+          "name": "Marcell Ozuna",
+          "id": 542303
+        },
+        {
+          "name": "Andrew Vaughn",
+          "id": 683734
+        },
+        {
+          "name": "Nick Kurtz",
+          "id": 701762
+        },
+        {
+          "name": "Colson Montgomery",
+          "id": 695657
+        },
+        {
+          "name": "Josh Naylor",
+          "id": 647304
+        }
+      ]
+    },
+    {
+      "name": "Mike/Nick/Evan (2)",
+      "players": [
+        {
+          "name": "Michael Busch",
+          "id": 683737
+        },
+        {
+          "name": "Giancarlo Stanton",
+          "id": 519317
+        },
+        {
+          "name": "Isaac Paredes",
+          "id": 670623
+        },
+        {
+          "name": "Vinnie Pasquantino",
+          "id": 686469
+        },
+        {
+          "name": "Andy Pages",
+          "id": 681624
+        },
+        {
+          "name": "Ramón Laureano",
+          "id": 657656
+        }
+      ]
+    },
+    {
+      "name": "Nate",
+      "players": [
+        {
+          "name": "Shohei Ohtani",
+          "id": 660271
+        },
+        {
+          "name": "Corbin Carroll",
+          "id": 682998
+        },
+        {
+          "name": "Sal Stewart",
+          "id": 701398
+        },
+        {
+          "name": "Byron Buxton",
+          "id": 621439
+        },
+        {
+          "name": "Brandon Lowe",
+          "id": 664040
+        },
+        {
+          "name": "Austin Wells",
+          "id": 669224
+        }
+      ]
+    },
+    {
+      "name": "Nate (2)",
+      "players": [
+        {
+          "name": "Pete Alonso",
+          "id": 624413
+        },
+        {
+          "name": "Seiya Suzuki",
+          "id": 673548
+        },
+        {
+          "name": "Mookie Betts",
+          "id": 605141
+        },
+        {
+          "name": "Roman Anthony",
+          "id": 701350
+        },
+        {
+          "name": "Matt Chapman",
+          "id": 656305
+        },
+        {
+          "name": "Iván Herrera",
+          "id": 671056
+        }
+      ]
+    },
+    {
+      "name": "Pat T",
+      "players": [
+        {
+          "name": "Kyle Tucker",
+          "id": 663656
+        },
+        {
+          "name": "Lawrence Butler",
+          "id": 671732
+        },
+        {
+          "name": "Trevor Story",
+          "id": 596115
+        },
+        {
+          "name": "Yordan Alvarez",
+          "id": 670541
+        },
+        {
+          "name": "Nolan Gorman",
+          "id": 669357
+        },
+        {
+          "name": "Royce Lewis",
+          "id": 668904
+        }
+      ]
+    },
+    {
+      "name": "Payton/Matt",
+      "players": [
+        {
+          "name": "Manny Machado",
+          "id": 592518
+        },
+        {
+          "name": "Mickey Moniak",
+          "id": 666160
+        },
+        {
+          "name": "Ceddanne Rafaela",
+          "id": 678882
+        },
+        {
+          "name": "Brent Rooker",
+          "id": 667670
+        },
+        {
+          "name": "Kazuma Okamoto",
+          "id": 672960
+        },
+        {
+          "name": "Freddie Freeman",
+          "id": 518692
+        }
+      ]
+    },
+    {
+      "name": "Pete/Zack",
+      "players": [
+        {
+          "name": "James Wood",
+          "id": 695578
+        },
+        {
+          "name": "Francisco Lindor",
+          "id": 596019
+        },
+        {
+          "name": "Addison Barger",
+          "id": 680718
+        },
+        {
+          "name": "Spencer Torkelson",
+          "id": 679529
+        },
+        {
+          "name": "Cody Bellinger",
+          "id": 641355
+        },
+        {
+          "name": "Colton Cowser",
+          "id": 681297
+        }
+      ]
+    },
+    {
+      "name": "Peyton B",
+      "players": [
+        {
+          "name": "Ronald Acuña Jr.",
+          "id": 660670
+        },
+        {
+          "name": "Elly De La Cruz",
+          "id": 682829
+        },
+        {
+          "name": "Luis Robert Jr.",
+          "id": 673357
+        },
+        {
+          "name": "Hunter Goodman",
+          "id": 696100
+        },
+        {
+          "name": "Jac Caglianone",
+          "id": 695506
+        },
+        {
+          "name": "Jose Altuve",
+          "id": 514888
+        }
+      ]
+    },
+    {
+      "name": "Ryan/Paul",
+      "players": [
+        {
+          "name": "Willy Adames",
+          "id": 642715
+        },
+        {
+          "name": "Ian Happ",
+          "id": 664023
+        },
+        {
+          "name": "Marcus Semien",
+          "id": 543760
+        },
+        {
+          "name": "Aaron Judge",
+          "id": 592450
+        },
+        {
+          "name": "Teoscar Hernández",
+          "id": 606192
+        },
+        {
+          "name": "Christian Yelich",
+          "id": 592885
+        }
+      ]
+    },
+    {
+      "name": "Ryan/Paul (2)",
+      "players": [
+        {
+          "name": "Rafael Devers",
+          "id": 646240
+        },
+        {
+          "name": "Jake Burger",
+          "id": 669394
+        },
+        {
+          "name": "Will Smith",
+          "id": 669257
+        },
+        {
+          "name": "Ketel Marte",
+          "id": 606466
+        },
+        {
+          "name": "Randy Arozarena",
+          "id": 668227
+        },
+        {
+          "name": "Jonathan Aranda",
+          "id": 666018
+        }
+      ]
+    },
+    {
+      "name": "Tom",
+      "players": [
+        {
+          "name": "Juan Soto",
+          "id": 665742
+        },
+        {
+          "name": "Willson Contreras",
+          "id": 575929
+        },
+        {
+          "name": "Jarren Duran",
+          "id": 680776
+        },
+        {
+          "name": "Salvador Perez",
+          "id": 521692
+        },
+        {
+          "name": "Brandon Nimmo",
+          "id": 607043
+        },
+        {
+          "name": "Brice Turang",
+          "id": 668930
+        }
+      ]
+    }
+  ]
+}
