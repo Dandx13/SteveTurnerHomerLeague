@@ -1966,8 +1966,7 @@ function renderTeamStats() {
     const hrPace = tsHrPace(r);
     return `
       <tr>
-        ${isLeague ? `<td>${r.teamName}</td>` : ""}
-        <td>
+        <td class="ts-player-cell">
           <div class="ts-player">
             <img class="ts-avatar ts-headshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="ts-avatar ts-avatar-fallback" style="display:none;">${tsInitials(r.name)}</div>
@@ -1991,6 +1990,7 @@ function renderTeamStats() {
         <td>${tsFmt3(r.obp)}</td>
         <td>${tsFmt3(r.slg)}</td>
         <td style="font-weight:900;">${tsFmt3(r.ops)}</td>
+        ${isLeague ? `<td>${r.teamName}</td>` : ""}
       </tr>`;
   }).join("");
 
@@ -2038,35 +2038,41 @@ function renderTeamStats() {
   const leadersBox = document.getElementById("ts-leaders");
   const maxBy = (arr, fn) => arr.reduce((best, cur) => (fn(cur) > fn(best) ? cur : best), arr[0]);
   if (!rows.length) { leadersBox.innerHTML = ''; return; }
-  const hrLeader = maxBy(rows, r => r.hr);
-  const opsLeader = maxBy(rows, r => r.ops);
+
+  const validHrLeaderPool = rows.filter(r => Number.isFinite(r.hr) && r.hr > 0);
+  const validOpsLeaderPool = rows.filter(r => Number.isFinite(r.ops) && r.ops > 0);
   const abhrLeaderPool = rows.filter(r => tsAbPerHr(r) !== null);
   const paceLeaderPool = rows.filter(r => tsHrPace(r) !== null);
   const longestLeaderPool = rows.filter(r => r.longestHR !== null);
   const maxEVLeaderPool = rows.filter(r => r.maxEV !== null);
+
+  const hrLeader = validHrLeaderPool.length ? maxBy(validHrLeaderPool, r => r.hr) : null;
+  const opsLeader = validOpsLeaderPool.length ? maxBy(validOpsLeaderPool, r => r.ops) : null;
   const abhrLeader = abhrLeaderPool.length ? abhrLeaderPool.reduce((best, cur) => tsAbPerHr(cur) < tsAbPerHr(best) ? cur : best, abhrLeaderPool[0]) : null;
   const paceLeader = paceLeaderPool.length ? maxBy(paceLeaderPool, r => tsHrPace(r)) : null;
   const longestLeader = longestLeaderPool.length ? maxBy(longestLeaderPool, r => r.longestHR) : null;
   const maxEVLeader = maxEVLeaderPool.length ? maxBy(maxEVLeaderPool, r => r.maxEV) : null;
-  const line = (title, r, value) => r ? `
+
+  const line = (title, r, value) => `
     <div class="ts-leaderItem">
       <div class="ts-leaderLeft">
-        <img class="ts-leaderHeadshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="ts-leaderHeadshot ts-leaderHeadshotFallback" style="display:none;">${tsInitials(r.name)}</div>
+        ${r ? `<img class="ts-leaderHeadshot" src="${tsHeadshotUrl(r.playerId)}" alt="${r.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="ts-leaderHeadshot ts-leaderHeadshotFallback" style="display:none;">${tsInitials(r.name)}</div>` : `<div class="ts-leaderHeadshot ts-leaderHeadshotFallback" style="display:flex;">—</div>`}
         <div class="left">
           <div class="ts-leaderTitle">${title}</div>
-          <div class="ts-small ts-leaderName">${r.name}</div>
+          <div class="ts-small ts-leaderName">${r ? r.name : '—'}</div>
         </div>
       </div>
       <div class="right">${value}</div>
-    </div>` : '';
+    </div>`;
+
   leadersBox.innerHTML = [
-    line('HR Leader', hrLeader, `${hrLeader.hr}`),
-    line('OPS Leader', opsLeader, opsLeader.ops ? opsLeader.ops.toFixed(3) : '—'),
+    line('HR Leader', hrLeader, hrLeader ? `${hrLeader.hr}` : '—'),
+    line('OPS Leader', opsLeader, opsLeader ? opsLeader.ops.toFixed(3) : '—'),
     line('Longest HR', longestLeader, longestLeader ? `${tsFmtInt(longestLeader.longestHR)} ft` : '—'),
     line('Max EV', maxEVLeader, maxEVLeader ? `${tsFmt1(maxEVLeader.maxEV)} MPH` : '—'),
-    line('Best AB/HR', abhrLeader, abhrLeader && tsAbPerHr(abhrLeader) ? tsAbPerHr(abhrLeader).toFixed(1) : '—'),
-    line('HR Pace Leader', paceLeader, paceLeader && tsHrPace(paceLeader) ? tsHrPace(paceLeader).toFixed(1) : '—')
+    line('Best AB/HR', abhrLeader, abhrLeader ? tsAbPerHr(abhrLeader).toFixed(1) : '—'),
+    line('HR Pace Leader', paceLeader, paceLeader ? tsHrPace(paceLeader).toFixed(1) : '—')
   ].join('');
 }
 
