@@ -82,14 +82,35 @@ function txDateValue(t) {
 function evaluateTransactionsForIL(transactions) {
   const tx = Array.isArray(transactions) ? [...transactions] : [];
   tx.sort((a,b) => txDateValue(b) - txDateValue(a));
+
   for (const t of tx) {
+    const txTime = txDateValue(t);
+    if (!txTime) continue;
+
+    const txYear = new Date(txTime).getFullYear();
+    if (txYear !== CURRENT_SEASON) continue;
+
     const desc = (t?.description || '').toLowerCase();
     const typeDesc = (t?.typeDesc || '').toLowerCase();
-    const activated = desc.includes('activated from injured list') || desc.includes('returned from injured list') || desc.includes('reinstated from injured list') || desc.includes('activated') || typeDesc.includes('activated');
+
+    const activated =
+      desc.includes('activated from injured list') ||
+      desc.includes('returned from injured list') ||
+      desc.includes('reinstated from injured list') ||
+      typeDesc.includes('activated');
+
     if (activated) return false;
-    const placedIL = (desc.includes('placed on') && desc.includes('injured list')) || desc.includes('transferred to the 60-day injured list') || desc.includes('10-day injured list') || desc.includes('15-day injured list') || desc.includes('60-day injured list') || typeDesc.includes('injured');
+
+    const placedIL =
+      (desc.includes('placed on') && desc.includes('injured list')) ||
+      desc.includes('transferred to the 60-day injured list') ||
+      desc.includes('10-day injured list') ||
+      desc.includes('15-day injured list') ||
+      desc.includes('60-day injured list');
+
     if (placedIL) return true;
   }
+
   return false;
 }
 async function fetchPlayerILStatus(playerId) {
