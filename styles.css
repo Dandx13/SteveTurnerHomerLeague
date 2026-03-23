@@ -513,17 +513,17 @@ body.winnings-active .leaderboard-tools{
 .team ul li{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:10px;
+  justify-content:center;   /* ✅ THIS IS THE FIX */
+  gap:8px;                  /* slightly tighter */
   padding:9px 0;
   border-top:1px solid rgba(255,255,255,.07);
   font-size:13px;
   position:relative;
 
-  min-height:32px;        /* keeps rows equal height */
-  white-space:nowrap;     /* prevents name wrapping */
+  min-height:32px;
+  white-space:nowrap;
   overflow:hidden;
-  text-overflow:ellipsis; /* adds ... for very long names */
+  text-overflow:ellipsis;
 }
 
 .team ul li:first-child{border-top:none;}
