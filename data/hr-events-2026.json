@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-23T02:05:04.077Z",
+  "updatedAt": "2026-03-23T04:35:46.680Z",
   "events": [],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
@@ -13,8 +13,8 @@
     "2026-03-23"
   ],
   "rosterSummary": {
-    "teamCount": 25,
-    "playerCount": 150,
-    "uniquePlayerIdCount": 150
+    "teamCount": 21,
+    "playerCount": 126,
+    "uniquePlayerIdCount": 126
   }
 }
