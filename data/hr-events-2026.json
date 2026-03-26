@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-26T20:00:45.862Z",
+  "updatedAt": "2026-03-26T20:47:50.532Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27,6 +27,19 @@
       "distance": 401,
       "launchSpeed": 104.7,
       "launchAngle": 35
+    },
+    {
+      "key": "656941-823486-6-6",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823486,
+      "atBatIndex": 6,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 383,
+      "launchSpeed": 99.6,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
