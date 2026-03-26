@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-26T20:47:50.532Z",
+  "updatedAt": "2026-03-26T21:19:24.570Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -40,6 +40,19 @@
       "distance": 383,
       "launchSpeed": 99.6,
       "launchAngle": 33
+    },
+    {
+      "key": "808959-823812-77-77",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823812,
+      "atBatIndex": 77,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 384,
+      "launchSpeed": 103,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
