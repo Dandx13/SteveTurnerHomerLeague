@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-26T22:16:22.358Z",
+  "updatedAt": "2026-03-26T22:52:19.721Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -92,6 +92,32 @@
       "distance": 423,
       "launchSpeed": 106,
       "launchAngle": 33
+    },
+    {
+      "key": "676475-823081-64-64",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823081,
+      "atBatIndex": 64,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 432,
+      "launchSpeed": 109,
+      "launchAngle": 32
+    },
+    {
+      "key": "669394-823486-66-66",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823486,
+      "atBatIndex": 66,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 438,
+      "launchSpeed": 108.1,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
