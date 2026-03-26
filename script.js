@@ -40,7 +40,7 @@ const playerSeasonStats = {};
 let hrEventDataByPlayer = {};
 let hrEventDataLoadPromise = null;
 const IL_CACHE_KEY = "dl_il_status_cache_v2";
-const IL_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+const IL_CACHE_TTL_MS = 30 * 60 * 1000;
 let playerILByPlayerId = new Map();
 let lineupKnownByTeamId = new Map();
 let currentLineupByPlayerId = new Map();
@@ -91,15 +91,17 @@ function evaluateTransactionsForIL(transactions) {
     if (txYear !== CURRENT_SEASON) continue;
 
     const desc = (t?.description || '').toLowerCase();
-    const typeDesc = (t?.typeDesc || '').toLowerCase();
 
-    const activated =
-      desc.includes('activated from injured list') ||
-      desc.includes('returned from injured list') ||
-      desc.includes('reinstated from injured list') ||
-      typeDesc.includes('activated');
+    const activatedIL =
+      desc.includes('activated') && desc.includes('injured list');
 
-    if (activated) return false;
+    const returnedIL =
+      desc.includes('returned') && desc.includes('injured list');
+
+    const reinstatedIL =
+      desc.includes('reinstated') && desc.includes('injured list');
+
+    if (activatedIL || returnedIL || reinstatedIL) return false;
 
     const placedIL =
       (desc.includes('placed on') && desc.includes('injured list')) ||
