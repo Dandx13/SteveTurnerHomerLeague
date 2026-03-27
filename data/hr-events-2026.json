@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-27T21:58:43.918Z",
+  "updatedAt": "2026-03-27T22:45:06.490Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -144,6 +144,32 @@
       "distance": 418,
       "launchSpeed": 104.8,
       "launchAngle": 28
+    },
+    {
+      "key": "592450-823243-35-35",
+      "season": 2026,
+      "date": "2026-03-27",
+      "gamePk": 823243,
+      "atBatIndex": 35,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 405,
+      "launchSpeed": 109.1,
+      "launchAngle": 37
+    },
+    {
+      "key": "519317-823243-37-37",
+      "season": 2026,
+      "date": "2026-03-27",
+      "gamePk": 823243,
+      "atBatIndex": 37,
+      "playerId": 519317,
+      "playerName": "Giancarlo Stanton",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 414,
+      "launchSpeed": 108,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
