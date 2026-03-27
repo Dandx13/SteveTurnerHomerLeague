@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-26T23:58:08.439Z",
+  "updatedAt": "2026-03-27T03:23:53.134Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -118,17 +118,43 @@
       "distance": 438,
       "launchSpeed": 108.1,
       "launchAngle": 21
+    },
+    {
+      "key": "681624-823974-35-35",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823974,
+      "atBatIndex": 35,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 400,
+      "launchSpeed": 100.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "669257-823974-57-57",
+      "season": 2026,
+      "date": "2026-03-26",
+      "gamePk": 823974,
+      "atBatIndex": 57,
+      "playerId": 669257,
+      "playerName": "Will Smith",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 418,
+      "launchSpeed": 104.8,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-03-20",
     "2026-03-21",
     "2026-03-22",
     "2026-03-23",
     "2026-03-24",
     "2026-03-25",
-    "2026-03-26"
+    "2026-03-26",
+    "2026-03-27"
   ],
   "rosterSummary": {
     "teamCount": 21,
