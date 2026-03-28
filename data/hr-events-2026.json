@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-28T20:31:33.858Z",
+  "updatedAt": "2026-03-28T20:59:32.743Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -339,6 +339,32 @@
       "distance": 392,
       "launchSpeed": 103.2,
       "launchAngle": 33
+    },
+    {
+      "key": "669394-823488-19-19",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823488,
+      "atBatIndex": 19,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 374,
+      "launchSpeed": 104.1,
+      "launchAngle": 22
+    },
+    {
+      "key": "596115-824540-22-22",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824540,
+      "atBatIndex": 22,
+      "playerId": 596115,
+      "playerName": "Trevor Story",
+      "fantasyTeam": "Pat T",
+      "distance": 402,
+      "launchSpeed": 109.6,
+      "launchAngle": 19
     }
   ],
   "lastScanMode": "rolling-7-day",
