@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-28T19:54:42.892Z",
+  "updatedAt": "2026-03-28T20:31:33.858Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -313,6 +313,32 @@
       "distance": 364,
       "launchSpeed": 110,
       "launchAngle": 18
+    },
+    {
+      "key": "664023-824701-49-49",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824701,
+      "atBatIndex": 49,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "608369-823488-2-2",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823488,
+      "atBatIndex": 2,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 392,
+      "launchSpeed": 103.2,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
