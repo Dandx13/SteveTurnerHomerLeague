@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-28T23:03:30.666Z",
+  "updatedAt": "2026-03-28T23:43:10.758Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -430,6 +430,32 @@
       "distance": 379,
       "launchSpeed": 106.8,
       "launchAngle": 24
+    },
+    {
+      "key": "677800-824540-81-81",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824540,
+      "atBatIndex": 81,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 360,
+      "launchSpeed": 106,
+      "launchAngle": 41
+    },
+    {
+      "key": "673357-823651-90-90",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823651,
+      "atBatIndex": 90,
+      "playerId": 673357,
+      "playerName": "Luis Robert Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
     }
   ],
   "lastScanMode": "rolling-7-day",
