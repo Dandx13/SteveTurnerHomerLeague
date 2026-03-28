@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-28T20:59:32.743Z",
+  "updatedAt": "2026-03-28T21:38:55.516Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -365,6 +365,58 @@
       "distance": 402,
       "launchSpeed": 109.6,
       "launchAngle": 19
+    },
+    {
+      "key": "669127-822838-53-53",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 822838,
+      "atBatIndex": 53,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 420,
+      "launchSpeed": 109.7,
+      "launchAngle": 20
+    },
+    {
+      "key": "668904-824862-34-34",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824862,
+      "atBatIndex": 34,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 378,
+      "launchSpeed": 101,
+      "launchAngle": 27
+    },
+    {
+      "key": "701398-824540-26-26",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824540,
+      "atBatIndex": 26,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 399,
+      "launchSpeed": 108.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "678662-823892-26-26",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823892,
+      "atBatIndex": 26,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 401,
+      "launchSpeed": 105.6,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
