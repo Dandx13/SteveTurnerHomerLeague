@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-27T23:49:40.551Z",
+  "updatedAt": "2026-03-28T00:58:51.832Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -183,17 +183,56 @@
       "distance": 367,
       "launchSpeed": 96.6,
       "launchAngle": 33
+    },
+    {
+      "key": "669127-822839-20-20",
+      "season": 2026,
+      "date": "2026-03-27",
+      "gamePk": 822839,
+      "atBatIndex": 20,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 375,
+      "launchSpeed": 105.2,
+      "launchAngle": 22
+    },
+    {
+      "key": "686948-824946-23-23",
+      "season": 2026,
+      "date": "2026-03-27",
+      "gamePk": 824946,
+      "atBatIndex": 23,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 370,
+      "launchSpeed": 110.2,
+      "launchAngle": 21
+    },
+    {
+      "key": "671739-824946-33-33",
+      "season": 2026,
+      "date": "2026-03-27",
+      "gamePk": 824946,
+      "atBatIndex": 33,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 372,
+      "launchSpeed": 102.9,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-03-21",
     "2026-03-22",
     "2026-03-23",
     "2026-03-24",
     "2026-03-25",
     "2026-03-26",
-    "2026-03-27"
+    "2026-03-27",
+    "2026-03-28"
   ],
   "rosterSummary": {
     "teamCount": 21,
