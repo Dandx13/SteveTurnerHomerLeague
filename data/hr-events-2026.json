@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-29T00:03:30.171Z",
+  "updatedAt": "2026-03-29T03:32:50.349Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -456,6 +456,71 @@
       "distance": null,
       "launchSpeed": null,
       "launchAngle": null
+    },
+    {
+      "key": "624585-824213-25-25",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824213,
+      "atBatIndex": 25,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 363,
+      "launchSpeed": 104.4,
+      "launchAngle": 20
+    },
+    {
+      "key": "808959-823811-29-29",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823811,
+      "atBatIndex": 29,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 409,
+      "launchSpeed": 102.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "521692-824945-41-41",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 824945,
+      "atBatIndex": 41,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 390,
+      "launchSpeed": 105.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "592450-823241-36-36",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823241,
+      "atBatIndex": 36,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 383,
+      "launchSpeed": 102.1,
+      "launchAngle": 33
+    },
+    {
+      "key": "669257-823973-60-60",
+      "season": 2026,
+      "date": "2026-03-28",
+      "gamePk": 823973,
+      "atBatIndex": 60,
+      "playerId": 669257,
+      "playerName": "Will Smith",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 414,
+      "launchSpeed": 105.1,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
