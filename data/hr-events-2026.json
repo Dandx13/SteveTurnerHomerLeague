@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-29T18:03:26.523Z",
+  "updatedAt": "2026-03-29T19:00:20.008Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -533,6 +533,97 @@
       "fantasyTeam": "Dan/Joe",
       "distance": 362,
       "launchSpeed": 99.6,
+      "launchAngle": 38
+    },
+    {
+      "key": "607043-823487-15-15",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 823487,
+      "atBatIndex": 15,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 410,
+      "launchSpeed": 103.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "672960-822837-26-26",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 822837,
+      "atBatIndex": 26,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 420,
+      "launchSpeed": 110.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "691777-822837-31-31",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 822837,
+      "atBatIndex": 31,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 362,
+      "launchSpeed": 104.8,
+      "launchAngle": 23
+    },
+    {
+      "key": "677800-824538-25-25",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 824538,
+      "atBatIndex": 25,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 385,
+      "launchSpeed": 98,
+      "launchAngle": 29
+    },
+    {
+      "key": "664040-823647-19-19",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 823647,
+      "atBatIndex": 19,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 390,
+      "launchSpeed": 103.4,
+      "launchAngle": 34
+    },
+    {
+      "key": "695657-823810-3-3",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 823810,
+      "atBatIndex": 3,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 405,
+      "launchSpeed": 103.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "808959-823810-15-15",
+      "season": 2026,
+      "date": "2026-03-29",
+      "gamePk": 823810,
+      "atBatIndex": 15,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 375,
+      "launchSpeed": 102.1,
       "launchAngle": 38
     }
   ],
