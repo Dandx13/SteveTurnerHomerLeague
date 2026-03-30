@@ -39,8 +39,18 @@ const CURRENT_SEASON = 2026;
 const playerSeasonStats = {};
 let hrEventDataByPlayer = {};
 let hrEventDataLoadPromise = null;
+
+// App loading state
+let initialLeaderboardLoaded = false;
+let leaderboardRefreshPromise = null;
+let monthlyStatsLoaded = false;
+let monthlyStatsLoadPromise = null;
+let feedDataLoadPromise = null;
+let feedAutoRefreshStarted = false;
+let monthlyAutoRefreshStarted = false;
+let pendingTeamStatsOpen = false;
 const IL_CACHE_KEY = "dl_il_status_cache_v2";
-const IL_CACHE_TTL_MS = 30 * 60 * 1000;
+const IL_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 let playerILByPlayerId = new Map();
 let lineupKnownByTeamId = new Map();
 let currentLineupByPlayerId = new Map();
@@ -91,17 +101,15 @@ function evaluateTransactionsForIL(transactions) {
     if (txYear !== CURRENT_SEASON) continue;
 
     const desc = (t?.description || '').toLowerCase();
+    const typeDesc = (t?.typeDesc || '').toLowerCase();
 
-    const activatedIL =
-      desc.includes('activated') && desc.includes('injured list');
+    const activated =
+      desc.includes('activated from injured list') ||
+      desc.includes('returned from injured list') ||
+      desc.includes('reinstated from injured list') ||
+      typeDesc.includes('activated');
 
-    const returnedIL =
-      desc.includes('returned') && desc.includes('injured list');
-
-    const reinstatedIL =
-      desc.includes('reinstated') && desc.includes('injured list');
-
-    if (activatedIL || returnedIL || reinstatedIL) return false;
+    if (activated) return false;
 
     const placedIL =
       (desc.includes('placed on') && desc.includes('injured list')) ||
@@ -600,6 +608,32 @@ function fetchPlayerId(playerName) {
   return playerIdLookup[playerName] || null;
 }
 
+
+function setLoadingMessage(message, submessage = "") {
+  const indicator = document.getElementById("loading-indicator");
+  if (!indicator) return;
+  indicator.innerHTML = `
+    <div class="loading-card">
+      <div class="loading-spinner"></div>
+      <div class="loading-title">${message}</div>
+      ${submessage ? `<div class="loading-subtitle">${submessage}</div>` : ""}
+    </div>
+  `;
+}
+
+function showLoading(message, submessage = "") {
+  const indicator = document.getElementById("loading-indicator");
+  if (!indicator) return;
+  setLoadingMessage(message, submessage);
+  indicator.style.display = "flex";
+}
+
+function hideLoading() {
+  const indicator = document.getElementById("loading-indicator");
+  if (!indicator) return;
+  indicator.style.display = "none";
+}
+
 // Disable all console logs
 //console.log = function() {};
 
@@ -608,64 +642,107 @@ console.log("This will not appear in the console");
 
 // Other functions, variables, etc.
 
-async function fetchPlayerStats() {
-  // Clear previous player stats to fetch new data
-  playerHomeRuns = {};  // Reset the player home run data
+async function fetchPlayerStats(options = {}) {
+  const {
+    showLoader = !initialLeaderboardLoaded
+  } = options;
 
-  // Hide the loading indicator
-  document.getElementById("loading-indicator").style.display = "none";
-  document.getElementById("team-container").innerHTML = "<p>Loading teams...</p>";  // Show loading message
+  if (leaderboardRefreshPromise) return leaderboardRefreshPromise;
 
-  try {
-    // --- NEW: preload (optimized) ---
-    // 1) team ids (cached)
-    await ensurePlayerTeamIdsLoaded();
-    // 1b) team season games played (for HR pace projection)
-    await ensureTeamGamesPlayedLoaded();
-    // 2) today's schedule statuses (single call)
-    await fetchTodaysTeamStatuses();
-    // 3) lineup / participation context for today
-    await fetchTodaysParticipationData();
-    // 4) injured list statuses
-    await ensurePlayerILStatusesLoaded();
-    // 5) NEW: HR counts across today's schedule games (doubleheaders included)
-    await fetchTodaysHomeRunCounts();
+  leaderboardRefreshPromise = (async () => {
+    const teamContainer = document.getElementById("team-container");
+    const lastUpdateEl = document.getElementById("last-update");
 
-    const batchSize = 5; // Size of each batch for requests
-    let playerRequests = [];
-    let batchResults = [];
-
-    // Create batches of player stats requests
-    for (let i = 0; i < fantasyTeams.length; i++) {
-      const team = fantasyTeams[i];
-
-      // Group players in batches of size 'batchSize'
-      const batch = [];
-      for (let j = 0; j < team.players.length; j++) {
-        const player = team.players[j];
-
-        batch.push(fetchPlayerStatsForPlayer(player));
-
-        // Process batch when reaching batchSize or last player
-        if (batch.length === batchSize || j === team.players.length - 1) {
-          playerRequests.push(batch);
-          batchResults.push(await processBatch(batch));
-          batch.length = 0;  // Reset for the next batch
-        }
+    if (showLoader) {
+      showLoading("Loading leaderboard…", "Getting live home run totals first.");
+      if (teamContainer && !initialLeaderboardLoaded) {
+        teamContainer.innerHTML = "";
       }
     }
 
-    // Flatten the batch results and then continue processing
-    batchResults = batchResults.flat();
-    displayFantasyTeams();  // Now display the updated teams
-    const now = new Date();
-    document.getElementById("last-update").textContent = "Last updated: " + now.toLocaleString();
+    try {
+      await ensurePlayerTeamIdsLoaded();
+      await ensureTeamGamesPlayedLoaded();
+      await fetchTodaysTeamStatuses();
+      await fetchTodaysParticipationData();
+      await ensurePlayerILStatusesLoaded();
+      await fetchTodaysHomeRunCounts();
 
-  } catch (error) {
-    console.error("Error fetching player stats:", error);
-  } finally {
-    document.getElementById("loading-indicator").style.display = "none";
-  }
+      const nextPlayerSeasonStats = {};
+      const nextPlayerHomeRuns = {};
+      const allPlayers = fantasyTeams.flatMap(team => team.players);
+
+      const batchSize = 8;
+      for (let i = 0; i < allPlayers.length; i += batchSize) {
+        const batchPlayers = allPlayers.slice(i, i + batchSize);
+        const results = await Promise.allSettled(batchPlayers.map(async (player) => {
+          const playerId = player.id || player.playerId || fetchPlayerId(player.name);
+          if (!playerId) {
+            throw new Error(`Player ID for ${player.name} not found.`);
+          }
+          const seasonStats = await fetchSeasonHittingStats(playerId);
+          return { playerId, seasonStats };
+        }));
+
+        results.forEach((result, idx) => {
+          const player = batchPlayers[idx];
+          const playerId = player.id || player.playerId || fetchPlayerId(player.name);
+          if (result.status === "fulfilled") {
+            nextPlayerSeasonStats[result.value.playerId] = result.value.seasonStats;
+            nextPlayerHomeRuns[result.value.playerId] = result.value.seasonStats.homeRuns || 0;
+          } else {
+            console.error(`Failed to fetch stats for player ${player?.name || playerId}:`, result.reason);
+            if (playerId && playerSeasonStats[playerId]) {
+              nextPlayerSeasonStats[playerId] = playerSeasonStats[playerId];
+              nextPlayerHomeRuns[playerId] = playerSeasonStats[playerId].homeRuns || 0;
+            } else if (playerId) {
+              nextPlayerSeasonStats[playerId] = {
+                homeRuns: 0, rbi: 0, runs: 0,
+                avg: 0, obp: 0, slg: 0, ops: 0,
+                gamesPlayed: 0, atBats: 0, plateAppearances: 0, hits: 0,
+                baseOnBalls: 0, strikeOuts: 0,
+                doubles: 0, triples: 0, stolenBases: 0
+              };
+              nextPlayerHomeRuns[playerId] = 0;
+            }
+          }
+        });
+      }
+
+      Object.keys(playerSeasonStats).forEach(key => delete playerSeasonStats[key]);
+      Object.assign(playerSeasonStats, nextPlayerSeasonStats);
+      playerHomeRuns = nextPlayerHomeRuns;
+
+      displayFantasyTeams();
+
+      if (document.getElementById("team-stats-container")?.style.display === "block") {
+        renderTeamStats();
+      }
+
+      const now = new Date();
+      if (lastUpdateEl) {
+        lastUpdateEl.textContent = "Last updated: " + now.toLocaleString();
+      }
+
+      initialLeaderboardLoaded = true;
+    } catch (error) {
+      console.error("Error fetching player stats:", error);
+      if (!initialLeaderboardLoaded && teamContainer) {
+        teamContainer.innerHTML = "<p>Unable to load leaderboard right now.</p>";
+      }
+    } finally {
+      if (showLoader) hideLoading();
+      leaderboardRefreshPromise = null;
+
+      if (pendingTeamStatsOpen && initialLeaderboardLoaded) {
+        pendingTeamStatsOpen = false;
+        await openTeamStatsView();
+        hideLoading();
+      }
+    }
+  })();
+
+  return leaderboardRefreshPromise;
 }
 
 async function ensureTeamGamesPlayedLoaded() {
@@ -1066,27 +1143,41 @@ async function fetchMonthlyHomeRuns(playerId) {
   }
 }
 
-async function fetchMonthlyStats() {
-  document.getElementById("loading-indicator").style.display = "flex";
-
-  // Ensure dropdown appears before fetching stats
-  populateMobileMonthDropdown();
-
-  try {
-    await Promise.all(fantasyTeams.flatMap(team =>
-      team.players.map(async player => {
-        if (player.id) {
-          playerMonthlyStats[player.id] = await fetchMonthlyHomeRuns(player.id);
-        }
-      })
-    ));
-
+async function fetchMonthlyStats(options = {}) {
+  const { force = false } = options;
+  if (monthlyStatsLoaded && !force) {
     displayMonthlyStats();
-  } catch (error) {
-    console.error("Error fetching monthly stats:", error);
-  } finally {
-    document.getElementById("loading-indicator").style.display = "none";
+    return;
   }
+  if (monthlyStatsLoadPromise) {
+    await monthlyStatsLoadPromise;
+    return;
+  }
+
+  monthlyStatsLoadPromise = (async () => {
+    showLoading("Loading monthly totals…", "Fetching game logs by month.");
+    populateMobileMonthDropdown();
+
+    try {
+      await Promise.all(fantasyTeams.flatMap(team =>
+        team.players.map(async player => {
+          if (player.id) {
+            playerMonthlyStats[player.id] = await fetchMonthlyHomeRuns(player.id);
+          }
+        })
+      ));
+
+      monthlyStatsLoaded = true;
+      displayMonthlyStats();
+    } catch (error) {
+      console.error("Error fetching monthly stats:", error);
+    } finally {
+      hideLoading();
+      monthlyStatsLoadPromise = null;
+    }
+  })();
+
+  await monthlyStatsLoadPromise;
 }
 
 // Function to populate the dropdown menu with available months
@@ -1286,8 +1377,12 @@ function convertUTCToET(utcDateString) {
   return etDate;
 }
 
-async function fetchHomeRunFeed() {
-  try {
+async function fetchHomeRunFeed(options = {}) {
+  const { force = false } = options;
+  if (feedDataLoadPromise && !force) return feedDataLoadPromise;
+
+  feedDataLoadPromise = (async () => {
+    try {
     const seenPlays = new Set();
     // Clear any existing cached feed data
     sessionStorage.removeItem("homeRunFeedData");
@@ -1423,17 +1518,19 @@ async function fetchHomeRunFeed() {
       feedBody.innerHTML += row;
     });
 
-  } catch (error) {
-    console.error("🚨 Error fetching home run data:", error);
-    document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
-  }
+    feedDataLoaded = true;
+
+    } catch (error) {
+      console.error("🚨 Error fetching home run data:", error);
+      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner in case of error
+    } finally {
+      feedDataLoadPromise = null;
+    }
+  })();
+
+  return feedDataLoadPromise;
 }
 
-// 🔄 Auto-refresh the feed every 5 minutes
-setInterval(fetchHomeRunFeed, 300000); // Fetch every 5 minutes
-
-// Initially load the data when the page is loaded or when switching tabs
-fetchHomeRunFeed(); // Trigger on page load
 
 function calculateAndDisplayWinnings() {
   const payouts = [1100, 650, 450, 350, 300, 250, 200];
@@ -1498,24 +1595,22 @@ function setActiveTabClass(tab) {
 }
 
 // --- Tab Switching Logic ---
-document.getElementById("season-tab").addEventListener("click", () => {
-  // Show the team container (leaderboard) and hide the other containers
+document.getElementById("season-tab").addEventListener("click", async () => {
   document.getElementById("team-container").style.display = "grid";
   document.getElementById("monthly-container").style.display = "none";
   document.getElementById("feed-container").style.display = "none";
-  document.getElementById("winnings-container").style.display = "none"; // Hide winnings
-  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none")
+  document.getElementById("winnings-container").style.display = "none";
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none");
 
-  // Hide dropdown only on mobile
   if (window.innerWidth <= 768) {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ set active tab state (leaderboard = none)
   setActiveTabClass("");
 
-  // Fetch fresh player stats when the "Leaderboard" tab is clicked
-  fetchPlayerStats();
+  if (!initialLeaderboardLoaded) {
+    await fetchPlayerStats({ showLoader: true });
+  }
 });
 
 document.getElementById("monthly-tab").addEventListener("click", async () => {
@@ -1525,12 +1620,11 @@ document.getElementById("monthly-tab").addEventListener("click", async () => {
   document.getElementById("winnings-container").style.display = "none";
   document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none");
 
-  // ✅ set active tab state
   setActiveTabClass("monthly-active");
 
-  await fetchMonthlyStats(); // ✅ Wait for stats to load fully
+  ensureMonthlyAutoRefreshStarted();
+  await fetchMonthlyStats();
 
-  // ✅ Mobile only: show default month table after data is ready
   if (window.innerWidth <= 768) {
     const selectedMonth = document.getElementById("mobile-month-select").value;
     if (selectedMonth) {
@@ -1539,26 +1633,22 @@ document.getElementById("monthly-tab").addEventListener("click", async () => {
   }
 });
 
-document.getElementById("feed-tab").addEventListener("click", () => {
-  // Hide other containers and show the feed container
+document.getElementById("feed-tab").addEventListener("click", async () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "none";
   document.getElementById("feed-container").style.display = "block";
-  document.getElementById("winnings-container").style.display = "none"; // Hide winnings
-  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none")
+  document.getElementById("winnings-container").style.display = "none";
+  document.getElementById("team-stats-container") && (document.getElementById("team-stats-container").style.display = "none");
 
-  // Hide dropdown only on mobile when viewing the feed
   if (window.innerWidth <= 768) {
     document.getElementById("mobile-month-select").style.display = "none";
   }
 
-  // ✅ set active tab state
   setActiveTabClass("feed-active");
 
-  // Check if feed data is already loaded
+  ensureFeedAutoRefreshStarted();
   if (!feedDataLoaded) {
-    console.log("Fetching Home Run Feed data...");
-    fetchHomeRunFeed();
+    await fetchHomeRunFeed();
   }
 });
 
@@ -1722,7 +1812,7 @@ async function ensureHrEventDataLoaded() {
         const launchSpeed = Number(ev?.launchSpeed);
         const distance = Number(ev?.distance);
 
-        if (Number.isFinite(launchSpeed)) {
+        if (Number.isFinite(launchSpeed) && launchSpeed > 0) {
           byPlayer[playerId].maxEV =
             byPlayer[playerId].maxEV === null
               ? launchSpeed
@@ -1731,7 +1821,7 @@ async function ensureHrEventDataLoaded() {
           byPlayer[playerId]._evCount += 1;
         }
 
-        if (Number.isFinite(distance)) {
+        if (Number.isFinite(distance) && distance > 0) {
           byPlayer[playerId].longestHR =
             byPlayer[playerId].longestHR === null
               ? distance
@@ -2078,6 +2168,29 @@ function renderTeamStats() {
   ].join('');
 }
 
+
+function ensureFeedAutoRefreshStarted() {
+  if (feedAutoRefreshStarted) return;
+  feedAutoRefreshStarted = true;
+  setInterval(() => fetchHomeRunFeed({ force: true }), 300000);
+}
+
+function ensureMonthlyAutoRefreshStarted() {
+  if (monthlyAutoRefreshStarted) return;
+  monthlyAutoRefreshStarted = true;
+  setInterval(() => {
+    if (monthlyStatsLoaded) fetchMonthlyStats({ force: true });
+  }, 300000);
+}
+
+async function openTeamStatsView() {
+  await ensurePlayerTeamIdsLoaded();
+  await ensureTeamGamesPlayedLoaded();
+  await ensureHrEventDataLoaded();
+  initTeamStatsUI();
+  renderTeamStats();
+}
+
 document.getElementById("teamstats-tab")?.addEventListener("click", async () => {
   document.getElementById("team-container").style.display = "none";
   document.getElementById("monthly-container").style.display = "none";
@@ -2105,15 +2218,17 @@ document.getElementById("mobile-month-select").addEventListener("change", handle
 (async function initApp() {
   try {
     await loadFantasyTeams();
-    await fetchPlayerStats();
-    setInterval(fetchPlayerStats, 300000);
-    setInterval(fetchMonthlyStats, 300000);
+    showLoading("Loading leaderboard…", "Fetching live totals for all teams.");
+    await fetchPlayerStats({ showLoader: false });
+    hideLoading();
+    setInterval(() => fetchPlayerStats({ showLoader: false }), 300000);
   } catch (error) {
     console.error("App initialization failed:", error);
     const container = document.getElementById("team-container");
     if (container) {
       container.innerHTML = '<p style="padding:20px;">Failed to load fantasy rosters.</p>';
     }
+    hideLoading();
   }
 })();
 
