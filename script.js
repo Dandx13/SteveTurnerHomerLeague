@@ -1377,6 +1377,115 @@ function convertUTCToET(utcDateString) {
   return etDate;
 }
 
+const savantGameCache = new Map();
+const disableHomeRunFeedCache = true;
+const disableSavantGameCache = true;
+
+function normalizeFeedDescription(description) {
+  return String(description || "")
+    .toLowerCase()
+    .replace(/[.,;:!?()]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getSavantCacheKey(gamePk) {
+  return `dl_savant_game_${gamePk}`;
+}
+
+async function fetchSavantGameData(gamePk) {
+  if (!gamePk) return null;
+  if (savantGameCache.has(gamePk)) return savantGameCache.get(gamePk);
+
+  const storageKey = getSavantCacheKey(gamePk);
+  if (!disableSavantGameCache) {
+    const cached = sessionStorage.getItem(storageKey);
+    if (cached) {
+      const parsed = safeJsonParse(cached);
+      if (parsed) {
+        savantGameCache.set(gamePk, parsed);
+        return parsed;
+      }
+    }
+  }
+
+  try {
+    const response = await fetch(`https://baseballsavant.mlb.com/gf?game_pk=${gamePk}&_=${Date.now()}`);
+    if (!response.ok) return null;
+    const data = await response.json();
+    savantGameCache.set(gamePk, data);
+    if (!disableSavantGameCache) sessionStorage.setItem(storageKey, JSON.stringify(data));
+    return data;
+  } catch (error) {
+    console.warn('Savant fetch failed for gamePk', gamePk, error);
+    return null;
+  }
+}
+
+
+function getWouldItDongFromSavantGame(savantData, hr) {
+  if (!savantData || !hr) return "—";
+
+  const playerId = Number(hr.playerId);
+  const targetDistance = Number(hr.distance);
+  const targetLaunchSpeed = Number(hr.launchSpeed);
+
+  if (!Number.isFinite(playerId) || !Number.isFinite(targetDistance) || !Number.isFinite(targetLaunchSpeed)) {
+    return "—";
+  }
+
+  const allRows = [
+    ...(Array.isArray(savantData.team_home) ? savantData.team_home : []),
+    ...(Array.isArray(savantData.team_away) ? savantData.team_away : [])
+  ];
+
+  const sameBatterHomeRuns = allRows.filter(row =>
+    row?.type === "pitch" &&
+    String(row?.game_pk) === String(hr.gamePk) &&
+    row?.events === "Home Run" &&
+    Number(row?.batter) === playerId &&
+    Number(row?.hit_distance) === targetDistance &&
+    Number(row?.launch_speed) === targetLaunchSpeed
+  );
+
+  if (!sameBatterHomeRuns.length) return "—";
+
+  const dedupedMatches = [];
+  const seenMatchKeys = new Set();
+
+  sameBatterHomeRuns.forEach(row => {
+    const matchKey = [
+      row?.batter ?? "",
+      row?.hit_distance ?? "",
+      row?.launch_speed ?? "",
+      row?.des || ""
+    ].join("|");
+
+    if (seenMatchKeys.has(matchKey)) return;
+    seenMatchKeys.add(matchKey);
+    dedupedMatches.push(row);
+  });
+
+  const bestRow = dedupedMatches.find(row =>
+    Number.isFinite(Number(row?.contextMetrics?.homeRunBallparks))
+  ) || dedupedMatches[0];
+
+  const parkCount = Number(bestRow?.contextMetrics?.homeRunBallparks);
+  return Number.isFinite(parkCount) ? `${parkCount} of 30 Stadiums` : "—";
+}
+
+function formatWouldItDongDisplay(value) {
+  if (!value || value === "—") return "—";
+
+  const match = String(value).match(/^(\d+) of 30 Stadiums$/);
+  if (!match) return value;
+
+  const parkCount = match[1];
+  return window.innerWidth <= 768
+    ? `${parkCount}/30`
+    : `${parkCount} of 30 Stadiums`;
+}
+
 async function fetchHomeRunFeed(options = {}) {
   const { force = false } = options;
   if (feedDataLoadPromise && !force) return feedDataLoadPromise;
@@ -1384,8 +1493,6 @@ async function fetchHomeRunFeed(options = {}) {
   feedDataLoadPromise = (async () => {
     try {
     const seenPlays = new Set();
-    // Clear any existing cached feed data
-    sessionStorage.removeItem("homeRunFeedData");
 
     // Show the loading spinner and reset the percentage
     document.getElementById("loading-spinner").style.display = "block";
@@ -1393,7 +1500,7 @@ async function fetchHomeRunFeed(options = {}) {
     const percentageElement = document.getElementById("spinner-percentage");
     percentageElement.textContent = `${percentage}%`; // Start at 0%
 
-    let homeRuns = JSON.parse(sessionStorage.getItem("homeRunFeedData")) || [];
+    let homeRuns = [];
     const maxHomeRuns = 25; // Limit to the 25 most recent home runs
 
     if (homeRuns.length === 0) {
@@ -1471,12 +1578,17 @@ async function fetchHomeRunFeed(options = {}) {
                 homeRuns.push({
                   team: fantasyTeamName,
                   player: playerName,
+                  playerId: playerId,
+                  description: description,
                   date: formattedETDate,
                   dateTime: utcPlayEndTime,
                   distance: hitData.totalDistance || null,
                   launchSpeed: hitData.launchSpeed || null,
                   launchAngle: hitData.launchAngle || null,
-                  hrNumber: hrNumber
+                  hrNumber: hrNumber,
+                  gamePk: gameId,
+                  captivatingIndex: play.about?.captivatingIndex ?? null,
+                  wouldItDong: "—"
                 });
               }
             }
@@ -1494,7 +1606,27 @@ async function fetchHomeRunFeed(options = {}) {
 
       // Ensure we only have the top 25 home runs
       homeRuns = homeRuns.slice(0, maxHomeRuns);
-      sessionStorage.setItem("homeRunFeedData", JSON.stringify(homeRuns));
+
+      const uniqueGamePks = [...new Set(homeRuns.map(hr => hr.gamePk).filter(Boolean))];
+      const savantGames = new Map();
+      const savantResults = await Promise.allSettled(uniqueGamePks.map(async (gamePk) => ({ gamePk, data: await fetchSavantGameData(gamePk) })));
+      savantResults.forEach(result => {
+        if (result.status === "fulfilled" && result.value?.data) {
+          savantGames.set(result.value.gamePk, result.value.data);
+        } else if (result.status === "rejected") {
+          console.warn("Savant fetch rejected", result.reason);
+        }
+      });
+
+      homeRuns = homeRuns.map(hr => ({
+        ...hr,
+        wouldItDong: getWouldItDongFromSavantGame(
+          savantGames.get(hr.gamePk),
+          hr
+        )
+      }));
+
+
     }
 
     document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
@@ -1508,10 +1640,15 @@ async function fetchHomeRunFeed(options = {}) {
         ? `${hr.distance} ft<br><span class="ev">${hr.launchSpeed} mph</span>`
         : "—";
 
+      const dongDisplay = formatWouldItDongDisplay(
+        hr.wouldItDong !== undefined && hr.wouldItDong !== null ? hr.wouldItDong : "—"
+      );
+
       const row = `<tr>
-        <td>${hr.team}</td>
         <td><strong>${hr.player} (${hr.hrNumber})</strong></td>
         <td>${details}</td>
+        <td class="feed-dong-cell">${dongDisplay}</td>
+        <td>${hr.team}</td>
         <td>${hr.date}</td>
       </tr>`;
 

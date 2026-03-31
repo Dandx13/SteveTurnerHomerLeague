@@ -1642,3 +1642,56 @@ body.winnings-active .leaderboard-tools{
     padding-right:36px;
   }
 }
+
+
+/* Live Feed mobile fit */
+.feed-dong-header,
+.feed-dong-cell{
+  white-space: nowrap;
+}
+
+@media (max-width: 768px){
+  .feed-table{
+    table-layout: fixed;
+  }
+
+  .feed-table th,
+  .feed-table td{
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .feed-table th:nth-child(1),
+  .feed-table td:nth-child(1){
+    width: 26%;
+  }
+
+  .feed-table th:nth-child(2),
+  .feed-table td:nth-child(2){
+    width: 22%;
+  }
+
+  .feed-table th:nth-child(3),
+  .feed-table td:nth-child(3){
+    width: 22%;
+  }
+
+  .feed-table th:nth-child(4),
+  .feed-table td:nth-child(4){
+    width: 18%;
+  }
+
+  .feed-table th:nth-child(5),
+  .feed-table td:nth-child(5){
+    width: 12%;
+  }
+
+  .feed-dong-header,
+  .feed-dong-cell{
+    font-size: 11px;
+  }
+
+  .feed-table td{
+    word-break: break-word;
+  }
+}
