@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-31T23:03:17.825Z",
+  "updatedAt": "2026-03-31T23:47:21.750Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -911,6 +911,97 @@
       "distance": 403,
       "launchSpeed": 107.8,
       "launchAngle": 37
+    },
+    {
+      "key": "624413-824861-29-29",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824861,
+      "atBatIndex": 29,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 400,
+      "launchSpeed": 99.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "668804-824537-14-14",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824537,
+      "atBatIndex": 14,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 417,
+      "launchSpeed": 106.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "665833-824537-28-28",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824537,
+      "atBatIndex": 28,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 444,
+      "launchSpeed": 111.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "656941-823485-21-21",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823485,
+      "atBatIndex": 21,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 397,
+      "launchSpeed": 103,
+      "launchAngle": 33
+    },
+    {
+      "key": "666969-823485-29-29",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823485,
+      "atBatIndex": 29,
+      "playerId": 666969,
+      "playerName": "Adolis García",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 349,
+      "launchSpeed": 97.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "686948-824942-4-4",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824942,
+      "atBatIndex": 4,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 410,
+      "launchSpeed": 105.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "666018-823807-1-1",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823807,
+      "atBatIndex": 1,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 388,
+      "launchSpeed": 102.8,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
