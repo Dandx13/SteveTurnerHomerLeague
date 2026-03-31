@@ -1653,27 +1653,41 @@ body.winnings-active .leaderboard-tools{
 @media (max-width: 768px){
   .feed-table{
     table-layout: fixed;
+    width: 100%;
   }
 
   .feed-table th,
   .feed-table td{
     padding: 8px 6px;
     font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .feed-table th{
+    white-space: normal;
+    line-height: 1.2;
+    height: auto;
+    font-size: 13px;
+  }
+
+  .feed-table td{
+    word-break: break-word;
   }
 
   .feed-table th:nth-child(1),
   .feed-table td:nth-child(1){
-    width: 26%;
+    width: 24%;
   }
 
   .feed-table th:nth-child(2),
   .feed-table td:nth-child(2){
-    width: 22%;
+    width: 20%;
   }
 
   .feed-table th:nth-child(3),
   .feed-table td:nth-child(3){
-    width: 22%;
+    width: 26%;
   }
 
   .feed-table th:nth-child(4),
@@ -1686,12 +1700,14 @@ body.winnings-active .leaderboard-tools{
     width: 12%;
   }
 
-  .feed-dong-header,
-  .feed-dong-cell{
-    font-size: 11px;
+  .feed-dong-header{
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
-  .feed-table td{
-    word-break: break-word;
+  .feed-dong-cell{
+    font-size: 11px;
+    white-space: nowrap;
   }
 }
