@@ -1423,15 +1423,15 @@ async function fetchSavantGameData(gamePk) {
 }
 
 
-function getWouldItDongFromSavantGame(savantData, hr) {
-  if (!savantData || !hr) return "—";
+function getMatchedSavantHomeRunRow(savantData, hr) {
+  if (!savantData || !hr) return null;
 
   const playerId = Number(hr.playerId);
   const targetDistance = Number(hr.distance);
   const targetLaunchSpeed = Number(hr.launchSpeed);
 
   if (!Number.isFinite(playerId) || !Number.isFinite(targetDistance) || !Number.isFinite(targetLaunchSpeed)) {
-    return "—";
+    return null;
   }
 
   const allRows = [
@@ -1448,7 +1448,7 @@ function getWouldItDongFromSavantGame(savantData, hr) {
     Number(row?.launch_speed) === targetLaunchSpeed
   );
 
-  if (!sameBatterHomeRuns.length) return "—";
+  if (!sameBatterHomeRuns.length) return null;
 
   const dedupedMatches = [];
   const seenMatchKeys = new Set();
@@ -1466,11 +1466,26 @@ function getWouldItDongFromSavantGame(savantData, hr) {
     dedupedMatches.push(row);
   });
 
-  const bestRow = dedupedMatches.find(row =>
+  return dedupedMatches.find(row =>
     Number.isFinite(Number(row?.contextMetrics?.homeRunBallparks))
-  ) || dedupedMatches[0];
+  ) || dedupedMatches[0] || null;
+}
 
-  const parkCount = Number(bestRow?.contextMetrics?.homeRunBallparks);
+function getSavantVideoUrlFromRow(row) {
+  if (!row) return null;
+
+  const playId = row?.play_id || row?.playId || row?.play_guid || row?.playGuid || null;
+  if (!playId) return null;
+
+  const videoType = row?.away_team === 'home' ? 'HOME' : 'AWAY';
+  return `https://baseballsavant.mlb.com/sporty-videos?playId=${encodeURIComponent(playId)}&videoType=${videoType}`;
+}
+
+function getWouldItDongFromSavantGame(savantData, hr) {
+  const matchedRow = getMatchedSavantHomeRunRow(savantData, hr);
+  if (!matchedRow) return "—";
+
+  const parkCount = Number(matchedRow?.contextMetrics?.homeRunBallparks);
   return Number.isFinite(parkCount) ? `${parkCount} of 30 Stadiums` : "—";
 }
 
@@ -1618,13 +1633,15 @@ async function fetchHomeRunFeed(options = {}) {
         }
       });
 
-      homeRuns = homeRuns.map(hr => ({
-        ...hr,
-        wouldItDong: getWouldItDongFromSavantGame(
-          savantGames.get(hr.gamePk),
-          hr
-        )
-      }));
+      homeRuns = homeRuns.map(hr => {
+        const savantData = savantGames.get(hr.gamePk);
+        const matchedSavantRow = getMatchedSavantHomeRunRow(savantData, hr);
+        return {
+          ...hr,
+          wouldItDong: getWouldItDongFromSavantGame(savantData, hr),
+          videoUrl: getSavantVideoUrlFromRow(matchedSavantRow)
+        };
+      });
 
 
     }
@@ -1644,8 +1661,13 @@ async function fetchHomeRunFeed(options = {}) {
         hr.wouldItDong !== undefined && hr.wouldItDong !== null ? hr.wouldItDong : "—"
       );
 
+      const playerLabel = `${escapeHtml(hr.player)} (${hr.hrNumber})`;
+      const playerDisplay = hr.videoUrl
+        ? `<a class="feed-player-link" href="${hr.videoUrl}" target="_blank" rel="noopener noreferrer"><span class="feed-player-link-text">${playerLabel}</span><span class="feed-player-link-icon" aria-hidden="true">🎥</span></a>`
+        : `<strong>${playerLabel}</strong>`;
+
       const row = `<tr>
-        <td><strong>${hr.player} (${hr.hrNumber})</strong></td>
+        <td>${playerDisplay}</td>
         <td>${details}</td>
         <td class="feed-dong-cell">${dongDisplay}</td>
         <td>${hr.team}</td>
