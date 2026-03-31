@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-31T01:20:36.387Z",
+  "updatedAt": "2026-03-31T04:10:58.805Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -832,6 +832,84 @@
       "fantasyTeam": "Pat T",
       "distance": 394,
       "launchSpeed": 108.8,
+      "launchAngle": 37
+    },
+    {
+      "key": "672960-822834-83-83",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 822834,
+      "atBatIndex": 83,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 399,
+      "launchSpeed": 107.7,
+      "launchAngle": 36
+    },
+    {
+      "key": "669357-823080-52-52",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 823080,
+      "atBatIndex": 52,
+      "playerId": 669357,
+      "playerName": "Nolan Gorman",
+      "fantasyTeam": "Pat T",
+      "distance": 419,
+      "launchSpeed": 110.3,
+      "launchAngle": 39
+    },
+    {
+      "key": "514888-824214-52-52",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 824214,
+      "atBatIndex": 52,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 383,
+      "launchSpeed": 103.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "514888-824214-65-65",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 824214,
+      "atBatIndex": 65,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 368,
+      "launchSpeed": 102.2,
+      "launchAngle": 23
+    },
+    {
+      "key": "701538-823320-66-66",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 823320,
+      "atBatIndex": 66,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 387,
+      "launchSpeed": 107.4,
+      "launchAngle": 38
+    },
+    {
+      "key": "682998-825108-19-19",
+      "season": 2026,
+      "date": "2026-03-30",
+      "gamePk": 825108,
+      "atBatIndex": 19,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 403,
+      "launchSpeed": 107.8,
       "launchAngle": 37
     }
   ],
