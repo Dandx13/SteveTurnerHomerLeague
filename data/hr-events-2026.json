@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T17:31:30.944Z",
+  "updatedAt": "2026-04-01T18:32:29.531Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1170,6 +1170,45 @@
       "fantasyTeam": "Dan/Larry (2)",
       "distance": 407,
       "launchSpeed": 107.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "694212-824860-42-42",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824860,
+      "atBatIndex": 42,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 437,
+      "launchSpeed": 109.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "553993-824536-49-49",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824536,
+      "atBatIndex": 49,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 410,
+      "launchSpeed": 107.3,
+      "launchAngle": 37
+    },
+    {
+      "key": "650490-823806-16-16",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823806,
+      "atBatIndex": 16,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 364,
+      "launchSpeed": 102.3,
       "launchAngle": 28
     }
   ],
