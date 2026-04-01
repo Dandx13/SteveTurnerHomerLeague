@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T18:32:29.531Z",
+  "updatedAt": "2026-04-01T19:41:08.150Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1210,6 +1210,71 @@
       "distance": 364,
       "launchSpeed": 102.3,
       "launchAngle": 28
+    },
+    {
+      "key": "608369-824860-68-68",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824860,
+      "atBatIndex": 68,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 422,
+      "launchSpeed": 101.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "668804-824536-70-70",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824536,
+      "atBatIndex": 70,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 413,
+      "launchSpeed": 107.7,
+      "launchAngle": 32
+    },
+    {
+      "key": "547180-823483-66-66",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823483,
+      "atBatIndex": 66,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 425,
+      "launchSpeed": 106,
+      "launchAngle": 25
+    },
+    {
+      "key": "665742-823078-37-37",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823078,
+      "atBatIndex": 37,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 344,
+      "launchSpeed": 107.6,
+      "launchAngle": 42
+    },
+    {
+      "key": "668930-823806-23-23",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823806,
+      "atBatIndex": 23,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 392,
+      "launchSpeed": 104.9,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
