@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T19:41:08.150Z",
+  "updatedAt": "2026-04-01T20:27:02.203Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1275,6 +1275,32 @@
       "distance": 392,
       "launchSpeed": 104.9,
       "launchAngle": 24
+    },
+    {
+      "key": "677800-824211-61-61",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824211,
+      "atBatIndex": 61,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 372,
+      "launchSpeed": 103.5,
+      "launchAngle": 42
+    },
+    {
+      "key": "682998-825106-5-5",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 825106,
+      "atBatIndex": 5,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 410,
+      "launchSpeed": 106.8,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
