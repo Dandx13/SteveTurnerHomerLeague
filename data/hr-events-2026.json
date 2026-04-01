@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-03-31T23:47:21.750Z",
+  "updatedAt": "2026-04-01T01:10:41.411Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1002,17 +1002,82 @@
       "distance": 388,
       "launchSpeed": 102.8,
       "launchAngle": 33
+    },
+    {
+      "key": "608369-824861-70-70",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824861,
+      "atBatIndex": 70,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 395,
+      "launchSpeed": 101.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "682829-824537-61-61",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824537,
+      "atBatIndex": 61,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 334,
+      "launchSpeed": 93.6,
+      "launchAngle": 41
+    },
+    {
+      "key": "701398-824537-62-62",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824537,
+      "atBatIndex": 62,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 376,
+      "launchSpeed": 103.8,
+      "launchAngle": 31
+    },
+    {
+      "key": "696100-822836-42-42",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 822836,
+      "atBatIndex": 42,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 435,
+      "launchSpeed": 110.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "669127-824942-34-34",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824942,
+      "atBatIndex": 34,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 404,
+      "launchSpeed": 108.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-03-25",
     "2026-03-26",
     "2026-03-27",
     "2026-03-28",
     "2026-03-29",
     "2026-03-30",
-    "2026-03-31"
+    "2026-03-31",
+    "2026-04-01"
   ],
   "rosterSummary": {
     "teamCount": 21,
