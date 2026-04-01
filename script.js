@@ -1377,6 +1377,16 @@ function convertUTCToET(utcDateString) {
   return etDate;
 }
 
+function shouldShowVideoLink(dateTime, delayHours = 8) {
+  if (!dateTime) return false;
+
+  const playTime = new Date(dateTime).getTime();
+  if (!Number.isFinite(playTime)) return false;
+
+  const delayMs = delayHours * 60 * 60 * 1000;
+  return (Date.now() - playTime) >= delayMs;
+}
+
 const savantGameCache = new Map();
 const disableHomeRunFeedCache = true;
 const disableSavantGameCache = true;
@@ -1636,10 +1646,11 @@ async function fetchHomeRunFeed(options = {}) {
       homeRuns = homeRuns.map(hr => {
         const savantData = savantGames.get(hr.gamePk);
         const matchedSavantRow = getMatchedSavantHomeRunRow(savantData, hr);
+        const rawVideoUrl = getSavantVideoUrlFromRow(matchedSavantRow);
         return {
           ...hr,
           wouldItDong: getWouldItDongFromSavantGame(savantData, hr),
-          videoUrl: getSavantVideoUrlFromRow(matchedSavantRow)
+          videoUrl: shouldShowVideoLink(hr.dateTime, 8) ? rawVideoUrl : null
         };
       });
 
