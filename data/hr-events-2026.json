@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T21:58:53.747Z",
+  "updatedAt": "2026-04-01T22:51:48.430Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1314,6 +1314,32 @@
       "distance": 391,
       "launchSpeed": 106.9,
       "launchAngle": 32
+    },
+    {
+      "key": "657656-823321-61-61",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823321,
+      "atBatIndex": 61,
+      "playerId": 657656,
+      "playerName": "Ramón Laureano",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 393,
+      "launchSpeed": 101,
+      "launchAngle": 36
+    },
+    {
+      "key": "700250-823157-61-61",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823157,
+      "atBatIndex": 61,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 427,
+      "launchSpeed": 108.2,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
