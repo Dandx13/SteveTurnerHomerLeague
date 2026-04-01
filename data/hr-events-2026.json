@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T01:10:41.411Z",
+  "updatedAt": "2026-04-01T04:22:11.810Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1067,6 +1067,84 @@
       "distance": 404,
       "launchSpeed": 108.8,
       "launchAngle": 26
+    },
+    {
+      "key": "665833-824537-69-69",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824537,
+      "atBatIndex": 69,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 403,
+      "launchSpeed": 108.1,
+      "launchAngle": 34
+    },
+    {
+      "key": "670541-824212-37-37",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824212,
+      "atBatIndex": 37,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 399,
+      "launchSpeed": 110.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "678882-824212-63-63",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 824212,
+      "atBatIndex": 63,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 337,
+      "launchSpeed": 98.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "642715-823322-0-0",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823322,
+      "atBatIndex": 0,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 338,
+      "launchSpeed": 96,
+      "launchAngle": 33
+    },
+    {
+      "key": "656305-823322-22-22",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823322,
+      "atBatIndex": 22,
+      "playerId": 656305,
+      "playerName": "Matt Chapman",
+      "fantasyTeam": "Nate (2)",
+      "distance": 349,
+      "launchSpeed": 102.2,
+      "launchAngle": 45
+    },
+    {
+      "key": "571970-823969-46-46",
+      "season": 2026,
+      "date": "2026-03-31",
+      "gamePk": 823969,
+      "atBatIndex": 46,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 410,
+      "launchSpeed": 108.1,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
