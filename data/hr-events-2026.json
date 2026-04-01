@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-01T16:30:47.131Z",
+  "updatedAt": "2026-04-01T17:31:30.944Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1145,6 +1145,32 @@
       "distance": 410,
       "launchSpeed": 108.1,
       "launchAngle": 34
+    },
+    {
+      "key": "669127-824940-26-26",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824940,
+      "atBatIndex": 26,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 355,
+      "launchSpeed": 98.1,
+      "launchAngle": 38
+    },
+    {
+      "key": "665833-824536-4-4",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824536,
+      "atBatIndex": 4,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 407,
+      "launchSpeed": 107.4,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
