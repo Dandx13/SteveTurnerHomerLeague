@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-02T00:05:07.246Z",
+  "updatedAt": "2026-04-02T03:23:59.977Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1340,6 +1340,45 @@
       "distance": 427,
       "launchSpeed": 108.2,
       "launchAngle": 29
+    },
+    {
+      "key": "605137-824136-85-85",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 824136,
+      "atBatIndex": 85,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 383,
+      "launchSpeed": 104.4,
+      "launchAngle": 45
+    },
+    {
+      "key": "608070-823970-52-52",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823970,
+      "atBatIndex": 52,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 376,
+      "launchSpeed": 105.4,
+      "launchAngle": 36
+    },
+    {
+      "key": "518692-823970-64-64",
+      "season": 2026,
+      "date": "2026-04-01",
+      "gamePk": 823970,
+      "atBatIndex": 64,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 407,
+      "launchSpeed": 104.4,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
