@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-02T19:59:13.342Z",
+  "updatedAt": "2026-04-02T20:48:21.864Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1379,6 +1379,19 @@
       "distance": 407,
       "launchSpeed": 104.4,
       "launchAngle": 28
+    },
+    {
+      "key": "670242-824133-63-63",
+      "season": 2026,
+      "date": "2026-04-02",
+      "gamePk": 824133,
+      "atBatIndex": 63,
+      "playerId": 670242,
+      "playerName": "Matt Wallner",
+      "fantasyTeam": "John Fournier",
+      "distance": 405,
+      "launchSpeed": 106.8,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
