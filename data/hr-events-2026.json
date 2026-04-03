@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T17:03:35.341Z",
+  "updatedAt": "2026-04-03T17:50:03.248Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1444,6 +1444,32 @@
       "distance": 404,
       "launchSpeed": 105.5,
       "launchAngle": 29
+    },
+    {
+      "key": "660271-822758-19-19",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822758,
+      "atBatIndex": 19,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 401,
+      "launchSpeed": 109.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "605141-822758-21-21",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822758,
+      "atBatIndex": 21,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 375,
+      "launchSpeed": 99.4,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
