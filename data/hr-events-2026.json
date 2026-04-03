@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T18:28:49.905Z",
+  "updatedAt": "2026-04-03T19:23:45.472Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1509,6 +1509,19 @@
       "distance": 387,
       "launchSpeed": 101.2,
       "launchAngle": 31
+    },
+    {
+      "key": "663656-822758-65-65",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822758,
+      "atBatIndex": 65,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 404,
+      "launchSpeed": 101.6,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
