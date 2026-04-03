@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T21:20:32.355Z",
+  "updatedAt": "2026-04-03T21:53:53.936Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1561,6 +1561,32 @@
       "distance": 421,
       "launchSpeed": 108.9,
       "launchAngle": 25
+    },
+    {
+      "key": "682829-822919-41-41",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822919,
+      "atBatIndex": 41,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 385,
+      "launchSpeed": 107.5,
+      "launchAngle": 20
+    },
+    {
+      "key": "656941-824377-44-44",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 824377,
+      "atBatIndex": 44,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 460,
+      "launchSpeed": 110.7,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
