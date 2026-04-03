@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T19:23:45.472Z",
+  "updatedAt": "2026-04-03T19:58:17.622Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1522,6 +1522,32 @@
       "distance": 404,
       "launchSpeed": 101.6,
       "launchAngle": 33
+    },
+    {
+      "key": "700250-823568-55-55",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 823568,
+      "atBatIndex": 55,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 353,
+      "launchSpeed": 110.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "575929-824786-43-43",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 824786,
+      "atBatIndex": 43,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 423,
+      "launchSpeed": 108.7,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
