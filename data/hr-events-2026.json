@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T17:50:03.248Z",
+  "updatedAt": "2026-04-03T18:28:49.905Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1469,6 +1469,45 @@
       "fantasyTeam": "Nate (2)",
       "distance": 375,
       "launchSpeed": 99.4,
+      "launchAngle": 31
+    },
+    {
+      "key": "681624-822758-31-31",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822758,
+      "atBatIndex": 31,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 412,
+      "launchSpeed": 109.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "518692-822758-40-40",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 822758,
+      "atBatIndex": 40,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 391,
+      "launchSpeed": 110,
+      "launchAngle": 41
+    },
+    {
+      "key": "592450-823568-5-5",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 823568,
+      "atBatIndex": 5,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 387,
+      "launchSpeed": 101.2,
       "launchAngle": 31
     }
   ],
