@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-03T02:27:49.842Z",
+  "updatedAt": "2026-04-03T04:54:26.853Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1431,6 +1431,19 @@
       "distance": 406,
       "launchSpeed": 108.6,
       "launchAngle": 30
+    },
+    {
+      "key": "646240-823242-52-52",
+      "season": 2026,
+      "date": "2026-04-02",
+      "gamePk": 823242,
+      "atBatIndex": 52,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 404,
+      "launchSpeed": 105.5,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
