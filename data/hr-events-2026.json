@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T00:58:23.095Z",
+  "updatedAt": "2026-04-04T03:38:21.718Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1600,6 +1600,45 @@
       "distance": 397,
       "launchSpeed": 101,
       "launchAngle": 31
+    },
+    {
+      "key": "671732-825026-38-38",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 825026,
+      "atBatIndex": 38,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 354,
+      "launchSpeed": 96.2,
+      "launchAngle": 35
+    },
+    {
+      "key": "691777-825026-39-39",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 825026,
+      "atBatIndex": 39,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 404,
+      "launchSpeed": 101.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "543760-823240-24-24",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 823240,
+      "atBatIndex": 24,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 407,
+      "launchSpeed": 101.7,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
