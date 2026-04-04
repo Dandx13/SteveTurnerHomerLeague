@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T16:58:09.791Z",
+  "updatedAt": "2026-04-04T17:40:19.025Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1665,6 +1665,19 @@
       "distance": 426,
       "launchSpeed": 107.3,
       "launchAngle": 30
+    },
+    {
+      "key": "681481-824295-8-8",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824295,
+      "atBatIndex": 8,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 359,
+      "launchSpeed": 97.9,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
