@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T19:39:19.146Z",
+  "updatedAt": "2026-04-04T19:59:30.289Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1690,6 +1690,32 @@
       "fantasyTeam": "Dan/Joe (2)",
       "distance": 437,
       "launchSpeed": 108.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "808959-824622-45-45",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824622,
+      "atBatIndex": 45,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 431,
+      "launchSpeed": 111.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "695657-824622-47-47",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824622,
+      "atBatIndex": 47,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 348,
+      "launchSpeed": 92.9,
       "launchAngle": 25
     }
   ],
