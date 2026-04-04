@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T18:59:55.536Z",
+  "updatedAt": "2026-04-04T19:39:19.146Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1678,6 +1678,19 @@
       "distance": 359,
       "launchSpeed": 97.9,
       "launchAngle": 28
+    },
+    {
+      "key": "665489-824622-40-40",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824622,
+      "atBatIndex": 40,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 437,
+      "launchSpeed": 108.5,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
