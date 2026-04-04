@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T03:38:21.718Z",
+  "updatedAt": "2026-04-04T05:12:29.398Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1639,6 +1639,32 @@
       "distance": 407,
       "launchSpeed": 101.7,
       "launchAngle": 26
+    },
+    {
+      "key": "645277-825103-57-57",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 825103,
+      "atBatIndex": 57,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 382,
+      "launchSpeed": 105.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "621566-825103-58-58",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 825103,
+      "atBatIndex": 58,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 426,
+      "launchSpeed": 107.3,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
