@@ -49,7 +49,7 @@ let feedDataLoadPromise = null;
 let feedAutoRefreshStarted = false;
 let monthlyAutoRefreshStarted = false;
 let pendingTeamStatsOpen = false;
-const IL_CACHE_KEY = "dl_il_status_cache_v2";
+const IL_CACHE_KEY = "dl_il_status_cache_v3";
 const IL_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 let playerILByPlayerId = new Map();
 let lineupKnownByTeamId = new Map();
@@ -91,7 +91,7 @@ function txDateValue(t) {
 }
 function evaluateTransactionsForIL(transactions) {
   const tx = Array.isArray(transactions) ? [...transactions] : [];
-  tx.sort((a,b) => txDateValue(b) - txDateValue(a));
+  tx.sort((a, b) => txDateValue(b) - txDateValue(a));
 
   for (const t of tx) {
     const txTime = txDateValue(t);
@@ -100,25 +100,29 @@ function evaluateTransactionsForIL(transactions) {
     const txYear = new Date(txTime).getFullYear();
     if (txYear !== CURRENT_SEASON) continue;
 
-    const desc = (t?.description || '').toLowerCase();
-    const typeDesc = (t?.typeDesc || '').toLowerCase();
+    const desc = String(t?.description || '').toLowerCase();
+    const typeDesc = String(t?.typeDesc || '').toLowerCase();
 
-    const activated =
-      desc.includes('activated from injured list') ||
-      desc.includes('returned from injured list') ||
-      desc.includes('reinstated from injured list') ||
-      typeDesc.includes('activated');
+    const activatedFromIL =
+      /\bactivated\b.*\bfrom\b.*\binjured list\b/.test(desc) ||
+      /\breturned\b.*\bfrom\b.*\binjured list\b/.test(desc) ||
+      /\breinstated\b.*\bfrom\b.*\binjured list\b/.test(desc) ||
+      (typeDesc.includes('activated') && desc.includes('injured list') && desc.includes('from'));
 
-    if (activated) return false;
+    if (activatedFromIL) return false;
 
-    const placedIL =
-      (desc.includes('placed on') && desc.includes('injured list')) ||
-      desc.includes('transferred to the 60-day injured list') ||
-      desc.includes('10-day injured list') ||
-      desc.includes('15-day injured list') ||
-      desc.includes('60-day injured list');
+    const placedOnIL =
+      /\bplaced\b.*\bon\b.*\binjured list\b/.test(desc) ||
+      /\btransferred\b.*\bto\b.*\binjured list\b/.test(desc) ||
+      /\bout for the season\b/.test(desc) ||
+      (desc.includes('injured list') &&
+        (desc.includes('10-day') ||
+         desc.includes('15-day') ||
+         desc.includes('7-day') ||
+         desc.includes('60-day')) &&
+        !desc.includes('from'));
 
-    if (placedIL) return true;
+    if (placedOnIL) return true;
   }
 
   return false;
