@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-04T23:54:38.518Z",
+  "updatedAt": "2026-04-05T02:31:47.979Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1743,17 +1743,56 @@
       "distance": 387,
       "launchSpeed": 100.3,
       "launchAngle": 35
+    },
+    {
+      "key": "521692-824134-45-45",
+      "season": 2026,
+      "date": "2026-04-03",
+      "gamePk": 824134,
+      "atBatIndex": 45,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 417,
+      "launchSpeed": 101.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "641355-823569-45-45",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 823569,
+      "atBatIndex": 45,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 394,
+      "launchSpeed": 105.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "687263-824054-5-5",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824054,
+      "atBatIndex": 5,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 443,
+      "launchSpeed": 106.8,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-03-29",
     "2026-03-30",
     "2026-03-31",
     "2026-04-01",
     "2026-04-02",
     "2026-04-03",
-    "2026-04-04"
+    "2026-04-04",
+    "2026-04-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
