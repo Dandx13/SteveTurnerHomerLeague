@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T21:58:03.220Z",
+  "updatedAt": "2026-04-05T22:41:25.397Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1950,6 +1950,58 @@
       "fantasyTeam": "Pat T",
       "distance": 399,
       "launchSpeed": 110.8,
+      "launchAngle": 22
+    },
+    {
+      "key": "621020-824460-41-41",
+      "season": 2026,
+      "date": "2026-04-04",
+      "gamePk": 824460,
+      "atBatIndex": 41,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 380,
+      "launchSpeed": 100.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "606192-822756-74-74",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 822756,
+      "atBatIndex": 74,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 414,
+      "launchSpeed": 103,
+      "launchAngle": 29
+    },
+    {
+      "key": "572233-825025-59-59",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 825025,
+      "atBatIndex": 59,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 397,
+      "launchSpeed": 98.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "667670-825025-63-63",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 825025,
+      "atBatIndex": 63,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 365,
+      "launchSpeed": 106.6,
       "launchAngle": 22
     }
   ],
