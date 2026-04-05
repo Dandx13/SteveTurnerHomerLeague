@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T19:48:46.172Z",
+  "updatedAt": "2026-04-05T20:17:21.814Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1860,6 +1860,32 @@
       "distance": 405,
       "launchSpeed": 103.4,
       "launchAngle": 32
+    },
+    {
+      "key": "701538-824781-63-63",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 824781,
+      "atBatIndex": 63,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 384,
+      "launchSpeed": 103.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "686948-825102-1-1",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 825102,
+      "atBatIndex": 1,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 398,
+      "launchSpeed": 108.4,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
