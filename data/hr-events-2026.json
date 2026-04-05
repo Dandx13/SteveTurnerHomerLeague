@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T20:17:21.814Z",
+  "updatedAt": "2026-04-05T20:54:13.528Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1886,6 +1886,32 @@
       "distance": 398,
       "launchSpeed": 108.4,
       "launchAngle": 22
+    },
+    {
+      "key": "660271-822756-17-17",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 822756,
+      "atBatIndex": 17,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 438,
+      "launchSpeed": 114.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "666160-824379-40-40",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 824379,
+      "atBatIndex": 40,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 437,
+      "launchSpeed": 103.1,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
