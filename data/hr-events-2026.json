@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T20:54:13.528Z",
+  "updatedAt": "2026-04-05T21:30:41.307Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1912,6 +1912,45 @@
       "distance": 437,
       "launchSpeed": 103.1,
       "launchAngle": 32
+    },
+    {
+      "key": "695578-822756-35-35",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 822756,
+      "atBatIndex": 35,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 416,
+      "launchSpeed": 107.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "700250-823566-8-8",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 823566,
+      "atBatIndex": 8,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 410,
+      "launchSpeed": 110,
+      "launchAngle": 27
+    },
+    {
+      "key": "670541-825025-34-34",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 825025,
+      "atBatIndex": 34,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 399,
+      "launchSpeed": 110.8,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
