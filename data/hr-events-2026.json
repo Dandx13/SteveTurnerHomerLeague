@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T19:09:06.209Z",
+  "updatedAt": "2026-04-05T19:48:46.172Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1821,6 +1821,45 @@
       "distance": 397,
       "launchSpeed": 103.2,
       "launchAngle": 28
+    },
+    {
+      "key": "665833-823405-48-48",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 823405,
+      "atBatIndex": 48,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 415,
+      "launchSpeed": 107.2,
+      "launchAngle": 23
+    },
+    {
+      "key": "666160-824379-6-6",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 824379,
+      "atBatIndex": 6,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 433,
+      "launchSpeed": 108.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "666969-824379-12-12",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 824379,
+      "atBatIndex": 12,
+      "playerId": 666969,
+      "playerName": "Adolis García",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 405,
+      "launchSpeed": 103.4,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
