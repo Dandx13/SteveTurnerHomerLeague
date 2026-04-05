@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-05T18:23:07.031Z",
+  "updatedAt": "2026-04-05T19:09:06.209Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -1782,6 +1782,45 @@
       "distance": 443,
       "launchSpeed": 106.8,
       "launchAngle": 33
+    },
+    {
+      "key": "592518-824781-40-40",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 824781,
+      "atBatIndex": 40,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 365,
+      "launchSpeed": 99.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "670242-823729-10-10",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 823729,
+      "atBatIndex": 10,
+      "playerId": 670242,
+      "playerName": "Matt Wallner",
+      "fantasyTeam": "John Fournier",
+      "distance": 409,
+      "launchSpeed": 110.1,
+      "launchAngle": 36
+    },
+    {
+      "key": "691406-823729-22-22",
+      "season": 2026,
+      "date": "2026-04-05",
+      "gamePk": 823729,
+      "atBatIndex": 22,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 397,
+      "launchSpeed": 103.2,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
