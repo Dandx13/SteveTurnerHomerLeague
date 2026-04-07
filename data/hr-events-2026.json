@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-07T21:26:17.899Z",
+  "updatedAt": "2026-04-07T22:05:41.362Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2198,6 +2198,19 @@
       "distance": 411,
       "launchSpeed": 113.2,
       "launchAngle": 24
+    },
+    {
+      "key": "683002-824618-65-65",
+      "season": 2026,
+      "date": "2026-04-07",
+      "gamePk": 824618,
+      "atBatIndex": 65,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 387,
+      "launchSpeed": 105,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
