@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-07T01:05:19.472Z",
+  "updatedAt": "2026-04-07T04:05:23.061Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2133,6 +2133,71 @@
       "distance": 418,
       "launchSpeed": 107.8,
       "launchAngle": 29
+    },
+    {
+      "key": "695578-822755-74-74",
+      "season": 2026,
+      "date": "2026-04-06",
+      "gamePk": 822755,
+      "atBatIndex": 74,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 409,
+      "launchSpeed": 114.3,
+      "launchAngle": 18
+    },
+    {
+      "key": "575929-824783-85-85",
+      "season": 2026,
+      "date": "2026-04-06",
+      "gamePk": 824783,
+      "atBatIndex": 85,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 362,
+      "launchSpeed": 105.3,
+      "launchAngle": 33
+    },
+    {
+      "key": "686948-824052-1-1",
+      "season": 2026,
+      "date": "2026-04-06",
+      "gamePk": 824052,
+      "atBatIndex": 1,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 397,
+      "launchSpeed": 102.1,
+      "launchAngle": 34
+    },
+    {
+      "key": "687263-824052-4-4",
+      "season": 2026,
+      "date": "2026-04-06",
+      "gamePk": 824052,
+      "atBatIndex": 4,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 400,
+      "launchSpeed": 107,
+      "launchAngle": 29
+    },
+    {
+      "key": "666176-824052-36-36",
+      "season": 2026,
+      "date": "2026-04-06",
+      "gamePk": 824052,
+      "atBatIndex": 36,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 411,
+      "launchSpeed": 113.2,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
