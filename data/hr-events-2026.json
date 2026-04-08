@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-08T20:30:39.498Z",
+  "updatedAt": "2026-04-08T21:26:00.732Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2289,6 +2289,45 @@
       "distance": 379,
       "launchSpeed": 101.8,
       "launchAngle": 38
+    },
+    {
+      "key": "696100-824374-37-37",
+      "season": 2026,
+      "date": "2026-04-08",
+      "gamePk": 824374,
+      "atBatIndex": 37,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 378,
+      "launchSpeed": 96,
+      "launchAngle": 32
+    },
+    {
+      "key": "624585-824050-12-12",
+      "season": 2026,
+      "date": "2026-04-08",
+      "gamePk": 824050,
+      "atBatIndex": 12,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 402,
+      "launchSpeed": 105.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "621566-824050-23-23",
+      "season": 2026,
+      "date": "2026-04-08",
+      "gamePk": 824050,
+      "atBatIndex": 23,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 399,
+      "launchSpeed": 104.9,
+      "launchAngle": 19
     }
   ],
   "lastScanMode": "rolling-7-day",
