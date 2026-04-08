@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-08T01:04:42.589Z",
+  "updatedAt": "2026-04-08T04:07:07.357Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2250,6 +2250,32 @@
       "distance": 371,
       "launchSpeed": 94.6,
       "launchAngle": 32
+    },
+    {
+      "key": "666160-824375-54-54",
+      "season": 2026,
+      "date": "2026-04-07",
+      "gamePk": 824375,
+      "atBatIndex": 54,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 426,
+      "launchSpeed": 97,
+      "launchAngle": 39
+    },
+    {
+      "key": "624585-824051-6-6",
+      "season": 2026,
+      "date": "2026-04-07",
+      "gamePk": 824051,
+      "atBatIndex": 6,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 366,
+      "launchSpeed": 109.2,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
