@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-09T18:10:34.733Z",
+  "updatedAt": "2026-04-09T19:37:33.696Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2367,6 +2367,19 @@
       "distance": 409,
       "launchSpeed": 103.4,
       "launchAngle": 26
+    },
+    {
+      "key": "605137-823724-29-29",
+      "season": 2026,
+      "date": "2026-04-09",
+      "gamePk": 823724,
+      "atBatIndex": 29,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 401,
+      "launchSpeed": 106,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
