@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T21:52:31.849Z",
+  "updatedAt": "2026-04-11T22:25:34.598Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2744,6 +2744,19 @@
       "distance": 386,
       "launchSpeed": 104.1,
       "launchAngle": 36
+    },
+    {
+      "key": "666182-823644-47-47",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823644,
+      "atBatIndex": 47,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 344,
+      "launchSpeed": 96.6,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
