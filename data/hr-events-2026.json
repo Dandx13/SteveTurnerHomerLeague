@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-10T23:35:00.671Z",
+  "updatedAt": "2026-04-11T00:03:59.183Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2419,17 +2419,56 @@
       "distance": 377,
       "launchSpeed": 103.3,
       "launchAngle": 32
+    },
+    {
+      "key": "687263-824534-29-29",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 824534,
+      "atBatIndex": 29,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 417,
+      "launchSpeed": 104.7,
+      "launchAngle": 33
+    },
+    {
+      "key": "642715-824858-17-17",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 824858,
+      "atBatIndex": 17,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 402,
+      "launchSpeed": 103.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "700932-824941-23-23",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 824941,
+      "atBatIndex": 23,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 454,
+      "launchSpeed": 108.4,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-04",
     "2026-04-05",
     "2026-04-06",
     "2026-04-07",
     "2026-04-08",
     "2026-04-09",
-    "2026-04-10"
+    "2026-04-10",
+    "2026-04-11"
   ],
   "rosterSummary": {
     "teamCount": 21,
