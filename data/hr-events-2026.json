@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T22:25:34.598Z",
+  "updatedAt": "2026-04-11T23:01:20.028Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2757,6 +2757,45 @@
       "distance": 344,
       "launchSpeed": 96.6,
       "launchAngle": 30
+    },
+    {
+      "key": "593871-823644-63-63",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823644,
+      "atBatIndex": 63,
+      "playerId": 593871,
+      "playerName": "Jorge Polanco",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 346,
+      "launchSpeed": 94.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "691016-823644-74-74",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823644,
+      "atBatIndex": 74,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 420,
+      "launchSpeed": 109.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "669224-822996-9-9",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 822996,
+      "atBatIndex": 9,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 396,
+      "launchSpeed": 105.5,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
