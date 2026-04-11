@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T03:16:56.069Z",
+  "updatedAt": "2026-04-11T05:09:25.433Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2601,6 +2601,71 @@
       "distance": 396,
       "launchSpeed": 102.8,
       "launchAngle": 32
+    },
+    {
+      "key": "668227-823156-41-41",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 823156,
+      "atBatIndex": 41,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 426,
+      "launchSpeed": 107.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "670541-823156-68-68",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 823156,
+      "atBatIndex": 68,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 389,
+      "launchSpeed": 104.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "694671-823968-34-34",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 823968,
+      "atBatIndex": 34,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 365,
+      "launchSpeed": 99,
+      "launchAngle": 32
+    },
+    {
+      "key": "681624-823968-64-64",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 823968,
+      "atBatIndex": 64,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 396,
+      "launchSpeed": 103.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "571970-823968-79-79",
+      "season": 2026,
+      "date": "2026-04-10",
+      "gamePk": 823968,
+      "atBatIndex": 79,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 401,
+      "launchSpeed": 106,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
