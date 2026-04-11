@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T20:45:05.486Z",
+  "updatedAt": "2026-04-11T21:18:08.933Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2731,6 +2731,19 @@
       "distance": 382,
       "launchSpeed": 104.2,
       "launchAngle": 20
+    },
+    {
+      "key": "691016-823644-20-20",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823644,
+      "atBatIndex": 20,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 386,
+      "launchSpeed": 104.1,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
