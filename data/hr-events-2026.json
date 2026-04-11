@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T17:22:26.966Z",
+  "updatedAt": "2026-04-11T17:55:27.900Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2679,6 +2679,32 @@
       "distance": 406,
       "launchSpeed": 107.3,
       "launchAngle": 26
+    },
+    {
+      "key": "656941-823480-23-23",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823480,
+      "atBatIndex": 23,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 381,
+      "launchSpeed": 110.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "547180-823480-24-24",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823480,
+      "atBatIndex": 24,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 419,
+      "launchSpeed": 111.5,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
