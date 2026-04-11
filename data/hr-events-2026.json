@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T16:50:30.064Z",
+  "updatedAt": "2026-04-11T17:22:26.966Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2666,6 +2666,19 @@
       "distance": 401,
       "launchSpeed": 106,
       "launchAngle": 35
+    },
+    {
+      "key": "606466-823480-0-0",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 823480,
+      "atBatIndex": 0,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 406,
+      "launchSpeed": 107.3,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
