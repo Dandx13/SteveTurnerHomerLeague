@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T18:50:09.934Z",
+  "updatedAt": "2026-04-11T19:27:13.764Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2718,6 +2718,19 @@
       "distance": 408,
       "launchSpeed": 106.9,
       "launchAngle": 32
+    },
+    {
+      "key": "662139-822830-4-4",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 822830,
+      "atBatIndex": 4,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 382,
+      "launchSpeed": 104.2,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
