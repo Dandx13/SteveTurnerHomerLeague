@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-11T23:01:20.028Z",
+  "updatedAt": "2026-04-11T23:48:36.978Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2796,6 +2796,19 @@
       "distance": 396,
       "launchSpeed": 105.5,
       "launchAngle": 26
+    },
+    {
+      "key": "608070-824939-2-2",
+      "season": 2026,
+      "date": "2026-04-11",
+      "gamePk": 824939,
+      "atBatIndex": 2,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 403,
+      "launchSpeed": 108.1,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
