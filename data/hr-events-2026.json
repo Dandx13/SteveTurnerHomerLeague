@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-12T17:51:11.938Z",
+  "updatedAt": "2026-04-12T18:34:01.569Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -2978,6 +2978,58 @@
       "distance": 426,
       "launchSpeed": 107.8,
       "launchAngle": 28
+    },
+    {
+      "key": "694212-824859-6-6",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824859,
+      "atBatIndex": 6,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 396,
+      "launchSpeed": 107.9,
+      "launchAngle": 21
+    },
+    {
+      "key": "701762-823642-17-17",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823642,
+      "atBatIndex": 17,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 363,
+      "launchSpeed": 106.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "575929-823075-3-3",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823075,
+      "atBatIndex": 3,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 411,
+      "launchSpeed": 106.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "665833-824696-0-0",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824696,
+      "atBatIndex": 0,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 394,
+      "launchSpeed": 111,
+      "launchAngle": 41
     }
   ],
   "lastScanMode": "rolling-7-day",
