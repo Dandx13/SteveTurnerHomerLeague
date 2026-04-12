@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-12T19:59:40.452Z",
+  "updatedAt": "2026-04-12T20:48:40.890Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3121,6 +3121,58 @@
       "distance": 444,
       "launchSpeed": 108.5,
       "launchAngle": 27
+    },
+    {
+      "key": "682829-824533-84-84",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824533,
+      "atBatIndex": 84,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 405,
+      "launchSpeed": 109.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "592450-822998-65-65",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 822998,
+      "atBatIndex": 65,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 415,
+      "launchSpeed": 108.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "676475-823075-66-66",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823075,
+      "atBatIndex": 66,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 430,
+      "launchSpeed": 111.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "660271-823966-5-5",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823966,
+      "atBatIndex": 5,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 374,
+      "launchSpeed": 108.3,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
