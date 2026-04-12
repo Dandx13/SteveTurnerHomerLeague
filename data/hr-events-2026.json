@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-12T18:34:01.569Z",
+  "updatedAt": "2026-04-12T19:26:02.361Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3030,6 +3030,84 @@
       "distance": 394,
       "launchSpeed": 111,
       "launchAngle": 41
+    },
+    {
+      "key": "681481-824293-43-43",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824293,
+      "atBatIndex": 43,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 363,
+      "launchSpeed": 101,
+      "launchAngle": 27
+    },
+    {
+      "key": "668930-823804-18-18",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823804,
+      "atBatIndex": 18,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 378,
+      "launchSpeed": 104,
+      "launchAngle": 25
+    },
+    {
+      "key": "695578-823804-21-21",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823804,
+      "atBatIndex": 21,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 393,
+      "launchSpeed": 101.1,
+      "launchAngle": 32
+    },
+    {
+      "key": "668930-823804-38-38",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 823804,
+      "atBatIndex": 38,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 433,
+      "launchSpeed": 109.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "664040-824696-13-13",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824696,
+      "atBatIndex": 13,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 372,
+      "launchSpeed": 97.3,
+      "launchAngle": 39
+    },
+    {
+      "key": "621020-824696-22-22",
+      "season": 2026,
+      "date": "2026-04-12",
+      "gamePk": 824696,
+      "atBatIndex": 22,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 391,
+      "launchSpeed": 100.3,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
