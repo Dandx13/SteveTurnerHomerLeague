@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-13T22:27:05.214Z",
+  "updatedAt": "2026-04-13T23:12:26.210Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3251,6 +3251,45 @@
       "distance": 433,
       "launchSpeed": 111.5,
       "launchAngle": 27
+    },
+    {
+      "key": "606466-824856-0-0",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 824856,
+      "atBatIndex": 0,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 443,
+      "launchSpeed": 108.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "606466-824856-16-16",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 824856,
+      "atBatIndex": 16,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 405,
+      "launchSpeed": 106.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "656941-823481-4-4",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 823481,
+      "atBatIndex": 4,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 414,
+      "launchSpeed": 103.5,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
