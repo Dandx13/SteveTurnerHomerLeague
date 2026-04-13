@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-13T20:39:20.531Z",
+  "updatedAt": "2026-04-13T21:32:34.464Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3238,6 +3238,19 @@
       "distance": 365,
       "launchSpeed": 102,
       "launchAngle": 20
+    },
+    {
+      "key": "647304-823153-22-22",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 823153,
+      "atBatIndex": 22,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 433,
+      "launchSpeed": 111.5,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
