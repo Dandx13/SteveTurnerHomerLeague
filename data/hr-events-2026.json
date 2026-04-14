@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-13T23:12:26.210Z",
+  "updatedAt": "2026-04-14T00:01:11.937Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3290,17 +3290,56 @@
       "distance": 414,
       "launchSpeed": 103.5,
       "launchAngle": 29
+    },
+    {
+      "key": "656941-823481-23-23",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 823481,
+      "atBatIndex": 23,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 417,
+      "launchSpeed": 101.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "621020-823481-30-30",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 823481,
+      "atBatIndex": 30,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 359,
+      "launchSpeed": 97.5,
+      "launchAngle": 36
+    },
+    {
+      "key": "592450-823563-4-4",
+      "season": 2026,
+      "date": "2026-04-13",
+      "gamePk": 823563,
+      "atBatIndex": 4,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 456,
+      "launchSpeed": 116.2,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-07",
     "2026-04-08",
     "2026-04-09",
     "2026-04-10",
     "2026-04-11",
     "2026-04-12",
-    "2026-04-13"
+    "2026-04-13",
+    "2026-04-14"
   ],
   "rosterSummary": {
     "teamCount": 21,
