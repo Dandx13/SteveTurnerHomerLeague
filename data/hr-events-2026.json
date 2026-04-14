@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-14T22:25:32.326Z",
+  "updatedAt": "2026-04-14T23:12:56.284Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3511,6 +3511,45 @@
       "distance": 376,
       "launchSpeed": 102.7,
       "launchAngle": 27
+    },
+    {
+      "key": "694212-824853-11-11",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 824853,
+      "atBatIndex": 11,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 431,
+      "launchSpeed": 109.3,
+      "launchAngle": 34
+    },
+    {
+      "key": "545361-823562-1-1",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823562,
+      "atBatIndex": 1,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 432,
+      "launchSpeed": 110.1,
+      "launchAngle": 35
+    },
+    {
+      "key": "666176-823562-2-2",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823562,
+      "atBatIndex": 2,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 445,
+      "launchSpeed": 110.5,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
