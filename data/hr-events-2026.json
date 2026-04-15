@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-15T22:03:48.837Z",
+  "updatedAt": "2026-04-15T22:58:08.487Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3745,6 +3745,32 @@
       "distance": 411,
       "launchSpeed": 101.8,
       "launchAngle": 32
+    },
+    {
+      "key": "701398-824532-6-6",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824532,
+      "atBatIndex": 6,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 387,
+      "launchSpeed": 103.6,
+      "launchAngle": 21
+    },
+    {
+      "key": "553993-824532-7-7",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824532,
+      "atBatIndex": 7,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 349,
+      "launchSpeed": 98,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
