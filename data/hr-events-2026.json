@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-14T23:12:56.284Z",
+  "updatedAt": "2026-04-15T00:01:58.804Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3550,17 +3550,95 @@
       "distance": 445,
       "launchSpeed": 110.5,
       "launchAngle": 21
+    },
+    {
+      "key": "664040-823398-7-7",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823398,
+      "atBatIndex": 7,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 376,
+      "launchSpeed": 101.3,
+      "launchAngle": 38
+    },
+    {
+      "key": "701398-824531-29-29",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 824531,
+      "atBatIndex": 29,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 390,
+      "launchSpeed": 101.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "642715-824531-35-35",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 824531,
+      "atBatIndex": 35,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 386,
+      "launchSpeed": 104.4,
+      "launchAngle": 35
+    },
+    {
+      "key": "624585-823562-3-3",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823562,
+      "atBatIndex": 3,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 399,
+      "launchSpeed": 104,
+      "launchAngle": 34
+    },
+    {
+      "key": "608070-823072-2-2",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823072,
+      "atBatIndex": 2,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 398,
+      "launchSpeed": 107.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "671056-823072-5-5",
+      "season": 2026,
+      "date": "2026-04-14",
+      "gamePk": 823072,
+      "atBatIndex": 5,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 401,
+      "launchSpeed": 104.1,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-08",
     "2026-04-09",
     "2026-04-10",
     "2026-04-11",
     "2026-04-12",
     "2026-04-13",
-    "2026-04-14"
+    "2026-04-14",
+    "2026-04-15"
   ],
   "rosterSummary": {
     "teamCount": 21,
