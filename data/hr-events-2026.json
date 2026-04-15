@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-15T22:58:08.487Z",
+  "updatedAt": "2026-04-15T23:53:27.939Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3771,6 +3771,58 @@
       "distance": 349,
       "launchSpeed": 98,
       "launchAngle": 27
+    },
+    {
+      "key": "701398-824532-21-21",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824532,
+      "atBatIndex": 21,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 383,
+      "launchSpeed": 102.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "682829-824532-35-35",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824532,
+      "atBatIndex": 35,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 442,
+      "launchSpeed": 109.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "592450-823561-6-6",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823561,
+      "atBatIndex": 6,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 382,
+      "launchSpeed": 105.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "645277-824936-12-12",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824936,
+      "atBatIndex": 12,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 370,
+      "launchSpeed": 99.7,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
