@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-16T19:53:30.721Z",
+  "updatedAt": "2026-04-16T20:44:10.963Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4031,6 +4031,45 @@
       "distance": 405,
       "launchSpeed": 99.9,
       "launchAngle": 26
+    },
+    {
+      "key": "521692-824289-58-58",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 824289,
+      "atBatIndex": 58,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 379,
+      "launchSpeed": 97.9,
+      "launchAngle": 36
+    },
+    {
+      "key": "545361-823560-55-55",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 823560,
+      "atBatIndex": 55,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 446,
+      "launchSpeed": 114.6,
+      "launchAngle": 31
+    },
+    {
+      "key": "666176-823560-68-68",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 823560,
+      "atBatIndex": 68,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 356,
+      "launchSpeed": 100.2,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
