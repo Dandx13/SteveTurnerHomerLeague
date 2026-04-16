@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-16T17:42:56.521Z",
+  "updatedAt": "2026-04-16T18:49:51.508Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3979,6 +3979,45 @@
       "distance": 374,
       "launchSpeed": 100.2,
       "launchAngle": 25
+    },
+    {
+      "key": "542303-823396-43-43",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 823396,
+      "atBatIndex": 43,
+      "playerId": 542303,
+      "playerName": "Marcell Ozuna",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 423,
+      "launchSpeed": 109.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "592450-823560-6-6",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 823560,
+      "atBatIndex": 6,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 410,
+      "launchSpeed": 105.1,
+      "launchAngle": 32
+    },
+    {
+      "key": "519317-823560-24-24",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 823560,
+      "atBatIndex": 24,
+      "playerId": 519317,
+      "playerName": "Giancarlo Stanton",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 446,
+      "launchSpeed": 111.1,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
