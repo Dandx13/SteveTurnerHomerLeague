@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-15T23:53:27.939Z",
+  "updatedAt": "2026-04-16T02:24:53.335Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3823,17 +3823,108 @@
       "distance": 370,
       "launchSpeed": 99.7,
       "launchAngle": 38
+    },
+    {
+      "key": "621020-823477-54-54",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823477,
+      "atBatIndex": 54,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 389,
+      "launchSpeed": 103.5,
+      "launchAngle": 34
+    },
+    {
+      "key": "547180-823477-72-72",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823477,
+      "atBatIndex": 72,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 406,
+      "launchSpeed": 107.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "545361-823561-37-37",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823561,
+      "atBatIndex": 37,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 383,
+      "launchSpeed": 102.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "663586-824936-46-46",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824936,
+      "atBatIndex": 46,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 400,
+      "launchSpeed": 109.3,
+      "launchAngle": 22
+    },
+    {
+      "key": "621566-824936-57-57",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824936,
+      "atBatIndex": 57,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 423,
+      "launchSpeed": 106.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "691406-824615-19-19",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824615,
+      "atBatIndex": 19,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 393,
+      "launchSpeed": 104.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "670541-824209-24-24",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 824209,
+      "atBatIndex": 24,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 375,
+      "launchSpeed": 107.2,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-09",
     "2026-04-10",
     "2026-04-11",
     "2026-04-12",
     "2026-04-13",
     "2026-04-14",
-    "2026-04-15"
+    "2026-04-15",
+    "2026-04-16"
   ],
   "rosterSummary": {
     "teamCount": 21,
