@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-16T21:30:38.718Z",
+  "updatedAt": "2026-04-16T22:10:24.515Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4082,6 +4082,19 @@
       "fantasyTeam": "John Fournier",
       "distance": 375,
       "launchSpeed": 100.4,
+      "launchAngle": 21
+    },
+    {
+      "key": "686469-824289-74-74",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 824289,
+      "atBatIndex": 74,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 412,
+      "launchSpeed": 108,
       "launchAngle": 21
     }
   ],
