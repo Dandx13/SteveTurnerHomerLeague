@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-16T02:24:53.335Z",
+  "updatedAt": "2026-04-16T05:16:09.821Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -3914,6 +3914,71 @@
       "distance": 375,
       "launchSpeed": 107.2,
       "launchAngle": 22
+    },
+    {
+      "key": "608369-825021-21-21",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 825021,
+      "atBatIndex": 21,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 410,
+      "launchSpeed": 107.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "669127-825021-51-51",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 825021,
+      "atBatIndex": 51,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 467,
+      "launchSpeed": 112.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "669394-825021-66-66",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 825021,
+      "atBatIndex": 66,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 408,
+      "launchSpeed": 104.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "606192-823963-43-43",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823963,
+      "atBatIndex": 43,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 370,
+      "launchSpeed": 104.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "663656-823963-65-65",
+      "season": 2026,
+      "date": "2026-04-15",
+      "gamePk": 823963,
+      "atBatIndex": 65,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 374,
+      "launchSpeed": 100.2,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
