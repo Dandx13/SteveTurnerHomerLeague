@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-17T22:49:42.961Z",
+  "updatedAt": "2026-04-17T23:27:54.352Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4135,6 +4135,32 @@
       "distance": 411,
       "launchSpeed": 106.4,
       "launchAngle": 33
+    },
+    {
+      "key": "663586-823476-18-18",
+      "season": 2026,
+      "date": "2026-04-17",
+      "gamePk": 823476,
+      "atBatIndex": 18,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 380,
+      "launchSpeed": 103,
+      "launchAngle": 25
+    },
+    {
+      "key": "671218-822752-9-9",
+      "season": 2026,
+      "date": "2026-04-17",
+      "gamePk": 822752,
+      "atBatIndex": 9,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 416,
+      "launchSpeed": 107.1,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
