@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-16T23:55:09.985Z",
+  "updatedAt": "2026-04-17T02:42:02.310Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4109,17 +4109,30 @@
       "distance": 388,
       "launchSpeed": 103.9,
       "launchAngle": 25
+    },
+    {
+      "key": "696100-824208-25-25",
+      "season": 2026,
+      "date": "2026-04-16",
+      "gamePk": 824208,
+      "atBatIndex": 25,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 397,
+      "launchSpeed": 105.5,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-10",
     "2026-04-11",
     "2026-04-12",
     "2026-04-13",
     "2026-04-14",
     "2026-04-15",
-    "2026-04-16"
+    "2026-04-16",
+    "2026-04-17"
   ],
   "rosterSummary": {
     "teamCount": 21,
