@@ -1707,7 +1707,7 @@ async function fetchHomeRunFeed(options = {}) {
 
 
 function calculateAndDisplayWinnings() {
-  const payouts = [1100, 650, 450, 350, 300, 250, 200];
+  const payouts = [900, 600, 375, 300, 250, 200, 150];
 
   // Step 1: Calculate top 4 totals
   let teams = fantasyTeams.map(team => ({
@@ -1933,6 +1933,20 @@ function tsAvg(arr) {
 function tsFmt3(n) { return Number.isFinite(n) && n !== 0 ? n.toFixed(3) : "—"; }
 function tsFmt1(n) { return Number.isFinite(n) ? n.toFixed(1) : "—"; }
 function tsFmtInt(n) { return Number.isFinite(n) ? String(Math.trunc(n)) : "—"; }
+function tsTeamSlugging(rows) {
+  const totalAtBats = rows.reduce((sum, r) => sum + Number(r.atBats || 0), 0);
+  if (!totalAtBats) return null;
+
+  const totalBases = rows.reduce((sum, r) => {
+    const hits = Number(r.hits || 0);
+    const doubles = Number(r.doubles || 0);
+    const triples = Number(r.triples || 0);
+    const homeRuns = Number(r.hr || 0);
+    return sum + hits + doubles + (2 * triples) + (3 * homeRuns);
+  }, 0);
+
+  return totalBases / totalAtBats;
+}
 function tsAbPerHr(r) {
   if (!r.hr || !r.atBats) return null;
   return r.atBats / r.hr;
@@ -2052,6 +2066,9 @@ function tsBuildPlayerRow(teamName, p) {
     ops: Number(s.ops || 0),
     gamesPlayed: Number(s.gamesPlayed || 0),
     atBats: Number(s.atBats || 0),
+    hits: Number(s.hits || 0),
+    doubles: Number(s.doubles || 0),
+    triples: Number(s.triples || 0),
     avgDistance: Number.isFinite(hrx.avgDistance) ? hrx.avgDistance : null,
     avgEV: Number.isFinite(hrx.avgEV) ? hrx.avgEV : null,
     longestHR: Number.isFinite(hrx.longestHR) ? hrx.longestHR : null,
@@ -2070,7 +2087,7 @@ function tsGetTeamSummaries() {
     const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
     const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
     const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
-    const avgSlg = tsAvg(rows.map(r=>r.slg));
+    const avgSlg = tsTeamSlugging(rows);
     return { name: team.name, rows, teamHR, top4, avgTeamEV, avgTeamDistance, avgSlg };
   });
 }
@@ -2292,7 +2309,7 @@ function renderTeamStats() {
   const top4 = rows.map(r=>r.hr).sort((a,b)=>b-a).slice(0,4).reduce((s,x)=>s+x,0);
   const avgTeamEV = tsAvg(rows.map(r=>r.avgEV));
   const avgTeamDistance = tsAvg(rows.map(r=>r.avgDistance));
-  const avgSlg = tsAvg(rows.map(r=>r.slg));
+  const avgSlg = tsTeamSlugging(rows);
 
   tsRenderSimpleKpi("ts-kpi-1", "Current Place", tsCurrentPlaceLabel(selectedTeam.name), "League Standing");
   tsRenderSimpleKpi("ts-kpi-2", "Total Team HR", teamHR, tsLeagueRankText("teamHR", teamHR));
