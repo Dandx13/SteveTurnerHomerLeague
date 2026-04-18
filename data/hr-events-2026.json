@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-18T19:49:50.198Z",
+  "updatedAt": "2026-04-18T20:21:49.908Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4408,6 +4408,32 @@
       "distance": 374,
       "launchSpeed": 104,
       "launchAngle": 30
+    },
+    {
+      "key": "695578-822751-4-4",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 822751,
+      "atBatIndex": 4,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 406,
+      "launchSpeed": 109,
+      "launchAngle": 28
+    },
+    {
+      "key": "695657-825020-6-6",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 825020,
+      "atBatIndex": 6,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 397,
+      "launchSpeed": 106.5,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
