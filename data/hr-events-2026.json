@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-18T22:58:51.799Z",
+  "updatedAt": "2026-04-18T23:47:00.883Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4512,6 +4512,19 @@
       "distance": 386,
       "launchSpeed": 115.3,
       "launchAngle": 22
+    },
+    {
+      "key": "670541-824206-8-8",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 824206,
+      "atBatIndex": 8,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 421,
+      "launchSpeed": 109.2,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
