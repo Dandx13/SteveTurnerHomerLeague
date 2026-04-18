@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-18T19:03:35.706Z",
+  "updatedAt": "2026-04-18T19:49:50.198Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4394,6 +4394,19 @@
       "fantasyTeam": "Ryan/Paul",
       "distance": 431,
       "launchSpeed": 105.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "641355-823558-49-49",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 823558,
+      "atBatIndex": 49,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 374,
+      "launchSpeed": 104,
       "launchAngle": 30
     }
   ],
