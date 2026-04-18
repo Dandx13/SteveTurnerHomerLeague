@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-18T21:47:48.215Z",
+  "updatedAt": "2026-04-18T22:18:30.525Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4473,6 +4473,45 @@
       "distance": 402,
       "launchSpeed": 106.2,
       "launchAngle": 26
+    },
+    {
+      "key": "671218-822751-48-48",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 822751,
+      "atBatIndex": 48,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 378,
+      "launchSpeed": 99.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "808959-825020-56-56",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 825020,
+      "atBatIndex": 56,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 415,
+      "launchSpeed": 103.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "701762-825020-61-61",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 825020,
+      "atBatIndex": 61,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 386,
+      "launchSpeed": 115.3,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
