@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-19T20:22:28.218Z",
+  "updatedAt": "2026-04-19T21:01:42.033Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4629,6 +4629,71 @@
       "distance": 398,
       "launchSpeed": 103,
       "launchAngle": 29
+    },
+    {
+      "key": "592450-823556-5-5",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 823556,
+      "atBatIndex": 5,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 425,
+      "launchSpeed": 111.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "700250-823556-16-16",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 823556,
+      "atBatIndex": 16,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 350,
+      "launchSpeed": 97.9,
+      "launchAngle": 33
+    },
+    {
+      "key": "670541-824205-61-61",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 824205,
+      "atBatIndex": 61,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 357,
+      "launchSpeed": 95.8,
+      "launchAngle": 28
+    },
+    {
+      "key": "672960-825100-24-24",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 825100,
+      "atBatIndex": 24,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 406,
+      "launchSpeed": 103.3,
+      "launchAngle": 23
+    },
+    {
+      "key": "575929-824777-7-7",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 824777,
+      "atBatIndex": 7,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 394,
+      "launchSpeed": 109.4,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
