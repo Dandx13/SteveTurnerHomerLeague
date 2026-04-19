@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-19T21:01:42.033Z",
+  "updatedAt": "2026-04-19T21:48:54.279Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4694,6 +4694,71 @@
       "distance": 394,
       "launchSpeed": 109.4,
       "launchAngle": 32
+    },
+    {
+      "key": "663757-823556-38-38",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 823556,
+      "atBatIndex": 38,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 369,
+      "launchSpeed": 103,
+      "launchAngle": 34
+    },
+    {
+      "key": "666160-824371-59-59",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 824371,
+      "atBatIndex": 59,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 428,
+      "launchSpeed": 102.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "808959-825018-35-35",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 825018,
+      "atBatIndex": 35,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 425,
+      "launchSpeed": 114.1,
+      "launchAngle": 35
+    },
+    {
+      "key": "695657-825018-38-38",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 825018,
+      "atBatIndex": 38,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 419,
+      "launchSpeed": 104.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "668227-823150-36-36",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 823150,
+      "atBatIndex": 36,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 347,
+      "launchSpeed": 103.8,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
