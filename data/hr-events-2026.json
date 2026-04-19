@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-19T17:57:24.459Z",
+  "updatedAt": "2026-04-19T19:02:41.524Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4577,6 +4577,32 @@
       "distance": 389,
       "launchSpeed": 102.3,
       "launchAngle": 33
+    },
+    {
+      "key": "608070-824452-26-26",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 824452,
+      "atBatIndex": 26,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 408,
+      "launchSpeed": 106.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "621493-824452-37-37",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 824452,
+      "atBatIndex": 37,
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 394,
+      "launchSpeed": 107.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
