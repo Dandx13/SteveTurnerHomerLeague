@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-18T23:47:00.883Z",
+  "updatedAt": "2026-04-19T01:12:13.105Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4525,17 +4525,56 @@
       "distance": 421,
       "launchSpeed": 109.2,
       "launchAngle": 29
+    },
+    {
+      "key": "683002-824451-52-52",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 824451,
+      "atBatIndex": 52,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 368,
+      "launchSpeed": 102.5,
+      "launchAngle": 40
+    },
+    {
+      "key": "676475-824206-53-53",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 824206,
+      "atBatIndex": 53,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 408,
+      "launchSpeed": 106.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "663656-824372-1-1",
+      "season": 2026,
+      "date": "2026-04-18",
+      "gamePk": 824372,
+      "atBatIndex": 1,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 435,
+      "launchSpeed": 102.9,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-12",
     "2026-04-13",
     "2026-04-14",
     "2026-04-15",
     "2026-04-16",
     "2026-04-17",
-    "2026-04-18"
+    "2026-04-18",
+    "2026-04-19"
   ],
   "rosterSummary": {
     "teamCount": 21,
