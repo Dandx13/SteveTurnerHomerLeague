@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-19T23:49:29.543Z",
+  "updatedAt": "2026-04-20T01:13:53.791Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4772,17 +4772,30 @@
       "distance": 381,
       "launchSpeed": 107.1,
       "launchAngle": 25
+    },
+    {
+      "key": "671739-823475-17-17",
+      "season": 2026,
+      "date": "2026-04-19",
+      "gamePk": 823475,
+      "atBatIndex": 17,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 376,
+      "launchSpeed": 101.9,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-13",
     "2026-04-14",
     "2026-04-15",
     "2026-04-16",
     "2026-04-17",
     "2026-04-18",
-    "2026-04-19"
+    "2026-04-19",
+    "2026-04-20"
   ],
   "rosterSummary": {
     "teamCount": 21,
