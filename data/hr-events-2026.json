@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-20T23:04:00.198Z",
+  "updatedAt": "2026-04-20T23:55:58.068Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4811,6 +4811,45 @@
       "distance": 424,
       "launchSpeed": 108.5,
       "launchAngle": 25
+    },
+    {
+      "key": "670623-824450-29-29",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824450,
+      "atBatIndex": 29,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 383,
+      "launchSpeed": 99.6,
+      "launchAngle": 31
+    },
+    {
+      "key": "682663-823879-35-35",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 823879,
+      "atBatIndex": 35,
+      "playerId": 682663,
+      "playerName": "Agustín Ramírez",
+      "fantasyTeam": "Austin",
+      "distance": 411,
+      "launchSpeed": 111.8,
+      "launchAngle": 17
+    },
+    {
+      "key": "621566-822749-24-24",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 822749,
+      "atBatIndex": 24,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 419,
+      "launchSpeed": 108.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
