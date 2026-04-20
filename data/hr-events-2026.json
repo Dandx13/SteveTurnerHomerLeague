@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-20T22:10:57.321Z",
+  "updatedAt": "2026-04-20T23:04:00.198Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4785,6 +4785,32 @@
       "distance": 376,
       "launchSpeed": 101.9,
       "launchAngle": 37
+    },
+    {
+      "key": "572233-824450-3-3",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824450,
+      "atBatIndex": 3,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 391,
+      "launchSpeed": 111.1,
+      "launchAngle": 20
+    },
+    {
+      "key": "701398-822994-3-3",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 822994,
+      "atBatIndex": 3,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 424,
+      "launchSpeed": 108.5,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
