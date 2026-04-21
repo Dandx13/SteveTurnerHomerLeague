@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-21T22:57:42.005Z",
+  "updatedAt": "2026-04-21T23:44:24.009Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4980,6 +4980,45 @@
       "distance": 414,
       "launchSpeed": 111.6,
       "launchAngle": 20
+    },
+    {
+      "key": "695578-822747-17-17",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 822747,
+      "atBatIndex": 17,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 412,
+      "launchSpeed": 114.5,
+      "launchAngle": 20
+    },
+    {
+      "key": "686948-822747-24-24",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 822747,
+      "atBatIndex": 24,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 438,
+      "launchSpeed": 105.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "519317-824773-7-7",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 824773,
+      "atBatIndex": 7,
+      "playerId": 519317,
+      "playerName": "Giancarlo Stanton",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 369,
+      "launchSpeed": 111.5,
+      "launchAngle": 41
     }
   ],
   "lastScanMode": "rolling-7-day",
