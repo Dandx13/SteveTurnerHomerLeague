@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-21T02:54:13.447Z",
+  "updatedAt": "2026-04-21T05:26:34.757Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4928,6 +4928,45 @@
       "distance": 382,
       "launchSpeed": 106,
       "launchAngle": 32
+    },
+    {
+      "key": "571970-824370-75-75",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824370,
+      "atBatIndex": 75,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 397,
+      "launchSpeed": 99.3,
+      "launchAngle": 36
+    },
+    {
+      "key": "701762-823149-40-40",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 823149,
+      "atBatIndex": 40,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 416,
+      "launchSpeed": 105.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "669127-823149-41-41",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 823149,
+      "atBatIndex": 41,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 432,
+      "launchSpeed": 108.3,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
