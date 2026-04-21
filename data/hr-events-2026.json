@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-20T23:55:58.068Z",
+  "updatedAt": "2026-04-21T02:54:13.447Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4850,17 +4850,95 @@
       "distance": 419,
       "launchSpeed": 108.6,
       "launchAngle": 26
+    },
+    {
+      "key": "670623-824450-78-78",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824450,
+      "atBatIndex": 78,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 375,
+      "launchSpeed": 104.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "695506-824125-13-13",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824125,
+      "atBatIndex": 13,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 437,
+      "launchSpeed": 109.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "621020-824692-17-17",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824692,
+      "atBatIndex": 17,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 424,
+      "launchSpeed": 110.3,
+      "launchAngle": 22
+    },
+    {
+      "key": "571970-824370-10-10",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824370,
+      "atBatIndex": 10,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 419,
+      "launchSpeed": 100.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "665489-824046-20-20",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 824046,
+      "atBatIndex": 20,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 430,
+      "launchSpeed": 107.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "663728-823149-5-5",
+      "season": 2026,
+      "date": "2026-04-20",
+      "gamePk": 823149,
+      "atBatIndex": 5,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 382,
+      "launchSpeed": 106,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-14",
     "2026-04-15",
     "2026-04-16",
     "2026-04-17",
     "2026-04-18",
     "2026-04-19",
-    "2026-04-20"
+    "2026-04-20",
+    "2026-04-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
