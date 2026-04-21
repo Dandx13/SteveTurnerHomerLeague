@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-21T22:06:33.120Z",
+  "updatedAt": "2026-04-21T22:57:42.005Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -4967,6 +4967,19 @@
       "distance": 432,
       "launchSpeed": 108.3,
       "launchAngle": 30
+    },
+    {
+      "key": "682829-822995-2-2",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 822995,
+      "atBatIndex": 2,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 414,
+      "launchSpeed": 111.6,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
