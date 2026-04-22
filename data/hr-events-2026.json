@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-22T19:57:50.807Z",
+  "updatedAt": "2026-04-22T21:04:13.155Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5226,6 +5226,19 @@
       "fantasyTeam": "Mike/Nick/Evan (2)",
       "distance": 422,
       "launchSpeed": 108.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "545361-824044-39-39",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 824044,
+      "atBatIndex": 39,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 428,
+      "launchSpeed": 113.2,
       "launchAngle": 24
     }
   ],
