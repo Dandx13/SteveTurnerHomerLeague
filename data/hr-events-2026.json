@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-22T22:00:56.173Z",
+  "updatedAt": "2026-04-22T22:59:57.589Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5253,6 +5253,32 @@
       "distance": 405,
       "launchSpeed": 105.8,
       "launchAngle": 27
+    },
+    {
+      "key": "701762-823147-72-72",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 823147,
+      "atBatIndex": 72,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 438,
+      "launchSpeed": 110.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "686948-822748-1-1",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 822748,
+      "atBatIndex": 1,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 391,
+      "launchSpeed": 101.7,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
