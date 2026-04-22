@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-22T01:07:14.117Z",
+  "updatedAt": "2026-04-22T04:16:30.567Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5058,6 +5058,110 @@
       "distance": 374,
       "launchSpeed": 101.2,
       "launchAngle": 34
+    },
+    {
+      "key": "682829-822995-80-80",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 822995,
+      "atBatIndex": 80,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 406,
+      "launchSpeed": 108.5,
+      "launchAngle": 35
+    },
+    {
+      "key": "656941-824690-46-46",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 824690,
+      "atBatIndex": 46,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 386,
+      "launchSpeed": 97.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "673548-824690-65-65",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 824690,
+      "atBatIndex": 65,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 441,
+      "launchSpeed": 109.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "547180-824690-70-70",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 824690,
+      "atBatIndex": 70,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 406,
+      "launchSpeed": 106.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "663728-823148-41-41",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 823148,
+      "atBatIndex": 41,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 367,
+      "launchSpeed": 104.3,
+      "launchAngle": 37
+    },
+    {
+      "key": "669127-823148-55-55",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 823148,
+      "atBatIndex": 55,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 417,
+      "launchSpeed": 108.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "808959-825099-14-14",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 825099,
+      "atBatIndex": 14,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 426,
+      "launchSpeed": 113,
+      "launchAngle": 30
+    },
+    {
+      "key": "695657-825099-16-16",
+      "season": 2026,
+      "date": "2026-04-21",
+      "gamePk": 825099,
+      "atBatIndex": 16,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 440,
+      "launchSpeed": 107.2,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
