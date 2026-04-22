@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-22T17:45:23.452Z",
+  "updatedAt": "2026-04-22T18:49:44.729Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5175,6 +5175,58 @@
       "distance": 422,
       "launchSpeed": 108.8,
       "launchAngle": 27
+    },
+    {
+      "key": "671056-823878-66-66",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 823878,
+      "atBatIndex": 66,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 388,
+      "launchSpeed": 108.2,
+      "launchAngle": 21
+    },
+    {
+      "key": "691406-822993-21-21",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 822993,
+      "atBatIndex": 21,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 404,
+      "launchSpeed": 106.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "624413-824123-3-3",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 824123,
+      "atBatIndex": 3,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 410,
+      "launchSpeed": 106.9,
+      "launchAngle": 26
+    },
+    {
+      "key": "686469-824123-7-7",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 824123,
+      "atBatIndex": 7,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 422,
+      "launchSpeed": 108.1,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
