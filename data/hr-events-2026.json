@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-22T22:59:57.589Z",
+  "updatedAt": "2026-04-22T23:55:27.682Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5279,6 +5279,58 @@
       "distance": 391,
       "launchSpeed": 101.7,
       "launchAngle": 28
+    },
+    {
+      "key": "679529-824286-28-28",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 824286,
+      "atBatIndex": 28,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 400,
+      "launchSpeed": 106.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "671739-822748-13-13",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 822748,
+      "atBatIndex": 13,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 414,
+      "launchSpeed": 107.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "671739-822748-26-26",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 822748,
+      "atBatIndex": 26,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 394,
+      "launchSpeed": 104.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "621566-822748-38-38",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 822748,
+      "atBatIndex": 38,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 376,
+      "launchSpeed": 108.4,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
