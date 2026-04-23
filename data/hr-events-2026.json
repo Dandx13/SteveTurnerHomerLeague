@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-23T18:02:38.314Z",
+  "updatedAt": "2026-04-23T19:37:52.707Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5474,6 +5474,58 @@
       "distance": 406,
       "launchSpeed": 107.7,
       "launchAngle": 23
+    },
+    {
+      "key": "645277-822745-70-70",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 822745,
+      "atBatIndex": 70,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "683737-824689-24-24",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 824689,
+      "atBatIndex": 24,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 421,
+      "launchSpeed": 106,
+      "launchAngle": 25
+    },
+    {
+      "key": "664023-824689-35-35",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 824689,
+      "atBatIndex": 35,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 429,
+      "launchSpeed": 110.7,
+      "launchAngle": 32
+    },
+    {
+      "key": "666160-824368-4-4",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 824368,
+      "atBatIndex": 4,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 386,
+      "launchSpeed": 96.6,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
