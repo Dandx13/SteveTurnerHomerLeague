@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-23T19:37:52.707Z",
+  "updatedAt": "2026-04-23T20:38:01.937Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5525,6 +5525,32 @@
       "fantasyTeam": "Payton/Matt",
       "distance": 386,
       "launchSpeed": 96.6,
+      "launchAngle": 39
+    },
+    {
+      "key": "679529-824288-69-69",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 824288,
+      "atBatIndex": 69,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 382,
+      "launchSpeed": 109.8,
+      "launchAngle": 21
+    },
+    {
+      "key": "673548-824689-74-74",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 824689,
+      "atBatIndex": 74,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 393,
+      "launchSpeed": 103.6,
       "launchAngle": 39
     }
   ],
