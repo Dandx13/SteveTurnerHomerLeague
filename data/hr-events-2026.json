@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-23T02:49:38.212Z",
+  "updatedAt": "2026-04-23T05:19:17.742Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5421,6 +5421,32 @@
       "fantasyTeam": "Mike/Nick/Evan",
       "distance": 423,
       "launchSpeed": 105.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "696100-824367-71-71",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 824367,
+      "atBatIndex": 71,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 427,
+      "launchSpeed": 105.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "808959-825097-64-64",
+      "season": 2026,
+      "date": "2026-04-22",
+      "gamePk": 825097,
+      "atBatIndex": 64,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 451,
+      "launchSpeed": 110.2,
       "launchAngle": 29
     }
   ],
