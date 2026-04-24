@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-24T22:56:26.306Z",
+  "updatedAt": "2026-04-24T23:44:48.309Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5617,6 +5617,58 @@
       "distance": 415,
       "launchSpeed": 107.5,
       "launchAngle": 22
+    },
+    {
+      "key": "682985-824529-8-8",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 824529,
+      "atBatIndex": 8,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 405,
+      "launchSpeed": 103.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "683002-824854-3-3",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 824854,
+      "atBatIndex": 3,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 410,
+      "launchSpeed": 109.1,
+      "launchAngle": 36
+    },
+    {
+      "key": "677800-824854-12-12",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 824854,
+      "atBatIndex": 12,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 403,
+      "launchSpeed": 105.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "691406-822992-4-4",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 822992,
+      "atBatIndex": 4,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 450,
+      "launchSpeed": 111,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
