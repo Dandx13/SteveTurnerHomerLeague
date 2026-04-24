@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-24T00:02:25.495Z",
+  "updatedAt": "2026-04-24T03:46:33.237Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5591,6 +5591,32 @@
       "distance": 333,
       "launchSpeed": 98,
       "launchAngle": 36
+    },
+    {
+      "key": "608369-822912-36-36",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 822912,
+      "atBatIndex": 36,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 382,
+      "launchSpeed": 104.7,
+      "launchAngle": 36
+    },
+    {
+      "key": "665833-822912-41-41",
+      "season": 2026,
+      "date": "2026-04-23",
+      "gamePk": 822912,
+      "atBatIndex": 41,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 415,
+      "launchSpeed": 107.5,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
