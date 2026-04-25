@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-25T21:56:01.176Z",
+  "updatedAt": "2026-04-25T22:40:42.085Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6007,6 +6007,19 @@
       "distance": 425,
       "launchSpeed": 108.9,
       "launchAngle": 30
+    },
+    {
+      "key": "671218-823229-66-66",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 823229,
+      "atBatIndex": 66,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 365,
+      "launchSpeed": 102.7,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
