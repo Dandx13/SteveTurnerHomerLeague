@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-25T04:07:16.321Z",
+  "updatedAt": "2026-04-25T05:57:51.009Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5929,6 +5929,32 @@
       "distance": 386,
       "launchSpeed": 103.9,
       "launchAngle": 25
+    },
+    {
+      "key": "608324-823962-58-58",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 823962,
+      "atBatIndex": 58,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 408,
+      "launchSpeed": 107.3,
+      "launchAngle": 35
+    },
+    {
+      "key": "621020-823962-67-67",
+      "season": 2026,
+      "date": "2026-04-24",
+      "gamePk": 823962,
+      "atBatIndex": 67,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 413,
+      "launchSpeed": 108.5,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
