@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-25T18:02:32.488Z",
+  "updatedAt": "2026-04-25T19:08:27.264Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -5955,6 +5955,45 @@
       "distance": 413,
       "launchSpeed": 108.5,
       "launchAngle": 26
+    },
+    {
+      "key": "575929-824851-78-78",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 824851,
+      "atBatIndex": 78,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 418,
+      "launchSpeed": 104.2,
+      "launchAngle": 29
+    },
+    {
+      "key": "677594-823070-2-2",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 823070,
+      "atBatIndex": 2,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 402,
+      "launchSpeed": 108,
+      "launchAngle": 33
+    },
+    {
+      "key": "671056-823070-7-7",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 823070,
+      "atBatIndex": 7,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 429,
+      "launchSpeed": 108.5,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
