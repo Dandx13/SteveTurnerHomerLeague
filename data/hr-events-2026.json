@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-26T00:01:36.775Z",
+  "updatedAt": "2026-04-26T03:51:39.718Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6085,6 +6085,71 @@
       "distance": 404,
       "launchSpeed": 103.8,
       "launchAngle": 25
+    },
+    {
+      "key": "666176-824121-29-29",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 824121,
+      "atBatIndex": 29,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 416,
+      "launchSpeed": 110,
+      "launchAngle": 30
+    },
+    {
+      "key": "669224-824203-48-48",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 824203,
+      "atBatIndex": 48,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 343,
+      "launchSpeed": 92.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "572233-824203-76-76",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 824203,
+      "atBatIndex": 76,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 398,
+      "launchSpeed": 106.9,
+      "launchAngle": 35
+    },
+    {
+      "key": "679529-824527-33-33",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 824527,
+      "atBatIndex": 33,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 395,
+      "launchSpeed": 102.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "571970-823960-23-23",
+      "season": 2026,
+      "date": "2026-04-25",
+      "gamePk": 823960,
+      "atBatIndex": 23,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 387,
+      "launchSpeed": 110.1,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
