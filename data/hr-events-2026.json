@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-26T20:07:35.465Z",
+  "updatedAt": "2026-04-26T20:56:37.695Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6293,6 +6293,32 @@
       "distance": 401,
       "launchSpeed": 109.3,
       "launchAngle": 31
+    },
+    {
+      "key": "592518-825094-18-18",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 825094,
+      "atBatIndex": 18,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 436,
+      "launchSpeed": 104.6,
+      "launchAngle": 22
+    },
+    {
+      "key": "545361-824122-1-1",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824122,
+      "atBatIndex": 1,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 381,
+      "launchSpeed": 100,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
