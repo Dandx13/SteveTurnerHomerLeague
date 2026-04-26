@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-26T21:45:16.587Z",
+  "updatedAt": "2026-04-26T22:22:20.312Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6345,6 +6345,32 @@
       "distance": 395,
       "launchSpeed": 96.1,
       "launchAngle": 31
+    },
+    {
+      "key": "677951-824122-49-49",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824122,
+      "atBatIndex": 49,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 427,
+      "launchSpeed": 108.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "660271-823959-59-59",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 823959,
+      "atBatIndex": 59,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 382,
+      "launchSpeed": 109.8,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
