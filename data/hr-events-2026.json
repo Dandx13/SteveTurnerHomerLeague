@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-26T16:58:53.120Z",
+  "updatedAt": "2026-04-26T17:51:11.040Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6150,6 +6150,19 @@
       "distance": 387,
       "launchSpeed": 110.1,
       "launchAngle": 22
+    },
+    {
+      "key": "621566-824934-5-5",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824934,
+      "atBatIndex": 5,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 399,
+      "launchSpeed": 105.4,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
