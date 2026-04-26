@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-26T19:33:57.236Z",
+  "updatedAt": "2026-04-26T20:07:35.465Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6254,6 +6254,45 @@
       "distance": 401,
       "launchSpeed": 109.8,
       "launchAngle": 25
+    },
+    {
+      "key": "656941-824934-61-61",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824934,
+      "atBatIndex": 61,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 377,
+      "launchSpeed": 103.4,
+      "launchAngle": 36
+    },
+    {
+      "key": "679529-824528-56-56",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824528,
+      "atBatIndex": 56,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 421,
+      "launchSpeed": 107.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "592450-824202-45-45",
+      "season": 2026,
+      "date": "2026-04-26",
+      "gamePk": 824202,
+      "atBatIndex": 45,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 401,
+      "launchSpeed": 109.3,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
