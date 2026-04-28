@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-27T23:11:39.182Z",
+  "updatedAt": "2026-04-28T00:07:48.783Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6384,17 +6384,30 @@
       "distance": 409,
       "launchSpeed": 109,
       "launchAngle": 35
+    },
+    {
+      "key": "666018-824446-53-53",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 824446,
+      "atBatIndex": 53,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 373,
+      "launchSpeed": 103.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-21",
     "2026-04-22",
     "2026-04-23",
     "2026-04-24",
     "2026-04-25",
     "2026-04-26",
-    "2026-04-27"
+    "2026-04-27",
+    "2026-04-28"
   ],
   "rosterSummary": {
     "teamCount": 21,
