@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-28T00:07:48.783Z",
+  "updatedAt": "2026-04-28T04:04:33.567Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6397,6 +6397,84 @@
       "distance": 373,
       "launchSpeed": 103.6,
       "launchAngle": 26
+    },
+    {
+      "key": "621439-823719-31-31",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 823719,
+      "atBatIndex": 31,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 396,
+      "launchSpeed": 104.2,
+      "launchAngle": 39
+    },
+    {
+      "key": "663728-823719-64-64",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 823719,
+      "atBatIndex": 64,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 396,
+      "launchSpeed": 109.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "700250-822906-17-17",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 822906,
+      "atBatIndex": 17,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 404,
+      "launchSpeed": 106.9,
+      "launchAngle": 23
+    },
+    {
+      "key": "592450-822906-18-18",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 822906,
+      "atBatIndex": 18,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 414,
+      "launchSpeed": 113,
+      "launchAngle": 20
+    },
+    {
+      "key": "665862-822906-23-23",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 822906,
+      "atBatIndex": 23,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 406,
+      "launchSpeed": 106.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "673548-823311-12-12",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 823311,
+      "atBatIndex": 12,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 396,
+      "launchSpeed": 103.7,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
