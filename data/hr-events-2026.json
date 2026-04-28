@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-28T04:04:33.567Z",
+  "updatedAt": "2026-04-28T06:41:33.820Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6475,6 +6475,32 @@
       "distance": 396,
       "launchSpeed": 103.7,
       "launchAngle": 30
+    },
+    {
+      "key": "624585-824609-53-53",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 824609,
+      "atBatIndex": 53,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 431,
+      "launchSpeed": 107.9,
+      "launchAngle": 24
+    },
+    {
+      "key": "808959-824609-60-60",
+      "season": 2026,
+      "date": "2026-04-27",
+      "gamePk": 824609,
+      "atBatIndex": 60,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 382,
+      "launchSpeed": 95.8,
+      "launchAngle": 48
     }
   ],
   "lastScanMode": "rolling-7-day",
