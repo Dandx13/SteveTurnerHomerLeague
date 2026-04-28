@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-28T22:35:57.890Z",
+  "updatedAt": "2026-04-28T23:35:15.878Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6501,6 +6501,32 @@
       "distance": 382,
       "launchSpeed": 95.8,
       "launchAngle": 48
+    },
+    {
+      "key": "669357-823390-8-8",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 823390,
+      "atBatIndex": 8,
+      "playerId": 669357,
+      "playerName": "Nolan Gorman",
+      "fantasyTeam": "Pat T",
+      "distance": 413,
+      "launchSpeed": 108.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "666182-823636-3-3",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 823636,
+      "atBatIndex": 3,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 386,
+      "launchSpeed": 105.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
