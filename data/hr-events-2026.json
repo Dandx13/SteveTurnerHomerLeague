@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-29T19:57:30.922Z",
+  "updatedAt": "2026-04-29T21:13:31.863Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6722,6 +6722,19 @@
       "distance": 406,
       "launchSpeed": 103.9,
       "launchAngle": 28
+    },
+    {
+      "key": "691718-823312-25-25",
+      "season": 2026,
+      "date": "2026-04-29",
+      "gamePk": 823312,
+      "atBatIndex": 25,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 357,
+      "launchSpeed": 105.4,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
