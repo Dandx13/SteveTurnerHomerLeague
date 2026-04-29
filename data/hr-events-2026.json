@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-29T01:22:12.717Z",
+  "updatedAt": "2026-04-29T04:47:17.773Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6605,6 +6605,97 @@
       "distance": 384,
       "launchSpeed": 102.1,
       "launchAngle": 33
+    },
+    {
+      "key": "645277-824931-63-63",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 824931,
+      "atBatIndex": 63,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 378,
+      "launchSpeed": 98.5,
+      "launchAngle": 29
+    },
+    {
+      "key": "647304-823716-62-62",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 823716,
+      "atBatIndex": 62,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 390,
+      "launchSpeed": 102.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "669224-822908-47-47",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 822908,
+      "atBatIndex": 47,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 376,
+      "launchSpeed": 97.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "592450-822908-62-62",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 822908,
+      "atBatIndex": 62,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 424,
+      "launchSpeed": 112.7,
+      "launchAngle": 36
+    },
+    {
+      "key": "521692-825017-45-45",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 825017,
+      "atBatIndex": 45,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 425,
+      "launchSpeed": 107.3,
+      "launchAngle": 22
+    },
+    {
+      "key": "677951-825017-78-78",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 825017,
+      "atBatIndex": 78,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 383,
+      "launchSpeed": 103.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "691718-823310-60-60",
+      "season": 2026,
+      "date": "2026-04-28",
+      "gamePk": 823310,
+      "atBatIndex": 60,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 410,
+      "launchSpeed": 106.3,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
