@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-29T18:19:30.081Z",
+  "updatedAt": "2026-04-29T19:57:30.922Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6709,6 +6709,19 @@
       "distance": 364,
       "launchSpeed": 99.4,
       "launchAngle": 23
+    },
+    {
+      "key": "575929-822821-1-1",
+      "season": 2026,
+      "date": "2026-04-29",
+      "gamePk": 822821,
+      "atBatIndex": 1,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 406,
+      "launchSpeed": 103.9,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
