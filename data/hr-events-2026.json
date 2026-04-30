@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-04-30T17:42:35.891Z",
+  "updatedAt": "2026-04-30T18:59:11.127Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6878,6 +6878,32 @@
       "distance": 406,
       "launchSpeed": 113,
       "launchAngle": 30
+    },
+    {
+      "key": "664040-823391-59-59",
+      "season": 2026,
+      "date": "2026-04-30",
+      "gamePk": 823391,
+      "atBatIndex": 59,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 416,
+      "launchSpeed": 110,
+      "launchAngle": 27
+    },
+    {
+      "key": "661388-823795-22-22",
+      "season": 2026,
+      "date": "2026-04-30",
+      "gamePk": 823795,
+      "atBatIndex": 22,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 419,
+      "launchSpeed": 105.9,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
