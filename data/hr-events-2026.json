@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-01T00:08:49.297Z",
+  "updatedAt": "2026-05-01T04:16:13.664Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6930,6 +6930,32 @@
       "distance": 446,
       "launchSpeed": 112.4,
       "launchAngle": 25
+    },
+    {
+      "key": "662139-823714-23-23",
+      "season": 2026,
+      "date": "2026-04-30",
+      "gamePk": 823714,
+      "atBatIndex": 23,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 397,
+      "launchSpeed": 107.4,
+      "launchAngle": 34
+    },
+    {
+      "key": "621439-823714-41-41",
+      "season": 2026,
+      "date": "2026-04-30",
+      "gamePk": 823714,
+      "atBatIndex": 41,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 375,
+      "launchSpeed": 101.8,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
