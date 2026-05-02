@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-01T23:31:36.130Z",
+  "updatedAt": "2026-05-02T01:14:39.111Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -6969,17 +6969,134 @@
       "distance": 367,
       "launchSpeed": 107.6,
       "launchAngle": 30
+    },
+    {
+      "key": "668804-823389-5-5",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823389,
+      "atBatIndex": 5,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 443,
+      "launchSpeed": 108.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "700250-823557-17-17",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823557,
+      "atBatIndex": 17,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 380,
+      "launchSpeed": 106.6,
+      "launchAngle": 21
+    },
+    {
+      "key": "680776-824772-22-22",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 824772,
+      "atBatIndex": 22,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 407,
+      "launchSpeed": 104,
+      "launchAngle": 25
+    },
+    {
+      "key": "650490-822990-10-10",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 822990,
+      "atBatIndex": 10,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 364,
+      "launchSpeed": 99.9,
+      "launchAngle": 36
+    },
+    {
+      "key": "691406-822990-23-23",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 822990,
+      "atBatIndex": 23,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 432,
+      "launchSpeed": 112.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "621439-823713-21-21",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823713,
+      "atBatIndex": 21,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 364,
+      "launchSpeed": 98.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "672960-823713-25-25",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823713,
+      "atBatIndex": 25,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 390,
+      "launchSpeed": 104.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "669357-823066-7-7",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823066,
+      "atBatIndex": 7,
+      "playerId": 669357,
+      "playerName": "Nolan Gorman",
+      "fantasyTeam": "Pat T",
+      "distance": 388,
+      "launchSpeed": 107.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "676475-823066-22-22",
+      "season": 2026,
+      "date": "2026-05-01",
+      "gamePk": 823066,
+      "atBatIndex": 22,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 390,
+      "launchSpeed": 106.5,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-25",
     "2026-04-26",
     "2026-04-27",
     "2026-04-28",
     "2026-04-29",
     "2026-04-30",
-    "2026-05-01"
+    "2026-05-01",
+    "2026-05-02"
   ],
   "rosterSummary": {
     "teamCount": 21,
