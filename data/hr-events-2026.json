@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-02T20:56:04.717Z",
+  "updatedAt": "2026-05-02T21:45:53.971Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7372,6 +7372,32 @@
       "distance": 398,
       "launchSpeed": 102.9,
       "launchAngle": 30
+    },
+    {
+      "key": "669127-825014-42-42",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 825014,
+      "atBatIndex": 42,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 433,
+      "launchSpeed": 107.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "572233-824771-37-37",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824771,
+      "atBatIndex": 37,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 388,
+      "launchSpeed": 108.3,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
