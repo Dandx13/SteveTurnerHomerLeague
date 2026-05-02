@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-02T18:09:46.119Z",
+  "updatedAt": "2026-05-02T19:17:46.661Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7281,6 +7281,71 @@
       "distance": 363,
       "launchSpeed": 102.4,
       "launchAngle": 36
+    },
+    {
+      "key": "624413-823554-27-27",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 823554,
+      "atBatIndex": 27,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 413,
+      "launchSpeed": 114.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "663757-823554-33-33",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 823554,
+      "atBatIndex": 33,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 412,
+      "launchSpeed": 105.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "641355-823554-39-39",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 823554,
+      "atBatIndex": 39,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 354,
+      "launchSpeed": 93.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "621439-823715-3-3",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 823715,
+      "atBatIndex": 3,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 363,
+      "launchSpeed": 99.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "664023-824685-10-10",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824685,
+      "atBatIndex": 10,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 399,
+      "launchSpeed": 110.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
