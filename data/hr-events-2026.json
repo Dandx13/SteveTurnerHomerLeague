@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-03T20:03:52.269Z",
+  "updatedAt": "2026-05-03T20:58:45.609Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7515,6 +7515,19 @@
       "distance": 401,
       "launchSpeed": 109,
       "launchAngle": 36
+    },
+    {
+      "key": "666160-824364-37-37",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 824364,
+      "atBatIndex": 37,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 422,
+      "launchSpeed": 104,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
