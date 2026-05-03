@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-03T20:58:45.609Z",
+  "updatedAt": "2026-05-03T21:54:53.526Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7528,6 +7528,45 @@
       "distance": 422,
       "launchSpeed": 104,
       "launchAngle": 31
+    },
+    {
+      "key": "691016-825013-36-36",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 825013,
+      "atBatIndex": 36,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 379,
+      "launchSpeed": 103,
+      "launchAngle": 24
+    },
+    {
+      "key": "668901-824043-27-27",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 824043,
+      "atBatIndex": 27,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 427,
+      "launchSpeed": 107,
+      "launchAngle": 29
+    },
+    {
+      "key": "592518-823307-28-28",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 823307,
+      "atBatIndex": 28,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 397,
+      "launchSpeed": 102.5,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
