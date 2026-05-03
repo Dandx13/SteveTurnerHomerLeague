@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-03T18:11:32.211Z",
+  "updatedAt": "2026-05-03T19:19:38.241Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7476,6 +7476,32 @@
       "distance": 379,
       "launchSpeed": 109.8,
       "launchAngle": 22
+    },
+    {
+      "key": "680776-824769-39-39",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 824769,
+      "atBatIndex": 39,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 376,
+      "launchSpeed": 111.8,
+      "launchAngle": 21
+    },
+    {
+      "key": "592450-823555-22-22",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 823555,
+      "atBatIndex": 22,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 413,
+      "launchSpeed": 107.7,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
