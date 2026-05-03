@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-03T00:01:13.410Z",
+  "updatedAt": "2026-05-03T04:05:26.934Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7411,6 +7411,58 @@
       "distance": 389,
       "launchSpeed": 99.3,
       "launchAngle": 30
+    },
+    {
+      "key": "669394-824284-28-28",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824284,
+      "atBatIndex": 28,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 373,
+      "launchSpeed": 102.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "686948-824365-1-1",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824365,
+      "atBatIndex": 1,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 384,
+      "launchSpeed": 101.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "663586-824365-39-39",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824365,
+      "atBatIndex": 39,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 438,
+      "launchSpeed": 106.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "621566-824365-70-70",
+      "season": 2026,
+      "date": "2026-05-02",
+      "gamePk": 824365,
+      "atBatIndex": 70,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 414,
+      "launchSpeed": 109.6,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
