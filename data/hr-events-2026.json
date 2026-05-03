@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-03T21:54:53.526Z",
+  "updatedAt": "2026-05-03T22:41:40.092Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7567,6 +7567,32 @@
       "distance": 397,
       "launchSpeed": 102.5,
       "launchAngle": 32
+    },
+    {
+      "key": "666160-824364-75-75",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 824364,
+      "atBatIndex": 75,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 438,
+      "launchSpeed": 105,
+      "launchAngle": 31
+    },
+    {
+      "key": "668901-824043-60-60",
+      "season": 2026,
+      "date": "2026-05-03",
+      "gamePk": 824043,
+      "atBatIndex": 60,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 378,
+      "launchSpeed": 103.3,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
