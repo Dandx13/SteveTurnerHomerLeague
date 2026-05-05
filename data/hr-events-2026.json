@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-05T03:45:08.311Z",
+  "updatedAt": "2026-05-05T06:06:20.706Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7788,6 +7788,19 @@
       "distance": 436,
       "launchSpeed": 105.2,
       "launchAngle": 24
+    },
+    {
+      "key": "657656-823228-60-60",
+      "season": 2026,
+      "date": "2026-05-04",
+      "gamePk": 823228,
+      "atBatIndex": 60,
+      "playerId": 657656,
+      "playerName": "Ramón Laureano",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 447,
+      "launchSpeed": 106.3,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
