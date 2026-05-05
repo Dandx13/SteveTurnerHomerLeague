@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-04T22:59:26.691Z",
+  "updatedAt": "2026-05-05T00:02:57.319Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7606,17 +7606,56 @@
       "distance": 388,
       "launchSpeed": 102.1,
       "launchAngle": 29
+    },
+    {
+      "key": "680776-824283-49-49",
+      "season": 2026,
+      "date": "2026-05-04",
+      "gamePk": 824283,
+      "atBatIndex": 49,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 381,
+      "launchSpeed": 98.9,
+      "launchAngle": 33
+    },
+    {
+      "key": "547180-823874-19-19",
+      "season": 2026,
+      "date": "2026-05-04",
+      "gamePk": 823874,
+      "atBatIndex": 19,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 393,
+      "launchSpeed": 103.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "592450-823552-5-5",
+      "season": 2026,
+      "date": "2026-05-04",
+      "gamePk": 823552,
+      "atBatIndex": 5,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 416,
+      "launchSpeed": 110.6,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-28",
     "2026-04-29",
     "2026-04-30",
     "2026-05-01",
     "2026-05-02",
     "2026-05-03",
-    "2026-05-04"
+    "2026-05-04",
+    "2026-05-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
