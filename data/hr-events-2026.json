@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-05T22:09:47.290Z",
+  "updatedAt": "2026-05-05T23:11:50.176Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7801,6 +7801,32 @@
       "distance": 447,
       "launchSpeed": 106.3,
       "launchAngle": 29
+    },
+    {
+      "key": "678882-824281-4-4",
+      "season": 2026,
+      "date": "2026-05-05",
+      "gamePk": 824281,
+      "atBatIndex": 4,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 362,
+      "launchSpeed": 98,
+      "launchAngle": 30
+    },
+    {
+      "key": "672960-822986-2-2",
+      "season": 2026,
+      "date": "2026-05-05",
+      "gamePk": 822986,
+      "atBatIndex": 2,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 409,
+      "launchSpeed": 107.9,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
