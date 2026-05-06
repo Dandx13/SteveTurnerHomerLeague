@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-06T20:41:58.322Z",
+  "updatedAt": "2026-05-06T21:46:07.692Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8022,6 +8022,45 @@
       "distance": 370,
       "launchSpeed": 109.7,
       "launchAngle": 21
+    },
+    {
+      "key": "681624-824198-69-69",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824198,
+      "atBatIndex": 69,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 363,
+      "launchSpeed": 98.1,
+      "launchAngle": 35
+    },
+    {
+      "key": "646240-823226-32-32",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823226,
+      "atBatIndex": 32,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 365,
+      "launchSpeed": 100.5,
+      "launchAngle": 39
+    },
+    {
+      "key": "677594-823141-41-41",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823141,
+      "atBatIndex": 41,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 436,
+      "launchSpeed": 110.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
