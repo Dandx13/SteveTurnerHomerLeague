@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-06T22:34:56.274Z",
+  "updatedAt": "2026-05-06T23:32:50.632Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8061,6 +8061,32 @@
       "distance": 436,
       "launchSpeed": 110.4,
       "launchAngle": 25
+    },
+    {
+      "key": "624413-823872-3-3",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823872,
+      "atBatIndex": 3,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 407,
+      "launchSpeed": 109.5,
+      "launchAngle": 35
+    },
+    {
+      "key": "608369-823550-2-2",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823550,
+      "atBatIndex": 2,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 350,
+      "launchSpeed": 101.7,
+      "launchAngle": 42
     }
   ],
   "lastScanMode": "rolling-7-day",
