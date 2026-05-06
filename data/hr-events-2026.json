@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-06T17:09:25.185Z",
+  "updatedAt": "2026-05-06T18:58:58.385Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7982,6 +7982,19 @@
       "fantasyTeam": "Dan/Connor",
       "distance": 412,
       "launchSpeed": 110.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "683734-823063-5-5",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823063,
+      "atBatIndex": 5,
+      "playerId": 683734,
+      "playerName": "Andrew Vaughn",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 403,
+      "launchSpeed": 102.8,
       "launchAngle": 23
     }
   ],
