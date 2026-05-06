@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-06T18:58:58.385Z",
+  "updatedAt": "2026-05-06T20:41:58.322Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7996,6 +7996,32 @@
       "distance": 403,
       "launchSpeed": 102.8,
       "launchAngle": 23
+    },
+    {
+      "key": "681624-824198-21-21",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824198,
+      "atBatIndex": 21,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 393,
+      "launchSpeed": 104.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "681624-824198-37-37",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824198,
+      "atBatIndex": 37,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 370,
+      "launchSpeed": 109.7,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
