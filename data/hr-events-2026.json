@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-05T23:11:50.176Z",
+  "updatedAt": "2026-05-06T00:05:36.943Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -7827,17 +7827,56 @@
       "distance": 409,
       "launchSpeed": 107.9,
       "launchAngle": 23
+    },
+    {
+      "key": "575929-824281-34-34",
+      "season": 2026,
+      "date": "2026-05-05",
+      "gamePk": 824281,
+      "atBatIndex": 34,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 449,
+      "launchSpeed": 111.9,
+      "launchAngle": 32
+    },
+    {
+      "key": "677800-824281-35-35",
+      "season": 2026,
+      "date": "2026-05-05",
+      "gamePk": 824281,
+      "atBatIndex": 35,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 396,
+      "launchSpeed": 109.1,
+      "launchAngle": 23
+    },
+    {
+      "key": "547180-823469-22-22",
+      "season": 2026,
+      "date": "2026-05-05",
+      "gamePk": 823469,
+      "atBatIndex": 22,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 393,
+      "launchSpeed": 97.9,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-29",
     "2026-04-30",
     "2026-05-01",
     "2026-05-02",
     "2026-05-03",
     "2026-05-04",
-    "2026-05-05"
+    "2026-05-05",
+    "2026-05-06"
   ],
   "rosterSummary": {
     "teamCount": 21,
