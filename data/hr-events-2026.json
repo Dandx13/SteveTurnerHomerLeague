@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-06T23:32:50.632Z",
+  "updatedAt": "2026-05-07T01:20:22.850Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8087,17 +8087,95 @@
       "distance": 350,
       "launchSpeed": 101.7,
       "launchAngle": 42
+    },
+    {
+      "key": "691016-823470-41-41",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823470,
+      "atBatIndex": 41,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 363,
+      "launchSpeed": 100.4,
+      "launchAngle": 29
+    },
+    {
+      "key": "666969-823470-46-46",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823470,
+      "atBatIndex": 46,
+      "playerId": 666969,
+      "playerName": "Adolis García",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 421,
+      "launchSpeed": 106,
+      "launchAngle": 31
+    },
+    {
+      "key": "670242-822740-31-31",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 822740,
+      "atBatIndex": 31,
+      "playerId": 670242,
+      "playerName": "Matt Wallner",
+      "fantasyTeam": "John Fournier",
+      "distance": 420,
+      "launchSpeed": 108.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "592450-823550-49-49",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 823550,
+      "atBatIndex": 49,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 399,
+      "launchSpeed": 110,
+      "launchAngle": 34
+    },
+    {
+      "key": "664023-824683-7-7",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824683,
+      "atBatIndex": 7,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 399,
+      "launchSpeed": 104.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "680574-824683-35-35",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824683,
+      "atBatIndex": 35,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 371,
+      "launchSpeed": 99.1,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-04-30",
     "2026-05-01",
     "2026-05-02",
     "2026-05-03",
     "2026-05-04",
     "2026-05-05",
-    "2026-05-06"
+    "2026-05-06",
+    "2026-05-07"
   ],
   "rosterSummary": {
     "teamCount": 21,
