@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-07T22:13:47.840Z",
+  "updatedAt": "2026-05-07T23:13:09.601Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8282,6 +8282,32 @@
       "distance": 406,
       "launchSpeed": 104,
       "launchAngle": 27
+    },
+    {
+      "key": "669127-823467-1-1",
+      "season": 2026,
+      "date": "2026-05-07",
+      "gamePk": 823467,
+      "atBatIndex": 1,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 412,
+      "launchSpeed": 108.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "667670-823467-3-3",
+      "season": 2026,
+      "date": "2026-05-07",
+      "gamePk": 823467,
+      "atBatIndex": 3,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 384,
+      "launchSpeed": 100.2,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
