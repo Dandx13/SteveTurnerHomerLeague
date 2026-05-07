@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-07T01:20:22.850Z",
+  "updatedAt": "2026-05-07T04:48:32.562Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8165,6 +8165,58 @@
       "distance": 371,
       "launchSpeed": 99.1,
       "launchAngle": 29
+    },
+    {
+      "key": "691718-824683-74-74",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824683,
+      "atBatIndex": 74,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 375,
+      "launchSpeed": 104.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "665742-824361-0-0",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824361,
+      "atBatIndex": 0,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 435,
+      "launchSpeed": 104.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "543760-824361-77-77",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 824361,
+      "atBatIndex": 77,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 395,
+      "launchSpeed": 100.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "664040-825091-1-1",
+      "season": 2026,
+      "date": "2026-05-06",
+      "gamePk": 825091,
+      "atBatIndex": 1,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 435,
+      "launchSpeed": 104.9,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
