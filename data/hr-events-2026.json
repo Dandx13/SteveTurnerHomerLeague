@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-08T22:40:14.794Z",
+  "updatedAt": "2026-05-08T23:39:02.447Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8347,6 +8347,32 @@
       "distance": 378,
       "launchSpeed": 111.2,
       "launchAngle": 22
+    },
+    {
+      "key": "670541-824522-38-38",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824522,
+      "atBatIndex": 38,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 407,
+      "launchSpeed": 115.9,
+      "launchAngle": 19
+    },
+    {
+      "key": "696100-823466-23-23",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 823466,
+      "atBatIndex": 23,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 389,
+      "launchSpeed": 101.8,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
