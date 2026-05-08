@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-08T00:09:00.260Z",
+  "updatedAt": "2026-05-08T03:53:17.783Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8321,6 +8321,32 @@
       "distance": 377,
       "launchSpeed": 108.8,
       "launchAngle": 21
+    },
+    {
+      "key": "691406-824767-69-69",
+      "season": 2026,
+      "date": "2026-05-07",
+      "gamePk": 824767,
+      "atBatIndex": 69,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 449,
+      "launchSpeed": 114.3,
+      "launchAngle": 19
+    },
+    {
+      "key": "676475-823306-23-23",
+      "season": 2026,
+      "date": "2026-05-07",
+      "gamePk": 823306,
+      "atBatIndex": 23,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 378,
+      "launchSpeed": 111.2,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
