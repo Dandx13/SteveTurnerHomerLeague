@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-08T23:39:02.447Z",
+  "updatedAt": "2026-05-09T01:22:35.130Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8373,17 +8373,121 @@
       "distance": 389,
       "launchSpeed": 101.8,
       "launchAngle": 35
+    },
+    {
+      "key": "656941-823466-46-46",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 823466,
+      "atBatIndex": 46,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 415,
+      "launchSpeed": 109.2,
+      "launchAngle": 37
+    },
+    {
+      "key": "624413-824846-26-26",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824846,
+      "atBatIndex": 26,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 373,
+      "launchSpeed": 107,
+      "launchAngle": 20
+    },
+    {
+      "key": "677800-824768-23-23",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824768,
+      "atBatIndex": 23,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 427,
+      "launchSpeed": 106.9,
+      "launchAngle": 23
+    },
+    {
+      "key": "678882-824768-29-29",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824768,
+      "atBatIndex": 29,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 379,
+      "launchSpeed": 99.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "621439-824443-53-53",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824443,
+      "atBatIndex": 53,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 400,
+      "launchSpeed": 103.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "808959-824607-4-4",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824607,
+      "atBatIndex": 4,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 380,
+      "launchSpeed": 106.2,
+      "launchAngle": 32
+    },
+    {
+      "key": "677594-824607-38-38",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824607,
+      "atBatIndex": 38,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 418,
+      "launchSpeed": 104.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "673548-822904-23-23",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 822904,
+      "atBatIndex": 23,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 419,
+      "launchSpeed": 110.2,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-02",
     "2026-05-03",
     "2026-05-04",
     "2026-05-05",
     "2026-05-06",
     "2026-05-07",
-    "2026-05-08"
+    "2026-05-08",
+    "2026-05-09"
   ],
   "rosterSummary": {
     "teamCount": 21,
