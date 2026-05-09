@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-09T01:22:35.130Z",
+  "updatedAt": "2026-05-09T04:43:44.118Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8477,6 +8477,71 @@
       "distance": 419,
       "launchSpeed": 110.2,
       "launchAngle": 33
+    },
+    {
+      "key": "647304-824607-68-68",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 824607,
+      "atBatIndex": 68,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 403,
+      "launchSpeed": 105.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "668901-825088-7-7",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 825088,
+      "atBatIndex": 7,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 401,
+      "launchSpeed": 104,
+      "launchAngle": 24
+    },
+    {
+      "key": "518692-823957-46-46",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 823957,
+      "atBatIndex": 46,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 413,
+      "launchSpeed": 107.2,
+      "launchAngle": 24
+    },
+    {
+      "key": "542303-823225-6-6",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 823225,
+      "atBatIndex": 6,
+      "playerId": 542303,
+      "playerName": "Marcell Ozuna",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 365,
+      "launchSpeed": 104.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "646240-823225-11-11",
+      "season": 2026,
+      "date": "2026-05-08",
+      "gamePk": 823225,
+      "atBatIndex": 11,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 399,
+      "launchSpeed": 102.5,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
