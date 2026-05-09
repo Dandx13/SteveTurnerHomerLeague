@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-09T23:03:00.394Z",
+  "updatedAt": "2026-05-09T23:59:29.336Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8580,6 +8580,45 @@
       "fantasyTeam": "Dan/Connor",
       "distance": 380,
       "launchSpeed": 103.1,
+      "launchAngle": 38
+    },
+    {
+      "key": "656941-823468-22-22",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 823468,
+      "atBatIndex": 22,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 417,
+      "launchSpeed": 110.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "677951-824115-4-4",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 824115,
+      "atBatIndex": 4,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 17,
+      "launchSpeed": 101.7,
+      "launchAngle": -6
+    },
+    {
+      "key": "695657-824606-7-7",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 824606,
+      "atBatIndex": 7,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 367,
+      "launchSpeed": 98.1,
       "launchAngle": 38
     }
   ],
