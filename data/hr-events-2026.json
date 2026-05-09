@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-09T20:28:54.545Z",
+  "updatedAt": "2026-05-09T21:24:02.899Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8555,6 +8555,32 @@
       "distance": 442,
       "launchSpeed": 109.6,
       "launchAngle": 28
+    },
+    {
+      "key": "667670-824847-20-20",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 824847,
+      "atBatIndex": 20,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 365,
+      "launchSpeed": 98.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "669065-823869-30-30",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 823869,
+      "atBatIndex": 30,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 380,
+      "launchSpeed": 103.1,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
