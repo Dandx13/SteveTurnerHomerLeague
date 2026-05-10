@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-10T21:29:18.219Z",
+  "updatedAt": "2026-05-10T22:25:41.069Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8789,6 +8789,45 @@
       "distance": 360,
       "launchSpeed": 101.9,
       "launchAngle": 39
+    },
+    {
+      "key": "686948-823954-56-56",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823954,
+      "atBatIndex": 56,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 390,
+      "launchSpeed": 104.9,
+      "launchAngle": 28
+    },
+    {
+      "key": "571970-823954-61-61",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823954,
+      "atBatIndex": 61,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 420,
+      "launchSpeed": 109.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "621566-823954-63-63",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823954,
+      "atBatIndex": 63,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 396,
+      "launchSpeed": 103.1,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
