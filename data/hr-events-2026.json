@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-10T20:31:57.561Z",
+  "updatedAt": "2026-05-10T21:29:18.219Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8750,6 +8750,45 @@
       "distance": 449,
       "launchSpeed": 114.5,
       "launchAngle": 25
+    },
+    {
+      "key": "668930-823793-73-73",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823793,
+      "atBatIndex": 73,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 411,
+      "launchSpeed": 104.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "671218-823221-29-29",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823221,
+      "atBatIndex": 29,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 437,
+      "launchSpeed": 110.3,
+      "launchAngle": 27
+    },
+    {
+      "key": "665833-823221-34-34",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 823221,
+      "atBatIndex": 34,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 360,
+      "launchSpeed": 101.9,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
