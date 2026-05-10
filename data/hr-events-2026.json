@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-10T18:37:57.120Z",
+  "updatedAt": "2026-05-10T19:44:30.048Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8724,6 +8724,32 @@
       "distance": 373,
       "launchSpeed": 104.4,
       "launchAngle": 26
+    },
+    {
+      "key": "666176-822819-40-40",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 822819,
+      "atBatIndex": 40,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 385,
+      "launchSpeed": 104.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "666176-822819-61-61",
+      "season": 2026,
+      "date": "2026-05-10",
+      "gamePk": 822819,
+      "atBatIndex": 61,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 449,
+      "launchSpeed": 114.5,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
