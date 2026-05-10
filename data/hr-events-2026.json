@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-09T23:59:29.336Z",
+  "updatedAt": "2026-05-10T04:05:47.533Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8620,17 +8620,56 @@
       "distance": 367,
       "launchSpeed": 98.1,
       "launchAngle": 38
+    },
+    {
+      "key": "621439-824444-0-0",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 824444,
+      "atBatIndex": 0,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 378,
+      "launchSpeed": 97.6,
+      "launchAngle": 35
+    },
+    {
+      "key": "592518-823304-60-60",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 823304,
+      "atBatIndex": 60,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": null,
+      "launchSpeed": 105.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "681624-823955-74-74",
+      "season": 2026,
+      "date": "2026-05-09",
+      "gamePk": 823955,
+      "atBatIndex": 74,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 397,
+      "launchSpeed": 106.7,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-03",
     "2026-05-04",
     "2026-05-05",
     "2026-05-06",
     "2026-05-07",
     "2026-05-08",
-    "2026-05-09"
+    "2026-05-09",
+    "2026-05-10"
   ],
   "rosterSummary": {
     "teamCount": 21,
