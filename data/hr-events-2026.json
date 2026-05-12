@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-11T23:06:55.235Z",
+  "updatedAt": "2026-05-12T00:08:51.010Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8828,17 +8828,30 @@
       "distance": 396,
       "launchSpeed": 103.1,
       "launchAngle": 25
+    },
+    {
+      "key": "700250-824844-17-17",
+      "season": 2026,
+      "date": "2026-05-11",
+      "gamePk": 824844,
+      "atBatIndex": 17,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 374,
+      "launchSpeed": 100.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-05",
     "2026-05-06",
     "2026-05-07",
     "2026-05-08",
     "2026-05-09",
     "2026-05-10",
-    "2026-05-11"
+    "2026-05-11",
+    "2026-05-12"
   ],
   "rosterSummary": {
     "teamCount": 21,
