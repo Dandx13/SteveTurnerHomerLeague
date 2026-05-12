@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-12T00:08:51.010Z",
+  "updatedAt": "2026-05-12T04:04:36.460Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8841,6 +8841,58 @@
       "distance": 374,
       "launchSpeed": 100.6,
       "launchAngle": 26
+    },
+    {
+      "key": "666018-822818-37-37",
+      "season": 2026,
+      "date": "2026-05-11",
+      "gamePk": 822818,
+      "atBatIndex": 37,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 415,
+      "launchSpeed": 104.8,
+      "launchAngle": 34
+    },
+    {
+      "key": "677594-824199-18-18",
+      "season": 2026,
+      "date": "2026-05-11",
+      "gamePk": 824199,
+      "atBatIndex": 18,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 414,
+      "launchSpeed": 106.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "646240-823953-7-7",
+      "season": 2026,
+      "date": "2026-05-11",
+      "gamePk": 823953,
+      "atBatIndex": 7,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 401,
+      "launchSpeed": 102.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "571970-823953-49-49",
+      "season": 2026,
+      "date": "2026-05-11",
+      "gamePk": 823953,
+      "atBatIndex": 49,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 396,
+      "launchSpeed": 104.1,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
