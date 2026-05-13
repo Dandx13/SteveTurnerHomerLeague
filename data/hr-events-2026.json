@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-13T22:39:40.924Z",
+  "updatedAt": "2026-05-13T23:42:09.192Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9036,6 +9036,19 @@
       "distance": 361,
       "launchSpeed": 107.8,
       "launchAngle": 38
+    },
+    {
+      "key": "596115-824763-11-11",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824763,
+      "atBatIndex": 11,
+      "playerId": 596115,
+      "playerName": "Trevor Story",
+      "fantasyTeam": "Pat T",
+      "distance": 424,
+      "launchSpeed": 106.6,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
