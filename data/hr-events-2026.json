@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-12T23:44:40.416Z",
+  "updatedAt": "2026-05-13T01:31:12.935Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8945,17 +8945,69 @@
       "distance": 373,
       "launchSpeed": 102.7,
       "launchAngle": 24
+    },
+    {
+      "key": "608324-824927-22-22",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 824927,
+      "atBatIndex": 22,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 374,
+      "launchSpeed": 100.4,
+      "launchAngle": 35
+    },
+    {
+      "key": "663586-824927-35-35",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 824927,
+      "atBatIndex": 35,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 409,
+      "launchSpeed": 107,
+      "launchAngle": 35
+    },
+    {
+      "key": "521692-824604-3-3",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 824604,
+      "atBatIndex": 3,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 381,
+      "launchSpeed": 106.1,
+      "launchAngle": 21
+    },
+    {
+      "key": "668227-824197-8-8",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 824197,
+      "atBatIndex": 8,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 369,
+      "launchSpeed": 101.7,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-06",
     "2026-05-07",
     "2026-05-08",
     "2026-05-09",
     "2026-05-10",
     "2026-05-11",
-    "2026-05-12"
+    "2026-05-12",
+    "2026-05-13"
   ],
   "rosterSummary": {
     "teamCount": 21,
