@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-13T01:31:12.935Z",
+  "updatedAt": "2026-05-13T05:31:26.098Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -8997,6 +8997,32 @@
       "distance": 369,
       "launchSpeed": 101.7,
       "launchAngle": 34
+    },
+    {
+      "key": "669127-825011-67-67",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 825011,
+      "atBatIndex": 67,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 448,
+      "launchSpeed": 108.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "660271-823951-19-19",
+      "season": 2026,
+      "date": "2026-05-12",
+      "gamePk": 823951,
+      "atBatIndex": 19,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 398,
+      "launchSpeed": 105.9,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
