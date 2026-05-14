@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-14T18:52:58.770Z",
+  "updatedAt": "2026-05-14T20:25:14.165Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9231,6 +9231,58 @@
       "distance": 392,
       "launchSpeed": 106.9,
       "launchAngle": 25
+    },
+    {
+      "key": "665742-823630-57-57",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 823630,
+      "atBatIndex": 57,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 412,
+      "launchSpeed": 105.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "543760-823630-65-65",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 823630,
+      "atBatIndex": 65,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 386,
+      "launchSpeed": 106.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "670541-824196-24-24",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 824196,
+      "atBatIndex": 24,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 422,
+      "launchSpeed": 110.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "701762-825008-3-3",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 825008,
+      "atBatIndex": 3,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 442,
+      "launchSpeed": 111.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
