@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-14T16:53:35.768Z",
+  "updatedAt": "2026-05-14T18:52:58.770Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9205,6 +9205,32 @@
       "distance": 414,
       "launchSpeed": 104.1,
       "launchAngle": 28
+    },
+    {
+      "key": "680574-824517-12-12",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 824517,
+      "atBatIndex": 12,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 400,
+      "launchSpeed": 104.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "668901-823630-41-41",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 823630,
+      "atBatIndex": 41,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 392,
+      "launchSpeed": 106.9,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
