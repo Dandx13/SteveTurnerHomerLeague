@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-13T23:42:09.192Z",
+  "updatedAt": "2026-05-14T01:34:05.436Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9049,17 +9049,95 @@
       "distance": 424,
       "launchSpeed": 106.6,
       "launchAngle": 28
+    },
+    {
+      "key": "666160-823386-38-38",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 823386,
+      "atBatIndex": 38,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 372,
+      "launchSpeed": 103.4,
+      "launchAngle": 31
+    },
+    {
+      "key": "678882-824763-42-42",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824763,
+      "atBatIndex": 42,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 376,
+      "launchSpeed": 102.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "686948-824928-25-25",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824928,
+      "atBatIndex": 25,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 402,
+      "launchSpeed": 99,
+      "launchAngle": 30
+    },
+    {
+      "key": "621439-823710-7-7",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 823710,
+      "atBatIndex": 7,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 382,
+      "launchSpeed": 108.2,
+      "launchAngle": 38
+    },
+    {
+      "key": "621439-823710-25-25",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 823710,
+      "atBatIndex": 25,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 418,
+      "launchSpeed": 105.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "669394-822900-37-37",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 822900,
+      "atBatIndex": 37,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 370,
+      "launchSpeed": 99.3,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-07",
     "2026-05-08",
     "2026-05-09",
     "2026-05-10",
     "2026-05-11",
     "2026-05-12",
-    "2026-05-13"
+    "2026-05-13",
+    "2026-05-14"
   ],
   "rosterSummary": {
     "teamCount": 21,
