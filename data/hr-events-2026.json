@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-14T01:34:05.436Z",
+  "updatedAt": "2026-05-14T05:30:26.885Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9127,6 +9127,84 @@
       "distance": 370,
       "launchSpeed": 99.3,
       "launchAngle": 35
+    },
+    {
+      "key": "662139-822815-83-83",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 822815,
+      "atBatIndex": 83,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 375,
+      "launchSpeed": 98.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "695657-824603-60-60",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824603,
+      "atBatIndex": 60,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 399,
+      "launchSpeed": 110.3,
+      "launchAngle": 25
+    },
+    {
+      "key": "677951-824603-76-76",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824603,
+      "atBatIndex": 76,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 405,
+      "launchSpeed": 104.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "572233-824195-47-47",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 824195,
+      "atBatIndex": 47,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 338,
+      "launchSpeed": 96.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "701762-825010-41-41",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 825010,
+      "atBatIndex": 41,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 405,
+      "launchSpeed": 100.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "605141-823952-21-21",
+      "season": 2026,
+      "date": "2026-05-13",
+      "gamePk": 823952,
+      "atBatIndex": 21,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 414,
+      "launchSpeed": 104.1,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
