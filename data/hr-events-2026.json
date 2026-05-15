@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-15T22:32:28.212Z",
+  "updatedAt": "2026-05-15T23:31:55.150Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9322,6 +9322,45 @@
       "distance": 390,
       "launchSpeed": 103.1,
       "launchAngle": 33
+    },
+    {
+      "key": "664040-823384-21-21",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 823384,
+      "atBatIndex": 21,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 378,
+      "launchSpeed": 109.2,
+      "launchAngle": 24
+    },
+    {
+      "key": "650490-822983-6-6",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 822983,
+      "atBatIndex": 6,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 374,
+      "launchSpeed": 99.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "686948-824925-5-5",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 824925,
+      "atBatIndex": 5,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 407,
+      "launchSpeed": 103,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
