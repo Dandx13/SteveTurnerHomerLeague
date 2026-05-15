@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-14T23:40:17.940Z",
+  "updatedAt": "2026-05-15T01:30:58.909Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9283,17 +9283,43 @@
       "distance": 442,
       "launchSpeed": 111.8,
       "launchAngle": 26
+    },
+    {
+      "key": "656941-824762-55-55",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 824762,
+      "atBatIndex": 55,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 417,
+      "launchSpeed": 110.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "664023-824926-56-56",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 824926,
+      "atBatIndex": 56,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 424,
+      "launchSpeed": 107.6,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-08",
     "2026-05-09",
     "2026-05-10",
     "2026-05-11",
     "2026-05-12",
     "2026-05-13",
-    "2026-05-14"
+    "2026-05-14",
+    "2026-05-15"
   ],
   "rosterSummary": {
     "teamCount": 21,
