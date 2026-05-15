@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-15T01:30:58.909Z",
+  "updatedAt": "2026-05-15T05:36:19.888Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9309,6 +9309,19 @@
       "distance": 424,
       "launchSpeed": 107.6,
       "launchAngle": 28
+    },
+    {
+      "key": "669257-823950-3-3",
+      "season": 2026,
+      "date": "2026-05-14",
+      "gamePk": 823950,
+      "atBatIndex": 3,
+      "playerId": 669257,
+      "playerName": "Will Smith",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 390,
+      "launchSpeed": 103.1,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
