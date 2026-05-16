@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-15T23:31:55.150Z",
+  "updatedAt": "2026-05-16T01:20:16.829Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9361,17 +9361,121 @@
       "distance": 407,
       "launchSpeed": 103,
       "launchAngle": 32
+    },
+    {
+      "key": "542303-823384-24-24",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 823384,
+      "atBatIndex": 24,
+      "playerId": 542303,
+      "playerName": "Marcell Ozuna",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 438,
+      "launchSpeed": 109.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "656941-823384-38-38",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 823384,
+      "atBatIndex": 38,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 400,
+      "launchSpeed": 109.5,
+      "launchAngle": 39
+    },
+    {
+      "key": "664040-823384-41-41",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 823384,
+      "atBatIndex": 41,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 422,
+      "launchSpeed": 107.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "656941-823384-57-57",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 823384,
+      "atBatIndex": 57,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 408,
+      "launchSpeed": 110.7,
+      "launchAngle": 21
+    },
+    {
+      "key": "671739-824925-28-28",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 824925,
+      "atBatIndex": 28,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 419,
+      "launchSpeed": 104.6,
+      "launchAngle": 22
+    },
+    {
+      "key": "695657-824601-12-12",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 824601,
+      "atBatIndex": 12,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 381,
+      "launchSpeed": 104,
+      "launchAngle": 33
+    },
+    {
+      "key": "670623-824194-20-20",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 824194,
+      "atBatIndex": 20,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 355,
+      "launchSpeed": 99.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "696100-824360-12-12",
+      "season": 2026,
+      "date": "2026-05-15",
+      "gamePk": 824360,
+      "atBatIndex": 12,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 387,
+      "launchSpeed": 111.4,
+      "launchAngle": 19
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-09",
     "2026-05-10",
     "2026-05-11",
     "2026-05-12",
     "2026-05-13",
     "2026-05-14",
-    "2026-05-15"
+    "2026-05-15",
+    "2026-05-16"
   ],
   "rosterSummary": {
     "teamCount": 21,
