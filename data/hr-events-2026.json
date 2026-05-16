@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-16T21:10:56.190Z",
+  "updatedAt": "2026-05-16T22:06:18.733Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9582,6 +9582,19 @@
       "distance": 428,
       "launchSpeed": 113.4,
       "launchAngle": 30
+    },
+    {
+      "key": "694212-822737-49-49",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 822737,
+      "atBatIndex": 49,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 376,
+      "launchSpeed": 109.2,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
