@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-17T00:04:51.267Z",
+  "updatedAt": "2026-05-17T04:17:33.630Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9660,6 +9660,97 @@
       "distance": 421,
       "launchSpeed": 106.2,
       "launchAngle": 22
+    },
+    {
+      "key": "572233-824193-29-29",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 824193,
+      "atBatIndex": 29,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 422,
+      "launchSpeed": 109.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "808959-824600-36-36",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 824600,
+      "atBatIndex": 36,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 428,
+      "launchSpeed": 109,
+      "launchAngle": 36
+    },
+    {
+      "key": "691718-824600-67-67",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 824600,
+      "atBatIndex": 67,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 380,
+      "launchSpeed": 100.4,
+      "launchAngle": 35
+    },
+    {
+      "key": "694192-823706-40-40",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 823706,
+      "atBatIndex": 40,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 400,
+      "launchSpeed": 102.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "575929-824924-55-55",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 824924,
+      "atBatIndex": 55,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 426,
+      "launchSpeed": 106.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "605141-824038-67-67",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 824038,
+      "atBatIndex": 67,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 366,
+      "launchSpeed": 102.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "667670-825007-70-70",
+      "season": 2026,
+      "date": "2026-05-16",
+      "gamePk": 825007,
+      "atBatIndex": 70,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 407,
+      "launchSpeed": 109.5,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
