@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-17T18:41:29.758Z",
+  "updatedAt": "2026-05-17T19:51:53.466Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -9881,6 +9881,71 @@
       "distance": 379,
       "launchSpeed": 108,
       "launchAngle": 25
+    },
+    {
+      "key": "547180-823381-37-37",
+      "season": 2026,
+      "date": "2026-05-17",
+      "gamePk": 823381,
+      "atBatIndex": 37,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 401,
+      "launchSpeed": 103.7,
+      "launchAngle": 35
+    },
+    {
+      "key": "700932-824436-42-42",
+      "season": 2026,
+      "date": "2026-05-17",
+      "gamePk": 824436,
+      "atBatIndex": 42,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 406,
+      "launchSpeed": 103.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "669394-824192-30-30",
+      "season": 2026,
+      "date": "2026-05-17",
+      "gamePk": 824192,
+      "atBatIndex": 30,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 356,
+      "launchSpeed": 102.4,
+      "launchAngle": 27
+    },
+    {
+      "key": "592885-823708-41-41",
+      "season": 2026,
+      "date": "2026-05-17",
+      "gamePk": 823708,
+      "atBatIndex": 41,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 398,
+      "launchSpeed": 105.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "521692-823058-24-24",
+      "season": 2026,
+      "date": "2026-05-17",
+      "gamePk": 823058,
+      "atBatIndex": 24,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 393,
+      "launchSpeed": 99,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
