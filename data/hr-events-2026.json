@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-19T01:50:42.880Z",
+  "updatedAt": "2026-05-19T05:57:46.396Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10141,6 +10141,45 @@
       "distance": 430,
       "launchSpeed": 108.6,
       "launchAngle": 29
+    },
+    {
+      "key": "687263-824035-66-66",
+      "season": 2026,
+      "date": "2026-05-18",
+      "gamePk": 824035,
+      "atBatIndex": 66,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 413,
+      "launchSpeed": 105.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "642715-825087-11-11",
+      "season": 2026,
+      "date": "2026-05-18",
+      "gamePk": 825087,
+      "atBatIndex": 11,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 388,
+      "launchSpeed": 101.6,
+      "launchAngle": 38
+    },
+    {
+      "key": "677594-823137-6-6",
+      "season": 2026,
+      "date": "2026-05-18",
+      "gamePk": 823137,
+      "atBatIndex": 6,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 396,
+      "launchSpeed": 104.3,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
