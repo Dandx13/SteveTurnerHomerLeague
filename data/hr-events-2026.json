@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-19T22:50:57.179Z",
+  "updatedAt": "2026-05-19T23:53:15.882Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10206,6 +10206,45 @@
       "distance": 385,
       "launchSpeed": 99.9,
       "launchAngle": 40
+    },
+    {
+      "key": "679529-824276-13-13",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 824276,
+      "atBatIndex": 13,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 380,
+      "launchSpeed": 95.8,
+      "launchAngle": 36
+    },
+    {
+      "key": "666182-822736-1-1",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 822736,
+      "atBatIndex": 1,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 406,
+      "launchSpeed": 105.8,
+      "launchAngle": 20
+    },
+    {
+      "key": "670623-823704-1-1",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 823704,
+      "atBatIndex": 1,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 382,
+      "launchSpeed": 102.5,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
