@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-20T02:49:39.752Z",
+  "updatedAt": "2026-05-20T06:36:02.986Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10453,6 +10453,45 @@
       "distance": 359,
       "launchSpeed": 108.1,
       "launchAngle": 26
+    },
+    {
+      "key": "667670-824033-72-72",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 824033,
+      "atBatIndex": 72,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 406,
+      "launchSpeed": 110,
+      "launchAngle": 32
+    },
+    {
+      "key": "518692-823302-42-42",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 823302,
+      "atBatIndex": 42,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 399,
+      "launchSpeed": 101.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "606466-825086-74-74",
+      "season": 2026,
+      "date": "2026-05-19",
+      "gamePk": 825086,
+      "atBatIndex": 74,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 391,
+      "launchSpeed": 101.4,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
