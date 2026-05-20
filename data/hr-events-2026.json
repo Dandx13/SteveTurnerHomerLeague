@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-20T22:14:55.646Z",
+  "updatedAt": "2026-05-20T23:41:45.249Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10556,6 +10556,45 @@
       "fantasyTeam": "Ryan/Paul (2)",
       "distance": 415,
       "launchSpeed": 104.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "668227-823134-60-60",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 823134,
+      "atBatIndex": 60,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 396,
+      "launchSpeed": 105.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "663586-823866-11-11",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 823866,
+      "atBatIndex": 11,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 415,
+      "launchSpeed": 103.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "665742-822735-22-22",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 822735,
+      "atBatIndex": 22,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 416,
+      "launchSpeed": 110.9,
       "launchAngle": 25
     }
   ],
