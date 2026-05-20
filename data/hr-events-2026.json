@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-20T18:35:43.894Z",
+  "updatedAt": "2026-05-20T20:37:58.227Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10505,6 +10505,58 @@
       "distance": 374,
       "launchSpeed": 106.8,
       "launchAngle": 34
+    },
+    {
+      "key": "701398-823462-71-71",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 823462,
+      "atBatIndex": 71,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 441,
+      "launchSpeed": 109.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "694212-822977-42-42",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 822977,
+      "atBatIndex": 42,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 400,
+      "launchSpeed": 105.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "669394-824355-25-25",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 824355,
+      "atBatIndex": 25,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 409,
+      "launchSpeed": 108.4,
+      "launchAngle": 27
+    },
+    {
+      "key": "606466-825084-22-22",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 825084,
+      "atBatIndex": 22,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 415,
+      "launchSpeed": 104.9,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
