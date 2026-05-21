@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-21T01:34:37.079Z",
+  "updatedAt": "2026-05-21T05:52:07.508Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10648,6 +10648,45 @@
       "distance": 405,
       "launchSpeed": 111.3,
       "launchAngle": 39
+    },
+    {
+      "key": "606192-823299-63-63",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 823299,
+      "atBatIndex": 63,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 406,
+      "launchSpeed": 105.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "624585-824032-9-9",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 824032,
+      "atBatIndex": 9,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 432,
+      "launchSpeed": 108.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "666176-824032-18-18",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 824032,
+      "atBatIndex": 18,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 419,
+      "launchSpeed": 107.7,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
