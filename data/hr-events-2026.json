@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-21T15:55:54.091Z",
+  "updatedAt": "2026-05-21T18:04:49.941Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10687,6 +10687,32 @@
       "distance": 419,
       "launchSpeed": 107.7,
       "launchAngle": 33
+    },
+    {
+      "key": "664040-823056-1-1",
+      "season": 2026,
+      "date": "2026-05-21",
+      "gamePk": 823056,
+      "atBatIndex": 1,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 342,
+      "launchSpeed": 96,
+      "launchAngle": 39
+    },
+    {
+      "key": "671056-823056-22-22",
+      "season": 2026,
+      "date": "2026-05-21",
+      "gamePk": 823056,
+      "atBatIndex": 22,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 408,
+      "launchSpeed": 108.7,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
