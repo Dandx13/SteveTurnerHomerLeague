@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-20T23:41:45.249Z",
+  "updatedAt": "2026-05-21T01:34:37.079Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10596,17 +10596,69 @@
       "distance": 416,
       "launchSpeed": 110.9,
       "launchAngle": 25
+    },
+    {
+      "key": "665742-822735-59-59",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 822735,
+      "atBatIndex": 59,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 408,
+      "launchSpeed": 109,
+      "launchAngle": 35
+    },
+    {
+      "key": "521692-824111-5-5",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 824111,
+      "atBatIndex": 5,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 379,
+      "launchSpeed": 109.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "680776-824111-52-52",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 824111,
+      "atBatIndex": 52,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 366,
+      "launchSpeed": 101.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "660271-823299-0-0",
+      "season": 2026,
+      "date": "2026-05-20",
+      "gamePk": 823299,
+      "atBatIndex": 0,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 405,
+      "launchSpeed": 111.3,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-14",
     "2026-05-15",
     "2026-05-16",
     "2026-05-17",
     "2026-05-18",
     "2026-05-19",
-    "2026-05-20"
+    "2026-05-20",
+    "2026-05-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
