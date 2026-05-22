@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-21T22:55:20.319Z",
+  "updatedAt": "2026-05-22T00:03:36.517Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10726,17 +10726,30 @@
       "distance": 418,
       "launchSpeed": 110.5,
       "launchAngle": 18
+    },
+    {
+      "key": "669065-823864-27-27",
+      "season": 2026,
+      "date": "2026-05-21",
+      "gamePk": 823864,
+      "atBatIndex": 27,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 371,
+      "launchSpeed": 100.5,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-15",
     "2026-05-16",
     "2026-05-17",
     "2026-05-18",
     "2026-05-19",
     "2026-05-20",
-    "2026-05-21"
+    "2026-05-21",
+    "2026-05-22"
   ],
   "rosterSummary": {
     "teamCount": 21,
