@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-23T01:28:17.870Z",
+  "updatedAt": "2026-05-23T05:09:32.989Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10869,6 +10869,71 @@
       "distance": 410,
       "launchSpeed": 107.2,
       "launchAngle": 29
+    },
+    {
+      "key": "687263-824029-3-3",
+      "season": 2026,
+      "date": "2026-05-22",
+      "gamePk": 824029,
+      "atBatIndex": 3,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 398,
+      "launchSpeed": 108.6,
+      "launchAngle": 35
+    },
+    {
+      "key": "607043-824029-29-29",
+      "season": 2026,
+      "date": "2026-05-22",
+      "gamePk": 824029,
+      "atBatIndex": 29,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 436,
+      "launchSpeed": 108.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "687263-824029-72-72",
+      "season": 2026,
+      "date": "2026-05-22",
+      "gamePk": 824029,
+      "atBatIndex": 72,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 427,
+      "launchSpeed": 109.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "592518-823298-9-9",
+      "season": 2026,
+      "date": "2026-05-22",
+      "gamePk": 823298,
+      "atBatIndex": 9,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 370,
+      "launchSpeed": 109.6,
+      "launchAngle": 20
+    },
+    {
+      "key": "657656-823298-55-55",
+      "season": 2026,
+      "date": "2026-05-22",
+      "gamePk": 823298,
+      "atBatIndex": 55,
+      "playerId": 657656,
+      "playerName": "Ramón Laureano",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 401,
+      "launchSpeed": 102.9,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
