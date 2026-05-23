@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-23T18:35:49.652Z",
+  "updatedAt": "2026-05-23T19:47:21.043Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10947,6 +10947,32 @@
       "distance": 376,
       "launchSpeed": 105.5,
       "launchAngle": 19
+    },
+    {
+      "key": "572233-824674-23-23",
+      "season": 2026,
+      "date": "2026-05-23",
+      "gamePk": 824674,
+      "atBatIndex": 23,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 369,
+      "launchSpeed": 105.6,
+      "launchAngle": 18
+    },
+    {
+      "key": "543807-822814-4-4",
+      "season": 2026,
+      "date": "2026-05-23",
+      "gamePk": 822814,
+      "atBatIndex": 4,
+      "playerId": 543807,
+      "playerName": "George Springer",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 396,
+      "launchSpeed": 106.8,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
