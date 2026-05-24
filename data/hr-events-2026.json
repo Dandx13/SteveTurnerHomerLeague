@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-24T18:50:55.867Z",
+  "updatedAt": "2026-05-24T19:59:12.062Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11090,6 +11090,58 @@
       "distance": 405,
       "launchSpeed": 106.1,
       "launchAngle": 32
+    },
+    {
+      "key": "681297-824839-74-74",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824839,
+      "atBatIndex": 74,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 440,
+      "launchSpeed": 111.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "592450-823544-64-64",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 823544,
+      "atBatIndex": 64,
+      "playerId": 592450,
+      "playerName": "Aaron Judge",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 363,
+      "launchSpeed": 103.9,
+      "launchAngle": 34
+    },
+    {
+      "key": "681624-823786-38-38",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 823786,
+      "atBatIndex": 38,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 380,
+      "launchSpeed": 105.5,
+      "launchAngle": 36
+    },
+    {
+      "key": "572233-824676-42-42",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824676,
+      "atBatIndex": 42,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 426,
+      "launchSpeed": 105.1,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
