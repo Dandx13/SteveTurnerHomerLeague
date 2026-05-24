@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-24T17:43:09.746Z",
+  "updatedAt": "2026-05-24T18:50:55.867Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11051,6 +11051,45 @@
       "distance": 415,
       "launchSpeed": 105.8,
       "launchAngle": 29
+    },
+    {
+      "key": "683002-824839-44-44",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824839,
+      "atBatIndex": 44,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 368,
+      "launchSpeed": 100.8,
+      "launchAngle": 38
+    },
+    {
+      "key": "575929-824759-31-31",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824759,
+      "atBatIndex": 31,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 382,
+      "launchSpeed": 105.6,
+      "launchAngle": 31
+    },
+    {
+      "key": "677594-824108-1-1",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824108,
+      "atBatIndex": 1,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 405,
+      "launchSpeed": 106.1,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
