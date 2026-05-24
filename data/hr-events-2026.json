@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-24T19:59:12.062Z",
+  "updatedAt": "2026-05-24T21:07:04.748Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11142,6 +11142,19 @@
       "distance": 426,
       "launchSpeed": 105.1,
       "launchAngle": 24
+    },
+    {
+      "key": "683737-824676-59-59",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824676,
+      "atBatIndex": 59,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 378,
+      "launchSpeed": 101.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
