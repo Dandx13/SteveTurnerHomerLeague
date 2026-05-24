@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-23T23:37:49.068Z",
+  "updatedAt": "2026-05-24T01:34:51.832Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -10986,17 +10986,43 @@
       "distance": 384,
       "launchSpeed": 94.7,
       "launchAngle": 30
+    },
+    {
+      "key": "682829-824516-38-38",
+      "season": 2026,
+      "date": "2026-05-23",
+      "gamePk": 824516,
+      "atBatIndex": 38,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 387,
+      "launchSpeed": 106.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "606192-823787-30-30",
+      "season": 2026,
+      "date": "2026-05-23",
+      "gamePk": 823787,
+      "atBatIndex": 30,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 357,
+      "launchSpeed": 104.3,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-17",
     "2026-05-18",
     "2026-05-19",
     "2026-05-20",
     "2026-05-21",
     "2026-05-22",
-    "2026-05-23"
+    "2026-05-23",
+    "2026-05-24"
   ],
   "rosterSummary": {
     "teamCount": 21,
