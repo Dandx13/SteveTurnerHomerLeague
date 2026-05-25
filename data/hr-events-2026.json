@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-25T17:23:58.354Z",
+  "updatedAt": "2026-05-25T18:59:11.684Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11181,6 +11181,45 @@
       "distance": 407,
       "launchSpeed": 101.1,
       "launchAngle": 30
+    },
+    {
+      "key": "683737-823380-36-36",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 823380,
+      "atBatIndex": 36,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 409,
+      "launchSpeed": 105.5,
+      "launchAngle": 36
+    },
+    {
+      "key": "808959-824598-5-5",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824598,
+      "atBatIndex": 5,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 375,
+      "launchSpeed": 105.7,
+      "launchAngle": 41
+    },
+    {
+      "key": "592885-823784-7-7",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 823784,
+      "atBatIndex": 7,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 381,
+      "launchSpeed": 101.8,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
