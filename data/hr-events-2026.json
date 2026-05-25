@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-24T23:13:51.008Z",
+  "updatedAt": "2026-05-25T00:15:29.666Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11168,17 +11168,30 @@
       "distance": 391,
       "launchSpeed": 102.6,
       "launchAngle": 32
+    },
+    {
+      "key": "669394-824028-6-6",
+      "season": 2026,
+      "date": "2026-05-24",
+      "gamePk": 824028,
+      "atBatIndex": 6,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 407,
+      "launchSpeed": 101.1,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-18",
     "2026-05-19",
     "2026-05-20",
     "2026-05-21",
     "2026-05-22",
     "2026-05-23",
-    "2026-05-24"
+    "2026-05-24",
+    "2026-05-25"
   ],
   "rosterSummary": {
     "teamCount": 21,
