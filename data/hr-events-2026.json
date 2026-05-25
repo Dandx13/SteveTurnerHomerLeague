@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-25T21:45:54.242Z",
+  "updatedAt": "2026-05-25T22:45:49.530Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11271,6 +11271,45 @@
       "fantasyTeam": "Dan/Connor",
       "distance": 432,
       "launchSpeed": 108.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "681297-824838-108-108",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824838,
+      "atBatIndex": 108,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 425,
+      "launchSpeed": 109.3,
+      "launchAngle": 34
+    },
+    {
+      "key": "543760-823625-51-51",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 823625,
+      "atBatIndex": 51,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 403,
+      "launchSpeed": 105.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "695578-824437-0-0",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824437,
+      "atBatIndex": 0,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 412,
+      "launchSpeed": 107.7,
       "launchAngle": 28
     }
   ],
