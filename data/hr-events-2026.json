@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-25T20:25:56.841Z",
+  "updatedAt": "2026-05-25T21:45:54.242Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11246,6 +11246,32 @@
       "distance": 403,
       "launchSpeed": 103.1,
       "launchAngle": 35
+    },
+    {
+      "key": "521692-824107-45-45",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824107,
+      "atBatIndex": 45,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 422,
+      "launchSpeed": 107.3,
+      "launchAngle": 24
+    },
+    {
+      "key": "677951-824107-58-58",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824107,
+      "atBatIndex": 58,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 432,
+      "launchSpeed": 108.7,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
