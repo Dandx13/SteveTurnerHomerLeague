@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-25T18:59:11.684Z",
+  "updatedAt": "2026-05-25T20:25:56.841Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11220,6 +11220,32 @@
       "distance": 381,
       "launchSpeed": 101.8,
       "launchAngle": 27
+    },
+    {
+      "key": "666018-824838-38-38",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824838,
+      "atBatIndex": 38,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 371,
+      "launchSpeed": 105.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "641355-824107-6-6",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 824107,
+      "atBatIndex": 6,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 403,
+      "launchSpeed": 103.1,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
