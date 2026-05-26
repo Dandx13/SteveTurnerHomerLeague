@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-26T22:39:17.941Z",
+  "updatedAt": "2026-05-26T23:48:06.684Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11389,6 +11389,71 @@
       "distance": 437,
       "launchSpeed": 104.1,
       "launchAngle": 30
+    },
+    {
+      "key": "695578-824434-13-13",
+      "season": 2026,
+      "date": "2026-05-26",
+      "gamePk": 824434,
+      "atBatIndex": 13,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 401,
+      "launchSpeed": 109.8,
+      "launchAngle": 28
+    },
+    {
+      "key": "666176-824275-26-26",
+      "season": 2026,
+      "date": "2026-05-26",
+      "gamePk": 824275,
+      "atBatIndex": 26,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 407,
+      "launchSpeed": 102.8,
+      "launchAngle": 35
+    },
+    {
+      "key": "680776-824758-3-3",
+      "season": 2026,
+      "date": "2026-05-26",
+      "gamePk": 824758,
+      "atBatIndex": 3,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 412,
+      "launchSpeed": 106.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "678882-824758-4-4",
+      "season": 2026,
+      "date": "2026-05-26",
+      "gamePk": 824758,
+      "atBatIndex": 4,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 368,
+      "launchSpeed": 101,
+      "launchAngle": 43
+    },
+    {
+      "key": "641355-824106-2-2",
+      "season": 2026,
+      "date": "2026-05-26",
+      "gamePk": 824106,
+      "atBatIndex": 2,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 387,
+      "launchSpeed": 105.1,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
