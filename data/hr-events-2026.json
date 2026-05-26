@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-25T23:51:22.181Z",
+  "updatedAt": "2026-05-26T02:14:35.439Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11324,17 +11324,43 @@
       "distance": 374,
       "launchSpeed": 106.8,
       "launchAngle": 20
+    },
+    {
+      "key": "670541-822899-22-22",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 822899,
+      "atBatIndex": 22,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 415,
+      "launchSpeed": 110.6,
+      "launchAngle": 20
+    },
+    {
+      "key": "572233-822899-50-50",
+      "season": 2026,
+      "date": "2026-05-25",
+      "gamePk": 822899,
+      "atBatIndex": 50,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 401,
+      "launchSpeed": 101.2,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-19",
     "2026-05-20",
     "2026-05-21",
     "2026-05-22",
     "2026-05-23",
     "2026-05-24",
-    "2026-05-25"
+    "2026-05-25",
+    "2026-05-26"
   ],
   "rosterSummary": {
     "teamCount": 21,
