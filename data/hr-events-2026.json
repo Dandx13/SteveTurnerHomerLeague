@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-27T17:28:37.606Z",
+  "updatedAt": "2026-05-27T19:38:00.916Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11727,6 +11727,19 @@
       "distance": 399,
       "launchSpeed": 106.9,
       "launchAngle": 23
+    },
+    {
+      "key": "672960-822809-48-48",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 822809,
+      "atBatIndex": 48,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 393,
+      "launchSpeed": 101.6,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
