@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-27T19:38:00.916Z",
+  "updatedAt": "2026-05-27T21:27:05.020Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11740,6 +11740,19 @@
       "distance": 393,
       "launchSpeed": 101.6,
       "launchAngle": 30
+    },
+    {
+      "key": "677594-825003-65-65",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 825003,
+      "atBatIndex": 65,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 418,
+      "launchSpeed": 105.8,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
