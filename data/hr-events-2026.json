@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-27T22:58:37.363Z",
+  "updatedAt": "2026-05-28T00:07:05.527Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11766,17 +11766,69 @@
       "distance": 392,
       "launchSpeed": 102.2,
       "launchAngle": 37
+    },
+    {
+      "key": "679529-824270-12-12",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 824270,
+      "atBatIndex": 12,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 373,
+      "launchSpeed": 100.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "664040-823376-25-25",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 823376,
+      "atBatIndex": 25,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 387,
+      "launchSpeed": 106.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "665742-823626-7-7",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 823626,
+      "atBatIndex": 7,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 366,
+      "launchSpeed": 96.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "621439-824596-0-0",
+      "season": 2026,
+      "date": "2026-05-27",
+      "gamePk": 824596,
+      "atBatIndex": 0,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 417,
+      "launchSpeed": 106.3,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-21",
     "2026-05-22",
     "2026-05-23",
     "2026-05-24",
     "2026-05-25",
     "2026-05-26",
-    "2026-05-27"
+    "2026-05-27",
+    "2026-05-28"
   ],
   "rosterSummary": {
     "teamCount": 21,
