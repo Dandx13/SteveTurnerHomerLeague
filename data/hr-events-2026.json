@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-28T21:18:28.231Z",
+  "updatedAt": "2026-05-28T22:48:42.628Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11935,6 +11935,32 @@
       "distance": 352,
       "launchSpeed": 106,
       "launchAngle": 21
+    },
+    {
+      "key": "660670-824757-52-52",
+      "season": 2026,
+      "date": "2026-05-28",
+      "gamePk": 824757,
+      "atBatIndex": 52,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 417,
+      "launchSpeed": 107.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "671739-824757-61-61",
+      "season": 2026,
+      "date": "2026-05-28",
+      "gamePk": 824757,
+      "atBatIndex": 61,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 396,
+      "launchSpeed": 104.1,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
