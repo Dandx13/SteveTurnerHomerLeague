@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-29T22:05:48.689Z",
+  "updatedAt": "2026-05-29T23:40:16.710Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12012,6 +12012,45 @@
       "fantasyTeam": "Mike/Nick/Evan (2)",
       "distance": 357,
       "launchSpeed": 101.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "660670-824515-0-0",
+      "season": 2026,
+      "date": "2026-05-29",
+      "gamePk": 824515,
+      "atBatIndex": 0,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 429,
+      "launchSpeed": 113.3,
+      "launchAngle": 33
+    },
+    {
+      "key": "650490-822978-3-3",
+      "season": 2026,
+      "date": "2026-05-29",
+      "gamePk": 822978,
+      "atBatIndex": 3,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 364,
+      "launchSpeed": 99.5,
+      "launchAngle": 35
+    },
+    {
+      "key": "664023-823055-4-4",
+      "season": 2026,
+      "date": "2026-05-29",
+      "gamePk": 823055,
+      "atBatIndex": 4,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 407,
+      "launchSpeed": 104.1,
       "launchAngle": 25
     }
   ],
