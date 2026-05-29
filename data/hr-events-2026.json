@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-28T23:58:24.441Z",
+  "updatedAt": "2026-05-29T04:25:50.336Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -11974,17 +11974,56 @@
       "distance": 416,
       "launchSpeed": 104.4,
       "launchAngle": 25
+    },
+    {
+      "key": "668804-823378-45-45",
+      "season": 2026,
+      "date": "2026-05-28",
+      "gamePk": 823378,
+      "atBatIndex": 45,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 400,
+      "launchSpeed": 106.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "664023-823378-62-62",
+      "season": 2026,
+      "date": "2026-05-28",
+      "gamePk": 823378,
+      "atBatIndex": 62,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 403,
+      "launchSpeed": 103.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "670623-822896-2-2",
+      "season": 2026,
+      "date": "2026-05-28",
+      "gamePk": 822896,
+      "atBatIndex": 2,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 357,
+      "launchSpeed": 101.8,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-22",
     "2026-05-23",
     "2026-05-24",
     "2026-05-25",
     "2026-05-26",
     "2026-05-27",
-    "2026-05-28"
+    "2026-05-28",
+    "2026-05-29"
   ],
   "rosterSummary": {
     "teamCount": 21,
