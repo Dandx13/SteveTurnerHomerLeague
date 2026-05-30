@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-30T20:11:20.720Z",
+  "updatedAt": "2026-05-30T21:15:27.925Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12351,6 +12351,71 @@
       "distance": 411,
       "launchSpeed": 104.8,
       "launchAngle": 26
+    },
+    {
+      "key": "695657-824593-60-60",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824593,
+      "atBatIndex": 60,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 372,
+      "launchSpeed": 106.8,
+      "launchAngle": 41
+    },
+    {
+      "key": "592518-822731-22-22",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 822731,
+      "atBatIndex": 22,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 362,
+      "launchSpeed": 102.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "665487-822731-31-31",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 822731,
+      "atBatIndex": 31,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 451,
+      "launchSpeed": 114,
+      "launchAngle": 24
+    },
+    {
+      "key": "665833-823375-22-22",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 823375,
+      "atBatIndex": 22,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 420,
+      "launchSpeed": 106.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "650490-822975-7-7",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 822975,
+      "atBatIndex": 7,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 396,
+      "launchSpeed": 103.6,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
