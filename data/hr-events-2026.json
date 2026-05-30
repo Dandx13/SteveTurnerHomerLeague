@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-30T22:15:54.655Z",
+  "updatedAt": "2026-05-30T23:29:51.239Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12429,6 +12429,45 @@
       "distance": 417,
       "launchSpeed": 105.3,
       "launchAngle": 38
+    },
+    {
+      "key": "680776-824431-78-78",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824431,
+      "atBatIndex": 78,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 371,
+      "launchSpeed": 105.6,
+      "launchAngle": 17
+    },
+    {
+      "key": "666176-822975-77-77",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 822975,
+      "atBatIndex": 77,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 431,
+      "launchSpeed": 113.2,
+      "launchAngle": 32
+    },
+    {
+      "key": "572233-824190-70-70",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824190,
+      "atBatIndex": 70,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 348,
+      "launchSpeed": 99.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
