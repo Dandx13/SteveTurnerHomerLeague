@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-30T23:29:51.239Z",
+  "updatedAt": "2026-05-31T01:35:56.572Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12468,17 +12468,69 @@
       "distance": 348,
       "launchSpeed": 99.4,
       "launchAngle": 25
+    },
+    {
+      "key": "691718-823054-59-59",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 823054,
+      "atBatIndex": 59,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 444,
+      "launchSpeed": 114.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "660670-824513-18-18",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824513,
+      "atBatIndex": 18,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 368,
+      "launchSpeed": 101.1,
+      "launchAngle": 33
+    },
+    {
+      "key": "621566-824513-52-52",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824513,
+      "atBatIndex": 52,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 403,
+      "launchSpeed": 106.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "660670-824513-66-66",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 824513,
+      "atBatIndex": 66,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 405,
+      "launchSpeed": 106.4,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-24",
     "2026-05-25",
     "2026-05-26",
     "2026-05-27",
     "2026-05-28",
     "2026-05-29",
-    "2026-05-30"
+    "2026-05-30",
+    "2026-05-31"
   ],
   "rosterSummary": {
     "teamCount": 21,
