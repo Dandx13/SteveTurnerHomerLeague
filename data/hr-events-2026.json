@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-31T17:51:05.439Z",
+  "updatedAt": "2026-05-31T19:03:02.849Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12611,6 +12611,45 @@
       "distance": 438,
       "launchSpeed": 112,
       "launchAngle": 27
+    },
+    {
+      "key": "695578-822729-36-36",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 822729,
+      "atBatIndex": 36,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 417,
+      "launchSpeed": 113.8,
+      "launchAngle": 21
+    },
+    {
+      "key": "666018-822976-5-5",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 822976,
+      "atBatIndex": 5,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 409,
+      "launchSpeed": 109.2,
+      "launchAngle": 25
+    },
+    {
+      "key": "543760-823621-17-17",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 823621,
+      "atBatIndex": 17,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 382,
+      "launchSpeed": 100.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
