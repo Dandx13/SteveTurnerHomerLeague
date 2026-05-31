@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-31T19:03:02.849Z",
+  "updatedAt": "2026-05-31T20:19:11.387Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12650,6 +12650,45 @@
       "distance": 382,
       "launchSpeed": 100.8,
       "launchAngle": 26
+    },
+    {
+      "key": "553993-824512-61-61",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 824512,
+      "atBatIndex": 61,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 387,
+      "launchSpeed": 102.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "665742-823621-57-57",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 823621,
+      "atBatIndex": 57,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 433,
+      "launchSpeed": 109,
+      "launchAngle": 30
+    },
+    {
+      "key": "695657-824592-48-48",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 824592,
+      "atBatIndex": 48,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 373,
+      "launchSpeed": 100.9,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
