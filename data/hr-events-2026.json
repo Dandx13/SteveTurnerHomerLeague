@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-31T21:28:53.559Z",
+  "updatedAt": "2026-05-31T22:34:53.107Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12701,6 +12701,19 @@
       "fantasyTeam": "Ryan/Paul",
       "distance": 380,
       "launchSpeed": 108.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "667670-825001-64-64",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 825001,
+      "atBatIndex": 64,
+      "playerId": 667670,
+      "playerName": "Brent Rooker",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 404,
+      "launchSpeed": 108.6,
       "launchAngle": 24
     }
   ],
