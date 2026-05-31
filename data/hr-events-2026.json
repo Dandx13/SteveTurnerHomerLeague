@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-31T01:35:56.572Z",
+  "updatedAt": "2026-05-31T06:01:34.000Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12520,6 +12520,58 @@
       "distance": 405,
       "launchSpeed": 106.4,
       "launchAngle": 28
+    },
+    {
+      "key": "669127-825000-5-5",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 825000,
+      "atBatIndex": 5,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 426,
+      "launchSpeed": 109.2,
+      "launchAngle": 25
+    },
+    {
+      "key": "691016-825000-46-46",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 825000,
+      "atBatIndex": 46,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 403,
+      "launchSpeed": 101.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "701762-825000-57-57",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 825000,
+      "atBatIndex": 57,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 410,
+      "launchSpeed": 104,
+      "launchAngle": 36
+    },
+    {
+      "key": "677594-823132-19-19",
+      "season": 2026,
+      "date": "2026-05-30",
+      "gamePk": 823132,
+      "atBatIndex": 19,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 418,
+      "launchSpeed": 107.9,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
