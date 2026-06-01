@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-05-31T23:41:44.623Z",
+  "updatedAt": "2026-06-01T02:01:55.955Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12728,17 +12728,30 @@
       "distance": 431,
       "launchSpeed": 106,
       "launchAngle": 31
+    },
+    {
+      "key": "608324-823053-43-43",
+      "season": 2026,
+      "date": "2026-05-31",
+      "gamePk": 823053,
+      "atBatIndex": 43,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 404,
+      "launchSpeed": 100.5,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-25",
     "2026-05-26",
     "2026-05-27",
     "2026-05-28",
     "2026-05-29",
     "2026-05-30",
-    "2026-05-31"
+    "2026-05-31",
+    "2026-06-01"
   ],
   "rosterSummary": {
     "teamCount": 21,
