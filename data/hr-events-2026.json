@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-01T21:54:41.718Z",
+  "updatedAt": "2026-06-01T23:26:49.317Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12740,6 +12740,32 @@
       "fantasyTeam": "Austin",
       "distance": 404,
       "launchSpeed": 100.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "681481-822974-19-19",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 822974,
+      "atBatIndex": 19,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 391,
+      "launchSpeed": 98.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "682985-822974-20-20",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 822974,
+      "atBatIndex": 20,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 428,
+      "launchSpeed": 102.9,
       "launchAngle": 30
     }
   ],
