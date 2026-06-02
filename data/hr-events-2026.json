@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-02T01:59:35.690Z",
+  "updatedAt": "2026-06-02T06:51:13.153Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12819,6 +12819,58 @@
       "distance": 391,
       "launchSpeed": 101.8,
       "launchAngle": 29
+    },
+    {
+      "key": "696100-824027-71-71",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 824027,
+      "atBatIndex": 71,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 384,
+      "launchSpeed": 112.9,
+      "launchAngle": 21
+    },
+    {
+      "key": "606466-825078-57-57",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 825078,
+      "atBatIndex": 57,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 409,
+      "launchSpeed": 111.9,
+      "launchAngle": 19
+    },
+    {
+      "key": "543760-823131-33-33",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 823131,
+      "atBatIndex": 33,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 389,
+      "launchSpeed": 103.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "647304-823131-43-43",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 823131,
+      "atBatIndex": 43,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 373,
+      "launchSpeed": 99.3,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
