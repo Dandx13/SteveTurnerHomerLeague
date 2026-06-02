@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-01T23:26:49.317Z",
+  "updatedAt": "2026-06-02T01:59:35.690Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -12767,17 +12767,69 @@
       "distance": 428,
       "launchSpeed": 102.9,
       "launchAngle": 30
+    },
+    {
+      "key": "691406-822974-32-32",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 822974,
+      "atBatIndex": 32,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 422,
+      "launchSpeed": 110.4,
+      "launchAngle": 33
+    },
+    {
+      "key": "669065-822730-69-69",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 822730,
+      "atBatIndex": 69,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 391,
+      "launchSpeed": 107,
+      "launchAngle": 27
+    },
+    {
+      "key": "695506-824510-38-38",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 824510,
+      "atBatIndex": 38,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 419,
+      "launchSpeed": 108.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "656305-823781-9-9",
+      "season": 2026,
+      "date": "2026-06-01",
+      "gamePk": 823781,
+      "atBatIndex": 9,
+      "playerId": 656305,
+      "playerName": "Matt Chapman",
+      "fantasyTeam": "Nate (2)",
+      "distance": 391,
+      "launchSpeed": 101.8,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-26",
     "2026-05-27",
     "2026-05-28",
     "2026-05-29",
     "2026-05-30",
     "2026-05-31",
-    "2026-06-01"
+    "2026-06-01",
+    "2026-06-02"
   ],
   "rosterSummary": {
     "teamCount": 21,
