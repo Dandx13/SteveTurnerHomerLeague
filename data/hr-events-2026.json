@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-04T20:20:38.101Z",
+  "updatedAt": "2026-06-04T21:57:37.815Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13287,6 +13287,19 @@
       "distance": 353,
       "launchSpeed": 99.4,
       "launchAngle": 38
+    },
+    {
+      "key": "694192-823779-71-71",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 823779,
+      "atBatIndex": 71,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 423,
+      "launchSpeed": 105.5,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
