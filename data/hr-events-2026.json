@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-03T22:39:16.304Z",
+  "updatedAt": "2026-06-04T00:20:41.010Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13079,17 +13079,69 @@
       "distance": 396,
       "launchSpeed": 108,
       "launchAngle": 37
+    },
+    {
+      "key": "677800-824755-23-23",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824755,
+      "atBatIndex": 23,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 398,
+      "launchSpeed": 106.7,
+      "launchAngle": 37
+    },
+    {
+      "key": "700932-823540-7-7",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 823540,
+      "atBatIndex": 7,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 370,
+      "launchSpeed": 99.4,
+      "launchAngle": 41
+    },
+    {
+      "key": "665862-823540-11-11",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 823540,
+      "atBatIndex": 11,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 409,
+      "launchSpeed": 107.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "686469-824509-2-2",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824509,
+      "atBatIndex": 2,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 377,
+      "launchSpeed": 101,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-28",
     "2026-05-29",
     "2026-05-30",
     "2026-05-31",
     "2026-06-01",
     "2026-06-02",
-    "2026-06-03"
+    "2026-06-03",
+    "2026-06-04"
   ],
   "rosterSummary": {
     "teamCount": 21,
