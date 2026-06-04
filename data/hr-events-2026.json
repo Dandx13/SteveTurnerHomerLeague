@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-04T00:20:41.010Z",
+  "updatedAt": "2026-06-04T05:16:27.236Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13131,6 +13131,97 @@
       "distance": 377,
       "launchSpeed": 101,
       "launchAngle": 30
+    },
+    {
+      "key": "656941-823456-53-53",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 823456,
+      "atBatIndex": 53,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 391,
+      "launchSpeed": 101.5,
+      "launchAngle": 32
+    },
+    {
+      "key": "608070-823540-38-38",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 823540,
+      "atBatIndex": 38,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 363,
+      "launchSpeed": 99.7,
+      "launchAngle": 39
+    },
+    {
+      "key": "645277-824917-59-59",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824917,
+      "atBatIndex": 59,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 393,
+      "launchSpeed": 106.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "673548-824671-13-13",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824671,
+      "atBatIndex": 13,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 408,
+      "launchSpeed": 108.9,
+      "launchAngle": 32
+    },
+    {
+      "key": "691718-824671-24-24",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824671,
+      "atBatIndex": 24,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 378,
+      "launchSpeed": 99.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "670623-824188-66-66",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 824188,
+      "atBatIndex": 66,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 363,
+      "launchSpeed": 101.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "663656-825077-7-7",
+      "season": 2026,
+      "date": "2026-06-03",
+      "gamePk": 825077,
+      "atBatIndex": 7,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 424,
+      "launchSpeed": 107.6,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
