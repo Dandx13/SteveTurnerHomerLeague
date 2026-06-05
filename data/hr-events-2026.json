@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-05T21:48:24.242Z",
+  "updatedAt": "2026-06-05T22:52:30.541Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13469,6 +13469,19 @@
       "distance": 432,
       "launchSpeed": 109.6,
       "launchAngle": 26
+    },
+    {
+      "key": "673548-824673-74-74",
+      "season": 2026,
+      "date": "2026-06-05",
+      "gamePk": 824673,
+      "atBatIndex": 74,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 387,
+      "launchSpeed": 105.6,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
