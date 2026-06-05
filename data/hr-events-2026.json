@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-05T01:32:22.902Z",
+  "updatedAt": "2026-06-05T06:04:11.031Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13352,6 +13352,71 @@
       "distance": 383,
       "launchSpeed": 110.1,
       "launchAngle": 24
+    },
+    {
+      "key": "691016-824672-43-43",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824672,
+      "atBatIndex": 43,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 396,
+      "launchSpeed": 103.7,
+      "launchAngle": 24
+    },
+    {
+      "key": "664023-824672-52-52",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824672,
+      "atBatIndex": 52,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 446,
+      "launchSpeed": 108.1,
+      "launchAngle": 37
+    },
+    {
+      "key": "670623-824185-49-49",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824185,
+      "atBatIndex": 49,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 356,
+      "launchSpeed": 101.3,
+      "launchAngle": 25
+    },
+    {
+      "key": "682998-825076-57-57",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 825076,
+      "atBatIndex": 57,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 383,
+      "launchSpeed": 98.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "606466-825076-69-69",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 825076,
+      "atBatIndex": 69,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 431,
+      "launchSpeed": 113,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
