@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-04T23:15:58.050Z",
+  "updatedAt": "2026-06-05T01:32:22.902Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13300,17 +13300,69 @@
       "distance": 423,
       "launchSpeed": 105.5,
       "launchAngle": 33
+    },
+    {
+      "key": "621439-823698-6-6",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 823698,
+      "atBatIndex": 6,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 430,
+      "launchSpeed": 109.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "669127-824672-22-22",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824672,
+      "atBatIndex": 22,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 369,
+      "launchSpeed": 98.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "669127-824672-37-37",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824672,
+      "atBatIndex": 37,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 358,
+      "launchSpeed": 98,
+      "launchAngle": 45
+    },
+    {
+      "key": "691718-824672-40-40",
+      "season": 2026,
+      "date": "2026-06-04",
+      "gamePk": 824672,
+      "atBatIndex": 40,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 383,
+      "launchSpeed": 110.1,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-29",
     "2026-05-30",
     "2026-05-31",
     "2026-06-01",
     "2026-06-02",
     "2026-06-03",
-    "2026-06-04"
+    "2026-06-04",
+    "2026-06-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
