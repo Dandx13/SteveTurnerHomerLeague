@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-06T19:37:09.681Z",
+  "updatedAt": "2026-06-06T20:44:41.250Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13677,6 +13677,32 @@
       "distance": 427,
       "launchSpeed": 105,
       "launchAngle": 28
+    },
+    {
+      "key": "646240-824669-37-37",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824669,
+      "atBatIndex": 37,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 387,
+      "launchSpeed": 108.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "691718-824669-40-40",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824669,
+      "atBatIndex": 40,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 386,
+      "launchSpeed": 105.4,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
