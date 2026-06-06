@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-06T17:56:07.237Z",
+  "updatedAt": "2026-06-06T19:37:09.681Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13651,6 +13651,32 @@
       "distance": 404,
       "launchSpeed": 105.8,
       "launchAngle": 38
+    },
+    {
+      "key": "680574-823048-32-32",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823048,
+      "atBatIndex": 32,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 381,
+      "launchSpeed": 103.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "681297-822808-9-9",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 822808,
+      "atBatIndex": 9,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 427,
+      "launchSpeed": 105,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
