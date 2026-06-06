@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-05T22:52:30.541Z",
+  "updatedAt": "2026-06-06T00:01:43.764Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13482,17 +13482,56 @@
       "distance": 387,
       "launchSpeed": 105.6,
       "launchAngle": 23
+    },
+    {
+      "key": "681481-824271-24-24",
+      "season": 2026,
+      "date": "2026-06-05",
+      "gamePk": 824271,
+      "atBatIndex": 24,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 347,
+      "launchSpeed": 95.2,
+      "launchAngle": 38
+    },
+    {
+      "key": "666969-823455-34-34",
+      "season": 2026,
+      "date": "2026-06-05",
+      "gamePk": 823455,
+      "atBatIndex": 34,
+      "playerId": 666969,
+      "playerName": "Adolis García",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 407,
+      "launchSpeed": 103.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "700250-823538-4-4",
+      "season": 2026,
+      "date": "2026-06-05",
+      "gamePk": 823538,
+      "atBatIndex": 4,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 377,
+      "launchSpeed": 96.9,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-05-30",
     "2026-05-31",
     "2026-06-01",
     "2026-06-02",
     "2026-06-03",
     "2026-06-04",
-    "2026-06-05"
+    "2026-06-05",
+    "2026-06-06"
   ],
   "rosterSummary": {
     "teamCount": 21,
