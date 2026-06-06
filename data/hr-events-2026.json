@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-06T20:44:41.250Z",
+  "updatedAt": "2026-06-06T21:46:45.966Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13703,6 +13703,71 @@
       "distance": 386,
       "launchSpeed": 105.4,
       "launchAngle": 35
+    },
+    {
+      "key": "691718-824669-71-71",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824669,
+      "atBatIndex": 71,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 403,
+      "launchSpeed": 104.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "624413-822808-46-46",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 822808,
+      "atBatIndex": 46,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 421,
+      "launchSpeed": 107.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "695657-823454-20-20",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823454,
+      "atBatIndex": 20,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 380,
+      "launchSpeed": 97.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "670541-824184-19-19",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824184,
+      "atBatIndex": 19,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 369,
+      "launchSpeed": 100.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "514888-824184-30-30",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824184,
+      "atBatIndex": 30,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 352,
+      "launchSpeed": 95.3,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
