@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-06T04:15:29.422Z",
+  "updatedAt": "2026-06-06T07:26:59.669Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13638,6 +13638,19 @@
       "distance": 419,
       "launchSpeed": 105.9,
       "launchAngle": 29
+    },
+    {
+      "key": "518692-823943-62-62",
+      "season": 2026,
+      "date": "2026-06-05",
+      "gamePk": 823943,
+      "atBatIndex": 62,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 404,
+      "launchSpeed": 105.8,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
