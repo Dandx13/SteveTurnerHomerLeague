@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-07T17:52:14.342Z",
+  "updatedAt": "2026-06-07T19:10:08.099Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13872,6 +13872,58 @@
       "distance": 394,
       "launchSpeed": 101.5,
       "launchAngle": 32
+    },
+    {
+      "key": "681297-822807-28-28",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 822807,
+      "atBatIndex": 28,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 400,
+      "launchSpeed": 111.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "621493-822807-32-32",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 822807,
+      "atBatIndex": 32,
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 380,
+      "launchSpeed": 103.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "701762-824183-17-17",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 824183,
+      "atBatIndex": 17,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 389,
+      "launchSpeed": 113.9,
+      "launchAngle": 20
+    },
+    {
+      "key": "680574-823047-17-17",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 823047,
+      "atBatIndex": 17,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 411,
+      "launchSpeed": 104,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
