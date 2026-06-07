@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-07T21:49:35.492Z",
+  "updatedAt": "2026-06-07T22:51:13.691Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14028,6 +14028,45 @@
       "distance": 442,
       "launchSpeed": 111.6,
       "launchAngle": 25
+    },
+    {
+      "key": "696100-824349-76-76",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 824349,
+      "atBatIndex": 76,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 424,
+      "launchSpeed": 99.9,
+      "launchAngle": 26
+    },
+    {
+      "key": "666176-823941-59-59",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 823941,
+      "atBatIndex": 59,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 433,
+      "launchSpeed": 112,
+      "launchAngle": 34
+    },
+    {
+      "key": "687263-823941-63-63",
+      "season": 2026,
+      "date": "2026-06-07",
+      "gamePk": 823941,
+      "atBatIndex": 63,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 404,
+      "launchSpeed": 101.1,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
