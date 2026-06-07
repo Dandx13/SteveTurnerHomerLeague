@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-07T02:07:28.023Z",
+  "updatedAt": "2026-06-07T06:41:32.329Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -13794,6 +13794,84 @@
       "distance": 444,
       "launchSpeed": 105.5,
       "launchAngle": 28
+    },
+    {
+      "key": "661388-824351-54-54",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824351,
+      "atBatIndex": 54,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 434,
+      "launchSpeed": 104.1,
+      "launchAngle": 36
+    },
+    {
+      "key": "668930-824351-67-67",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 824351,
+      "atBatIndex": 67,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 367,
+      "launchSpeed": 96.8,
+      "launchAngle": 38
+    },
+    {
+      "key": "681624-823942-6-6",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823942,
+      "atBatIndex": 6,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 394,
+      "launchSpeed": 100.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "660271-823942-14-14",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823942,
+      "atBatIndex": 14,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 406,
+      "launchSpeed": 110.4,
+      "launchAngle": 23
+    },
+    {
+      "key": "687263-823942-66-66",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823942,
+      "atBatIndex": 66,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 410,
+      "launchSpeed": 106.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "543760-823292-46-46",
+      "season": 2026,
+      "date": "2026-06-06",
+      "gamePk": 823292,
+      "atBatIndex": 46,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 394,
+      "launchSpeed": 101.5,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
