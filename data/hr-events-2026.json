@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-08T21:24:17.892Z",
+  "updatedAt": "2026-06-08T22:55:38.280Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14067,6 +14067,19 @@
       "distance": 404,
       "launchSpeed": 101.1,
       "launchAngle": 32
+    },
+    {
+      "key": "650490-822972-3-3",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 822972,
+      "atBatIndex": 3,
+      "playerId": 650490,
+      "playerName": "Yandy Díaz",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 390,
+      "launchSpeed": 100.4,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
