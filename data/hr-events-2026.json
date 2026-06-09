@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-09T21:03:24.514Z",
+  "updatedAt": "2026-06-09T22:45:07.683Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14223,6 +14223,19 @@
       "distance": 447,
       "launchSpeed": 110.3,
       "launchAngle": 26
+    },
+    {
+      "key": "682998-823858-1-1",
+      "season": 2026,
+      "date": "2026-06-09",
+      "gamePk": 823858,
+      "atBatIndex": 1,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 400,
+      "launchSpeed": 105.7,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
