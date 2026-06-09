@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-09T04:33:15.362Z",
+  "updatedAt": "2026-06-09T08:08:44.000Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14197,6 +14197,32 @@
       "distance": 418,
       "launchSpeed": 99.2,
       "launchAngle": 32
+    },
+    {
+      "key": "661388-824998-91-91",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 91,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 463,
+      "launchSpeed": 106.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "701762-824998-98-98",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 98,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 447,
+      "launchSpeed": 110.3,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
