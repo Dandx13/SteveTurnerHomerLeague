@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-09T00:08:17.620Z",
+  "updatedAt": "2026-06-09T04:33:15.362Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14106,6 +14106,97 @@
       "distance": 406,
       "launchSpeed": 104.8,
       "launchAngle": 24
+    },
+    {
+      "key": "687263-824025-59-59",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824025,
+      "atBatIndex": 59,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 395,
+      "launchSpeed": 102.8,
+      "launchAngle": 37
+    },
+    {
+      "key": "669127-824998-6-6",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 6,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "668930-824998-21-21",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 21,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 443,
+      "launchSpeed": 108.2,
+      "launchAngle": 24
+    },
+    {
+      "key": "683734-824998-24-24",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 24,
+      "playerId": 683734,
+      "playerName": "Andrew Vaughn",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 420,
+      "launchSpeed": 101.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "691016-824998-30-30",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 30,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 434,
+      "launchSpeed": 103.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "701762-824998-56-56",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 56,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 374,
+      "launchSpeed": 97.4,
+      "launchAngle": 36
+    },
+    {
+      "key": "691016-824998-66-66",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824998,
+      "atBatIndex": 66,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 418,
+      "launchSpeed": 99.2,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
