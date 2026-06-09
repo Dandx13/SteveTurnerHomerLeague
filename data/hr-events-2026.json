@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-08T22:55:38.280Z",
+  "updatedAt": "2026-06-09T00:08:17.620Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14080,17 +14080,43 @@
       "distance": 390,
       "launchSpeed": 100.4,
       "launchAngle": 34
+    },
+    {
+      "key": "647304-824829-37-37",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 824829,
+      "atBatIndex": 37,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 358,
+      "launchSpeed": 92.3,
+      "launchAngle": 31
+    },
+    {
+      "key": "666969-822806-10-10",
+      "season": 2026,
+      "date": "2026-06-08",
+      "gamePk": 822806,
+      "atBatIndex": 10,
+      "playerId": 666969,
+      "playerName": "Adolis García",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 406,
+      "launchSpeed": 104.8,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-02",
     "2026-06-03",
     "2026-06-04",
     "2026-06-05",
     "2026-06-06",
     "2026-06-07",
-    "2026-06-08"
+    "2026-06-08",
+    "2026-06-09"
   ],
   "rosterSummary": {
     "teamCount": 21,
