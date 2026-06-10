@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-10T04:40:02.959Z",
+  "updatedAt": "2026-06-10T08:36:17.196Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14483,6 +14483,19 @@
       "distance": 354,
       "launchSpeed": 95,
       "launchAngle": 26
+    },
+    {
+      "key": "701398-823290-91-91",
+      "season": 2026,
+      "date": "2026-06-09",
+      "gamePk": 823290,
+      "atBatIndex": 91,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 407,
+      "launchSpeed": 106.9,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
