@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-10T21:10:58.057Z",
+  "updatedAt": "2026-06-10T22:57:27.431Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14522,6 +14522,71 @@
       "distance": 405,
       "launchSpeed": 104.1,
       "launchAngle": 33
+    },
+    {
+      "key": "656305-823215-47-47",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823215,
+      "atBatIndex": 47,
+      "playerId": 656305,
+      "playerName": "Matt Chapman",
+      "fantasyTeam": "Nate (2)",
+      "distance": 421,
+      "launchSpeed": 107,
+      "launchAngle": 22
+    },
+    {
+      "key": "656305-823215-66-66",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823215,
+      "atBatIndex": 66,
+      "playerId": 656305,
+      "playerName": "Matt Chapman",
+      "fantasyTeam": "Nate (2)",
+      "distance": 409,
+      "launchSpeed": 101.4,
+      "launchAngle": 31
+    },
+    {
+      "key": "646240-823215-67-67",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823215,
+      "atBatIndex": 67,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 408,
+      "launchSpeed": 101.3,
+      "launchAngle": 37
+    },
+    {
+      "key": "553993-823287-60-60",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823287,
+      "atBatIndex": 60,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 365,
+      "launchSpeed": 104.8,
+      "launchAngle": 43
+    },
+    {
+      "key": "665487-823287-76-76",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823287,
+      "atBatIndex": 76,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 354,
+      "launchSpeed": 106.3,
+      "launchAngle": 18
     }
   ],
   "lastScanMode": "rolling-7-day",
