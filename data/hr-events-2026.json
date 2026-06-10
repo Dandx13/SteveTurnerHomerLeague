@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-09T22:45:07.683Z",
+  "updatedAt": "2026-06-10T00:00:16.597Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14236,17 +14236,43 @@
       "distance": 400,
       "launchSpeed": 105.7,
       "launchAngle": 36
+    },
+    {
+      "key": "668804-823374-5-5",
+      "season": 2026,
+      "date": "2026-06-09",
+      "gamePk": 823374,
+      "atBatIndex": 5,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 422,
+      "launchSpeed": 111.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "621566-824591-2-2",
+      "season": 2026,
+      "date": "2026-06-09",
+      "gamePk": 824591,
+      "atBatIndex": 2,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 411,
+      "launchSpeed": 103.4,
+      "launchAngle": 41
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-03",
     "2026-06-04",
     "2026-06-05",
     "2026-06-06",
     "2026-06-07",
     "2026-06-08",
-    "2026-06-09"
+    "2026-06-09",
+    "2026-06-10"
   ],
   "rosterSummary": {
     "teamCount": 21,
