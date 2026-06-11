@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-11T16:59:24.890Z",
+  "updatedAt": "2026-06-11T19:39:12.084Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14756,6 +14756,71 @@
       "distance": 404,
       "launchSpeed": 108.7,
       "launchAngle": 21
+    },
+    {
+      "key": "676475-823619-2-2",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 823619,
+      "atBatIndex": 2,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 424,
+      "launchSpeed": 107.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "666182-823619-5-5",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 823619,
+      "atBatIndex": 5,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 378,
+      "launchSpeed": 103,
+      "launchAngle": 34
+    },
+    {
+      "key": "665742-823619-59-59",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 823619,
+      "atBatIndex": 59,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 398,
+      "launchSpeed": 101.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "679529-824265-30-30",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 824265,
+      "atBatIndex": 30,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 371,
+      "launchSpeed": 95.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "682985-824265-56-56",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 824265,
+      "atBatIndex": 56,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 356,
+      "launchSpeed": 98.6,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
