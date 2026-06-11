@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-11T00:22:51.462Z",
+  "updatedAt": "2026-06-11T05:07:15.576Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14652,6 +14652,110 @@
       "distance": 423,
       "launchSpeed": 108.3,
       "launchAngle": 23
+    },
+    {
+      "key": "660271-823372-76-76",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823372,
+      "atBatIndex": 76,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 412,
+      "launchSpeed": 103.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "621439-824266-35-35",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824266,
+      "atBatIndex": 35,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 413,
+      "launchSpeed": 107,
+      "launchAngle": 22
+    },
+    {
+      "key": "676475-823618-68-68",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823618,
+      "atBatIndex": 68,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 408,
+      "launchSpeed": 111.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "669394-824103-58-58",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824103,
+      "atBatIndex": 58,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 399,
+      "launchSpeed": 99.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "664023-824348-64-64",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824348,
+      "atBatIndex": 64,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 424,
+      "launchSpeed": 98.2,
+      "launchAngle": 34
+    },
+    {
+      "key": "694192-824996-16-16",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824996,
+      "atBatIndex": 16,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "671732-824996-55-55",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824996,
+      "atBatIndex": 55,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 463,
+      "launchSpeed": 106.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "545361-824022-4-4",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824022,
+      "atBatIndex": 4,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 404,
+      "launchSpeed": 108.7,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
