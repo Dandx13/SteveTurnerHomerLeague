@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-10T22:57:27.431Z",
+  "updatedAt": "2026-06-11T00:22:51.462Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14587,17 +14587,82 @@
       "distance": 354,
       "launchSpeed": 106.3,
       "launchAngle": 18
+    },
+    {
+      "key": "624413-824831-41-41",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824831,
+      "atBatIndex": 41,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 402,
+      "launchSpeed": 106.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "668904-824266-8-8",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 824266,
+      "atBatIndex": 8,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 444,
+      "launchSpeed": 107.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "669065-823856-36-36",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 823856,
+      "atBatIndex": 36,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 425,
+      "launchSpeed": 110.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "547180-822804-2-2",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 822804,
+      "atBatIndex": 2,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 339,
+      "launchSpeed": 99.8,
+      "launchAngle": 42
+    },
+    {
+      "key": "656941-822804-30-30",
+      "season": 2026,
+      "date": "2026-06-10",
+      "gamePk": 822804,
+      "atBatIndex": 30,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 423,
+      "launchSpeed": 108.3,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-04",
     "2026-06-05",
     "2026-06-06",
     "2026-06-07",
     "2026-06-08",
     "2026-06-09",
-    "2026-06-10"
+    "2026-06-10",
+    "2026-06-11"
   ],
   "rosterSummary": {
     "teamCount": 21,
