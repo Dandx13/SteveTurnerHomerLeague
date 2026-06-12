@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-11T23:12:30.794Z",
+  "updatedAt": "2026-06-12T01:40:19.411Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14860,17 +14860,69 @@
       "distance": 410,
       "launchSpeed": 103.5,
       "launchAngle": 25
+    },
+    {
+      "key": "660271-823371-16-16",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 823371,
+      "atBatIndex": 16,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 391,
+      "launchSpeed": 107.7,
+      "launchAngle": 21
+    },
+    {
+      "key": "664040-823371-48-48",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 823371,
+      "atBatIndex": 48,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 383,
+      "launchSpeed": 103.7,
+      "launchAngle": 24
+    },
+    {
+      "key": "681297-824827-18-18",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 824827,
+      "atBatIndex": 18,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 416,
+      "launchSpeed": 108.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "624413-824827-24-24",
+      "season": 2026,
+      "date": "2026-06-11",
+      "gamePk": 824827,
+      "atBatIndex": 24,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 439,
+      "launchSpeed": 110.6,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-05",
     "2026-06-06",
     "2026-06-07",
     "2026-06-08",
     "2026-06-09",
     "2026-06-10",
-    "2026-06-11"
+    "2026-06-11",
+    "2026-06-12"
   ],
   "rosterSummary": {
     "teamCount": 21,
