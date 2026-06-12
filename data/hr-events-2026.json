@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-12T22:14:18.768Z",
+  "updatedAt": "2026-06-12T23:54:33.838Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -14912,6 +14912,45 @@
       "distance": 439,
       "launchSpeed": 110.6,
       "launchAngle": 33
+    },
+    {
+      "key": "694212-824826-10-10",
+      "season": 2026,
+      "date": "2026-06-12",
+      "gamePk": 824826,
+      "atBatIndex": 10,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 389,
+      "launchSpeed": 99.7,
+      "launchAngle": 31
+    },
+    {
+      "key": "575929-824752-9-9",
+      "season": 2026,
+      "date": "2026-06-12",
+      "gamePk": 824752,
+      "atBatIndex": 9,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 379,
+      "launchSpeed": 104.3,
+      "launchAngle": 41
+    },
+    {
+      "key": "672960-822803-8-8",
+      "season": 2026,
+      "date": "2026-06-12",
+      "gamePk": 822803,
+      "atBatIndex": 8,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 423,
+      "launchSpeed": 111.4,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
