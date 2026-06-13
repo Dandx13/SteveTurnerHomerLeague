@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-13T18:50:57.737Z",
+  "updatedAt": "2026-06-13T20:10:20.924Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15250,6 +15250,71 @@
       "distance": 417,
       "launchSpeed": 105.3,
       "launchAngle": 29
+    },
+    {
+      "key": "621439-823694-29-29",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 823694,
+      "atBatIndex": 29,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 420,
+      "launchSpeed": 106.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "668904-823694-31-31",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 823694,
+      "atBatIndex": 31,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 366,
+      "launchSpeed": 100.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "671056-823694-51-51",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 823694,
+      "atBatIndex": 51,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 403,
+      "launchSpeed": 103.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "672960-822802-22-22",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 822802,
+      "atBatIndex": 22,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 352,
+      "launchSpeed": 102.4,
+      "launchAngle": 21
+    },
+    {
+      "key": "701538-824828-1-1",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824828,
+      "atBatIndex": 1,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 372,
+      "launchSpeed": 99,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
