@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-13T20:10:20.924Z",
+  "updatedAt": "2026-06-13T21:38:23.250Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15315,6 +15315,58 @@
       "distance": 372,
       "launchSpeed": 99,
       "launchAngle": 34
+    },
+    {
+      "key": "624413-824828-10-10",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824828,
+      "atBatIndex": 10,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 392,
+      "launchSpeed": 104.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "682998-824508-1-1",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824508,
+      "atBatIndex": 1,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 433,
+      "launchSpeed": 111.8,
+      "launchAngle": 23
+    },
+    {
+      "key": "660271-824587-0-0",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824587,
+      "atBatIndex": 0,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 409,
+      "launchSpeed": 109.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "571970-824587-4-4",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824587,
+      "atBatIndex": 4,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 415,
+      "launchSpeed": 100.4,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
