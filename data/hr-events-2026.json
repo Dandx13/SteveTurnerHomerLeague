@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-13T22:45:29.600Z",
+  "updatedAt": "2026-06-13T23:51:44.091Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15419,6 +15419,19 @@
       "distance": 409,
       "launchSpeed": 101.4,
       "launchAngle": 32
+    },
+    {
+      "key": "680776-824749-67-67",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824749,
+      "atBatIndex": 67,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 400,
+      "launchSpeed": 102.5,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
