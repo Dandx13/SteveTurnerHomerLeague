@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-13T21:38:23.250Z",
+  "updatedAt": "2026-06-13T22:45:29.600Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15367,6 +15367,58 @@
       "distance": 415,
       "launchSpeed": 100.4,
       "launchAngle": 35
+    },
+    {
+      "key": "592518-824828-74-74",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824828,
+      "atBatIndex": 74,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 429,
+      "launchSpeed": 106.2,
+      "launchAngle": 22
+    },
+    {
+      "key": "669394-824749-61-61",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824749,
+      "atBatIndex": 61,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 421,
+      "launchSpeed": 107.3,
+      "launchAngle": 24
+    },
+    {
+      "key": "671739-823616-54-54",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 823616,
+      "atBatIndex": 54,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 392,
+      "launchSpeed": 106.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "571970-824587-61-61",
+      "season": 2026,
+      "date": "2026-06-13",
+      "gamePk": 824587,
+      "atBatIndex": 61,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 409,
+      "launchSpeed": 101.4,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
