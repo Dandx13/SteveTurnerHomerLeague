@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-14T16:21:19.274Z",
+  "updatedAt": "2026-06-14T17:54:26.549Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15510,6 +15510,19 @@
       "distance": 404,
       "launchSpeed": 103.6,
       "launchAngle": 29
+    },
+    {
+      "key": "695578-822722-5-5",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 822722,
+      "atBatIndex": 5,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 413,
+      "launchSpeed": 109.4,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
