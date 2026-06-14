@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-14T17:54:26.549Z",
+  "updatedAt": "2026-06-14T19:25:09.785Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15523,6 +15523,84 @@
       "distance": 413,
       "launchSpeed": 109.4,
       "launchAngle": 35
+    },
+    {
+      "key": "668804-823368-77-77",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 823368,
+      "atBatIndex": 77,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 422,
+      "launchSpeed": 105.3,
+      "launchAngle": 27
+    },
+    {
+      "key": "543760-823615-43-43",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 823615,
+      "atBatIndex": 43,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 403,
+      "launchSpeed": 101.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "676475-823693-24-24",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 823693,
+      "atBatIndex": 24,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 397,
+      "launchSpeed": 110.4,
+      "launchAngle": 39
+    },
+    {
+      "key": "518692-824586-2-2",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824586,
+      "atBatIndex": 2,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 369,
+      "launchSpeed": 101.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "694192-823777-3-3",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 823777,
+      "atBatIndex": 3,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 412,
+      "launchSpeed": 102.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "696100-824994-3-3",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824994,
+      "atBatIndex": 3,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 421,
+      "launchSpeed": 106.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
