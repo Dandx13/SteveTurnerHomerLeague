@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-14T20:47:34.760Z",
+  "updatedAt": "2026-06-14T21:59:15.776Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15666,6 +15666,32 @@
       "distance": 405,
       "launchSpeed": 106.8,
       "launchAngle": 20
+    },
+    {
+      "key": "691777-824994-54-54",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824994,
+      "atBatIndex": 54,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 375,
+      "launchSpeed": 103.8,
+      "launchAngle": 20
+    },
+    {
+      "key": "691016-824994-71-71",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824994,
+      "atBatIndex": 71,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 462,
+      "launchSpeed": 108.2,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
