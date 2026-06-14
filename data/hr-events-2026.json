@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-14T19:25:09.785Z",
+  "updatedAt": "2026-06-14T20:47:34.760Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15601,6 +15601,71 @@
       "distance": 421,
       "launchSpeed": 106.4,
       "launchAngle": 25
+    },
+    {
+      "key": "700250-822801-71-71",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 822801,
+      "atBatIndex": 71,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 381,
+      "launchSpeed": 101.2,
+      "launchAngle": 32
+    },
+    {
+      "key": "695657-824586-46-46",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824586,
+      "atBatIndex": 46,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 410,
+      "launchSpeed": 101.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "605141-824586-61-61",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824586,
+      "atBatIndex": 61,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 369,
+      "launchSpeed": 105.7,
+      "launchAngle": 19
+    },
+    {
+      "key": "696100-824994-42-42",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824994,
+      "atBatIndex": 42,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 453,
+      "launchSpeed": 110.7,
+      "launchAngle": 24
+    },
+    {
+      "key": "656305-823212-36-36",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 823212,
+      "atBatIndex": 36,
+      "playerId": 656305,
+      "playerName": "Matt Chapman",
+      "fantasyTeam": "Nate (2)",
+      "distance": 405,
+      "launchSpeed": 106.8,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
