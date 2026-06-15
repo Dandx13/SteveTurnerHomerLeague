@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-14T23:20:18.376Z",
+  "updatedAt": "2026-06-15T01:43:02.791Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15705,17 +15705,56 @@
       "distance": 374,
       "launchSpeed": 96,
       "launchAngle": 27
+    },
+    {
+      "key": "694671-824751-0-0",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824751,
+      "atBatIndex": 0,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 418,
+      "launchSpeed": 106.8,
+      "launchAngle": 28
+    },
+    {
+      "key": "575929-824751-14-14",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824751,
+      "atBatIndex": 14,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 337,
+      "launchSpeed": 93.5,
+      "launchAngle": 40
+    },
+    {
+      "key": "575929-824751-53-53",
+      "season": 2026,
+      "date": "2026-06-14",
+      "gamePk": 824751,
+      "atBatIndex": 53,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 392,
+      "launchSpeed": 101.5,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-08",
     "2026-06-09",
     "2026-06-10",
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
-    "2026-06-14"
+    "2026-06-14",
+    "2026-06-15"
   ],
   "rosterSummary": {
     "teamCount": 21,
