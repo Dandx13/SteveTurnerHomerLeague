@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-15T23:12:35.247Z",
+  "updatedAt": "2026-06-16T01:48:09.028Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15744,17 +15744,121 @@
       "distance": 392,
       "launchSpeed": 101.5,
       "launchAngle": 35
+    },
+    {
+      "key": "553993-824505-8-8",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824505,
+      "atBatIndex": 8,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 376,
+      "launchSpeed": 98.4,
+      "launchAngle": 39
+    },
+    {
+      "key": "553993-824505-20-20",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824505,
+      "atBatIndex": 20,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 406,
+      "launchSpeed": 105.9,
+      "launchAngle": 36
+    },
+    {
+      "key": "691718-824666-4-4",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824666,
+      "atBatIndex": 4,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 434,
+      "launchSpeed": 106,
+      "launchAngle": 28
+    },
+    {
+      "key": "605137-822887-4-4",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 822887,
+      "atBatIndex": 4,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 376,
+      "launchSpeed": 100,
+      "launchAngle": 32
+    },
+    {
+      "key": "621439-822887-38-38",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 822887,
+      "atBatIndex": 38,
+      "playerId": 621439,
+      "playerName": "Byron Buxton",
+      "fantasyTeam": "Nate",
+      "distance": 398,
+      "launchSpeed": 103.4,
+      "launchAngle": 34
+    },
+    {
+      "key": "679529-824181-24-24",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824181,
+      "atBatIndex": 24,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 372,
+      "launchSpeed": 103,
+      "launchAngle": 27
+    },
+    {
+      "key": "670623-824181-29-29",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824181,
+      "atBatIndex": 29,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 358,
+      "launchSpeed": 94.7,
+      "launchAngle": 36
+    },
+    {
+      "key": "514888-824181-30-30",
+      "season": 2026,
+      "date": "2026-06-15",
+      "gamePk": 824181,
+      "atBatIndex": 30,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 410,
+      "launchSpeed": 101.7,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-09",
     "2026-06-10",
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
     "2026-06-14",
-    "2026-06-15"
+    "2026-06-15",
+    "2026-06-16"
   ],
   "rosterSummary": {
     "teamCount": 21,
