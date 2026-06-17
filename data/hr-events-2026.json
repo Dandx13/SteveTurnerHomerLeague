@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-17T16:51:22.711Z",
+  "updatedAt": "2026-06-17T19:16:29.976Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16095,6 +16095,45 @@
       "distance": 427,
       "launchSpeed": 106.9,
       "launchAngle": 27
+    },
+    {
+      "key": "646240-824912-38-38",
+      "season": 2026,
+      "date": "2026-06-16",
+      "gamePk": 824912,
+      "atBatIndex": 38,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 400,
+      "launchSpeed": 97.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "669065-823450-2-2",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823450,
+      "atBatIndex": 2,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 396,
+      "launchSpeed": 110.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "669065-823450-55-55",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823450,
+      "atBatIndex": 55,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 436,
+      "launchSpeed": 107.7,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
