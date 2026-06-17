@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-17T19:16:29.976Z",
+  "updatedAt": "2026-06-17T21:24:22.542Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16134,6 +16134,84 @@
       "distance": 436,
       "launchSpeed": 107.7,
       "launchAngle": 25
+    },
+    {
+      "key": "642715-824912-60-60",
+      "season": 2026,
+      "date": "2026-06-16",
+      "gamePk": 824912,
+      "atBatIndex": 60,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 424,
+      "launchSpeed": 104.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "681481-824178-51-51",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 824178,
+      "atBatIndex": 51,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 337,
+      "launchSpeed": 96.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "701538-823044-69-69",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823044,
+      "atBatIndex": 69,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 423,
+      "launchSpeed": 106.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "518692-823940-56-56",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823940,
+      "atBatIndex": 56,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 407,
+      "launchSpeed": 102.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "687263-825072-0-0",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 825072,
+      "atBatIndex": 0,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 431,
+      "launchSpeed": 106.8,
+      "launchAngle": 28
+    },
+    {
+      "key": "682998-825072-18-18",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 825072,
+      "atBatIndex": 18,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 378,
+      "launchSpeed": 100.8,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
