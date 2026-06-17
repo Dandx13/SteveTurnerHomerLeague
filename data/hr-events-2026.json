@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-16T22:30:02.133Z",
+  "updatedAt": "2026-06-17T00:00:16.732Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -15900,17 +15900,56 @@
       "distance": 384,
       "launchSpeed": 102.1,
       "launchAngle": 24
+    },
+    {
+      "key": "656941-823451-32-32",
+      "season": 2026,
+      "date": "2026-06-16",
+      "gamePk": 823451,
+      "atBatIndex": 32,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 352,
+      "launchSpeed": 96.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "701398-824504-5-5",
+      "season": 2026,
+      "date": "2026-06-16",
+      "gamePk": 824504,
+      "atBatIndex": 5,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 410,
+      "launchSpeed": 106.9,
+      "launchAngle": 26
+    },
+    {
+      "key": "686948-824912-6-6",
+      "season": 2026,
+      "date": "2026-06-16",
+      "gamePk": 824912,
+      "atBatIndex": 6,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 473,
+      "launchSpeed": 112.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-10",
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
     "2026-06-14",
     "2026-06-15",
-    "2026-06-16"
+    "2026-06-16",
+    "2026-06-17"
   ],
   "rosterSummary": {
     "teamCount": 21,
