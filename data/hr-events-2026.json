@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-18T21:12:22.444Z",
+  "updatedAt": "2026-06-18T23:10:33.987Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16407,6 +16407,19 @@
       "distance": 366,
       "launchSpeed": 106.4,
       "launchAngle": 44
+    },
+    {
+      "key": "665742-823448-2-2",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 823448,
+      "atBatIndex": 2,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 386,
+      "launchSpeed": 100.5,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
