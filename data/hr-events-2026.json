@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-18T05:10:56.840Z",
+  "updatedAt": "2026-06-18T09:46:23.564Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16355,6 +16355,19 @@
       "distance": 370,
       "launchSpeed": 102.6,
       "launchAngle": 37
+    },
+    {
+      "key": "542303-824992-57-57",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 824992,
+      "atBatIndex": 57,
+      "playerId": 542303,
+      "playerName": "Marcell Ozuna",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 448,
+      "launchSpeed": 107.1,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
