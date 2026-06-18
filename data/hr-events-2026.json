@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-18T18:38:26.017Z",
+  "updatedAt": "2026-06-18T21:12:22.444Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16381,6 +16381,32 @@
       "distance": 410,
       "launchSpeed": 102.5,
       "launchAngle": 22
+    },
+    {
+      "key": "700932-823772-44-44",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 823772,
+      "atBatIndex": 44,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 370,
+      "launchSpeed": 100.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "694671-822889-49-49",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 822889,
+      "atBatIndex": 49,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 366,
+      "launchSpeed": 106.4,
+      "launchAngle": 44
     }
   ],
   "lastScanMode": "rolling-7-day",
