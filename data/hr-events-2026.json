@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-18T00:20:33.354Z",
+  "updatedAt": "2026-06-18T05:10:56.840Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16264,6 +16264,97 @@
       "distance": 387,
       "launchSpeed": 103.8,
       "launchAngle": 33
+    },
+    {
+      "key": "665862-823536-61-61",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823536,
+      "atBatIndex": 61,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 398,
+      "launchSpeed": 100.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "695657-823536-68-68",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823536,
+      "atBatIndex": 68,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 412,
+      "launchSpeed": 104.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "694192-823774-36-36",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823774,
+      "atBatIndex": 36,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 366,
+      "launchSpeed": 100.2,
+      "launchAngle": 34
+    },
+    {
+      "key": "621020-824668-14-14",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 824668,
+      "atBatIndex": 14,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 384,
+      "launchSpeed": 102,
+      "launchAngle": 46
+    },
+    {
+      "key": "691718-824668-33-33",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 824668,
+      "atBatIndex": 33,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 364,
+      "launchSpeed": 99.2,
+      "launchAngle": 41
+    },
+    {
+      "key": "696100-824668-63-63",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 824668,
+      "atBatIndex": 63,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 417,
+      "launchSpeed": 107.7,
+      "launchAngle": 22
+    },
+    {
+      "key": "683002-823127-17-17",
+      "season": 2026,
+      "date": "2026-06-17",
+      "gamePk": 823127,
+      "atBatIndex": 17,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 370,
+      "launchSpeed": 102.6,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
