@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-18T23:10:33.987Z",
+  "updatedAt": "2026-06-19T02:06:09.985Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16420,17 +16420,108 @@
       "distance": 386,
       "launchSpeed": 100.5,
       "launchAngle": 38
+    },
+    {
+      "key": "665742-823448-20-20",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 823448,
+      "atBatIndex": 20,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 389,
+      "launchSpeed": 105,
+      "launchAngle": 42
+    },
+    {
+      "key": "695657-823533-6-6",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 823533,
+      "atBatIndex": 6,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 420,
+      "launchSpeed": 107.2,
+      "launchAngle": 27
+    },
+    {
+      "key": "677951-824098-8-8",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 824098,
+      "atBatIndex": 8,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 419,
+      "launchSpeed": 105.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "695506-824098-42-42",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 824098,
+      "atBatIndex": 42,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 402,
+      "launchSpeed": 110,
+      "launchAngle": 22
+    },
+    {
+      "key": "521692-824098-63-63",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 824098,
+      "atBatIndex": 63,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 385,
+      "launchSpeed": 98.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "669127-824989-5-5",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 824989,
+      "atBatIndex": 5,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 430,
+      "launchSpeed": 103.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "691016-824989-6-6",
+      "season": 2026,
+      "date": "2026-06-18",
+      "gamePk": 824989,
+      "atBatIndex": 6,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 402,
+      "launchSpeed": 102.4,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-12",
     "2026-06-13",
     "2026-06-14",
     "2026-06-15",
     "2026-06-16",
     "2026-06-17",
-    "2026-06-18"
+    "2026-06-18",
+    "2026-06-19"
   ],
   "rosterSummary": {
     "teamCount": 21,
