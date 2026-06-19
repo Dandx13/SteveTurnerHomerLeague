@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-19T19:04:42.539Z",
+  "updatedAt": "2026-06-19T20:44:17.764Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16511,6 +16511,19 @@
       "distance": 402,
       "launchSpeed": 102.4,
       "launchAngle": 30
+    },
+    {
+      "key": "543807-824663-48-48",
+      "season": 2026,
+      "date": "2026-06-19",
+      "gamePk": 824663,
+      "atBatIndex": 48,
+      "playerId": 543807,
+      "playerName": "George Springer",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 374,
+      "launchSpeed": 98.2,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
