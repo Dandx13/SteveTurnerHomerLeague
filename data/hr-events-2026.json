@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-20T20:23:05.421Z",
+  "updatedAt": "2026-06-20T21:45:53.598Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16771,6 +16771,32 @@
       "distance": 368,
       "launchSpeed": 105.6,
       "launchAngle": 24
+    },
+    {
+      "key": "672960-824665-65-65",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 824665,
+      "atBatIndex": 65,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 377,
+      "launchSpeed": 107.3,
+      "launchAngle": 37
+    },
+    {
+      "key": "645277-824909-29-29",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 824909,
+      "atBatIndex": 29,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 367,
+      "launchSpeed": 97,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
