@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-20T19:00:58.900Z",
+  "updatedAt": "2026-06-20T20:23:05.421Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16745,6 +16745,32 @@
       "distance": 378,
       "launchSpeed": 100.7,
       "launchAngle": 38
+    },
+    {
+      "key": "691718-824665-47-47",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 824665,
+      "atBatIndex": 47,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 400,
+      "launchSpeed": 106.5,
+      "launchAngle": 32
+    },
+    {
+      "key": "662139-824665-52-52",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 824665,
+      "atBatIndex": 52,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 368,
+      "launchSpeed": 105.6,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
