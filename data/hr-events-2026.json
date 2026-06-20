@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-19T22:52:38.198Z",
+  "updatedAt": "2026-06-20T00:03:43.902Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16524,17 +16524,56 @@
       "distance": 374,
       "launchSpeed": 98.2,
       "launchAngle": 28
+    },
+    {
+      "key": "665862-823534-12-12",
+      "season": 2026,
+      "date": "2026-06-19",
+      "gamePk": 823534,
+      "atBatIndex": 12,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 390,
+      "launchSpeed": 107.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "700250-823534-17-17",
+      "season": 2026,
+      "date": "2026-06-19",
+      "gamePk": 823534,
+      "atBatIndex": 17,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 433,
+      "launchSpeed": 109.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "666018-822966-22-22",
+      "season": 2026,
+      "date": "2026-06-19",
+      "gamePk": 822966,
+      "atBatIndex": 22,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 334,
+      "launchSpeed": 95.2,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-13",
     "2026-06-14",
     "2026-06-15",
     "2026-06-16",
     "2026-06-17",
     "2026-06-18",
-    "2026-06-19"
+    "2026-06-19",
+    "2026-06-20"
   ],
   "rosterSummary": {
     "teamCount": 21,
