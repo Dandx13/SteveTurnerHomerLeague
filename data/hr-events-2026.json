@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-20T22:52:52.798Z",
+  "updatedAt": "2026-06-21T00:02:00.716Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16823,17 +16823,56 @@
       "distance": 339,
       "launchSpeed": 94.4,
       "launchAngle": 36
+    },
+    {
+      "key": "592518-822885-74-74",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 822885,
+      "atBatIndex": 74,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 408,
+      "launchSpeed": 108.1,
+      "launchAngle": 20
+    },
+    {
+      "key": "700932-824180-19-19",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 824180,
+      "atBatIndex": 19,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 388,
+      "launchSpeed": 100,
+      "launchAngle": 26
+    },
+    {
+      "key": "547180-823447-5-5",
+      "season": 2026,
+      "date": "2026-06-20",
+      "gamePk": 823447,
+      "atBatIndex": 5,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 385,
+      "launchSpeed": 97.7,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-14",
     "2026-06-15",
     "2026-06-16",
     "2026-06-17",
     "2026-06-18",
     "2026-06-19",
-    "2026-06-20"
+    "2026-06-20",
+    "2026-06-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
