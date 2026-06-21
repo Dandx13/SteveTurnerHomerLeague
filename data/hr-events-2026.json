@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-21T20:19:24.274Z",
+  "updatedAt": "2026-06-21T21:48:00.470Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17044,6 +17044,58 @@
       "distance": 403,
       "launchSpeed": 105.4,
       "launchAngle": 35
+    },
+    {
+      "key": "695506-824095-86-86",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824095,
+      "atBatIndex": 86,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 426,
+      "launchSpeed": 108.1,
+      "launchAngle": 34
+    },
+    {
+      "key": "668804-824343-51-51",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824343,
+      "atBatIndex": 51,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 433,
+      "launchSpeed": 107,
+      "launchAngle": 37
+    },
+    {
+      "key": "621493-823934-15-15",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823934,
+      "atBatIndex": 15,
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 388,
+      "launchSpeed": 102,
+      "launchAngle": 30
+    },
+    {
+      "key": "681297-823934-25-25",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823934,
+      "atBatIndex": 25,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 406,
+      "launchSpeed": 104.7,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
