@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-21T17:08:59.333Z",
+  "updatedAt": "2026-06-21T18:50:15.694Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -16953,6 +16953,58 @@
       "distance": 402,
       "launchSpeed": 104.5,
       "launchAngle": 25
+    },
+    {
+      "key": "700250-823531-21-21",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823531,
+      "atBatIndex": 21,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 375,
+      "launchSpeed": 105.1,
+      "launchAngle": 41
+    },
+    {
+      "key": "661388-824908-17-17",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824908,
+      "atBatIndex": 17,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 408,
+      "launchSpeed": 109.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "669065-823852-10-10",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823852,
+      "atBatIndex": 10,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 426,
+      "launchSpeed": 106.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "670541-824177-6-6",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824177,
+      "atBatIndex": 6,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 407,
+      "launchSpeed": 106.5,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
