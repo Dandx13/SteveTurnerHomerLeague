@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-21T21:48:00.470Z",
+  "updatedAt": "2026-06-21T22:54:15.997Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17096,6 +17096,45 @@
       "distance": 406,
       "launchSpeed": 104.7,
       "launchAngle": 33
+    },
+    {
+      "key": "701762-824987-56-56",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824987,
+      "atBatIndex": 56,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 437,
+      "launchSpeed": 109.2,
+      "launchAngle": 27
+    },
+    {
+      "key": "687263-824987-72-72",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 824987,
+      "atBatIndex": 72,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 391,
+      "launchSpeed": 94.4,
+      "launchAngle": 33
+    },
+    {
+      "key": "624413-823934-63-63",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823934,
+      "atBatIndex": 63,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 398,
+      "launchSpeed": 106.8,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
