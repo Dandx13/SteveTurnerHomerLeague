@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-22T00:10:26.289Z",
+  "updatedAt": "2026-06-22T05:31:08.572Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17148,6 +17148,19 @@
       "distance": 418,
       "launchSpeed": 105.1,
       "launchAngle": 35
+    },
+    {
+      "key": "547180-823449-38-38",
+      "season": 2026,
+      "date": "2026-06-21",
+      "gamePk": 823449,
+      "atBatIndex": 38,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 390,
+      "launchSpeed": 108.1,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
