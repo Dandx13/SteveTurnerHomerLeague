@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-23T22:02:44.731Z",
+  "updatedAt": "2026-06-23T23:18:21.756Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17278,6 +17278,32 @@
       "distance": 391,
       "launchSpeed": 106.3,
       "launchAngle": 25
+    },
+    {
+      "key": "662139-822799-62-62",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 822799,
+      "atBatIndex": 62,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 395,
+      "launchSpeed": 106,
+      "launchAngle": 30
+    },
+    {
+      "key": "695506-822963-2-2",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 822963,
+      "atBatIndex": 2,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 435,
+      "launchSpeed": 109.1,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
