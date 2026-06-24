@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-24T19:48:14.297Z",
+  "updatedAt": "2026-06-24T21:14:06.356Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17499,6 +17499,45 @@
       "distance": 418,
       "launchSpeed": 103.1,
       "launchAngle": 35
+    },
+    {
+      "key": "624585-824018-6-6",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 824018,
+      "atBatIndex": 6,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 366,
+      "launchSpeed": 95.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "694212-824018-10-10",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 824018,
+      "atBatIndex": 10,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 434,
+      "launchSpeed": 106.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "694212-824018-23-23",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 824018,
+      "atBatIndex": 23,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 371,
+      "launchSpeed": 112.5,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
