@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-23T23:18:21.756Z",
+  "updatedAt": "2026-06-24T00:15:17.052Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17304,17 +17304,69 @@
       "distance": 435,
       "launchSpeed": 109.1,
       "launchAngle": 30
+    },
+    {
+      "key": "663728-823365-25-25",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823365,
+      "atBatIndex": 25,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 393,
+      "launchSpeed": 99.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "695506-822963-39-39",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 822963,
+      "atBatIndex": 39,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 416,
+      "launchSpeed": 110,
+      "launchAngle": 22
+    },
+    {
+      "key": "665862-824262-41-41",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 824262,
+      "atBatIndex": 41,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 403,
+      "launchSpeed": 107.4,
+      "launchAngle": 37
+    },
+    {
+      "key": "691718-823614-12-12",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823614,
+      "atBatIndex": 12,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 409,
+      "launchSpeed": 101.9,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-17",
     "2026-06-18",
     "2026-06-19",
     "2026-06-20",
     "2026-06-21",
     "2026-06-22",
-    "2026-06-23"
+    "2026-06-23",
+    "2026-06-24"
   ],
   "rosterSummary": {
     "teamCount": 21,
