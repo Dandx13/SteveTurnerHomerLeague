@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-24T17:55:21.242Z",
+  "updatedAt": "2026-06-24T19:48:14.297Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17460,6 +17460,45 @@
       "distance": 437,
       "launchSpeed": 106.5,
       "launchAngle": 27
+    },
+    {
+      "key": "683737-823613-38-38",
+      "season": 2026,
+      "date": "2026-06-22",
+      "gamePk": 823613,
+      "atBatIndex": 38,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 398,
+      "launchSpeed": 108.2,
+      "launchAngle": 25
+    },
+    {
+      "key": "621020-823613-47-47",
+      "season": 2026,
+      "date": "2026-06-22",
+      "gamePk": 823613,
+      "atBatIndex": 47,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 400,
+      "launchSpeed": 105.1,
+      "launchAngle": 36
+    },
+    {
+      "key": "621020-823613-64-64",
+      "season": 2026,
+      "date": "2026-06-22",
+      "gamePk": 823613,
+      "atBatIndex": 64,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 418,
+      "launchSpeed": 103.1,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
