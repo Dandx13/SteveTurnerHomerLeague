@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-24T00:15:17.052Z",
+  "updatedAt": "2026-06-24T04:41:04.360Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17356,6 +17356,97 @@
       "distance": 409,
       "launchSpeed": 101.9,
       "launchAngle": 27
+    },
+    {
+      "key": "691406-822963-68-68",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 822963,
+      "atBatIndex": 68,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 416,
+      "launchSpeed": 108.5,
+      "launchAngle": 38
+    },
+    {
+      "key": "607043-823849-63-63",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823849,
+      "atBatIndex": 63,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 412,
+      "launchSpeed": 105.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "621020-823614-31-31",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823614,
+      "atBatIndex": 31,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 380,
+      "launchSpeed": 104.4,
+      "launchAngle": 22
+    },
+    {
+      "key": "666182-823614-78-78",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823614,
+      "atBatIndex": 78,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 388,
+      "launchSpeed": 102.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "677800-824340-38-38",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 824340,
+      "atBatIndex": 38,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 443,
+      "launchSpeed": 103,
+      "launchAngle": 34
+    },
+    {
+      "key": "678662-824340-76-76",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 824340,
+      "atBatIndex": 76,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 380,
+      "launchSpeed": 95.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "665487-823286-62-62",
+      "season": 2026,
+      "date": "2026-06-23",
+      "gamePk": 823286,
+      "atBatIndex": 62,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 410,
+      "launchSpeed": 106.6,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
