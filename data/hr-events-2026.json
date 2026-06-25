@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-25T15:09:12.064Z",
+  "updatedAt": "2026-06-25T17:22:48.128Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17629,6 +17629,45 @@
       "distance": 416,
       "launchSpeed": 106.1,
       "launchAngle": 30
+    },
+    {
+      "key": "691406-822961-5-5",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822961,
+      "atBatIndex": 5,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 372,
+      "launchSpeed": 103.9,
+      "launchAngle": 38
+    },
+    {
+      "key": "691406-822961-35-35",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822961,
+      "atBatIndex": 35,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 387,
+      "launchSpeed": 107.5,
+      "launchAngle": 22
+    },
+    {
+      "key": "664040-823366-5-5",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 823366,
+      "atBatIndex": 5,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 391,
+      "launchSpeed": 104.5,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
