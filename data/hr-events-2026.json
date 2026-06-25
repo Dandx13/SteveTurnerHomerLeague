@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-25T01:53:42.667Z",
+  "updatedAt": "2026-06-25T06:04:16.946Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17603,6 +17603,32 @@
       "distance": 416,
       "launchSpeed": 109.3,
       "launchAngle": 20
+    },
+    {
+      "key": "691777-823208-50-50",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823208,
+      "atBatIndex": 50,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 416,
+      "launchSpeed": 106.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "646240-823208-62-62",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823208,
+      "atBatIndex": 62,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 416,
+      "launchSpeed": 106.1,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
