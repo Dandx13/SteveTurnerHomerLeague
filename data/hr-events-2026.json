@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-24T23:49:44.640Z",
+  "updatedAt": "2026-06-25T01:53:42.667Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17538,17 +17538,82 @@
       "distance": 371,
       "launchSpeed": 112.5,
       "launchAngle": 22
+    },
+    {
+      "key": "668901-823611-34-34",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823611,
+      "atBatIndex": 34,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 416,
+      "launchSpeed": 108.4,
+      "launchAngle": 23
+    },
+    {
+      "key": "666182-823611-50-50",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823611,
+      "atBatIndex": 50,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 411,
+      "launchSpeed": 106.3,
+      "launchAngle": 31
+    },
+    {
+      "key": "661388-824500-22-22",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 824500,
+      "atBatIndex": 22,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 399,
+      "launchSpeed": 103.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "605141-823691-7-7",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823691,
+      "atBatIndex": 7,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 399,
+      "launchSpeed": 101,
+      "launchAngle": 28
+    },
+    {
+      "key": "606466-823041-31-31",
+      "season": 2026,
+      "date": "2026-06-24",
+      "gamePk": 823041,
+      "atBatIndex": 31,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 416,
+      "launchSpeed": 109.3,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-18",
     "2026-06-19",
     "2026-06-20",
     "2026-06-21",
     "2026-06-22",
     "2026-06-23",
-    "2026-06-24"
+    "2026-06-24",
+    "2026-06-25"
   ],
   "rosterSummary": {
     "teamCount": 21,
