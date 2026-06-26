@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-26T22:18:55.608Z",
+  "updatedAt": "2026-06-26T23:38:14.500Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17746,6 +17746,32 @@
       "distance": 420,
       "launchSpeed": 108.1,
       "launchAngle": 26
+    },
+    {
+      "key": "681481-824255-20-20",
+      "season": 2026,
+      "date": "2026-06-26",
+      "gamePk": 824255,
+      "atBatIndex": 20,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 412,
+      "launchSpeed": 105.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "691406-822962-7-7",
+      "season": 2026,
+      "date": "2026-06-26",
+      "gamePk": 822962,
+      "atBatIndex": 7,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 437,
+      "launchSpeed": 111.3,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
