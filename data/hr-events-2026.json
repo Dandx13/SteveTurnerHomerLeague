@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-26T00:00:23.233Z",
+  "updatedAt": "2026-06-26T04:25:26.411Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17720,6 +17720,32 @@
       "distance": 378,
       "launchSpeed": 106.7,
       "launchAngle": 40
+    },
+    {
+      "key": "547180-822717-73-73",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822717,
+      "atBatIndex": 73,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 390,
+      "launchSpeed": 103.5,
+      "launchAngle": 29
+    },
+    {
+      "key": "672960-822797-69-69",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822797,
+      "atBatIndex": 69,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 420,
+      "launchSpeed": 108.1,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
