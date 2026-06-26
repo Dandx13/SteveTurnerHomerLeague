@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-25T22:46:26.278Z",
+  "updatedAt": "2026-06-26T00:00:23.233Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17694,17 +17694,43 @@
       "distance": 390,
       "launchSpeed": 101.4,
       "launchAngle": 37
+    },
+    {
+      "key": "694671-822797-16-16",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822797,
+      "atBatIndex": 16,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 401,
+      "launchSpeed": 101.7,
+      "launchAngle": 32
+    },
+    {
+      "key": "669394-822797-19-19",
+      "season": 2026,
+      "date": "2026-06-25",
+      "gamePk": 822797,
+      "atBatIndex": 19,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 378,
+      "launchSpeed": 106.7,
+      "launchAngle": 40
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-19",
     "2026-06-20",
     "2026-06-21",
     "2026-06-22",
     "2026-06-23",
     "2026-06-24",
-    "2026-06-25"
+    "2026-06-25",
+    "2026-06-26"
   ],
   "rosterSummary": {
     "teamCount": 21,
