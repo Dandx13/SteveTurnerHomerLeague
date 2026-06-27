@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-27T20:01:07.630Z",
+  "updatedAt": "2026-06-27T21:15:41.243Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17889,6 +17889,32 @@
       "distance": 390,
       "launchSpeed": 102.7,
       "launchAngle": 27
+    },
+    {
+      "key": "608369-822794-51-51",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 822794,
+      "atBatIndex": 51,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 391,
+      "launchSpeed": 98.5,
+      "launchAngle": 29
+    },
+    {
+      "key": "701398-823364-1-1",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823364,
+      "atBatIndex": 1,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 372,
+      "launchSpeed": 102.5,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
