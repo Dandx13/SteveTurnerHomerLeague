@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-26T23:38:14.500Z",
+  "updatedAt": "2026-06-27T01:33:34.556Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17772,17 +17772,56 @@
       "distance": 437,
       "launchSpeed": 111.3,
       "launchAngle": 25
+    },
+    {
+      "key": "542303-823363-47-47",
+      "season": 2026,
+      "date": "2026-06-26",
+      "gamePk": 823363,
+      "atBatIndex": 47,
+      "playerId": 542303,
+      "playerName": "Marcell Ozuna",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 408,
+      "launchSpeed": 105.9,
+      "launchAngle": 28
+    },
+    {
+      "key": "575929-824743-21-21",
+      "season": 2026,
+      "date": "2026-06-26",
+      "gamePk": 824743,
+      "atBatIndex": 21,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 418,
+      "launchSpeed": 111.9,
+      "launchAngle": 36
+    },
+    {
+      "key": "673548-823773-29-29",
+      "season": 2026,
+      "date": "2026-06-26",
+      "gamePk": 823773,
+      "atBatIndex": 29,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 409,
+      "launchSpeed": 103.8,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-20",
     "2026-06-21",
     "2026-06-22",
     "2026-06-23",
     "2026-06-24",
     "2026-06-25",
-    "2026-06-26"
+    "2026-06-26",
+    "2026-06-27"
   ],
   "rosterSummary": {
     "teamCount": 21,
