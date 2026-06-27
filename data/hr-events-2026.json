@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-27T22:31:44.167Z",
+  "updatedAt": "2026-06-27T23:37:25.185Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -17954,6 +17954,58 @@
       "distance": 361,
       "launchSpeed": 106.9,
       "launchAngle": 44
+    },
+    {
+      "key": "553993-823364-76-76",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823364,
+      "atBatIndex": 76,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 344,
+      "launchSpeed": 98.9,
+      "launchAngle": 37
+    },
+    {
+      "key": "666018-822960-36-36",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 822960,
+      "atBatIndex": 36,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 391,
+      "launchSpeed": 101.7,
+      "launchAngle": 37
+    },
+    {
+      "key": "696100-823689-2-2",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823689,
+      "atBatIndex": 2,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 428,
+      "launchSpeed": 107.7,
+      "launchAngle": 36
+    },
+    {
+      "key": "694192-823770-3-3",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823770,
+      "atBatIndex": 3,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 411,
+      "launchSpeed": 108,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
