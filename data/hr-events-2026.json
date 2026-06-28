@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-28T20:00:03.102Z",
+  "updatedAt": "2026-06-28T21:13:30.154Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18188,6 +18188,58 @@
       "distance": 408,
       "launchSpeed": 108.3,
       "launchAngle": 37
+    },
+    {
+      "key": "670623-824256-60-60",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 824256,
+      "atBatIndex": 60,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 402,
+      "launchSpeed": 103.3,
+      "launchAngle": 34
+    },
+    {
+      "key": "572233-824256-79-79",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 824256,
+      "atBatIndex": 79,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 394,
+      "launchSpeed": 98.3,
+      "launchAngle": 33
+    },
+    {
+      "key": "679529-824256-84-84",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 824256,
+      "atBatIndex": 84,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 379,
+      "launchSpeed": 103.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "592518-823281-28-28",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 823281,
+      "atBatIndex": 28,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 367,
+      "launchSpeed": 106.9,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
