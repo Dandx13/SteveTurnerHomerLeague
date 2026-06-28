@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-28T01:50:58.460Z",
+  "updatedAt": "2026-06-28T06:06:48.454Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18097,6 +18097,45 @@
       "distance": 404,
       "launchSpeed": 102.4,
       "launchAngle": 35
+    },
+    {
+      "key": "663656-823283-42-42",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823283,
+      "atBatIndex": 42,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 398,
+      "launchSpeed": 106.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "605141-823283-48-48",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823283,
+      "atBatIndex": 48,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 402,
+      "launchSpeed": 100.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "646240-823207-25-25",
+      "season": 2026,
+      "date": "2026-06-27",
+      "gamePk": 823207,
+      "atBatIndex": 25,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 359,
+      "launchSpeed": 96.4,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
