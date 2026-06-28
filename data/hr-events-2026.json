@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-28T18:41:18.748Z",
+  "updatedAt": "2026-06-28T20:00:03.102Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18149,6 +18149,45 @@
       "distance": 437,
       "launchSpeed": 105.1,
       "launchAngle": 27
+    },
+    {
+      "key": "691406-822959-41-41",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 822959,
+      "atBatIndex": 41,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 463,
+      "launchSpeed": 113.5,
+      "launchAngle": 29
+    },
+    {
+      "key": "606466-822959-58-58",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 822959,
+      "atBatIndex": 58,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 424,
+      "launchSpeed": 106.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "656941-823608-58-58",
+      "season": 2026,
+      "date": "2026-06-28",
+      "gamePk": 823608,
+      "atBatIndex": 58,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 408,
+      "launchSpeed": 108.3,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
