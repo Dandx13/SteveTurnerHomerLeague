@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-29T22:20:24.380Z",
+  "updatedAt": "2026-06-29T23:31:02.113Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18240,6 +18240,45 @@
       "distance": 367,
       "launchSpeed": 106.9,
       "launchAngle": 39
+    },
+    {
+      "key": "547180-823444-22-22",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 823444,
+      "atBatIndex": 22,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 405,
+      "launchSpeed": 106.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "695578-824741-0-0",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824741,
+      "atBatIndex": 0,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 441,
+      "launchSpeed": 113.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "575929-824741-7-7",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824741,
+      "atBatIndex": 7,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 421,
+      "launchSpeed": 104.5,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
