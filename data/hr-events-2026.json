@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-30T21:52:26.178Z",
+  "updatedAt": "2026-06-30T23:04:41.312Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18435,6 +18435,19 @@
       "distance": 415,
       "launchSpeed": 106.5,
       "launchAngle": 23
+    },
+    {
+      "key": "700932-824418-6-6",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 824418,
+      "atBatIndex": 6,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 396,
+      "launchSpeed": 101.7,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
