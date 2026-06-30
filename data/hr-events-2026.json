@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-30T01:33:16.926Z",
+  "updatedAt": "2026-06-30T05:51:50.161Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18331,6 +18331,110 @@
       "distance": 413,
       "launchSpeed": 105.5,
       "launchAngle": 27
+    },
+    {
+      "key": "668930-823771-58-58",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 823771,
+      "atBatIndex": 58,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 418,
+      "launchSpeed": 105.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "696100-824339-66-66",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824339,
+      "atBatIndex": 66,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 442,
+      "launchSpeed": 107,
+      "launchAngle": 37
+    },
+    {
+      "key": "571970-824986-32-32",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824986,
+      "atBatIndex": 32,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 422,
+      "launchSpeed": 104,
+      "launchAngle": 30
+    },
+    {
+      "key": "681624-824986-36-36",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824986,
+      "atBatIndex": 36,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 387,
+      "launchSpeed": 107.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "660271-824986-50-50",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824986,
+      "atBatIndex": 50,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 432,
+      "launchSpeed": 112.3,
+      "launchAngle": 25
+    },
+    {
+      "key": "687263-823121-15-15",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 823121,
+      "atBatIndex": 15,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 396,
+      "launchSpeed": 102.3,
+      "launchAngle": 35
+    },
+    {
+      "key": "606466-825065-3-3",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 825065,
+      "atBatIndex": 3,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 367,
+      "launchSpeed": 100.5,
+      "launchAngle": 40
+    },
+    {
+      "key": "671218-825065-65-65",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 825065,
+      "atBatIndex": 65,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 415,
+      "launchSpeed": 106.5,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
