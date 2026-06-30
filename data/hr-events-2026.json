@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-29T23:31:02.113Z",
+  "updatedAt": "2026-06-30T01:33:16.926Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18279,17 +18279,69 @@
       "distance": 421,
       "launchSpeed": 104.5,
       "launchAngle": 32
+    },
+    {
+      "key": "596019-822792-46-46",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 822792,
+      "atBatIndex": 46,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 378,
+      "launchSpeed": 104.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "682829-823771-35-35",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 823771,
+      "atBatIndex": 35,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 412,
+      "launchSpeed": 102.5,
+      "launchAngle": 34
+    },
+    {
+      "key": "668904-824176-23-23",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824176,
+      "atBatIndex": 23,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 375,
+      "launchSpeed": 96.7,
+      "launchAngle": 32
+    },
+    {
+      "key": "605137-824176-38-38",
+      "season": 2026,
+      "date": "2026-06-29",
+      "gamePk": 824176,
+      "atBatIndex": 38,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 413,
+      "launchSpeed": 105.5,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-23",
     "2026-06-24",
     "2026-06-25",
     "2026-06-26",
     "2026-06-27",
     "2026-06-28",
-    "2026-06-29"
+    "2026-06-29",
+    "2026-06-30"
   ],
   "rosterSummary": {
     "teamCount": 21,
