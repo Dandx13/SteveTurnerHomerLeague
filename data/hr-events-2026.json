@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-01T19:03:59.009Z",
+  "updatedAt": "2026-07-01T20:52:07.158Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18773,6 +18773,71 @@
       "distance": 397,
       "launchSpeed": 102.9,
       "launchAngle": 36
+    },
+    {
+      "key": "695578-824740-61-61",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824740,
+      "atBatIndex": 61,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 393,
+      "launchSpeed": 104.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "621020-824660-31-31",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 31,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 434,
+      "launchSpeed": 103.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "691718-824660-52-52",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 52,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 390,
+      "launchSpeed": 100.4,
+      "launchAngle": 38
+    },
+    {
+      "key": "621020-824660-80-80",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 80,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 387,
+      "launchSpeed": 92.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "683737-824660-83-83",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 83,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 412,
+      "launchSpeed": 102.1,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
