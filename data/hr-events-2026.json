@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-01T16:58:41.471Z",
+  "updatedAt": "2026-07-01T19:03:59.009Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18747,6 +18747,32 @@
       "distance": 424,
       "launchSpeed": 111.3,
       "launchAngle": 24
+    },
+    {
+      "key": "673548-824660-7-7",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 7,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 426,
+      "launchSpeed": 102.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "621020-824660-16-16",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824660,
+      "atBatIndex": 16,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 397,
+      "launchSpeed": 102.9,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
