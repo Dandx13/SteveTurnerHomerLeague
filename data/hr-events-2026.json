@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-01T22:13:47.528Z",
+  "updatedAt": "2026-07-01T23:46:52.306Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18851,6 +18851,19 @@
       "distance": 408,
       "launchSpeed": 104.6,
       "launchAngle": 31
+    },
+    {
+      "key": "691406-824094-2-2",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824094,
+      "atBatIndex": 2,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 425,
+      "launchSpeed": 104.8,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
