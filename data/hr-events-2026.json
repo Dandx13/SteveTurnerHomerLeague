@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-06-30T23:04:41.312Z",
+  "updatedAt": "2026-07-01T00:18:11.412Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18448,17 +18448,134 @@
       "distance": 396,
       "launchSpeed": 101.7,
       "launchAngle": 26
+    },
+    {
+      "key": "695657-824819-22-22",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 824819,
+      "atBatIndex": 22,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 440,
+      "launchSpeed": 109.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "681481-823528-2-2",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823528,
+      "atBatIndex": 2,
+      "playerId": 681481,
+      "playerName": "Kerry Carpenter",
+      "fantasyTeam": "John Eames",
+      "distance": 410,
+      "launchSpeed": 102.9,
+      "launchAngle": 28
+    },
+    {
+      "key": "682985-823528-3-3",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823528,
+      "atBatIndex": 3,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 424,
+      "launchSpeed": 107.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "679529-823528-5-5",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823528,
+      "atBatIndex": 5,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 405,
+      "launchSpeed": 105.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "700250-823528-9-9",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823528,
+      "atBatIndex": 9,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 395,
+      "launchSpeed": 102.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "682985-823528-19-19",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823528,
+      "atBatIndex": 19,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 404,
+      "launchSpeed": 105.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "691406-824096-18-18",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 824096,
+      "atBatIndex": 18,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 438,
+      "launchSpeed": 108.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "701398-823768-1-1",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 823768,
+      "atBatIndex": 1,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 382,
+      "launchSpeed": 107.3,
+      "launchAngle": 19
+    },
+    {
+      "key": "665487-824661-0-0",
+      "season": 2026,
+      "date": "2026-06-30",
+      "gamePk": 824661,
+      "atBatIndex": 0,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 425,
+      "launchSpeed": 106,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-24",
     "2026-06-25",
     "2026-06-26",
     "2026-06-27",
     "2026-06-28",
     "2026-06-29",
-    "2026-06-30"
+    "2026-06-30",
+    "2026-07-01"
   ],
   "rosterSummary": {
     "teamCount": 21,
