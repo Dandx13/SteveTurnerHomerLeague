@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-01T23:46:52.306Z",
+  "updatedAt": "2026-07-02T01:52:36.984Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18864,17 +18864,56 @@
       "distance": 425,
       "launchSpeed": 104.8,
       "launchAngle": 27
+    },
+    {
+      "key": "645277-824905-22-22",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824905,
+      "atBatIndex": 22,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 380,
+      "launchSpeed": 97.7,
+      "launchAngle": 35
+    },
+    {
+      "key": "605137-824174-3-3",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824174,
+      "atBatIndex": 3,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 452,
+      "launchSpeed": 112.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "666160-824337-5-5",
+      "season": 2026,
+      "date": "2026-07-01",
+      "gamePk": 824337,
+      "atBatIndex": 5,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 434,
+      "launchSpeed": 103.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-25",
     "2026-06-26",
     "2026-06-27",
     "2026-06-28",
     "2026-06-29",
     "2026-06-30",
-    "2026-07-01"
+    "2026-07-01",
+    "2026-07-02"
   ],
   "rosterSummary": {
     "teamCount": 21,
