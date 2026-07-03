@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-03T01:21:43.977Z",
+  "updatedAt": "2026-07-03T05:07:35.869Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -18981,6 +18981,45 @@
       "distance": 407,
       "launchSpeed": 105.1,
       "launchAngle": 25
+    },
+    {
+      "key": "676475-824906-73-73",
+      "season": 2026,
+      "date": "2026-07-02",
+      "gamePk": 824906,
+      "atBatIndex": 73,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 395,
+      "launchSpeed": 107.4,
+      "launchAngle": 41
+    },
+    {
+      "key": "592518-823935-2-2",
+      "season": 2026,
+      "date": "2026-07-02",
+      "gamePk": 823935,
+      "atBatIndex": 2,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 408,
+      "launchSpeed": 103.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "701538-823935-10-10",
+      "season": 2026,
+      "date": "2026-07-02",
+      "gamePk": 823935,
+      "atBatIndex": 10,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 383,
+      "launchSpeed": 99.2,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
