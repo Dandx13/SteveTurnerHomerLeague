@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-04T19:56:24.230Z",
+  "updatedAt": "2026-07-04T21:02:43.073Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19267,6 +19267,58 @@
       "distance": 428,
       "launchSpeed": 113.1,
       "launchAngle": 31
+    },
+    {
+      "key": "605137-823526-58-58",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 823526,
+      "atBatIndex": 58,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 399,
+      "launchSpeed": 107.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "605137-823526-71-71",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 823526,
+      "atBatIndex": 71,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 376,
+      "launchSpeed": 96.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "682985-822882-3-3",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 822882,
+      "atBatIndex": 3,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 386,
+      "launchSpeed": 107.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "668227-823118-16-16",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 823118,
+      "atBatIndex": 16,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 412,
+      "launchSpeed": 105.2,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
