@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-05T20:41:35.330Z",
+  "updatedAt": "2026-07-05T21:42:17.013Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19592,6 +19592,58 @@
       "distance": 431,
       "launchSpeed": 111.2,
       "launchAngle": 36
+    },
+    {
+      "key": "686948-824902-77-77",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824902,
+      "atBatIndex": 77,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 383,
+      "launchSpeed": 101.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "670623-824172-42-42",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824172,
+      "atBatIndex": 42,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 401,
+      "launchSpeed": 101.9,
+      "launchAngle": 34
+    },
+    {
+      "key": "646240-824333-28-28",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824333,
+      "atBatIndex": 28,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 420,
+      "launchSpeed": 108,
+      "launchAngle": 33
+    },
+    {
+      "key": "646240-824333-40-40",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824333,
+      "atBatIndex": 40,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 463,
+      "launchSpeed": 110.3,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
