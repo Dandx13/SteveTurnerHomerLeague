@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-04T23:12:10.303Z",
+  "updatedAt": "2026-07-05T00:14:01.131Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19332,17 +19332,56 @@
       "distance": 384,
       "launchSpeed": 109.7,
       "launchAngle": 41
+    },
+    {
+      "key": "694212-824499-4-4",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 824499,
+      "atBatIndex": 4,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 406,
+      "launchSpeed": 105.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "691406-824171-1-1",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 824171,
+      "atBatIndex": 1,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 437,
+      "launchSpeed": 107.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "670541-824171-5-5",
+      "season": 2026,
+      "date": "2026-07-04",
+      "gamePk": 824171,
+      "atBatIndex": 5,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 403,
+      "launchSpeed": 104.7,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-28",
     "2026-06-29",
     "2026-06-30",
     "2026-07-01",
     "2026-07-02",
     "2026-07-03",
-    "2026-07-04"
+    "2026-07-04",
+    "2026-07-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
