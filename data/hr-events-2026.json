@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-05T17:03:17.578Z",
+  "updatedAt": "2026-07-05T18:13:14.400Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19514,6 +19514,19 @@
       "distance": 388,
       "launchSpeed": 100.6,
       "launchAngle": 36
+    },
+    {
+      "key": "668804-822715-19-19",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 822715,
+      "atBatIndex": 19,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 399,
+      "launchSpeed": 100.9,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
