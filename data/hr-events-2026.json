@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-06T17:22:47.425Z",
+  "updatedAt": "2026-07-06T19:13:16.544Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19696,6 +19696,19 @@
       "distance": 396,
       "launchSpeed": 103.9,
       "launchAngle": 31
+    },
+    {
+      "key": "521692-824089-24-24",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 824089,
+      "atBatIndex": 24,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 401,
+      "launchSpeed": 101,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
