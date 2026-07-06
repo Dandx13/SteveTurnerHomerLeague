@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-06T22:22:37.699Z",
+  "updatedAt": "2026-07-06T23:35:07.536Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19709,6 +19709,32 @@
       "distance": 401,
       "launchSpeed": 101,
       "launchAngle": 27
+    },
+    {
+      "key": "514888-822712-14-14",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 822712,
+      "atBatIndex": 14,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 372,
+      "launchSpeed": 94.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "673237-822712-23-23",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 822712,
+      "atBatIndex": 23,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 389,
+      "launchSpeed": 102.9,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
