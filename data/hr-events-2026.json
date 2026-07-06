@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-06T01:27:22.685Z",
+  "updatedAt": "2026-07-06T06:05:42.676Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19644,6 +19644,58 @@
       "distance": 463,
       "launchSpeed": 110.3,
       "launchAngle": 35
+    },
+    {
+      "key": "592518-823931-51-51",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 823931,
+      "atBatIndex": 51,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 407,
+      "launchSpeed": 102,
+      "launchAngle": 25
+    },
+    {
+      "key": "680776-824010-13-13",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824010,
+      "atBatIndex": 13,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 422,
+      "launchSpeed": 103.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "575929-824010-24-24",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824010,
+      "atBatIndex": 24,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 446,
+      "launchSpeed": 112.2,
+      "launchAngle": 29
+    },
+    {
+      "key": "687263-824010-77-77",
+      "season": 2026,
+      "date": "2026-07-05",
+      "gamePk": 824010,
+      "atBatIndex": 77,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 396,
+      "launchSpeed": 103.9,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
