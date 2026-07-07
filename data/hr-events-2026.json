@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-07T18:22:11.372Z",
+  "updatedAt": "2026-07-07T20:21:44.185Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19865,6 +19865,19 @@
       "distance": 393,
       "launchSpeed": 100.9,
       "launchAngle": 30
+    },
+    {
+      "key": "671056-823062-22-22",
+      "season": 2026,
+      "date": "2026-07-07",
+      "gamePk": 823062,
+      "atBatIndex": 22,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 378,
+      "launchSpeed": 101.2,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
