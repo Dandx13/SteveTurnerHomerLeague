@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-07T01:20:50.519Z",
+  "updatedAt": "2026-07-07T05:13:28.608Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19774,6 +19774,97 @@
       "distance": 403,
       "launchSpeed": 105.5,
       "launchAngle": 36
+    },
+    {
+      "key": "665742-824900-74-74",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 824900,
+      "atBatIndex": 74,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 430,
+      "launchSpeed": 107.8,
+      "launchAngle": 39
+    },
+    {
+      "key": "621566-824900-77-77",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 824900,
+      "atBatIndex": 77,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 379,
+      "launchSpeed": 100.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "672960-823205-42-42",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 823205,
+      "atBatIndex": 42,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 412,
+      "launchSpeed": 110.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "671218-823205-50-50",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 823205,
+      "atBatIndex": 50,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 349,
+      "launchSpeed": 99.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "671218-823205-66-66",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 823205,
+      "atBatIndex": 66,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 434,
+      "launchSpeed": 109.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "660271-823930-22-22",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 823930,
+      "atBatIndex": 22,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 379,
+      "launchSpeed": 105.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "678662-823930-37-37",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 823930,
+      "atBatIndex": 37,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 393,
+      "launchSpeed": 100.9,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
