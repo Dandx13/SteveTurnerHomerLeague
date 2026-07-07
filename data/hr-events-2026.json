@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-06T23:35:07.536Z",
+  "updatedAt": "2026-07-07T01:20:50.519Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19735,17 +19735,56 @@
       "distance": 389,
       "launchSpeed": 102.9,
       "launchAngle": 26
+    },
+    {
+      "key": "700250-822958-56-56",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 822958,
+      "atBatIndex": 56,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 400,
+      "launchSpeed": 102.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "695578-822712-50-50",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 822712,
+      "atBatIndex": 50,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 446,
+      "launchSpeed": 109.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "621566-824900-24-24",
+      "season": 2026,
+      "date": "2026-07-06",
+      "gamePk": 824900,
+      "atBatIndex": 24,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 403,
+      "launchSpeed": 105.5,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-06-30",
     "2026-07-01",
     "2026-07-02",
     "2026-07-03",
     "2026-07-04",
     "2026-07-05",
-    "2026-07-06"
+    "2026-07-06",
+    "2026-07-07"
   ],
   "rosterSummary": {
     "teamCount": 21,
