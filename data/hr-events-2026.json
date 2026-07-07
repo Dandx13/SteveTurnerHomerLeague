@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-07T22:47:44.437Z",
+  "updatedAt": "2026-07-07T23:41:15.123Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19878,6 +19878,32 @@
       "distance": 378,
       "launchSpeed": 101.2,
       "launchAngle": 37
+    },
+    {
+      "key": "700250-822956-22-22",
+      "season": 2026,
+      "date": "2026-07-07",
+      "gamePk": 822956,
+      "atBatIndex": 22,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 382,
+      "launchSpeed": 103.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "695578-822713-3-3",
+      "season": 2026,
+      "date": "2026-07-07",
+      "gamePk": 822713,
+      "atBatIndex": 3,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 419,
+      "launchSpeed": 111.4,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
