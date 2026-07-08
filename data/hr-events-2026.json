@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-08T21:31:07.438Z",
+  "updatedAt": "2026-07-08T22:37:11.591Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20008,6 +20008,32 @@
       "distance": 340,
       "launchSpeed": 99.1,
       "launchAngle": 34
+    },
+    {
+      "key": "665489-823202-65-65",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 823202,
+      "atBatIndex": 65,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 419,
+      "launchSpeed": 108.3,
+      "launchAngle": 18
+    },
+    {
+      "key": "543807-823202-66-66",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 823202,
+      "atBatIndex": 66,
+      "playerId": 543807,
+      "playerName": "George Springer",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 415,
+      "launchSpeed": 104.3,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
