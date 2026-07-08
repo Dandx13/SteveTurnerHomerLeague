@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-08T22:37:11.591Z",
+  "updatedAt": "2026-07-08T23:43:26.474Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20034,6 +20034,45 @@
       "distance": 415,
       "launchSpeed": 104.3,
       "launchAngle": 23
+    },
+    {
+      "key": "691718-824815-16-16",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 824815,
+      "atBatIndex": 16,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 370,
+      "launchSpeed": 94.2,
+      "launchAngle": 35
+    },
+    {
+      "key": "624413-824815-28-28",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 824815,
+      "atBatIndex": 28,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 411,
+      "launchSpeed": 106.2,
+      "launchAngle": 24
+    },
+    {
+      "key": "669065-823848-12-12",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 823848,
+      "atBatIndex": 12,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 416,
+      "launchSpeed": 105.4,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
