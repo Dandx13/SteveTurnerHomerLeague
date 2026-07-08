@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-08T01:12:36.211Z",
+  "updatedAt": "2026-07-08T04:34:03.306Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -19969,6 +19969,32 @@
       "distance": 383,
       "launchSpeed": 103.7,
       "launchAngle": 35
+    },
+    {
+      "key": "514888-822713-67-67",
+      "season": 2026,
+      "date": "2026-07-07",
+      "gamePk": 822713,
+      "atBatIndex": 67,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 402,
+      "launchSpeed": 99.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "660271-823929-4-4",
+      "season": 2026,
+      "date": "2026-07-07",
+      "gamePk": 823929,
+      "atBatIndex": 4,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 409,
+      "launchSpeed": 112.2,
+      "launchAngle": 19
     }
   ],
   "lastScanMode": "rolling-7-day",
