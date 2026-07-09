@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-09T16:45:57.511Z",
+  "updatedAt": "2026-07-09T18:31:07.620Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20229,6 +20229,71 @@
       "distance": 404,
       "launchSpeed": 107.6,
       "launchAngle": 37
+    },
+    {
+      "key": "668804-823359-26-26",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823359,
+      "atBatIndex": 26,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 390,
+      "launchSpeed": 102.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "677951-823606-23-23",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823606,
+      "atBatIndex": 23,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 386,
+      "launchSpeed": 105.3,
+      "launchAngle": 27
+    },
+    {
+      "key": "691406-822954-5-5",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 822954,
+      "atBatIndex": 5,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 438,
+      "launchSpeed": 108.3,
+      "launchAngle": 25
+    },
+    {
+      "key": "700250-822954-18-18",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 822954,
+      "atBatIndex": 18,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 367,
+      "launchSpeed": 104.2,
+      "launchAngle": 43
+    },
+    {
+      "key": "669224-822954-31-31",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 822954,
+      "atBatIndex": 31,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 375,
+      "launchSpeed": 100.4,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
