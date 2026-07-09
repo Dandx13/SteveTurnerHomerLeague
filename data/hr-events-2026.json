@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-09T01:19:33.902Z",
+  "updatedAt": "2026-07-09T05:14:23.775Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20164,6 +20164,58 @@
       "distance": 359,
       "launchSpeed": 99,
       "launchAngle": 32
+    },
+    {
+      "key": "656941-824496-79-79",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 824496,
+      "atBatIndex": 79,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 387,
+      "launchSpeed": 105.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "676475-823032-43-43",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 823032,
+      "atBatIndex": 43,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 443,
+      "launchSpeed": 109.4,
+      "launchAngle": 35
+    },
+    {
+      "key": "666176-822880-38-38",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 822880,
+      "atBatIndex": 38,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 433,
+      "launchSpeed": 110.3,
+      "launchAngle": 21
+    },
+    {
+      "key": "545361-822880-64-64",
+      "season": 2026,
+      "date": "2026-07-08",
+      "gamePk": 822880,
+      "atBatIndex": 64,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 438,
+      "launchSpeed": 110.6,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
