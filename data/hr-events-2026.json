@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-09T18:31:07.620Z",
+  "updatedAt": "2026-07-09T20:25:32.454Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20294,6 +20294,58 @@
       "distance": 375,
       "launchSpeed": 100.4,
       "launchAngle": 27
+    },
+    {
+      "key": "665742-823606-56-56",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823606,
+      "atBatIndex": 56,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 435,
+      "launchSpeed": 106.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "700250-822954-51-51",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 822954,
+      "atBatIndex": 51,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 422,
+      "launchSpeed": 103.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "673548-824816-40-40",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 824816,
+      "atBatIndex": 40,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 432,
+      "launchSpeed": 110.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "668904-823683-52-52",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823683,
+      "atBatIndex": 52,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 389,
+      "launchSpeed": 103.7,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
