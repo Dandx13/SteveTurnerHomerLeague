@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-10T01:05:00.417Z",
+  "updatedAt": "2026-07-10T05:04:44.814Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20372,6 +20372,45 @@
       "distance": 394,
       "launchSpeed": 104.4,
       "launchAngle": 22
+    },
+    {
+      "key": "668930-823034-53-53",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823034,
+      "atBatIndex": 53,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 419,
+      "launchSpeed": 103.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "592518-823277-11-11",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823277,
+      "atBatIndex": 11,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 368,
+      "launchSpeed": 101.4,
+      "launchAngle": 34
+    },
+    {
+      "key": "642715-823201-70-70",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823201,
+      "atBatIndex": 70,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 407,
+      "launchSpeed": 106.6,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
