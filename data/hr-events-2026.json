@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-09T23:20:25.088Z",
+  "updatedAt": "2026-07-10T01:05:00.417Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20346,17 +20346,43 @@
       "distance": 389,
       "launchSpeed": 103.7,
       "launchAngle": 36
+    },
+    {
+      "key": "668227-823846-42-42",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 823846,
+      "atBatIndex": 42,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 414,
+      "launchSpeed": 104.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "607043-822877-6-6",
+      "season": 2026,
+      "date": "2026-07-09",
+      "gamePk": 822877,
+      "atBatIndex": 6,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 394,
+      "launchSpeed": 104.4,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-03",
     "2026-07-04",
     "2026-07-05",
     "2026-07-06",
     "2026-07-07",
     "2026-07-08",
-    "2026-07-09"
+    "2026-07-09",
+    "2026-07-10"
   ],
   "rosterSummary": {
     "teamCount": 21,
