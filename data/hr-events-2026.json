@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-10T23:40:59.969Z",
+  "updatedAt": "2026-07-11T01:09:51.938Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20411,17 +20411,82 @@
       "distance": 407,
       "launchSpeed": 106.6,
       "launchAngle": 31
+    },
+    {
+      "key": "679529-824252-59-59",
+      "season": 2026,
+      "date": "2026-07-10",
+      "gamePk": 824252,
+      "atBatIndex": 59,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 389,
+      "launchSpeed": 105.2,
+      "launchAngle": 22
+    },
+    {
+      "key": "700250-822709-1-1",
+      "season": 2026,
+      "date": "2026-07-10",
+      "gamePk": 822709,
+      "atBatIndex": 1,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 387,
+      "launchSpeed": 102,
+      "launchAngle": 29
+    },
+    {
+      "key": "695506-824817-26-26",
+      "season": 2026,
+      "date": "2026-07-10",
+      "gamePk": 824817,
+      "atBatIndex": 26,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 368,
+      "launchSpeed": 99.5,
+      "launchAngle": 37
+    },
+    {
+      "key": "682829-824493-35-35",
+      "season": 2026,
+      "date": "2026-07-10",
+      "gamePk": 824493,
+      "atBatIndex": 35,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 400,
+      "launchSpeed": 108.5,
+      "launchAngle": 21
+    },
+    {
+      "key": "691406-822955-55-55",
+      "season": 2026,
+      "date": "2026-07-10",
+      "gamePk": 822955,
+      "atBatIndex": 55,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 385,
+      "launchSpeed": 102.3,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-04",
     "2026-07-05",
     "2026-07-06",
     "2026-07-07",
     "2026-07-08",
     "2026-07-09",
-    "2026-07-10"
+    "2026-07-10",
+    "2026-07-11"
   ],
   "rosterSummary": {
     "teamCount": 21,
