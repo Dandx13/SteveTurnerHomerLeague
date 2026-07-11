@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-11T18:34:52.714Z",
+  "updatedAt": "2026-07-11T19:49:11.435Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20658,6 +20658,19 @@
       "distance": 347,
       "launchSpeed": 98.3,
       "launchAngle": 36
+    },
+    {
+      "key": "668904-823682-13-13",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 823682,
+      "atBatIndex": 13,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 419,
+      "launchSpeed": 107.7,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
