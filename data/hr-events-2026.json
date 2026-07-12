@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-11T23:29:22.567Z",
+  "updatedAt": "2026-07-12T01:07:19.144Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20710,17 +20710,56 @@
       "distance": 425,
       "launchSpeed": 112.8,
       "launchAngle": 28
+    },
+    {
+      "key": "624413-824813-26-26",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 824813,
+      "atBatIndex": 26,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 420,
+      "launchSpeed": 103.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "621493-824813-40-40",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 824813,
+      "atBatIndex": 40,
+      "playerId": 621493,
+      "playerName": "Taylor Ward",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 354,
+      "launchSpeed": 96.6,
+      "launchAngle": 35
+    },
+    {
+      "key": "553993-824492-29-29",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 824492,
+      "atBatIndex": 29,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 370,
+      "launchSpeed": 101.7,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-05",
     "2026-07-06",
     "2026-07-07",
     "2026-07-08",
     "2026-07-09",
     "2026-07-10",
-    "2026-07-11"
+    "2026-07-11",
+    "2026-07-12"
   ],
   "rosterSummary": {
     "teamCount": 21,
