@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-12T01:07:19.144Z",
+  "updatedAt": "2026-07-12T04:36:46.278Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20748,6 +20748,45 @@
       "fantasyTeam": "Dan/Joe",
       "distance": 370,
       "launchSpeed": 101.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "683002-824813-56-56",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 824813,
+      "atBatIndex": 56,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 417,
+      "launchSpeed": 102.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "608324-824492-54-54",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 824492,
+      "atBatIndex": 54,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 354,
+      "launchSpeed": 93.4,
+      "launchAngle": 33
+    },
+    {
+      "key": "665489-823276-60-60",
+      "season": 2026,
+      "date": "2026-07-11",
+      "gamePk": 823276,
+      "atBatIndex": 60,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 385,
+      "launchSpeed": 99.4,
       "launchAngle": 34
     }
   ],
