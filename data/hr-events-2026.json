@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-12T19:46:19.320Z",
+  "updatedAt": "2026-07-12T20:30:18.840Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20892,6 +20892,58 @@
       "distance": 378,
       "launchSpeed": 101.7,
       "launchAngle": 30
+    },
+    {
+      "key": "694212-824814-62-62",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 824814,
+      "atBatIndex": 62,
+      "playerId": 694212,
+      "playerName": "Samuel Basallo",
+      "fantasyTeam": "John Eames",
+      "distance": 404,
+      "launchSpeed": 105,
+      "launchAngle": 22
+    },
+    {
+      "key": "666018-822951-62-62",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 822951,
+      "atBatIndex": 62,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 337,
+      "launchSpeed": 96,
+      "launchAngle": 35
+    },
+    {
+      "key": "514888-822876-29-29",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 822876,
+      "atBatIndex": 29,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 387,
+      "launchSpeed": 100.9,
+      "launchAngle": 23
+    },
+    {
+      "key": "660271-823925-3-3",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 823925,
+      "atBatIndex": 3,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 437,
+      "launchSpeed": 111.8,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
