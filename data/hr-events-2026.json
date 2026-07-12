@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-12T17:36:03.291Z",
+  "updatedAt": "2026-07-12T18:33:45.448Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20801,6 +20801,32 @@
       "distance": 338,
       "launchSpeed": 103.6,
       "launchAngle": 24
+    },
+    {
+      "key": "695578-822708-3-3",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 822708,
+      "atBatIndex": 3,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 434,
+      "launchSpeed": 110,
+      "launchAngle": 26
+    },
+    {
+      "key": "669127-824574-2-2",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 824574,
+      "atBatIndex": 2,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 411,
+      "launchSpeed": 105.1,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
