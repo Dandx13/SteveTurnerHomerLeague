@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-12T18:33:45.448Z",
+  "updatedAt": "2026-07-12T19:46:19.320Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20827,6 +20827,71 @@
       "distance": 411,
       "launchSpeed": 105.1,
       "launchAngle": 29
+    },
+    {
+      "key": "668930-823358-69-69",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 823358,
+      "atBatIndex": 69,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 387,
+      "launchSpeed": 100.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "553993-824491-25-25",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 824491,
+      "atBatIndex": 25,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 433,
+      "launchSpeed": 111.3,
+      "launchAngle": 31
+    },
+    {
+      "key": "608324-824491-56-56",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 824491,
+      "atBatIndex": 56,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 387,
+      "launchSpeed": 102.3,
+      "launchAngle": 38
+    },
+    {
+      "key": "596019-823602-41-41",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 823602,
+      "atBatIndex": 41,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 377,
+      "launchSpeed": 98.8,
+      "launchAngle": 31
+    },
+    {
+      "key": "668227-822951-31-31",
+      "season": 2026,
+      "date": "2026-07-12",
+      "gamePk": 822951,
+      "atBatIndex": 31,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 378,
+      "launchSpeed": 101.7,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
