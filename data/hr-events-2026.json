@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-18T21:21:45.644Z",
+  "updatedAt": "2026-07-18T22:11:32.043Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21204,6 +21204,32 @@
       "distance": 405,
       "launchSpeed": 104.5,
       "launchAngle": 37
+    },
+    {
+      "key": "521692-824088-50-50",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824088,
+      "atBatIndex": 50,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 438,
+      "launchSpeed": 105,
+      "launchAngle": 28
+    },
+    {
+      "key": "677800-824738-24-24",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824738,
+      "atBatIndex": 24,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 435,
+      "launchSpeed": 108.5,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
