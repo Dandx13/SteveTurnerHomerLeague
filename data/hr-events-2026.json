@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-18T18:11:06.909Z",
+  "updatedAt": "2026-07-18T19:32:15.914Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21152,6 +21152,32 @@
       "distance": 399,
       "launchSpeed": 107.6,
       "launchAngle": 24
+    },
+    {
+      "key": "683737-824657-5-5",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824657,
+      "atBatIndex": 5,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 402,
+      "launchSpeed": 101.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "656941-823441-6-6",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 823441,
+      "atBatIndex": 6,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 399,
+      "launchSpeed": 106,
+      "launchAngle": 41
     }
   ],
   "lastScanMode": "rolling-7-day",
