@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-18T04:07:38.598Z",
+  "updatedAt": "2026-07-18T06:16:36.627Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21138,6 +21138,19 @@
       "fantasyTeam": "Ryan/Paul",
       "distance": 393,
       "launchSpeed": 105.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "669127-824981-84-84",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824981,
+      "atBatIndex": 84,
+      "playerId": 669127,
+      "playerName": "Shea Langeliers",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 399,
+      "launchSpeed": 107.6,
       "launchAngle": 24
     }
   ],
