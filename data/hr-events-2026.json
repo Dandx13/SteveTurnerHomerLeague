@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-17T23:28:13.145Z",
+  "updatedAt": "2026-07-18T00:59:00.478Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -20944,17 +20944,95 @@
       "distance": 437,
       "launchSpeed": 111.8,
       "launchAngle": 33
+    },
+    {
+      "key": "677800-824737-9-9",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824737,
+      "atBatIndex": 9,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 422,
+      "launchSpeed": 106.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "575929-824737-10-10",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824737,
+      "atBatIndex": 10,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 367,
+      "launchSpeed": 107.6,
+      "launchAngle": 42
+    },
+    {
+      "key": "691406-824737-22-22",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824737,
+      "atBatIndex": 22,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 406,
+      "launchSpeed": 111.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "677800-824737-26-26",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824737,
+      "atBatIndex": 26,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 405,
+      "launchSpeed": 103.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "686948-824901-31-31",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824901,
+      "atBatIndex": 31,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 419,
+      "launchSpeed": 105.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "621566-824901-33-33",
+      "season": 2026,
+      "date": "2026-07-17",
+      "gamePk": 824901,
+      "atBatIndex": 33,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 420,
+      "launchSpeed": 110.7,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-11",
     "2026-07-12",
     "2026-07-13",
     "2026-07-14",
     "2026-07-15",
     "2026-07-16",
-    "2026-07-17"
+    "2026-07-17",
+    "2026-07-18"
   ],
   "rosterSummary": {
     "teamCount": 21,
