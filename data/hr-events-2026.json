@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-19T00:10:51.433Z",
+  "updatedAt": "2026-07-19T03:55:04.168Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21242,6 +21242,71 @@
       "fantasyTeam": "Austin",
       "distance": 412,
       "launchSpeed": 103.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "646240-823116-38-38",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 823116,
+      "atBatIndex": 38,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 339,
+      "launchSpeed": 98.6,
+      "launchAngle": 44
+    },
+    {
+      "key": "642715-823116-41-41",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 823116,
+      "atBatIndex": 41,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 358,
+      "launchSpeed": 100.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "691016-824979-49-49",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824979,
+      "atBatIndex": 49,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 406,
+      "launchSpeed": 100.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "679529-824008-4-4",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824008,
+      "atBatIndex": 4,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 415,
+      "launchSpeed": 104.2,
+      "launchAngle": 34
+    },
+    {
+      "key": "679529-824008-37-37",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824008,
+      "atBatIndex": 37,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 420,
+      "launchSpeed": 107.5,
       "launchAngle": 28
     }
   ],
