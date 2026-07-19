@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-19T17:18:39.153Z",
+  "updatedAt": "2026-07-19T18:13:12.327Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21308,6 +21308,58 @@
       "distance": 420,
       "launchSpeed": 107.5,
       "launchAngle": 28
+    },
+    {
+      "key": "663757-823523-26-26",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 823523,
+      "atBatIndex": 26,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 402,
+      "launchSpeed": 108.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "695657-822786-37-37",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 822786,
+      "atBatIndex": 37,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 388,
+      "launchSpeed": 106.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "596019-823439-3-3",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 823439,
+      "atBatIndex": 3,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 420,
+      "launchSpeed": 106.7,
+      "launchAngle": 37
+    },
+    {
+      "key": "663586-824897-13-13",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824897,
+      "atBatIndex": 13,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 416,
+      "launchSpeed": 103.2,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
