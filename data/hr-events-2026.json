@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-19T19:34:50.248Z",
+  "updatedAt": "2026-07-19T20:26:50.309Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21451,6 +21451,58 @@
       "distance": 425,
       "launchSpeed": 104.5,
       "launchAngle": 27
+    },
+    {
+      "key": "686948-824897-73-73",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824897,
+      "atBatIndex": 73,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 392,
+      "launchSpeed": 107.9,
+      "launchAngle": 34
+    },
+    {
+      "key": "694671-824897-78-78",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824897,
+      "atBatIndex": 78,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 422,
+      "launchSpeed": 105.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "665487-824086-50-50",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824086,
+      "atBatIndex": 50,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 401,
+      "launchSpeed": 107.6,
+      "launchAngle": 20
+    },
+    {
+      "key": "701398-824330-14-14",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824330,
+      "atBatIndex": 14,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 456,
+      "launchSpeed": 105.3,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
