@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-18T23:11:42.476Z",
+  "updatedAt": "2026-07-19T00:10:51.433Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21230,17 +21230,30 @@
       "distance": 435,
       "launchSpeed": 108.5,
       "launchAngle": 25
+    },
+    {
+      "key": "677800-824738-59-59",
+      "season": 2026,
+      "date": "2026-07-18",
+      "gamePk": 824738,
+      "atBatIndex": 59,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 412,
+      "launchSpeed": 103.7,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-12",
     "2026-07-13",
     "2026-07-14",
     "2026-07-15",
     "2026-07-16",
     "2026-07-17",
-    "2026-07-18"
+    "2026-07-18",
+    "2026-07-19"
   ],
   "rosterSummary": {
     "teamCount": 21,
