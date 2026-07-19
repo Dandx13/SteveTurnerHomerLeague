@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-19T18:13:12.327Z",
+  "updatedAt": "2026-07-19T19:34:50.248Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21360,6 +21360,97 @@
       "distance": 416,
       "launchSpeed": 103.2,
       "launchAngle": 34
+    },
+    {
+      "key": "575929-824739-44-44",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824739,
+      "atBatIndex": 44,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 414,
+      "launchSpeed": 106.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "686948-824897-21-21",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824897,
+      "atBatIndex": 21,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 395,
+      "launchSpeed": 98.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "663586-824897-31-31",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824897,
+      "atBatIndex": 31,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 413,
+      "launchSpeed": 109.4,
+      "launchAngle": 20
+    },
+    {
+      "key": "695506-824086-7-7",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824086,
+      "atBatIndex": 7,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 432,
+      "launchSpeed": 113.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "701538-824086-34-34",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824086,
+      "atBatIndex": 34,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 405,
+      "launchSpeed": 101.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "608324-824653-6-6",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824653,
+      "atBatIndex": 6,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 383,
+      "launchSpeed": 101.4,
+      "launchAngle": 31
+    },
+    {
+      "key": "696100-824330-10-10",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824330,
+      "atBatIndex": 10,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 425,
+      "launchSpeed": 104.5,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
