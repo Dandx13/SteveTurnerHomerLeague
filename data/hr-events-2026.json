@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-19T22:27:01.789Z",
+  "updatedAt": "2026-07-19T23:31:57.699Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21568,6 +21568,19 @@
       "distance": 442,
       "launchSpeed": 105.1,
       "launchAngle": 29
+    },
+    {
+      "key": "682985-824007-69-69",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 824007,
+      "atBatIndex": 69,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 390,
+      "launchSpeed": 105.6,
+      "launchAngle": 42
     }
   ],
   "lastScanMode": "rolling-7-day",
