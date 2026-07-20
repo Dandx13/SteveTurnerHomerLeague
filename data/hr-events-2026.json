@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-20T01:07:53.444Z",
+  "updatedAt": "2026-07-20T04:50:30.244Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21581,6 +21581,19 @@
       "distance": 390,
       "launchSpeed": 105.6,
       "launchAngle": 42
+    },
+    {
+      "key": "665862-823521-61-61",
+      "season": 2026,
+      "date": "2026-07-19",
+      "gamePk": 823521,
+      "atBatIndex": 61,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 402,
+      "launchSpeed": 105.3,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
