@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-20T23:35:07.716Z",
+  "updatedAt": "2026-07-21T01:04:08.939Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21607,17 +21607,134 @@
       "distance": 377,
       "launchSpeed": 106.1,
       "launchAngle": 24
+    },
+    {
+      "key": "665862-823522-29-29",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 823522,
+      "atBatIndex": 29,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 376,
+      "launchSpeed": 102.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "592518-824898-20-20",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824898,
+      "atBatIndex": 20,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 402,
+      "launchSpeed": 103.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "671739-824898-31-31",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824898,
+      "atBatIndex": 31,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 341,
+      "launchSpeed": 100.9,
+      "launchAngle": 40
+    },
+    {
+      "key": "645277-824898-40-40",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824898,
+      "atBatIndex": 40,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 393,
+      "launchSpeed": 101.2,
+      "launchAngle": 34
+    },
+    {
+      "key": "671218-824087-25-25",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824087,
+      "atBatIndex": 25,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 430,
+      "launchSpeed": 107.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "521692-824087-29-29",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824087,
+      "atBatIndex": 29,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 440,
+      "launchSpeed": 105.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "683734-823762-27-27",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 823762,
+      "atBatIndex": 27,
+      "playerId": 683734,
+      "playerName": "Andrew Vaughn",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 393,
+      "launchSpeed": 104.9,
+      "launchAngle": 21
+    },
+    {
+      "key": "682985-824654-3-3",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824654,
+      "atBatIndex": 3,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 408,
+      "launchSpeed": 102.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "670541-824167-18-18",
+      "season": 2026,
+      "date": "2026-07-20",
+      "gamePk": 824167,
+      "atBatIndex": 18,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 428,
+      "launchSpeed": 113.8,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-14",
     "2026-07-15",
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
     "2026-07-19",
-    "2026-07-20"
+    "2026-07-20",
+    "2026-07-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
