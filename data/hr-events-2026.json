@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-22T17:15:22.628Z",
+  "updatedAt": "2026-07-22T18:36:24.207Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22101,6 +22101,19 @@
       "distance": 409,
       "launchSpeed": 107.9,
       "launchAngle": 35
+    },
+    {
+      "key": "543760-823761-10-10",
+      "season": 2026,
+      "date": "2026-07-22",
+      "gamePk": 823761,
+      "atBatIndex": 10,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 377,
+      "launchSpeed": 99.5,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
