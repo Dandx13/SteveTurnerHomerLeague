@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-21T23:51:15.847Z",
+  "updatedAt": "2026-07-22T01:43:02.297Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -21880,17 +21880,108 @@
       "distance": 389,
       "launchSpeed": 103.6,
       "launchAngle": 30
+    },
+    {
+      "key": "571970-823437-25-25",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 823437,
+      "atBatIndex": 25,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 421,
+      "launchSpeed": 102.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "701538-824895-27-27",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 824895,
+      "atBatIndex": 27,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 405,
+      "launchSpeed": 99,
+      "launchAngle": 29
+    },
+    {
+      "key": "592518-824895-37-37",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 824895,
+      "atBatIndex": 37,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 412,
+      "launchSpeed": 104.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "592518-824895-49-49",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 824895,
+      "atBatIndex": 49,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 418,
+      "launchSpeed": 105,
+      "launchAngle": 24
+    },
+    {
+      "key": "665487-824895-67-67",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 824895,
+      "atBatIndex": 67,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 474,
+      "launchSpeed": 111,
+      "launchAngle": 27
+    },
+    {
+      "key": "607043-822871-7-7",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 822871,
+      "atBatIndex": 7,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 351,
+      "launchSpeed": 97.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "670623-824165-42-42",
+      "season": 2026,
+      "date": "2026-07-21",
+      "gamePk": 824165,
+      "atBatIndex": 42,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 388,
+      "launchSpeed": 101.1,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-15",
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
     "2026-07-19",
     "2026-07-20",
-    "2026-07-21"
+    "2026-07-21",
+    "2026-07-22"
   ],
   "rosterSummary": {
     "teamCount": 21,
