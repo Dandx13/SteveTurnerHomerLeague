@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-23T01:03:05.433Z",
+  "updatedAt": "2026-07-23T04:27:02.144Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22231,6 +22231,45 @@
       "distance": 391,
       "launchSpeed": 101.6,
       "launchAngle": 28
+    },
+    {
+      "key": "700932-824408-74-74",
+      "season": 2026,
+      "date": "2026-07-22",
+      "gamePk": 824408,
+      "atBatIndex": 74,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 344,
+      "launchSpeed": 97.3,
+      "launchAngle": 41
+    },
+    {
+      "key": "670541-824166-62-62",
+      "season": 2026,
+      "date": "2026-07-22",
+      "gamePk": 824166,
+      "atBatIndex": 62,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 394,
+      "launchSpeed": 104.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "670623-824166-63-63",
+      "season": 2026,
+      "date": "2026-07-22",
+      "gamePk": 824166,
+      "atBatIndex": 63,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 398,
+      "launchSpeed": 102.9,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
