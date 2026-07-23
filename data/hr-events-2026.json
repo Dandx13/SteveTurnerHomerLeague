@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-23T15:21:57.073Z",
+  "updatedAt": "2026-07-23T16:54:12.686Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22270,6 +22270,19 @@
       "distance": 398,
       "launchSpeed": 102.9,
       "launchAngle": 36
+    },
+    {
+      "key": "671739-824893-15-15",
+      "season": 2026,
+      "date": "2026-07-23",
+      "gamePk": 824893,
+      "atBatIndex": 15,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 420,
+      "launchSpeed": 109.6,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
