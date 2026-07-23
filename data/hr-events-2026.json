@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-23T18:11:04.655Z",
+  "updatedAt": "2026-07-23T19:46:13.543Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22296,6 +22296,19 @@
       "distance": 398,
       "launchSpeed": 99.6,
       "launchAngle": 33
+    },
+    {
+      "key": "686948-824893-56-56",
+      "season": 2026,
+      "date": "2026-07-23",
+      "gamePk": 824893,
+      "atBatIndex": 56,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 370,
+      "launchSpeed": 98.4,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
