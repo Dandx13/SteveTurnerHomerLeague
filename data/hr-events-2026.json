@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-24T19:41:24.054Z",
+  "updatedAt": "2026-07-24T20:50:00.688Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22309,6 +22309,19 @@
       "distance": 370,
       "launchSpeed": 98.4,
       "launchAngle": 37
+    },
+    {
+      "key": "592885-823759-6-6",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823759,
+      "atBatIndex": 6,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 413,
+      "launchSpeed": 105.5,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
