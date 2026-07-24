@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-24T22:52:59.314Z",
+  "updatedAt": "2026-07-24T23:58:00.201Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22335,6 +22335,19 @@
       "distance": 434,
       "launchSpeed": 108.6,
       "launchAngle": 35
+    },
+    {
+      "key": "673357-823601-12-12",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823601,
+      "atBatIndex": 12,
+      "playerId": 673357,
+      "playerName": "Luis Robert Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 381,
+      "launchSpeed": 101.8,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
