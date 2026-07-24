@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-24T20:50:00.688Z",
+  "updatedAt": "2026-07-24T21:51:19.048Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22322,6 +22322,19 @@
       "distance": 413,
       "launchSpeed": 105.5,
       "launchAngle": 31
+    },
+    {
+      "key": "668930-823759-44-44",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823759,
+      "atBatIndex": 44,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 434,
+      "launchSpeed": 108.6,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
