@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-25T20:29:52.081Z",
+  "updatedAt": "2026-07-25T21:28:37.267Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22491,6 +22491,32 @@
       "distance": 401,
       "launchSpeed": 105.3,
       "launchAngle": 27
+    },
+    {
+      "key": "646240-823197-37-37",
+      "season": 2026,
+      "date": "2026-07-25",
+      "gamePk": 823197,
+      "atBatIndex": 37,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 401,
+      "launchSpeed": 105.8,
+      "launchAngle": 22
+    },
+    {
+      "key": "543807-824734-18-18",
+      "season": 2026,
+      "date": "2026-07-25",
+      "gamePk": 824734,
+      "atBatIndex": 18,
+      "playerId": 543807,
+      "playerName": "George Springer",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 366,
+      "launchSpeed": 97.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
