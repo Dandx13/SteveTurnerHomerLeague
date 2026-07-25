@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-25T22:29:23.058Z",
+  "updatedAt": "2026-07-25T23:34:06.659Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22517,6 +22517,19 @@
       "distance": 366,
       "launchSpeed": 97.8,
       "launchAngle": 26
+    },
+    {
+      "key": "669224-823435-17-17",
+      "season": 2026,
+      "date": "2026-07-25",
+      "gamePk": 823435,
+      "atBatIndex": 17,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 430,
+      "launchSpeed": 105.7,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
