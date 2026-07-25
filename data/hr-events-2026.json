@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-24T23:58:00.201Z",
+  "updatedAt": "2026-07-25T03:30:34.690Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22348,17 +22348,147 @@
       "distance": 381,
       "launchSpeed": 101.8,
       "launchAngle": 37
+    },
+    {
+      "key": "691718-823352-39-39",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823352,
+      "atBatIndex": 39,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 375,
+      "launchSpeed": 100.6,
+      "launchAngle": 36
+    },
+    {
+      "key": "686948-824812-57-57",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 824812,
+      "atBatIndex": 57,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 389,
+      "launchSpeed": 105.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "621566-824812-78-78",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 824812,
+      "atBatIndex": 78,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 416,
+      "launchSpeed": 104.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "663656-823601-58-58",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823601,
+      "atBatIndex": 58,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 386,
+      "launchSpeed": 103.6,
+      "launchAngle": 23
+    },
+    {
+      "key": "678882-824733-23-23",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 824733,
+      "atBatIndex": 23,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 376,
+      "launchSpeed": 101.4,
+      "launchAngle": 23
+    },
+    {
+      "key": "672960-824733-56-56",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 824733,
+      "atBatIndex": 56,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 408,
+      "launchSpeed": 100.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "694671-822872-4-4",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 822872,
+      "atBatIndex": 4,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 384,
+      "launchSpeed": 97.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "669394-822872-31-31",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 822872,
+      "atBatIndex": 31,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 362,
+      "launchSpeed": 98.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "553993-823031-52-52",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823031,
+      "atBatIndex": 52,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 435,
+      "launchSpeed": 110.5,
+      "launchAngle": 34
+    },
+    {
+      "key": "646240-823196-8-8",
+      "season": 2026,
+      "date": "2026-07-24",
+      "gamePk": 823196,
+      "atBatIndex": 8,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 362,
+      "launchSpeed": 101.8,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-18",
     "2026-07-19",
     "2026-07-20",
     "2026-07-21",
     "2026-07-22",
     "2026-07-23",
-    "2026-07-24"
+    "2026-07-24",
+    "2026-07-25"
   ],
   "rosterSummary": {
     "teamCount": 21,
