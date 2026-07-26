@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-26T19:49:13.041Z",
+  "updatedAt": "2026-07-26T20:41:52.388Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22660,6 +22660,110 @@
       "distance": 411,
       "launchSpeed": 104.4,
       "launchAngle": 32
+    },
+    {
+      "key": "695578-822706-72-72",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 822706,
+      "atBatIndex": 72,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 418,
+      "launchSpeed": 109.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "673548-823354-73-73",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823354,
+      "atBatIndex": 73,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 392,
+      "launchSpeed": 103.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "624413-824810-62-62",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 824810,
+      "atBatIndex": 62,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 419,
+      "launchSpeed": 109.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "543760-823599-61-61",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823599,
+      "atBatIndex": 61,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 366,
+      "launchSpeed": 96.8,
+      "launchAngle": 37
+    },
+    {
+      "key": "592518-823840-58-58",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823840,
+      "atBatIndex": 58,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 399,
+      "launchSpeed": 106.1,
+      "launchAngle": 21
+    },
+    {
+      "key": "701538-823840-60-60",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823840,
+      "atBatIndex": 60,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 395,
+      "launchSpeed": 109,
+      "launchAngle": 23
+    },
+    {
+      "key": "701762-823678-44-44",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823678,
+      "atBatIndex": 44,
+      "playerId": 701762,
+      "playerName": "Nick Kurtz",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 412,
+      "launchSpeed": 104.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "683734-823755-42-42",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823755,
+      "atBatIndex": 42,
+      "playerId": 683734,
+      "playerName": "Andrew Vaughn",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 404,
+      "launchSpeed": 103.9,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
