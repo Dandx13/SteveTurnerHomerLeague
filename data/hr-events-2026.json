@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-26T01:11:09.256Z",
+  "updatedAt": "2026-07-26T04:42:50.547Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22569,6 +22569,19 @@
       "distance": 392,
       "launchSpeed": 107.7,
       "launchAngle": 31
+    },
+    {
+      "key": "645277-824811-58-58",
+      "season": 2026,
+      "date": "2026-07-25",
+      "gamePk": 824811,
+      "atBatIndex": 58,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 380,
+      "launchSpeed": 101.3,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
