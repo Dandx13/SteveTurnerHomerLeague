@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-26T20:41:52.388Z",
+  "updatedAt": "2026-07-26T21:40:41.669Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22763,6 +22763,58 @@
       "fantasyTeam": "Mike/Nick/Evan",
       "distance": 404,
       "launchSpeed": 103.9,
+      "launchAngle": 28
+    },
+    {
+      "key": "808959-824572-71-71",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 824572,
+      "atBatIndex": 71,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 398,
+      "launchSpeed": 101.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "668227-822870-55-55",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 822870,
+      "atBatIndex": 55,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 400,
+      "launchSpeed": 101.2,
+      "launchAngle": 29
+    },
+    {
+      "key": "624585-823194-24-24",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823194,
+      "atBatIndex": 24,
+      "playerId": 624585,
+      "playerName": "Jorge Soler",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 419,
+      "launchSpeed": 105.6,
+      "launchAngle": 27
+    },
+    {
+      "key": "666176-823194-26-26",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823194,
+      "atBatIndex": 26,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 446,
+      "launchSpeed": 108.6,
       "launchAngle": 28
     }
   ],
