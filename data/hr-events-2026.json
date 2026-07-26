@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-26T18:34:42.518Z",
+  "updatedAt": "2026-07-26T19:49:13.041Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22621,6 +22621,45 @@
       "distance": 385,
       "launchSpeed": 104.1,
       "launchAngle": 30
+    },
+    {
+      "key": "695578-822706-41-41",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 822706,
+      "atBatIndex": 41,
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "fantasyTeam": "Pete/Zack",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "682829-823028-18-18",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823028,
+      "atBatIndex": 18,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 410,
+      "launchSpeed": 105.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "671056-823028-23-23",
+      "season": 2026,
+      "date": "2026-07-26",
+      "gamePk": 823028,
+      "atBatIndex": 23,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 411,
+      "launchSpeed": 104.4,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
