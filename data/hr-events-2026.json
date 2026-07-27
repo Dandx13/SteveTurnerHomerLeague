@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-27T18:19:03.219Z",
+  "updatedAt": "2026-07-27T19:59:41.812Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22829,6 +22829,32 @@
       "distance": 417,
       "launchSpeed": 102.5,
       "launchAngle": 26
+    },
+    {
+      "key": "668227-822868-8-8",
+      "season": 2026,
+      "date": "2026-07-27",
+      "gamePk": 822868,
+      "atBatIndex": 8,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 395,
+      "launchSpeed": 103.3,
+      "launchAngle": 30
+    },
+    {
+      "key": "669394-822868-26-26",
+      "season": 2026,
+      "date": "2026-07-27",
+      "gamePk": 822868,
+      "atBatIndex": 26,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 403,
+      "launchSpeed": 105.1,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
