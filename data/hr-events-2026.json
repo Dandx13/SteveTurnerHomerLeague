@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-28T17:09:06.640Z",
+  "updatedAt": "2026-07-28T18:44:54.497Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -22959,6 +22959,32 @@
       "distance": 382,
       "launchSpeed": 98.4,
       "launchAngle": 40
+    },
+    {
+      "key": "700932-824490-5-5",
+      "season": 2026,
+      "date": "2026-07-27",
+      "gamePk": 824490,
+      "atBatIndex": 5,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 369,
+      "launchSpeed": 100.1,
+      "launchAngle": 32
+    },
+    {
+      "key": "701398-824490-25-25",
+      "season": 2026,
+      "date": "2026-07-27",
+      "gamePk": 824490,
+      "atBatIndex": 25,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 416,
+      "launchSpeed": 101.2,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
