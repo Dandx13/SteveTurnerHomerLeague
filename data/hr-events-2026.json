@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-30T17:54:11.489Z",
+  "updatedAt": "2026-07-30T19:23:04.016Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23258,6 +23258,19 @@
       "distance": 372,
       "launchSpeed": 95.4,
       "launchAngle": 33
+    },
+    {
+      "key": "695506-823674-17-17",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 823674,
+      "atBatIndex": 17,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 438,
+      "launchSpeed": 113.7,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
