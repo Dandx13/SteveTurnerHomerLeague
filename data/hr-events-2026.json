@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-30T00:12:36.780Z",
+  "updatedAt": "2026-07-30T03:32:08.968Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23180,6 +23180,84 @@
       "distance": 372,
       "launchSpeed": 99.1,
       "launchAngle": 31
+    },
+    {
+      "key": "700932-824487-58-58",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 824487,
+      "atBatIndex": 58,
+      "playerId": 700932,
+      "playerName": "Kyle Manzardo",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 425,
+      "launchSpeed": 104.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "808959-824567-61-61",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 824567,
+      "atBatIndex": 61,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 404,
+      "launchSpeed": 104.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "691718-823022-71-71",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 823022,
+      "atBatIndex": 71,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 424,
+      "launchSpeed": 109.1,
+      "launchAngle": 33
+    },
+    {
+      "key": "673237-824002-13-13",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 824002,
+      "atBatIndex": 13,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 425,
+      "launchSpeed": 106.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "671732-824973-38-38",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 824973,
+      "atBatIndex": 38,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 422,
+      "launchSpeed": 103.4,
+      "launchAngle": 33
+    },
+    {
+      "key": "681624-823924-6-6",
+      "season": 2026,
+      "date": "2026-07-29",
+      "gamePk": 823924,
+      "atBatIndex": 6,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 372,
+      "launchSpeed": 95.4,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
