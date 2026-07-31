@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-31T02:51:55.184Z",
+  "updatedAt": "2026-07-31T05:56:53.401Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23310,6 +23310,45 @@
       "distance": 421,
       "launchSpeed": 104.9,
       "launchAngle": 29
+    },
+    {
+      "key": "677800-824974-59-59",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 824974,
+      "atBatIndex": 59,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 422,
+      "launchSpeed": 102.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "575929-824974-60-60",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 824974,
+      "atBatIndex": 60,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 414,
+      "launchSpeed": 104.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "606192-823921-50-50",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 823921,
+      "atBatIndex": 50,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 412,
+      "launchSpeed": 102.8,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
