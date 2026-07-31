@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-31T22:34:39.406Z",
+  "updatedAt": "2026-07-31T23:38:05.845Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23349,6 +23349,45 @@
       "distance": 412,
       "launchSpeed": 102.8,
       "launchAngle": 28
+    },
+    {
+      "key": "701398-824486-38-38",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824486,
+      "atBatIndex": 38,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 409,
+      "launchSpeed": 104.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "624413-824809-7-7",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824809,
+      "atBatIndex": 7,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 394,
+      "launchSpeed": 109.3,
+      "launchAngle": 24
+    },
+    {
+      "key": "621566-824892-7-7",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824892,
+      "atBatIndex": 7,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 396,
+      "launchSpeed": 107.2,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
