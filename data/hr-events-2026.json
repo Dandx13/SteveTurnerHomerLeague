@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-07-30T23:55:13.957Z",
+  "updatedAt": "2026-07-31T02:51:55.184Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23271,17 +23271,56 @@
       "distance": 438,
       "launchSpeed": 113.7,
       "launchAngle": 31
+    },
+    {
+      "key": "664040-824488-42-42",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 824488,
+      "atBatIndex": 42,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 402,
+      "launchSpeed": 103.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "669065-823595-23-23",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 823595,
+      "atBatIndex": 23,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 368,
+      "launchSpeed": 112.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "660670-824894-27-27",
+      "season": 2026,
+      "date": "2026-07-30",
+      "gamePk": 824894,
+      "atBatIndex": 27,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 421,
+      "launchSpeed": 104.9,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-24",
     "2026-07-25",
     "2026-07-26",
     "2026-07-27",
     "2026-07-28",
     "2026-07-29",
-    "2026-07-30"
+    "2026-07-30",
+    "2026-07-31"
   ],
   "rosterSummary": {
     "teamCount": 21,
