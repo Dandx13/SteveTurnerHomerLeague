@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-01T01:12:53.248Z",
+  "updatedAt": "2026-08-01T04:38:22.412Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23453,6 +23453,110 @@
       "distance": 421,
       "launchSpeed": 112.8,
       "launchAngle": 19
+    },
+    {
+      "key": "596019-823593-57-57",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 823593,
+      "atBatIndex": 57,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 392,
+      "launchSpeed": 103.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "670623-824164-39-39",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824164,
+      "atBatIndex": 39,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 395,
+      "launchSpeed": 101.2,
+      "launchAngle": 35
+    },
+    {
+      "key": "572233-824164-40-40",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824164,
+      "atBatIndex": 40,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 428,
+      "launchSpeed": 110.1,
+      "launchAngle": 23
+    },
+    {
+      "key": "673237-824164-62-62",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 824164,
+      "atBatIndex": 62,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 407,
+      "launchSpeed": 104.9,
+      "launchAngle": 33
+    },
+    {
+      "key": "668930-823999-31-31",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 823999,
+      "atBatIndex": 31,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 398,
+      "launchSpeed": 102,
+      "launchAngle": 35
+    },
+    {
+      "key": "660271-823922-42-42",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 823922,
+      "atBatIndex": 42,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 386,
+      "launchSpeed": 112.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "678882-823922-55-55",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 823922,
+      "atBatIndex": 55,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 405,
+      "launchSpeed": 106,
+      "launchAngle": 30
+    },
+    {
+      "key": "668904-823111-47-47",
+      "season": 2026,
+      "date": "2026-07-31",
+      "gamePk": 823111,
+      "atBatIndex": 47,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 419,
+      "launchSpeed": 107.3,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
