@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-02T00:11:21.429Z",
+  "updatedAt": "2026-08-02T03:53:54.541Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23609,6 +23609,110 @@
       "distance": 372,
       "launchSpeed": 106.2,
       "launchAngle": 25
+    },
+    {
+      "key": "682998-824405-62-62",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824405,
+      "atBatIndex": 62,
+      "playerId": 682998,
+      "playerName": "Corbin Carroll",
+      "fantasyTeam": "Nate",
+      "distance": 403,
+      "launchSpeed": 101.6,
+      "launchAngle": 26
+    },
+    {
+      "key": "695506-824326-17-17",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824326,
+      "atBatIndex": 17,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 410,
+      "launchSpeed": 102.6,
+      "launchAngle": 37
+    },
+    {
+      "key": "521692-824326-18-18",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824326,
+      "atBatIndex": 18,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 425,
+      "launchSpeed": 104.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "696100-824326-26-26",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824326,
+      "atBatIndex": 26,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 384,
+      "launchSpeed": 97.6,
+      "launchAngle": 41
+    },
+    {
+      "key": "696100-824326-60-60",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824326,
+      "atBatIndex": 60,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 424,
+      "launchSpeed": 100.9,
+      "launchAngle": 34
+    },
+    {
+      "key": "678882-823920-1-1",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 823920,
+      "atBatIndex": 1,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 389,
+      "launchSpeed": 100.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "606192-823920-13-13",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 823920,
+      "atBatIndex": 13,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 374,
+      "launchSpeed": 100.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "678882-823920-21-21",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 823920,
+      "atBatIndex": 21,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 402,
+      "launchSpeed": 100.5,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
