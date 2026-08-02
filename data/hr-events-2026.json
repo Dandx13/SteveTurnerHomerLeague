@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-02T21:44:10.057Z",
+  "updatedAt": "2026-08-02T22:40:32.436Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23777,6 +23777,45 @@
       "fantasyTeam": "Dan/Joe (2)",
       "distance": 419,
       "launchSpeed": 100.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "646240-823270-64-64",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823270,
+      "atBatIndex": 64,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 359,
+      "launchSpeed": 97.4,
+      "launchAngle": 29
+    },
+    {
+      "key": "663728-823107-58-58",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823107,
+      "atBatIndex": 58,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 418,
+      "launchSpeed": 106.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "668904-823107-66-66",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823107,
+      "atBatIndex": 66,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 402,
+      "launchSpeed": 103,
       "launchAngle": 27
     }
   ],
