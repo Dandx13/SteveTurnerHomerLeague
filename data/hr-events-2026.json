@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-02T19:53:45.978Z",
+  "updatedAt": "2026-08-02T20:51:17.553Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23739,6 +23739,32 @@
       "distance": 401,
       "launchSpeed": 99.7,
       "launchAngle": 29
+    },
+    {
+      "key": "607043-824163-52-52",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 824163,
+      "atBatIndex": 52,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 414,
+      "launchSpeed": 103.2,
+      "launchAngle": 27
+    },
+    {
+      "key": "701538-823270-12-12",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823270,
+      "atBatIndex": 12,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 420,
+      "launchSpeed": 105,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
