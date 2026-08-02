@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-01T23:09:05.689Z",
+  "updatedAt": "2026-08-02T00:11:21.429Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23570,17 +23570,56 @@
       "distance": 350,
       "launchSpeed": 99.2,
       "launchAngle": 38
+    },
+    {
+      "key": "694671-824162-20-20",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824162,
+      "atBatIndex": 20,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 348,
+      "launchSpeed": 103.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "660670-824890-4-4",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824890,
+      "atBatIndex": 4,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 419,
+      "launchSpeed": 103.9,
+      "launchAngle": 33
+    },
+    {
+      "key": "621566-824890-5-5",
+      "season": 2026,
+      "date": "2026-08-01",
+      "gamePk": 824890,
+      "atBatIndex": 5,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 372,
+      "launchSpeed": 106.2,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-26",
     "2026-07-27",
     "2026-07-28",
     "2026-07-29",
     "2026-07-30",
     "2026-07-31",
-    "2026-08-01"
+    "2026-08-01",
+    "2026-08-02"
   ],
   "rosterSummary": {
     "teamCount": 21,
