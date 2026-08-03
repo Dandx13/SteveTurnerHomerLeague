@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-02T23:42:47.254Z",
+  "updatedAt": "2026-08-03T01:16:35.529Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23817,17 +23817,56 @@
       "distance": 402,
       "launchSpeed": 103,
       "launchAngle": 27
+    },
+    {
+      "key": "678882-823919-22-22",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823919,
+      "atBatIndex": 22,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 388,
+      "launchSpeed": 104,
+      "launchAngle": 23
+    },
+    {
+      "key": "677800-823919-23-23",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823919,
+      "atBatIndex": 23,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 431,
+      "launchSpeed": 109.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "680776-823919-46-46",
+      "season": 2026,
+      "date": "2026-08-02",
+      "gamePk": 823919,
+      "atBatIndex": 46,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 420,
+      "launchSpeed": 106.2,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-27",
     "2026-07-28",
     "2026-07-29",
     "2026-07-30",
     "2026-07-31",
     "2026-08-01",
-    "2026-08-02"
+    "2026-08-02",
+    "2026-08-03"
   ],
   "rosterSummary": {
     "teamCount": 21,
