@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-03T23:46:45.335Z",
+  "updatedAt": "2026-08-04T01:10:13.017Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23869,17 +23869,95 @@
       "distance": 350,
       "launchSpeed": 103.6,
       "launchAngle": 22
+    },
+    {
+      "key": "547180-823431-62-62",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 823431,
+      "atBatIndex": 62,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 433,
+      "launchSpeed": 112.6,
+      "launchAngle": 22
+    },
+    {
+      "key": "676475-823520-31-31",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 823520,
+      "atBatIndex": 31,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 365,
+      "launchSpeed": 108.3,
+      "launchAngle": 22
+    },
+    {
+      "key": "669224-823520-43-43",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 823520,
+      "atBatIndex": 43,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 394,
+      "launchSpeed": 104.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "663757-823520-44-44",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 823520,
+      "atBatIndex": 44,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 355,
+      "launchSpeed": 90.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "673548-824647-8-8",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824647,
+      "atBatIndex": 8,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 367,
+      "launchSpeed": 106.6,
+      "launchAngle": 20
+    },
+    {
+      "key": "691406-824324-2-2",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824324,
+      "atBatIndex": 2,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 422,
+      "launchSpeed": 109.1,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-28",
     "2026-07-29",
     "2026-07-30",
     "2026-07-31",
     "2026-08-01",
     "2026-08-02",
-    "2026-08-03"
+    "2026-08-03",
+    "2026-08-04"
   ],
   "rosterSummary": {
     "teamCount": 21,
