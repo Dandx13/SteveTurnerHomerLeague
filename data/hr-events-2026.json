@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-04T01:10:13.017Z",
+  "updatedAt": "2026-08-04T04:30:41.790Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -23947,6 +23947,84 @@
       "distance": 422,
       "launchSpeed": 109.1,
       "launchAngle": 22
+    },
+    {
+      "key": "676475-823520-70-70",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 823520,
+      "atBatIndex": 70,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 418,
+      "launchSpeed": 109.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "683737-824647-45-45",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824647,
+      "atBatIndex": 45,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 381,
+      "launchSpeed": 101.5,
+      "launchAngle": 22
+    },
+    {
+      "key": "606192-824647-50-50",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824647,
+      "atBatIndex": 50,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 443,
+      "launchSpeed": 111.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "678662-824324-26-26",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824324,
+      "atBatIndex": 26,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 398,
+      "launchSpeed": 104.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "691406-824324-32-32",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824324,
+      "atBatIndex": 32,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 442,
+      "launchSpeed": 112.4,
+      "launchAngle": 22
+    },
+    {
+      "key": "666160-824324-70-70",
+      "season": 2026,
+      "date": "2026-08-03",
+      "gamePk": 824324,
+      "atBatIndex": 70,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 447,
+      "launchSpeed": 104.3,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
