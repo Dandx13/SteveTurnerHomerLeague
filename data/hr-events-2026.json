@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-04T22:33:36.859Z",
+  "updatedAt": "2026-08-04T23:37:44.759Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24025,6 +24025,45 @@
       "distance": 447,
       "launchSpeed": 104.3,
       "launchAngle": 30
+    },
+    {
+      "key": "666182-824403-21-21",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824403,
+      "atBatIndex": 21,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 422,
+      "launchSpeed": 107.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "665862-823517-11-11",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 823517,
+      "atBatIndex": 11,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 397,
+      "launchSpeed": 103.2,
+      "launchAngle": 38
+    },
+    {
+      "key": "680776-824731-10-10",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824731,
+      "atBatIndex": 10,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 414,
+      "launchSpeed": 109,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
