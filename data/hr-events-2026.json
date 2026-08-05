@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T17:09:54.460Z",
+  "updatedAt": "2026-08-05T18:52:28.411Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24207,6 +24207,32 @@
       "distance": 403,
       "launchSpeed": 104.9,
       "launchAngle": 37
+    },
+    {
+      "key": "660271-824646-0-0",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824646,
+      "atBatIndex": 0,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 376,
+      "launchSpeed": 110.2,
+      "launchAngle": 20
+    },
+    {
+      "key": "691718-824646-4-4",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824646,
+      "atBatIndex": 4,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 420,
+      "launchSpeed": 101.5,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
