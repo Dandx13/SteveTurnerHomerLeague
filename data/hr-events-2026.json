@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T01:03:10.937Z",
+  "updatedAt": "2026-08-05T04:23:16.602Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24155,6 +24155,58 @@
       "distance": 401,
       "launchSpeed": 102.8,
       "launchAngle": 34
+    },
+    {
+      "key": "677800-824731-71-71",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824731,
+      "atBatIndex": 71,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 419,
+      "launchSpeed": 105,
+      "launchAngle": 31
+    },
+    {
+      "key": "605137-824084-59-59",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824084,
+      "atBatIndex": 59,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 417,
+      "launchSpeed": 108.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "666160-824321-25-25",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824321,
+      "atBatIndex": 25,
+      "playerId": 666160,
+      "playerName": "Mickey Moniak",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 380,
+      "launchSpeed": 96.5,
+      "launchAngle": 37
+    },
+    {
+      "key": "682985-823108-36-36",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 823108,
+      "atBatIndex": 36,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 403,
+      "launchSpeed": 104.9,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
