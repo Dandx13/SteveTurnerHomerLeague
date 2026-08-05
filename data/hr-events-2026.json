@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T22:42:05.459Z",
+  "updatedAt": "2026-08-05T23:40:06.841Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24311,6 +24311,32 @@
       "distance": 367,
       "launchSpeed": 100.6,
       "launchAngle": 23
+    },
+    {
+      "key": "593871-824402-14-14",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824402,
+      "atBatIndex": 14,
+      "playerId": 593871,
+      "playerName": "Jorge Polanco",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 380,
+      "launchSpeed": 104.9,
+      "launchAngle": 26
+    },
+    {
+      "key": "671732-824482-0-0",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824482,
+      "atBatIndex": 0,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 415,
+      "launchSpeed": 107.9,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
