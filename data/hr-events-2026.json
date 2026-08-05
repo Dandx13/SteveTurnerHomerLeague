@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T18:52:28.411Z",
+  "updatedAt": "2026-08-05T20:20:53.798Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24233,6 +24233,58 @@
       "distance": 420,
       "launchSpeed": 101.5,
       "launchAngle": 27
+    },
+    {
+      "key": "514888-824158-21-21",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824158,
+      "atBatIndex": 21,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 401,
+      "launchSpeed": 107,
+      "launchAngle": 30
+    },
+    {
+      "key": "691718-824646-36-36",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824646,
+      "atBatIndex": 36,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 405,
+      "launchSpeed": 104.4,
+      "launchAngle": 37
+    },
+    {
+      "key": "607043-822866-42-42",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 822866,
+      "atBatIndex": 42,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 350,
+      "launchSpeed": 94,
+      "launchAngle": 29
+    },
+    {
+      "key": "691406-824322-18-18",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824322,
+      "atBatIndex": 18,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 449,
+      "launchSpeed": 105.1,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
