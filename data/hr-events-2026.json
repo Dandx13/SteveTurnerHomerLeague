@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T20:20:53.798Z",
+  "updatedAt": "2026-08-05T21:39:56.181Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24285,6 +24285,32 @@
       "distance": 449,
       "launchSpeed": 105.1,
       "launchAngle": 38
+    },
+    {
+      "key": "571970-824646-70-70",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824646,
+      "atBatIndex": 70,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 413,
+      "launchSpeed": 106.3,
+      "launchAngle": 43
+    },
+    {
+      "key": "660271-824646-73-73",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824646,
+      "atBatIndex": 73,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 367,
+      "launchSpeed": 100.6,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
