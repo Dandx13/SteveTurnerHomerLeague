@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-04T23:37:44.759Z",
+  "updatedAt": "2026-08-05T01:03:10.937Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24064,17 +24064,108 @@
       "distance": 414,
       "launchSpeed": 109,
       "launchAngle": 25
+    },
+    {
+      "key": "677800-824731-42-42",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824731,
+      "atBatIndex": 42,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 430,
+      "launchSpeed": 106.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "645277-824888-11-11",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824888,
+      "atBatIndex": 11,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 397,
+      "launchSpeed": 100.1,
+      "launchAngle": 32
+    },
+    {
+      "key": "663586-824888-50-50",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824888,
+      "atBatIndex": 50,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 433,
+      "launchSpeed": 106.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "694192-823756-22-22",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 823756,
+      "atBatIndex": 22,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 399,
+      "launchSpeed": 102.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "683734-823756-29-29",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 823756,
+      "atBatIndex": 29,
+      "playerId": 683734,
+      "playerName": "Andrew Vaughn",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 417,
+      "launchSpeed": 107.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "663656-824645-8-8",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824645,
+      "atBatIndex": 8,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 376,
+      "launchSpeed": 98.7,
+      "launchAngle": 35
+    },
+    {
+      "key": "621020-824645-16-16",
+      "season": 2026,
+      "date": "2026-08-04",
+      "gamePk": 824645,
+      "atBatIndex": 16,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 401,
+      "launchSpeed": 102.8,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-29",
     "2026-07-30",
     "2026-07-31",
     "2026-08-01",
     "2026-08-02",
     "2026-08-03",
-    "2026-08-04"
+    "2026-08-04",
+    "2026-08-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
