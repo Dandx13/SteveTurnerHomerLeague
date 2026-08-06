@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-05T23:40:06.841Z",
+  "updatedAt": "2026-08-06T01:05:40.106Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24337,17 +24337,43 @@
       "distance": 415,
       "launchSpeed": 107.9,
       "launchAngle": 30
+    },
+    {
+      "key": "680574-824482-36-36",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824482,
+      "atBatIndex": 36,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 378,
+      "launchSpeed": 98.2,
+      "launchAngle": 29
+    },
+    {
+      "key": "677800-824728-23-23",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 824728,
+      "atBatIndex": 23,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 390,
+      "launchSpeed": 109.3,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-30",
     "2026-07-31",
     "2026-08-01",
     "2026-08-02",
     "2026-08-03",
     "2026-08-04",
-    "2026-08-05"
+    "2026-08-05",
+    "2026-08-06"
   ],
   "rosterSummary": {
     "teamCount": 21,
