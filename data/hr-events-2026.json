@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-06T01:05:40.106Z",
+  "updatedAt": "2026-08-06T04:27:16.165Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24363,6 +24363,45 @@
       "distance": 390,
       "launchSpeed": 109.3,
       "launchAngle": 22
+    },
+    {
+      "key": "661388-823753-41-41",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 823753,
+      "atBatIndex": 41,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 400,
+      "launchSpeed": 103,
+      "launchAngle": 28
+    },
+    {
+      "key": "665487-825052-70-70",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 825052,
+      "atBatIndex": 70,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 465,
+      "launchSpeed": 114.7,
+      "launchAngle": 24
+    },
+    {
+      "key": "677594-823106-44-44",
+      "season": 2026,
+      "date": "2026-08-05",
+      "gamePk": 823106,
+      "atBatIndex": 44,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 366,
+      "launchSpeed": 103.3,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
