@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-07T00:15:24.378Z",
+  "updatedAt": "2026-08-07T03:20:06.459Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24519,6 +24519,45 @@
       "distance": 390,
       "launchSpeed": 103.8,
       "launchAngle": 35
+    },
+    {
+      "key": "621566-824885-40-40",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824885,
+      "atBatIndex": 40,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 422,
+      "launchSpeed": 105.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "660670-824885-69-69",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824885,
+      "atBatIndex": 69,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 337,
+      "launchSpeed": 97.3,
+      "launchAngle": 38
+    },
+    {
+      "key": "668904-824080-29-29",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824080,
+      "atBatIndex": 29,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 421,
+      "launchSpeed": 104.2,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
