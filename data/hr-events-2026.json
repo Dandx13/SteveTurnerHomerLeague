@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-06T14:37:52.110Z",
+  "updatedAt": "2026-08-07T00:15:24.378Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24402,17 +24402,134 @@
       "distance": 366,
       "launchSpeed": 103.3,
       "launchAngle": 24
+    },
+    {
+      "key": "687263-824804-19-19",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824804,
+      "atBatIndex": 19,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 411,
+      "launchSpeed": 105,
+      "launchAngle": 30
+    },
+    {
+      "key": "682829-824481-3-3",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824481,
+      "atBatIndex": 3,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 381,
+      "launchSpeed": 104.2,
+      "launchAngle": 36
+    },
+    {
+      "key": "701398-824481-26-26",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824481,
+      "atBatIndex": 26,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 416,
+      "launchSpeed": 105.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "543760-824401-13-13",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824401,
+      "atBatIndex": 13,
+      "playerId": 543760,
+      "playerName": "Marcus Semien",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 392,
+      "launchSpeed": 96.3,
+      "launchAngle": 34
+    },
+    {
+      "key": "596019-824401-65-65",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824401,
+      "atBatIndex": 65,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 383,
+      "launchSpeed": 97.3,
+      "launchAngle": 34
+    },
+    {
+      "key": "694192-823754-5-5",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 823754,
+      "atBatIndex": 5,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 388,
+      "launchSpeed": 100,
+      "launchAngle": 30
+    },
+    {
+      "key": "664040-823754-21-21",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 823754,
+      "atBatIndex": 21,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 384,
+      "launchSpeed": 103.3,
+      "launchAngle": 24
+    },
+    {
+      "key": "608324-824664-69-69",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824664,
+      "atBatIndex": 69,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 368,
+      "launchSpeed": 99.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "660670-824885-19-19",
+      "season": 2026,
+      "date": "2026-08-06",
+      "gamePk": 824885,
+      "atBatIndex": 19,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 390,
+      "launchSpeed": 103.8,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-07-31",
     "2026-08-01",
     "2026-08-02",
     "2026-08-03",
     "2026-08-04",
     "2026-08-05",
-    "2026-08-06"
+    "2026-08-06",
+    "2026-08-07"
   ],
   "rosterSummary": {
     "teamCount": 21,
