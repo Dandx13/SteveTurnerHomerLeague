@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-07T23:01:24.657Z",
+  "updatedAt": "2026-08-07T23:42:45.886Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24558,6 +24558,32 @@
       "distance": 421,
       "launchSpeed": 104.2,
       "launchAngle": 32
+    },
+    {
+      "key": "680776-824727-12-12",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 824727,
+      "atBatIndex": 12,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 376,
+      "launchSpeed": 102,
+      "launchAngle": 28
+    },
+    {
+      "key": "545361-823836-1-1",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 823836,
+      "atBatIndex": 1,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 400,
+      "launchSpeed": 105.1,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
