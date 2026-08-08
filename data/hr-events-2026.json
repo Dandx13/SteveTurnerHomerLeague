@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-08T21:47:53.162Z",
+  "updatedAt": "2026-08-08T22:12:47.234Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24831,6 +24831,32 @@
       "distance": 431,
       "launchSpeed": 105.2,
       "launchAngle": 35
+    },
+    {
+      "key": "691016-824726-57-57",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 824726,
+      "atBatIndex": 57,
+      "playerId": 691016,
+      "playerName": "Tyler Soderstrom",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 413,
+      "launchSpeed": 108.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "665489-823426-2-2",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 823426,
+      "atBatIndex": 2,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 408,
+      "launchSpeed": 103.8,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
