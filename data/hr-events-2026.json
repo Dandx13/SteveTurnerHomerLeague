@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-08T02:31:39.456Z",
+  "updatedAt": "2026-08-08T03:53:59.199Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24727,6 +24727,71 @@
       "distance": 401,
       "launchSpeed": 100,
       "launchAngle": 29
+    },
+    {
+      "key": "663586-823515-51-51",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 823515,
+      "atBatIndex": 51,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 384,
+      "launchSpeed": 107.5,
+      "launchAngle": 41
+    },
+    {
+      "key": "621566-823515-62-62",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 823515,
+      "atBatIndex": 62,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 407,
+      "launchSpeed": 109.8,
+      "launchAngle": 19
+    },
+    {
+      "key": "681624-825051-56-56",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 825051,
+      "atBatIndex": 56,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 425,
+      "launchSpeed": 108.1,
+      "launchAngle": 35
+    },
+    {
+      "key": "665487-823266-43-43",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 823266,
+      "atBatIndex": 43,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 400,
+      "launchSpeed": 107,
+      "launchAngle": 28
+    },
+    {
+      "key": "642715-823191-42-42",
+      "season": 2026,
+      "date": "2026-08-07",
+      "gamePk": 823191,
+      "atBatIndex": 42,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 367,
+      "launchSpeed": 106.5,
+      "launchAngle": 43
     }
   ],
   "lastScanMode": "rolling-7-day",
