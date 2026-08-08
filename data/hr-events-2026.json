@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-08T21:12:48.385Z",
+  "updatedAt": "2026-08-08T21:47:53.162Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24805,6 +24805,32 @@
       "distance": 396,
       "launchSpeed": 105.1,
       "launchAngle": 24
+    },
+    {
+      "key": "660670-823514-57-57",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 823514,
+      "atBatIndex": 57,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 383,
+      "launchSpeed": 109,
+      "launchAngle": 23
+    },
+    {
+      "key": "700250-823514-61-61",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 823514,
+      "atBatIndex": 61,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 431,
+      "launchSpeed": 105.2,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
