@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-09T20:02:20.463Z",
+  "updatedAt": "2026-08-09T20:47:14.980Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25169,6 +25169,32 @@
       "distance": 404,
       "launchSpeed": 100.5,
       "launchAngle": 29
+    },
+    {
+      "key": "696100-823020-62-62",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823020,
+      "atBatIndex": 62,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 394,
+      "launchSpeed": 104,
+      "launchAngle": 36
+    },
+    {
+      "key": "606466-825050-6-6",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 825050,
+      "atBatIndex": 6,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 385,
+      "launchSpeed": 103.7,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
