@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-09T18:56:13.718Z",
+  "updatedAt": "2026-08-09T19:36:34.749Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25065,6 +25065,45 @@
       "distance": 387,
       "launchSpeed": 103.4,
       "launchAngle": 26
+    },
+    {
+      "key": "621566-823513-41-41",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823513,
+      "atBatIndex": 41,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 393,
+      "launchSpeed": 110.7,
+      "launchAngle": 19
+    },
+    {
+      "key": "681297-822862-10-10",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 822862,
+      "atBatIndex": 10,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 441,
+      "launchSpeed": 108.9,
+      "launchAngle": 23
+    },
+    {
+      "key": "624413-822862-13-13",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 822862,
+      "atBatIndex": 13,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 393,
+      "launchSpeed": 103.7,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
