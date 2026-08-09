@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-09T00:36:49.159Z",
+  "updatedAt": "2026-08-09T02:49:56.598Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -24909,6 +24909,97 @@
       "distance": 421,
       "launchSpeed": 106.7,
       "launchAngle": 28
+    },
+    {
+      "key": "664040-823348-62-62",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 823348,
+      "atBatIndex": 62,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 380,
+      "launchSpeed": 98.9,
+      "launchAngle": 38
+    },
+    {
+      "key": "664023-824079-45-45",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 824079,
+      "atBatIndex": 45,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 381,
+      "launchSpeed": 98.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "695506-824079-58-58",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 824079,
+      "atBatIndex": 58,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 420,
+      "launchSpeed": 111,
+      "launchAngle": 33
+    },
+    {
+      "key": "608369-822864-60-60",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 822864,
+      "atBatIndex": 60,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 418,
+      "launchSpeed": 107.7,
+      "launchAngle": 23
+    },
+    {
+      "key": "808959-824565-45-45",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 824565,
+      "atBatIndex": 45,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 347,
+      "launchSpeed": 101.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "663656-825049-53-53",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 825049,
+      "atBatIndex": 53,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 366,
+      "launchSpeed": 98.2,
+      "launchAngle": 32
+    },
+    {
+      "key": "647304-823102-12-12",
+      "season": 2026,
+      "date": "2026-08-08",
+      "gamePk": 823102,
+      "atBatIndex": 12,
+      "playerId": 647304,
+      "playerName": "Josh Naylor",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 367,
+      "launchSpeed": 93.9,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
