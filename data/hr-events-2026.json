@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-09T19:36:34.749Z",
+  "updatedAt": "2026-08-09T20:02:20.463Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25103,6 +25103,71 @@
       "fantasyTeam": "Nate (2)",
       "distance": 393,
       "launchSpeed": 103.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "663757-823513-54-54",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823513,
+      "atBatIndex": 54,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 392,
+      "launchSpeed": 106.2,
+      "launchAngle": 30
+    },
+    {
+      "key": "664023-824078-49-49",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 824078,
+      "atBatIndex": 49,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 401,
+      "launchSpeed": 100.3,
+      "launchAngle": 35
+    },
+    {
+      "key": "676475-823020-42-42",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823020,
+      "atBatIndex": 42,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 441,
+      "launchSpeed": 110.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "607043-822862-29-29",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 822862,
+      "atBatIndex": 29,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 434,
+      "launchSpeed": 107.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "624413-822862-34-34",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 822862,
+      "atBatIndex": 34,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 404,
+      "launchSpeed": 100.5,
       "launchAngle": 29
     }
   ],
