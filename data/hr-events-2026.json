@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-10T00:04:34.856Z",
+  "updatedAt": "2026-08-10T02:30:00.748Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25208,6 +25208,45 @@
       "distance": 391,
       "launchSpeed": 110.7,
       "launchAngle": 24
+    },
+    {
+      "key": "662139-823268-10-10",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823268,
+      "atBatIndex": 10,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 395,
+      "launchSpeed": 103.3,
+      "launchAngle": 27
+    },
+    {
+      "key": "701538-823268-12-12",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823268,
+      "atBatIndex": 12,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 411,
+      "launchSpeed": 106.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "665487-823268-32-32",
+      "season": 2026,
+      "date": "2026-08-09",
+      "gamePk": 823268,
+      "atBatIndex": 32,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 421,
+      "launchSpeed": 110.6,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
