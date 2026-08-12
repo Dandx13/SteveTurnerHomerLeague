@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-12T21:20:36.152Z",
+  "updatedAt": "2026-08-12T22:07:06.320Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25598,6 +25598,19 @@
       "distance": 378,
       "launchSpeed": 104.9,
       "launchAngle": 22
+    },
+    {
+      "key": "671732-824967-70-70",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 824967,
+      "atBatIndex": 70,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 426,
+      "launchSpeed": 107.6,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
