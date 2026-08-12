@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-11T23:33:03.172Z",
+  "updatedAt": "2026-08-12T00:39:02.036Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25364,17 +25364,82 @@
       "distance": 437,
       "launchSpeed": 111.5,
       "launchAngle": 28
+    },
+    {
+      "key": "677800-822778-25-25",
+      "season": 2026,
+      "date": "2026-08-11",
+      "gamePk": 822778,
+      "atBatIndex": 25,
+      "playerId": 677800,
+      "playerName": "Wilyer Abreu",
+      "fantasyTeam": "Austin",
+      "distance": 370,
+      "launchSpeed": 96,
+      "launchAngle": 32
+    },
+    {
+      "key": "678882-822778-34-34",
+      "season": 2026,
+      "date": "2026-08-11",
+      "gamePk": 822778,
+      "atBatIndex": 34,
+      "playerId": 678882,
+      "playerName": "Ceddanne Rafaela",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 411,
+      "launchSpeed": 101.8,
+      "launchAngle": 30
+    },
+    {
+      "key": "645277-824886-32-32",
+      "season": 2026,
+      "date": "2026-08-11",
+      "gamePk": 824886,
+      "atBatIndex": 32,
+      "playerId": 645277,
+      "playerName": "Ozzie Albies",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 386,
+      "launchSpeed": 103.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "624413-823673-1-1",
+      "season": 2026,
+      "date": "2026-08-11",
+      "gamePk": 823673,
+      "atBatIndex": 1,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 418,
+      "launchSpeed": 107.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "683002-823673-13-13",
+      "season": 2026,
+      "date": "2026-08-11",
+      "gamePk": 823673,
+      "atBatIndex": 13,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 409,
+      "launchSpeed": 108.1,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-05",
     "2026-08-06",
     "2026-08-07",
     "2026-08-08",
     "2026-08-09",
     "2026-08-10",
-    "2026-08-11"
+    "2026-08-11",
+    "2026-08-12"
   ],
   "rosterSummary": {
     "teamCount": 21,
