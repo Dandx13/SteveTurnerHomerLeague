@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-13T01:07:19.636Z",
+  "updatedAt": "2026-08-13T03:32:09.575Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25741,6 +25741,97 @@
       "distance": 438,
       "launchSpeed": 108.5,
       "launchAngle": 28
+    },
+    {
+      "key": "621020-822698-71-71",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 822698,
+      "atBatIndex": 71,
+      "playerId": 621020,
+      "playerName": "Dansby Swanson",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 436,
+      "launchSpeed": 106.4,
+      "launchAngle": 27
+    },
+    {
+      "key": "608324-822698-74-74",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 822698,
+      "atBatIndex": 74,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 394,
+      "launchSpeed": 98.1,
+      "launchAngle": 30
+    },
+    {
+      "key": "663757-823511-73-73",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 823511,
+      "atBatIndex": 73,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 398,
+      "launchSpeed": 103,
+      "launchAngle": 21
+    },
+    {
+      "key": "666182-824883-64-64",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 824883,
+      "atBatIndex": 64,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 405,
+      "launchSpeed": 103.1,
+      "launchAngle": 23
+    },
+    {
+      "key": "605141-823916-14-14",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 823916,
+      "atBatIndex": 14,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 412,
+      "launchSpeed": 103.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "660271-823916-25-25",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 823916,
+      "atBatIndex": 25,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 397,
+      "launchSpeed": 109.5,
+      "launchAngle": 34
+    },
+    {
+      "key": "608369-823994-19-19",
+      "season": 2026,
+      "date": "2026-08-12",
+      "gamePk": 823994,
+      "atBatIndex": 19,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 378,
+      "launchSpeed": 106.6,
+      "launchAngle": 40
     }
   ],
   "lastScanMode": "rolling-7-day",
