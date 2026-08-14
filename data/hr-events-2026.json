@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-14T23:40:34.687Z",
+  "updatedAt": "2026-08-14T23:59:47.499Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25910,6 +25910,32 @@
       "distance": 390,
       "launchSpeed": 106.4,
       "launchAngle": 39
+    },
+    {
+      "key": "808959-824237-33-33",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824237,
+      "atBatIndex": 33,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 392,
+      "launchSpeed": 110,
+      "launchAngle": 41
+    },
+    {
+      "key": "681297-822942-19-19",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 822942,
+      "atBatIndex": 19,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 420,
+      "launchSpeed": 103,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
