@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-14T02:36:52.776Z",
+  "updatedAt": "2026-08-14T04:26:43.140Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25884,6 +25884,19 @@
       "distance": 355,
       "launchSpeed": 108,
       "launchAngle": 39
+    },
+    {
+      "key": "571970-823915-49-49",
+      "season": 2026,
+      "date": "2026-08-13",
+      "gamePk": 823915,
+      "atBatIndex": 49,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 426,
+      "launchSpeed": 105.7,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
