@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-14T23:59:47.499Z",
+  "updatedAt": "2026-08-15T01:44:25.020Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -25936,17 +25936,95 @@
       "distance": 420,
       "launchSpeed": 103,
       "launchAngle": 30
+    },
+    {
+      "key": "664040-823346-42-42",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 823346,
+      "atBatIndex": 42,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 375,
+      "launchSpeed": 100,
+      "launchAngle": 27
+    },
+    {
+      "key": "596019-823591-46-46",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 823591,
+      "atBatIndex": 46,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 409,
+      "launchSpeed": 110.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "665487-824399-36-36",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824399,
+      "atBatIndex": 36,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 404,
+      "launchSpeed": 115.5,
+      "launchAngle": 21
+    },
+    {
+      "key": "683002-822942-62-62",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 822942,
+      "atBatIndex": 62,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 400,
+      "launchSpeed": 104.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "663757-822777-36-36",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 822777,
+      "atBatIndex": 36,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 359,
+      "launchSpeed": 100.3,
+      "launchAngle": 37
+    },
+    {
+      "key": "670541-824159-7-7",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824159,
+      "atBatIndex": 7,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 368,
+      "launchSpeed": 100.5,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-08",
     "2026-08-09",
     "2026-08-10",
     "2026-08-11",
     "2026-08-12",
     "2026-08-13",
-    "2026-08-14"
+    "2026-08-14",
+    "2026-08-15"
   ],
   "rosterSummary": {
     "teamCount": 21,
