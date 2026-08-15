@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-15T20:01:05.330Z",
+  "updatedAt": "2026-08-15T20:33:48.107Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26079,6 +26079,19 @@
       "distance": 367,
       "launchSpeed": 100.8,
       "launchAngle": 32
+    },
+    {
+      "key": "676475-824644-59-59",
+      "season": 2026,
+      "date": "2026-08-15",
+      "gamePk": 824644,
+      "atBatIndex": 59,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 403,
+      "launchSpeed": 107,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
