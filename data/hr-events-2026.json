@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-15T03:22:15.142Z",
+  "updatedAt": "2026-08-15T04:01:23.226Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26026,6 +26026,58 @@
       "fantasyTeam": "Peyton B",
       "distance": 393,
       "launchSpeed": 104,
+      "launchAngle": 32
+    },
+    {
+      "key": "572233-824159-89-89",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824159,
+      "atBatIndex": 89,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 405,
+      "launchSpeed": 108.2,
+      "launchAngle": 29
+    },
+    {
+      "key": "669394-824968-47-47",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824968,
+      "atBatIndex": 47,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 428,
+      "launchSpeed": 106,
+      "launchAngle": 27
+    },
+    {
+      "key": "671732-824968-60-60",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 824968,
+      "atBatIndex": 60,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 411,
+      "launchSpeed": 103.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "681624-823913-39-39",
+      "season": 2026,
+      "date": "2026-08-14",
+      "gamePk": 823913,
+      "atBatIndex": 39,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 367,
+      "launchSpeed": 100.8,
       "launchAngle": 32
     }
   ],
