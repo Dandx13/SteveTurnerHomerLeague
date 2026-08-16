@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T22:59:55.463Z",
+  "updatedAt": "2026-08-16T23:28:46.699Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26339,6 +26339,19 @@
       "distance": 382,
       "launchSpeed": 100.6,
       "launchAngle": 33
+    },
+    {
+      "key": "668227-824156-1-1",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 824156,
+      "atBatIndex": 1,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 365,
+      "launchSpeed": 94.7,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
