@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T20:00:47.968Z",
+  "updatedAt": "2026-08-16T20:33:15.585Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26235,6 +26235,45 @@
       "distance": 393,
       "launchSpeed": 102.4,
       "launchAngle": 33
+    },
+    {
+      "key": "700250-822774-69-69",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 822774,
+      "atBatIndex": 69,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 438,
+      "launchSpeed": 108.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "691718-824642-23-23",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 824642,
+      "atBatIndex": 23,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 408,
+      "launchSpeed": 110.3,
+      "launchAngle": 22
+    },
+    {
+      "key": "669394-824965-6-6",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 824965,
+      "atBatIndex": 6,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 396,
+      "launchSpeed": 104.9,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
