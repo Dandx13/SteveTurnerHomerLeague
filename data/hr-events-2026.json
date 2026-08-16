@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T20:53:36.736Z",
+  "updatedAt": "2026-08-16T21:16:19.602Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26300,6 +26300,32 @@
       "distance": 394,
       "launchSpeed": 107,
       "launchAngle": 27
+    },
+    {
+      "key": "677951-823991-31-31",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 823991,
+      "atBatIndex": 31,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 365,
+      "launchSpeed": 98.4,
+      "launchAngle": 38
+    },
+    {
+      "key": "571970-823912-30-30",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 823912,
+      "atBatIndex": 30,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 370,
+      "launchSpeed": 101.6,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
