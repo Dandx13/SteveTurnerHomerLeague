@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T00:57:52.846Z",
+  "updatedAt": "2026-08-16T02:23:00.280Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26157,6 +26157,19 @@
       "distance": 389,
       "launchSpeed": 101.4,
       "launchAngle": 23
+    },
+    {
+      "key": "670623-824157-69-69",
+      "season": 2026,
+      "date": "2026-08-15",
+      "gamePk": 824157,
+      "atBatIndex": 69,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 407,
+      "launchSpeed": 102.4,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
