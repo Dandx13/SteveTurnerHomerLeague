@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T19:29:18.771Z",
+  "updatedAt": "2026-08-16T19:48:09.442Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26208,6 +26208,32 @@
       "fantasyTeam": "Dan/Larry",
       "distance": 421,
       "launchSpeed": 105.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "621566-824880-56-56",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 824880,
+      "atBatIndex": 56,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 437,
+      "launchSpeed": 109.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "808959-824236-55-55",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 824236,
+      "atBatIndex": 55,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 393,
+      "launchSpeed": 102.4,
       "launchAngle": 33
     }
   ],
