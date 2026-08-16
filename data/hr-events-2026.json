@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T02:23:00.280Z",
+  "updatedAt": "2026-08-16T03:26:11.191Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26170,6 +26170,19 @@
       "distance": 407,
       "launchSpeed": 102.4,
       "launchAngle": 30
+    },
+    {
+      "key": "694671-824966-45-45",
+      "season": 2026,
+      "date": "2026-08-15",
+      "gamePk": 824966,
+      "atBatIndex": 45,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 421,
+      "launchSpeed": 105.1,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
