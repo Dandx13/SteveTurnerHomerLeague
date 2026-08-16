@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-16T17:28:26.967Z",
+  "updatedAt": "2026-08-16T17:48:32.349Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26183,6 +26183,19 @@
       "distance": 421,
       "launchSpeed": 105.1,
       "launchAngle": 35
+    },
+    {
+      "key": "681297-822940-44-44",
+      "season": 2026,
+      "date": "2026-08-16",
+      "gamePk": 822940,
+      "atBatIndex": 44,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 392,
+      "launchSpeed": 103.6,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
