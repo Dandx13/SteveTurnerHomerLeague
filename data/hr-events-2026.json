@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-18T23:05:20.945Z",
+  "updatedAt": "2026-08-18T23:33:22.516Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26521,6 +26521,32 @@
       "distance": 455,
       "launchSpeed": 111.9,
       "launchAngle": 30
+    },
+    {
+      "key": "663757-824803-19-19",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824803,
+      "atBatIndex": 19,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 403,
+      "launchSpeed": 101.4,
+      "launchAngle": 27
+    },
+    {
+      "key": "665487-823586-0-0",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823586,
+      "atBatIndex": 0,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 452,
+      "launchSpeed": 113.2,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
