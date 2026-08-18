@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-18T22:45:43.990Z",
+  "updatedAt": "2026-08-18T23:05:20.945Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26507,6 +26507,19 @@
       "fantasyTeam": "Dan/Connor (2)",
       "distance": 391,
       "launchSpeed": 98.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "666176-824398-6-6",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824398,
+      "atBatIndex": 6,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 455,
+      "launchSpeed": 111.9,
       "launchAngle": 30
     }
   ],
