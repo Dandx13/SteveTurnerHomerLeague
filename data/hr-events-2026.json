@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-17T23:47:29.028Z",
+  "updatedAt": "2026-08-18T00:22:45.592Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26404,17 +26404,56 @@
       "distance": 357,
       "launchSpeed": 101.3,
       "launchAngle": 29
+    },
+    {
+      "key": "677951-824077-18-18",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824077,
+      "atBatIndex": 18,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 390,
+      "launchSpeed": 106.6,
+      "launchAngle": 22
+    },
+    {
+      "key": "691718-824641-3-3",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824641,
+      "atBatIndex": 3,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 376,
+      "launchSpeed": 101.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "673548-824641-4-4",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824641,
+      "atBatIndex": 4,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 440,
+      "launchSpeed": 110.6,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-11",
     "2026-08-12",
     "2026-08-13",
     "2026-08-14",
     "2026-08-15",
     "2026-08-16",
-    "2026-08-17"
+    "2026-08-17",
+    "2026-08-18"
   ],
   "rosterSummary": {
     "teamCount": 21,
