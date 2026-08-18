@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-18T00:22:45.592Z",
+  "updatedAt": "2026-08-18T01:56:12.329Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26443,6 +26443,32 @@
       "distance": 440,
       "launchSpeed": 110.6,
       "launchAngle": 24
+    },
+    {
+      "key": "575929-824725-38-38",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824725,
+      "atBatIndex": 38,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": 342,
+      "launchSpeed": 89.9,
+      "launchAngle": 37
+    },
+    {
+      "key": "571970-824320-18-18",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824320,
+      "atBatIndex": 18,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 461,
+      "launchSpeed": 110.2,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
