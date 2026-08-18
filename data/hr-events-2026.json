@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-18T01:56:12.329Z",
+  "updatedAt": "2026-08-18T02:58:03.197Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26468,6 +26468,32 @@
       "fantasyTeam": "John Eames",
       "distance": 461,
       "launchSpeed": 110.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "660271-824320-35-35",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824320,
+      "atBatIndex": 35,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 428,
+      "launchSpeed": 105.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "660271-824320-47-47",
+      "season": 2026,
+      "date": "2026-08-17",
+      "gamePk": 824320,
+      "atBatIndex": 47,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 452,
+      "launchSpeed": 106.8,
       "launchAngle": 31
     }
   ],
