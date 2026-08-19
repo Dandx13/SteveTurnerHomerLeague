@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-19T23:19:16.370Z",
+  "updatedAt": "2026-08-19T23:42:09.563Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26741,6 +26741,32 @@
       "fantasyTeam": "Dan/Connor",
       "distance": 414,
       "launchSpeed": 104.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "700250-824801-19-19",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824801,
+      "atBatIndex": 19,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 431,
+      "launchSpeed": 110.2,
+      "launchAngle": 33
+    },
+    {
+      "key": "624413-824801-25-25",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824801,
+      "atBatIndex": 25,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 423,
+      "launchSpeed": 109.9,
       "launchAngle": 27
     }
   ],
