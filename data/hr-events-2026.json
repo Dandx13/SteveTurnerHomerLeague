@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-19T19:14:18.306Z",
+  "updatedAt": "2026-08-19T19:42:37.706Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26703,6 +26703,19 @@
       "distance": 448,
       "launchSpeed": 105.6,
       "launchAngle": 33
+    },
+    {
+      "key": "664040-823342-74-74",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 823342,
+      "atBatIndex": 74,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 359,
+      "launchSpeed": 105.6,
+      "launchAngle": 45
     }
   ],
   "lastScanMode": "rolling-7-day",
