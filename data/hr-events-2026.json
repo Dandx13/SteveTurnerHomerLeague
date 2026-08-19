@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-19T01:07:54.512Z",
+  "updatedAt": "2026-08-19T02:30:48.443Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26651,6 +26651,58 @@
       "distance": 406,
       "launchSpeed": 111.1,
       "launchAngle": 39
+    },
+    {
+      "key": "673357-823586-65-65",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823586,
+      "atBatIndex": 65,
+      "playerId": 673357,
+      "playerName": "Luis Robert Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 390,
+      "launchSpeed": 107.7,
+      "launchAngle": 21
+    },
+    {
+      "key": "592518-823586-73-73",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823586,
+      "atBatIndex": 73,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 397,
+      "launchSpeed": 101.2,
+      "launchAngle": 35
+    },
+    {
+      "key": "592885-823749-41-41",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823749,
+      "atBatIndex": 41,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 396,
+      "launchSpeed": 101.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "660271-824319-18-18",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824319,
+      "atBatIndex": 18,
+      "playerId": 660271,
+      "playerName": "Shohei Ohtani",
+      "fantasyTeam": "Nate",
+      "distance": 448,
+      "launchSpeed": 105.6,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
