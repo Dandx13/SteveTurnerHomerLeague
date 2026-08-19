@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-18T23:54:24.250Z",
+  "updatedAt": "2026-08-19T01:07:54.512Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26573,17 +26573,95 @@
       "distance": 434,
       "launchSpeed": 110,
       "launchAngle": 30
+    },
+    {
+      "key": "672960-822938-42-42",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 822938,
+      "atBatIndex": 42,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 442,
+      "launchSpeed": 106.8,
+      "launchAngle": 28
+    },
+    {
+      "key": "665487-823586-35-35",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823586,
+      "atBatIndex": 35,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 379,
+      "launchSpeed": 104.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "686948-823667-36-36",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 823667,
+      "atBatIndex": 36,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 383,
+      "launchSpeed": 105.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "691718-824639-4-4",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824639,
+      "atBatIndex": 4,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 379,
+      "launchSpeed": 95.8,
+      "launchAngle": 39
+    },
+    {
+      "key": "683737-824639-7-7",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824639,
+      "atBatIndex": 7,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 421,
+      "launchSpeed": 102.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "808959-824639-21-21",
+      "season": 2026,
+      "date": "2026-08-18",
+      "gamePk": 824639,
+      "atBatIndex": 21,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 406,
+      "launchSpeed": 111.1,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-12",
     "2026-08-13",
     "2026-08-14",
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
-    "2026-08-18"
+    "2026-08-18",
+    "2026-08-19"
   ],
   "rosterSummary": {
     "teamCount": 21,
