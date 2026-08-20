@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-20T00:00:23.606Z",
+  "updatedAt": "2026-08-20T01:45:48.982Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26768,6 +26768,45 @@
       "distance": 423,
       "launchSpeed": 109.9,
       "launchAngle": 27
+    },
+    {
+      "key": "701398-824476-46-46",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824476,
+      "atBatIndex": 46,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 422,
+      "launchSpeed": 108.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "686469-824076-48-48",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824076,
+      "atBatIndex": 48,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 427,
+      "launchSpeed": 105.9,
+      "launchAngle": 24
+    },
+    {
+      "key": "605141-824318-26-26",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824318,
+      "atBatIndex": 26,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 375,
+      "launchSpeed": 99.6,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
