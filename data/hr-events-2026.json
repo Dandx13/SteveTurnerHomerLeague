@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-20T01:45:48.982Z",
+  "updatedAt": "2026-08-20T02:44:07.837Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26807,6 +26807,19 @@
       "distance": 375,
       "launchSpeed": 99.6,
       "launchAngle": 25
+    },
+    {
+      "key": "691777-824076-76-76",
+      "season": 2026,
+      "date": "2026-08-19",
+      "gamePk": 824076,
+      "atBatIndex": 76,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 414,
+      "launchSpeed": 105.2,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
