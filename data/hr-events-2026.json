@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-20T17:40:26.157Z",
+  "updatedAt": "2026-08-20T18:02:44.439Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26846,6 +26846,19 @@
       "distance": 415,
       "launchSpeed": 107.3,
       "launchAngle": 29
+    },
+    {
+      "key": "642715-824395-26-26",
+      "season": 2026,
+      "date": "2026-08-20",
+      "gamePk": 824395,
+      "atBatIndex": 26,
+      "playerId": 642715,
+      "playerName": "Willy Adames",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 418,
+      "launchSpeed": 103.4,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
