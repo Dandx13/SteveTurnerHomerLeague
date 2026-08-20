@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-20T18:02:44.439Z",
+  "updatedAt": "2026-08-20T18:54:46.955Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26859,6 +26859,32 @@
       "distance": 418,
       "launchSpeed": 103.4,
       "launchAngle": 30
+    },
+    {
+      "key": "680574-824474-48-48",
+      "season": 2026,
+      "date": "2026-08-20",
+      "gamePk": 824474,
+      "atBatIndex": 48,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 360,
+      "launchSpeed": 102,
+      "launchAngle": 23
+    },
+    {
+      "key": "677951-824074-6-6",
+      "season": 2026,
+      "date": "2026-08-20",
+      "gamePk": 824074,
+      "atBatIndex": 6,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 402,
+      "launchSpeed": 104.3,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
