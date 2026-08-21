@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-21T01:25:54.379Z",
+  "updatedAt": "2026-08-21T02:45:28.067Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26898,6 +26898,19 @@
       "distance": 382,
       "launchSpeed": 103.4,
       "launchAngle": 31
+    },
+    {
+      "key": "687263-824153-48-48",
+      "season": 2026,
+      "date": "2026-08-20",
+      "gamePk": 824153,
+      "atBatIndex": 48,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 428,
+      "launchSpeed": 107.6,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
