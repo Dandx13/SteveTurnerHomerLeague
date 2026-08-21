@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-20T23:56:10.103Z",
+  "updatedAt": "2026-08-21T01:25:54.379Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26885,17 +26885,30 @@
       "distance": 402,
       "launchSpeed": 104.3,
       "launchAngle": 31
+    },
+    {
+      "key": "608369-822861-20-20",
+      "season": 2026,
+      "date": "2026-08-20",
+      "gamePk": 822861,
+      "atBatIndex": 20,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 382,
+      "launchSpeed": 103.4,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-14",
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
-    "2026-08-20"
+    "2026-08-20",
+    "2026-08-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
