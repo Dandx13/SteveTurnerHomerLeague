@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-22T02:29:03.112Z",
+  "updatedAt": "2026-08-22T03:22:18.690Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27028,6 +27028,19 @@
       "distance": 373,
       "launchSpeed": 100.5,
       "launchAngle": 27
+    },
+    {
+      "key": "663728-823101-16-16",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823101,
+      "atBatIndex": 16,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 410,
+      "launchSpeed": 107.2,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
