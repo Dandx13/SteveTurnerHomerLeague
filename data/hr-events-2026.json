@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-21T23:55:27.054Z",
+  "updatedAt": "2026-08-22T01:16:14.015Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26911,17 +26911,69 @@
       "distance": 428,
       "launchSpeed": 107.6,
       "launchAngle": 36
+    },
+    {
+      "key": "575929-824721-27-27",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824721,
+      "atBatIndex": 27,
+      "playerId": 575929,
+      "playerName": "Willson Contreras",
+      "fantasyTeam": "Tom",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "646240-824721-38-38",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824721,
+      "atBatIndex": 38,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 412,
+      "launchSpeed": 107.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "624413-824800-39-39",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824800,
+      "atBatIndex": 39,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 443,
+      "launchSpeed": 111,
+      "launchAngle": 30
+    },
+    {
+      "key": "666182-824559-35-35",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824559,
+      "atBatIndex": 35,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 345,
+      "launchSpeed": 97.6,
+      "launchAngle": 39
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-15",
     "2026-08-16",
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
     "2026-08-20",
-    "2026-08-21"
+    "2026-08-21",
+    "2026-08-22"
   ],
   "rosterSummary": {
     "teamCount": 21,
