@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-22T04:03:11.991Z",
+  "updatedAt": "2026-08-22T04:44:08.534Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27041,6 +27041,45 @@
       "distance": 410,
       "launchSpeed": 107.2,
       "launchAngle": 25
+    },
+    {
+      "key": "665833-823911-64-64",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823911,
+      "atBatIndex": 64,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 424,
+      "launchSpeed": 112.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "664023-823101-61-61",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823101,
+      "atBatIndex": 61,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 432,
+      "launchSpeed": 107.3,
+      "launchAngle": 27
+    },
+    {
+      "key": "608324-823101-73-73",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823101,
+      "atBatIndex": 73,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 405,
+      "launchSpeed": 102.6,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
