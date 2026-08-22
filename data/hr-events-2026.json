@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-22T01:16:14.015Z",
+  "updatedAt": "2026-08-22T02:29:03.112Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -26963,6 +26963,71 @@
       "distance": 345,
       "launchSpeed": 97.6,
       "launchAngle": 39
+    },
+    {
+      "key": "695657-824559-47-47",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824559,
+      "atBatIndex": 47,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 399,
+      "launchSpeed": 113.1,
+      "launchAngle": 24
+    },
+    {
+      "key": "686469-824072-47-47",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 824072,
+      "atBatIndex": 47,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 420,
+      "launchSpeed": 106.4,
+      "launchAngle": 32
+    },
+    {
+      "key": "571970-823911-9-9",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823911,
+      "atBatIndex": 9,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 392,
+      "launchSpeed": 104.3,
+      "launchAngle": 40
+    },
+    {
+      "key": "691718-823101-0-0",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823101,
+      "atBatIndex": 0,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 367,
+      "launchSpeed": 101.7,
+      "launchAngle": 39
+    },
+    {
+      "key": "608324-823101-3-3",
+      "season": 2026,
+      "date": "2026-08-21",
+      "gamePk": 823101,
+      "atBatIndex": 3,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 373,
+      "launchSpeed": 100.5,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
