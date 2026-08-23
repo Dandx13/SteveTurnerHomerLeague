@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-23T01:55:14.327Z",
+  "updatedAt": "2026-08-23T03:02:31.333Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27301,6 +27301,19 @@
       "distance": 411,
       "launchSpeed": 105.5,
       "launchAngle": 33
+    },
+    {
+      "key": "680574-825044-72-72",
+      "season": 2026,
+      "date": "2026-08-22",
+      "gamePk": 825044,
+      "atBatIndex": 72,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 395,
+      "launchSpeed": 100.9,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
