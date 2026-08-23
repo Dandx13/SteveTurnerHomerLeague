@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-23T22:10:12.122Z",
+  "updatedAt": "2026-08-23T22:38:07.072Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27457,6 +27457,32 @@
       "distance": 378,
       "launchSpeed": 101.6,
       "launchAngle": 27
+    },
+    {
+      "key": "701538-823258-54-54",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823258,
+      "atBatIndex": 54,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 414,
+      "launchSpeed": 107.4,
+      "launchAngle": 28
+    },
+    {
+      "key": "665487-823258-62-62",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823258,
+      "atBatIndex": 62,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 390,
+      "launchSpeed": 107.7,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
