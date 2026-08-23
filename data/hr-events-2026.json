@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-23T21:00:59.407Z",
+  "updatedAt": "2026-08-23T21:30:23.176Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27444,6 +27444,19 @@
       "distance": 396,
       "launchSpeed": 105.8,
       "launchAngle": 26
+    },
+    {
+      "key": "664023-823099-25-25",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823099,
+      "atBatIndex": 25,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 378,
+      "launchSpeed": 101.6,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
