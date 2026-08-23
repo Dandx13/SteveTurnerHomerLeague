@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-23T20:15:36.027Z",
+  "updatedAt": "2026-08-23T20:43:09.880Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27353,6 +27353,71 @@
       "distance": 364,
       "launchSpeed": 99.6,
       "launchAngle": 37
+    },
+    {
+      "key": "681297-824799-62-62",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 824799,
+      "atBatIndex": 62,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 382,
+      "launchSpeed": 99.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "656941-823421-73-73",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823421,
+      "atBatIndex": 73,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 459,
+      "launchSpeed": 108.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "663757-823507-67-67",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823507,
+      "atBatIndex": 67,
+      "playerId": 663757,
+      "playerName": "Trent Grisham",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 413,
+      "launchSpeed": 104.5,
+      "launchAngle": 31
+    },
+    {
+      "key": "691777-824150-63-63",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 824150,
+      "atBatIndex": 63,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 409,
+      "launchSpeed": 101.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "668227-823099-4-4",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823099,
+      "atBatIndex": 4,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 358,
+      "launchSpeed": 93.8,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
