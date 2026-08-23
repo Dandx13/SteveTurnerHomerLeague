@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-23T20:43:09.880Z",
+  "updatedAt": "2026-08-23T21:00:59.407Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27418,6 +27418,32 @@
       "distance": 358,
       "launchSpeed": 93.8,
       "launchAngle": 34
+    },
+    {
+      "key": "687263-822856-58-58",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 822856,
+      "atBatIndex": 58,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 418,
+      "launchSpeed": 105.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "665487-823258-18-18",
+      "season": 2026,
+      "date": "2026-08-23",
+      "gamePk": 823258,
+      "atBatIndex": 18,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 396,
+      "launchSpeed": 105.8,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
