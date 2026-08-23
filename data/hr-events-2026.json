@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-22T23:48:12.813Z",
+  "updatedAt": "2026-08-23T00:01:17.114Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27106,17 +27106,43 @@
       "distance": 403,
       "launchSpeed": 109.4,
       "launchAngle": 27
+    },
+    {
+      "key": "547180-823422-51-51",
+      "season": 2026,
+      "date": "2026-08-22",
+      "gamePk": 823422,
+      "atBatIndex": 51,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 390,
+      "launchSpeed": 102.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "666182-824560-18-18",
+      "season": 2026,
+      "date": "2026-08-22",
+      "gamePk": 824560,
+      "atBatIndex": 18,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 378,
+      "launchSpeed": 100.3,
+      "launchAngle": 40
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-16",
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
     "2026-08-20",
     "2026-08-21",
-    "2026-08-22"
+    "2026-08-22",
+    "2026-08-23"
   ],
   "rosterSummary": {
     "teamCount": 21,
