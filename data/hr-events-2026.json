@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-24T23:51:08.837Z",
+  "updatedAt": "2026-08-25T00:37:45.182Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27509,17 +27509,43 @@
       "distance": 380,
       "launchSpeed": 96,
       "launchAngle": 29
+    },
+    {
+      "key": "666018-824235-40-40",
+      "season": 2026,
+      "date": "2026-08-24",
+      "gamePk": 824235,
+      "atBatIndex": 40,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 380,
+      "launchSpeed": 99.1,
+      "launchAngle": 35
+    },
+    {
+      "key": "678662-822695-32-32",
+      "season": 2026,
+      "date": "2026-08-24",
+      "gamePk": 822695,
+      "atBatIndex": 32,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 416,
+      "launchSpeed": 104.8,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-18",
     "2026-08-19",
     "2026-08-20",
     "2026-08-21",
     "2026-08-22",
     "2026-08-23",
-    "2026-08-24"
+    "2026-08-24",
+    "2026-08-25"
   ],
   "rosterSummary": {
     "teamCount": 21,
