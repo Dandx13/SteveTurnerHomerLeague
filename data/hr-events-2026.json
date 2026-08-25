@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-25T00:37:45.182Z",
+  "updatedAt": "2026-08-25T02:07:39.392Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27535,6 +27535,32 @@
       "distance": 416,
       "launchSpeed": 104.8,
       "launchAngle": 27
+    },
+    {
+      "key": "669394-824557-43-43",
+      "season": 2026,
+      "date": "2026-08-24",
+      "gamePk": 824557,
+      "atBatIndex": 43,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 412,
+      "launchSpeed": 108.2,
+      "launchAngle": 32
+    },
+    {
+      "key": "677594-823097-8-8",
+      "season": 2026,
+      "date": "2026-08-24",
+      "gamePk": 823097,
+      "atBatIndex": 8,
+      "playerId": 677594,
+      "playerName": "Julio Rodríguez",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 392,
+      "launchSpeed": 109,
+      "launchAngle": 21
     }
   ],
   "lastScanMode": "rolling-7-day",
