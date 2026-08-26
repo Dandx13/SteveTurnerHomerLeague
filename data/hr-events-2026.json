@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-26T20:04:57.465Z",
+  "updatedAt": "2026-08-26T23:27:28.892Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27808,6 +27808,71 @@
       "distance": 355,
       "launchSpeed": 103.2,
       "launchAngle": 26
+    },
+    {
+      "key": "646240-823180-40-40",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823180,
+      "atBatIndex": 40,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 414,
+      "launchSpeed": 105.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "553993-823180-79-79",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823180,
+      "atBatIndex": 79,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 401,
+      "launchSpeed": 100.5,
+      "launchAngle": 38
+    },
+    {
+      "key": "547180-823096-2-2",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823096,
+      "atBatIndex": 2,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 388,
+      "launchSpeed": 106.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "656941-823096-12-12",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823096,
+      "atBatIndex": 12,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 425,
+      "launchSpeed": 104.8,
+      "launchAngle": 27
+    },
+    {
+      "key": "700250-823506-6-6",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823506,
+      "atBatIndex": 6,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 364,
+      "launchSpeed": 107.4,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
