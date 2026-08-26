@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-26T03:40:34.765Z",
+  "updatedAt": "2026-08-26T04:24:08.861Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27782,6 +27782,32 @@
       "distance": 400,
       "launchSpeed": 100.8,
       "launchAngle": 34
+    },
+    {
+      "key": "665833-823259-59-59",
+      "season": 2026,
+      "date": "2026-08-25",
+      "gamePk": 823259,
+      "atBatIndex": 59,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 379,
+      "launchSpeed": 111.8,
+      "launchAngle": 19
+    },
+    {
+      "key": "701398-823181-65-65",
+      "season": 2026,
+      "date": "2026-08-25",
+      "gamePk": 823181,
+      "atBatIndex": 65,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 355,
+      "launchSpeed": 103.2,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
