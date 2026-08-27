@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-26T23:27:28.892Z",
+  "updatedAt": "2026-08-27T04:40:13.868Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27873,17 +27873,108 @@
       "distance": 364,
       "launchSpeed": 107.4,
       "launchAngle": 23
+    },
+    {
+      "key": "696100-822692-66-66",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 822692,
+      "atBatIndex": 66,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 435,
+      "launchSpeed": 108.8,
+      "launchAngle": 25
+    },
+    {
+      "key": "662139-823506-28-28",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823506,
+      "atBatIndex": 28,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 412,
+      "launchSpeed": 102.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "668930-823584-33-33",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823584,
+      "atBatIndex": 33,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 408,
+      "launchSpeed": 104.9,
+      "launchAngle": 37
+    },
+    {
+      "key": "621566-824878-6-6",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 824878,
+      "atBatIndex": 6,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 400,
+      "launchSpeed": 110.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "624413-823015-15-15",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823015,
+      "atBatIndex": 15,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 369,
+      "launchSpeed": 102.8,
+      "launchAngle": 35
+    },
+    {
+      "key": "669357-823015-19-19",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 823015,
+      "atBatIndex": 19,
+      "playerId": 669357,
+      "playerName": "Nolan Gorman",
+      "fantasyTeam": "Pat T",
+      "distance": 413,
+      "launchSpeed": 107.3,
+      "launchAngle": 32
+    },
+    {
+      "key": "671732-824963-58-58",
+      "season": 2026,
+      "date": "2026-08-26",
+      "gamePk": 824963,
+      "atBatIndex": 58,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 425,
+      "launchSpeed": 104.3,
+      "launchAngle": 28
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-20",
     "2026-08-21",
     "2026-08-22",
     "2026-08-23",
     "2026-08-24",
     "2026-08-25",
-    "2026-08-26"
+    "2026-08-26",
+    "2026-08-27"
   ],
   "rosterSummary": {
     "teamCount": 21,
