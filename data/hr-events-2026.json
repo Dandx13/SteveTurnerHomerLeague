@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-28T12:11:49.634Z",
+  "updatedAt": "2026-08-28T22:22:43.248Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28054,6 +28054,32 @@
       "fantasyTeam": "Dan/Larry (2)",
       "distance": 380,
       "launchSpeed": 102.8,
+      "launchAngle": 24
+    },
+    {
+      "key": "683737-824638-25-25",
+      "season": 2026,
+      "date": "2026-08-28",
+      "gamePk": 824638,
+      "atBatIndex": 25,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 374,
+      "launchSpeed": 102.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "701398-824638-38-38",
+      "season": 2026,
+      "date": "2026-08-28",
+      "gamePk": 824638,
+      "atBatIndex": 38,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 382,
+      "launchSpeed": 101.9,
       "launchAngle": 24
     }
   ],
