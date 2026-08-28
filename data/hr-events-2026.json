@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-27T15:32:08.030Z",
+  "updatedAt": "2026-08-28T00:34:55.322Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27964,17 +27964,43 @@
       "distance": 425,
       "launchSpeed": 104.3,
       "launchAngle": 28
+    },
+    {
+      "key": "694192-823581-12-12",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 823581,
+      "atBatIndex": 12,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 389,
+      "launchSpeed": 104.2,
+      "launchAngle": 27
+    },
+    {
+      "key": "686948-824879-4-4",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 824879,
+      "atBatIndex": 4,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 402,
+      "launchSpeed": 106.2,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-21",
     "2026-08-22",
     "2026-08-23",
     "2026-08-24",
     "2026-08-25",
     "2026-08-26",
-    "2026-08-27"
+    "2026-08-27",
+    "2026-08-28"
   ],
   "rosterSummary": {
     "teamCount": 21,
