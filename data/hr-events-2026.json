@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-28T00:34:55.322Z",
+  "updatedAt": "2026-08-28T12:11:49.634Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -27990,6 +27990,71 @@
       "distance": 402,
       "launchSpeed": 106.2,
       "launchAngle": 27
+    },
+    {
+      "key": "572233-823503-42-42",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 823503,
+      "atBatIndex": 42,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 369,
+      "launchSpeed": 100,
+      "launchAngle": 35
+    },
+    {
+      "key": "686469-822771-48-48",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 822771,
+      "atBatIndex": 48,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 370,
+      "launchSpeed": 95.6,
+      "launchAngle": 36
+    },
+    {
+      "key": "543807-822771-55-55",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 822771,
+      "atBatIndex": 55,
+      "playerId": 543807,
+      "playerName": "George Springer",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 404,
+      "launchSpeed": 100.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "695506-822771-79-79",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 822771,
+      "atBatIndex": 79,
+      "playerId": 695506,
+      "playerName": "Jac Caglianone",
+      "fantasyTeam": "Peyton B",
+      "distance": 409,
+      "launchSpeed": 104.9,
+      "launchAngle": 32
+    },
+    {
+      "key": "694192-823581-62-62",
+      "season": 2026,
+      "date": "2026-08-27",
+      "gamePk": 823581,
+      "atBatIndex": 62,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 380,
+      "launchSpeed": 102.8,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
