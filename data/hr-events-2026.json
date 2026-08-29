@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-29T21:14:04.883Z",
+  "updatedAt": "2026-08-29T23:23:25.637Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28315,6 +28315,32 @@
       "distance": 453,
       "launchSpeed": 110,
       "launchAngle": 29
+    },
+    {
+      "key": "670541-823582-59-59",
+      "season": 2026,
+      "date": "2026-08-29",
+      "gamePk": 823582,
+      "atBatIndex": 59,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 436,
+      "launchSpeed": 113.4,
+      "launchAngle": 23
+    },
+    {
+      "key": "691406-822936-45-45",
+      "season": 2026,
+      "date": "2026-08-29",
+      "gamePk": 822936,
+      "atBatIndex": 45,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 426,
+      "launchSpeed": 107.8,
+      "launchAngle": 17
     }
   ],
   "lastScanMode": "rolling-7-day",
