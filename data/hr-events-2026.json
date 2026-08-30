@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-30T01:25:33.338Z",
+  "updatedAt": "2026-08-30T07:08:32.023Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28367,6 +28367,45 @@
       "distance": 409,
       "launchSpeed": 105.8,
       "launchAngle": 33
+    },
+    {
+      "key": "607043-823741-58-58",
+      "season": 2026,
+      "date": "2026-08-29",
+      "gamePk": 823741,
+      "atBatIndex": 58,
+      "playerId": 607043,
+      "playerName": "Brandon Nimmo",
+      "fantasyTeam": "Tom",
+      "distance": 426,
+      "launchSpeed": 107.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "681297-824961-30-30",
+      "season": 2026,
+      "date": "2026-08-29",
+      "gamePk": 824961,
+      "atBatIndex": 30,
+      "playerId": 681297,
+      "playerName": "Colton Cowser",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 386,
+      "launchSpeed": 102.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "687263-823986-59-59",
+      "season": 2026,
+      "date": "2026-08-29",
+      "gamePk": 823986,
+      "atBatIndex": 59,
+      "playerId": 687263,
+      "playerName": "Zach Neto",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 407,
+      "launchSpeed": 103.3,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
