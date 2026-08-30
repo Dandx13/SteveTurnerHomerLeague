@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-30T17:06:44.454Z",
+  "updatedAt": "2026-08-30T19:48:51.841Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28406,6 +28406,84 @@
       "distance": 407,
       "launchSpeed": 103.3,
       "launchAngle": 32
+    },
+    {
+      "key": "671218-823502-38-38",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 823502,
+      "atBatIndex": 38,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 416,
+      "launchSpeed": 106.7,
+      "launchAngle": 26
+    },
+    {
+      "key": "672960-822766-43-43",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 822766,
+      "atBatIndex": 43,
+      "playerId": 672960,
+      "playerName": "Kazuma Okamoto",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 405,
+      "launchSpeed": 107.7,
+      "launchAngle": 38
+    },
+    {
+      "key": "608070-824393-37-37",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 824393,
+      "atBatIndex": 37,
+      "playerId": 608070,
+      "playerName": "José Ramírez",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 380,
+      "launchSpeed": 99.3,
+      "launchAngle": 35
+    },
+    {
+      "key": "691406-822933-29-29",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 822933,
+      "atBatIndex": 29,
+      "playerId": 691406,
+      "playerName": "Junior Caminero",
+      "fantasyTeam": "John Fournier",
+      "distance": 440,
+      "launchSpeed": 111.3,
+      "launchAngle": 24
+    },
+    {
+      "key": "596019-823580-5-5",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 823580,
+      "atBatIndex": 5,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 383,
+      "launchSpeed": 104.2,
+      "launchAngle": 36
+    },
+    {
+      "key": "665742-823580-6-6",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 823580,
+      "atBatIndex": 6,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 396,
+      "launchSpeed": 104.1,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
