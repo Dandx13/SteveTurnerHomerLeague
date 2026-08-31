@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-31T00:36:41.642Z",
+  "updatedAt": "2026-08-31T06:09:16.580Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28562,6 +28562,32 @@
       "distance": 417,
       "launchSpeed": 108,
       "launchAngle": 35
+    },
+    {
+      "key": "701398-824636-55-55",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 824636,
+      "atBatIndex": 55,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 418,
+      "launchSpeed": 101.7,
+      "launchAngle": 28
+    },
+    {
+      "key": "691718-824636-76-76",
+      "season": 2026,
+      "date": "2026-08-30",
+      "gamePk": 824636,
+      "atBatIndex": 76,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 431,
+      "launchSpeed": 105.4,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
