@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-31T19:42:55.170Z",
+  "updatedAt": "2026-08-31T23:26:05.258Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28588,6 +28588,58 @@
       "distance": 431,
       "launchSpeed": 105.4,
       "launchAngle": 33
+    },
+    {
+      "key": "646240-824911-1-1",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824911,
+      "atBatIndex": 1,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 403,
+      "launchSpeed": 107.3,
+      "launchAngle": 31
+    },
+    {
+      "key": "671739-824911-13-13",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824911,
+      "atBatIndex": 13,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 401,
+      "launchSpeed": 103.6,
+      "launchAngle": 30
+    },
+    {
+      "key": "680776-824719-15-15",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824719,
+      "atBatIndex": 15,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 409,
+      "launchSpeed": 111,
+      "launchAngle": 29
+    },
+    {
+      "key": "668227-824719-19-19",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824719,
+      "atBatIndex": 19,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 402,
+      "launchSpeed": 103.3,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
