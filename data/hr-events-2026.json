@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-08-31T23:26:05.258Z",
+  "updatedAt": "2026-09-01T01:58:46.517Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28640,17 +28640,82 @@
       "distance": 402,
       "launchSpeed": 103.3,
       "launchAngle": 34
+    },
+    {
+      "key": "668901-822932-44-44",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 822932,
+      "atBatIndex": 44,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 418,
+      "launchSpeed": 102.7,
+      "launchAngle": 27
+    },
+    {
+      "key": "663728-824719-57-57",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824719,
+      "atBatIndex": 57,
+      "playerId": 663728,
+      "playerName": "Cal Raleigh",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 355,
+      "launchSpeed": 94.9,
+      "launchAngle": 36
+    },
+    {
+      "key": "608324-824635-18-18",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824635,
+      "atBatIndex": 18,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 376,
+      "launchSpeed": 99.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "673548-824635-34-34",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824635,
+      "atBatIndex": 34,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 408,
+      "launchSpeed": 103.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "608324-824635-35-35",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824635,
+      "atBatIndex": 35,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 395,
+      "launchSpeed": 100.6,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-25",
     "2026-08-26",
     "2026-08-27",
     "2026-08-28",
     "2026-08-29",
     "2026-08-30",
-    "2026-08-31"
+    "2026-08-31",
+    "2026-09-01"
   ],
   "rosterSummary": {
     "teamCount": 21,
