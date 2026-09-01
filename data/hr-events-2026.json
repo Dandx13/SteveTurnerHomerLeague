@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-01T01:58:46.517Z",
+  "updatedAt": "2026-09-01T07:41:07.588Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28705,6 +28705,32 @@
       "distance": 395,
       "launchSpeed": 100.6,
       "launchAngle": 35
+    },
+    {
+      "key": "608324-824635-80-80",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824635,
+      "atBatIndex": 80,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 397,
+      "launchSpeed": 98.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "695657-824149-62-62",
+      "season": 2026,
+      "date": "2026-08-31",
+      "gamePk": 824149,
+      "atBatIndex": 62,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 378,
+      "launchSpeed": 115.4,
+      "launchAngle": 19
     }
   ],
   "lastScanMode": "rolling-7-day",
