@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-02T00:13:51.965Z",
+  "updatedAt": "2026-09-02T04:41:50.469Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28809,6 +28809,110 @@
       "distance": 409,
       "launchSpeed": 99.1,
       "launchAngle": 30
+    },
+    {
+      "key": "665487-824472-72-72",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 824472,
+      "atBatIndex": 72,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 361,
+      "launchSpeed": 100.9,
+      "launchAngle": 27
+    },
+    {
+      "key": "664040-823340-74-74",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 823340,
+      "atBatIndex": 74,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 411,
+      "launchSpeed": 103.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "671739-822687-67-67",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 822687,
+      "atBatIndex": 67,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 386,
+      "launchSpeed": 103.9,
+      "launchAngle": 31
+    },
+    {
+      "key": "668904-823661-49-49",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 823661,
+      "atBatIndex": 49,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 427,
+      "launchSpeed": 105.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "669065-824070-32-32",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 824070,
+      "atBatIndex": 32,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 412,
+      "launchSpeed": 110.4,
+      "launchAngle": 27
+    },
+    {
+      "key": "592885-824633-44-44",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 824633,
+      "atBatIndex": 44,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 394,
+      "launchSpeed": 97,
+      "launchAngle": 35
+    },
+    {
+      "key": "670623-824148-67-67",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 824148,
+      "atBatIndex": 67,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 339,
+      "launchSpeed": 98.2,
+      "launchAngle": 43
+    },
+    {
+      "key": "665862-823984-4-4",
+      "season": 2026,
+      "date": "2026-09-01",
+      "gamePk": 823984,
+      "atBatIndex": 4,
+      "playerId": 665862,
+      "playerName": "Jazz Chisholm Jr.",
+      "fantasyTeam": "John Eames",
+      "distance": 341,
+      "launchSpeed": 95.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
