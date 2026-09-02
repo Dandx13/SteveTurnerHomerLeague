@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-02T19:52:53.929Z",
+  "updatedAt": "2026-09-02T22:15:45.065Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28913,6 +28913,19 @@
       "distance": 341,
       "launchSpeed": 95.4,
       "launchAngle": 25
+    },
+    {
+      "key": "660670-822686-49-49",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 822686,
+      "atBatIndex": 49,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 379,
+      "launchSpeed": 104,
+      "launchAngle": 41
     }
   ],
   "lastScanMode": "rolling-7-day",
