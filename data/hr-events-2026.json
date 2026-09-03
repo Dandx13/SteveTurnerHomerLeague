@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-03T00:20:54.478Z",
+  "updatedAt": "2026-09-03T04:47:06.534Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29004,6 +29004,71 @@
       "distance": 390,
       "launchSpeed": 100.6,
       "launchAngle": 34
+    },
+    {
+      "key": "665742-822931-67-67",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 822931,
+      "atBatIndex": 67,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 383,
+      "launchSpeed": 111.8,
+      "launchAngle": 20
+    },
+    {
+      "key": "679529-823660-96-96",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 823660,
+      "atBatIndex": 96,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 382,
+      "launchSpeed": 106.5,
+      "launchAngle": 26
+    },
+    {
+      "key": "669065-824068-24-24",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824068,
+      "atBatIndex": 24,
+      "playerId": 669065,
+      "playerName": "Kyle Stowers",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 410,
+      "launchSpeed": 102.1,
+      "launchAngle": 34
+    },
+    {
+      "key": "518692-823906-6-6",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 823906,
+      "atBatIndex": 6,
+      "playerId": 518692,
+      "playerName": "Freddie Freeman",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 416,
+      "launchSpeed": 105.2,
+      "launchAngle": 26
+    },
+    {
+      "key": "605141-823906-50-50",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 823906,
+      "atBatIndex": 50,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 392,
+      "launchSpeed": 101.6,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
