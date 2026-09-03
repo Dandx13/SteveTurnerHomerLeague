@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-02T22:15:45.065Z",
+  "updatedAt": "2026-09-03T00:20:54.478Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -28926,17 +28926,95 @@
       "distance": 379,
       "launchSpeed": 104,
       "launchAngle": 41
+    },
+    {
+      "key": "701350-824717-64-64",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824717,
+      "atBatIndex": 64,
+      "playerId": 701350,
+      "playerName": "Roman Anthony",
+      "fantasyTeam": "Nate (2)",
+      "distance": 370,
+      "launchSpeed": 102.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "646240-823339-1-1",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 823339,
+      "atBatIndex": 1,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 415,
+      "launchSpeed": 103.8,
+      "launchAngle": 33
+    },
+    {
+      "key": "665489-824390-15-15",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824390,
+      "atBatIndex": 15,
+      "playerId": 665489,
+      "playerName": "Vladimir Guerrero Jr.",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 406,
+      "launchSpeed": 107.8,
+      "launchAngle": 37
+    },
+    {
+      "key": "521692-824068-9-9",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824068,
+      "atBatIndex": 9,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 392,
+      "launchSpeed": 107.4,
+      "launchAngle": 21
+    },
+    {
+      "key": "608324-824634-10-10",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824634,
+      "atBatIndex": 10,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 389,
+      "launchSpeed": 105.5,
+      "launchAngle": 19
+    },
+    {
+      "key": "694192-824634-14-14",
+      "season": 2026,
+      "date": "2026-09-02",
+      "gamePk": 824634,
+      "atBatIndex": 14,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 390,
+      "launchSpeed": 100.6,
+      "launchAngle": 34
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-27",
     "2026-08-28",
     "2026-08-29",
     "2026-08-30",
     "2026-08-31",
     "2026-09-01",
-    "2026-09-02"
+    "2026-09-02",
+    "2026-09-03"
   ],
   "rosterSummary": {
     "teamCount": 21,
