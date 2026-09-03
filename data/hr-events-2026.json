@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-03T17:14:00.186Z",
+  "updatedAt": "2026-09-03T19:53:57.563Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29069,6 +29069,19 @@
       "distance": 392,
       "launchSpeed": 101.6,
       "launchAngle": 25
+    },
+    {
+      "key": "514888-824144-7-7",
+      "season": 2026,
+      "date": "2026-09-03",
+      "gamePk": 824144,
+      "atBatIndex": 7,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 353,
+      "launchSpeed": 93.9,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
