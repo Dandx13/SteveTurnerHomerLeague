@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-04T19:22:13.625Z",
+  "updatedAt": "2026-09-04T21:36:56.136Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29173,6 +29173,19 @@
       "distance": 403,
       "launchSpeed": 102.5,
       "launchAngle": 29
+    },
+    {
+      "key": "679529-824424-24-24",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824424,
+      "atBatIndex": 24,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 359,
+      "launchSpeed": 101.9,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
