@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-04T00:09:21.850Z",
+  "updatedAt": "2026-09-04T04:32:49.844Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29121,6 +29121,58 @@
       "distance": 420,
       "launchSpeed": 105.5,
       "launchAngle": 35
+    },
+    {
+      "key": "624413-824796-28-28",
+      "season": 2026,
+      "date": "2026-09-03",
+      "gamePk": 824796,
+      "atBatIndex": 28,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 392,
+      "launchSpeed": 101.5,
+      "launchAngle": 33
+    },
+    {
+      "key": "701350-824796-66-66",
+      "season": 2026,
+      "date": "2026-09-03",
+      "gamePk": 824796,
+      "atBatIndex": 66,
+      "playerId": 701350,
+      "playerName": "Roman Anthony",
+      "fantasyTeam": "Nate (2)",
+      "distance": 370,
+      "launchSpeed": 100.9,
+      "launchAngle": 26
+    },
+    {
+      "key": "682663-824069-28-28",
+      "season": 2026,
+      "date": "2026-09-03",
+      "gamePk": 824069,
+      "atBatIndex": 28,
+      "playerId": 682663,
+      "playerName": "Agustín Ramírez",
+      "fantasyTeam": "Austin",
+      "distance": 426,
+      "launchSpeed": 108.3,
+      "launchAngle": 21
+    },
+    {
+      "key": "608369-822853-36-36",
+      "season": 2026,
+      "date": "2026-09-03",
+      "gamePk": 822853,
+      "atBatIndex": 36,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 403,
+      "launchSpeed": 102.5,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
