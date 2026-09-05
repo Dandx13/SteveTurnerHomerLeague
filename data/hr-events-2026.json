@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-04T23:19:14.779Z",
+  "updatedAt": "2026-09-05T01:06:58.127Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29186,17 +29186,134 @@
       "distance": 359,
       "launchSpeed": 101.9,
       "launchAngle": 35
+    },
+    {
+      "key": "680574-824471-16-16",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824471,
+      "atBatIndex": 16,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 391,
+      "launchSpeed": 102.4,
+      "launchAngle": 25
+    },
+    {
+      "key": "553993-824471-29-29",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824471,
+      "atBatIndex": 29,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 408,
+      "launchSpeed": 105.7,
+      "launchAngle": 29
+    },
+    {
+      "key": "668901-823579-7-7",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 823579,
+      "atBatIndex": 7,
+      "playerId": 668901,
+      "playerName": "Mark Vientos",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 369,
+      "launchSpeed": 99.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "666182-823579-18-18",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 823579,
+      "atBatIndex": 18,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 395,
+      "launchSpeed": 105.5,
+      "launchAngle": 20
+    },
+    {
+      "key": "596019-823579-54-54",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 823579,
+      "atBatIndex": 54,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 404,
+      "launchSpeed": 106.6,
+      "launchAngle": 38
+    },
+    {
+      "key": "695657-824554-30-30",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824554,
+      "atBatIndex": 30,
+      "playerId": 695657,
+      "playerName": "Colson Montgomery",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 416,
+      "launchSpeed": 108.6,
+      "launchAngle": 35
+    },
+    {
+      "key": "666018-822852-18-18",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 822852,
+      "atBatIndex": 18,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 412,
+      "launchSpeed": 103.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "673237-824146-18-18",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824146,
+      "atBatIndex": 18,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 383,
+      "launchSpeed": 100.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "677951-824067-9-9",
+      "season": 2026,
+      "date": "2026-09-04",
+      "gamePk": 824067,
+      "atBatIndex": 9,
+      "playerId": 677951,
+      "playerName": "Bobby Witt Jr.",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 410,
+      "launchSpeed": 106.7,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-29",
     "2026-08-30",
     "2026-08-31",
     "2026-09-01",
     "2026-09-02",
     "2026-09-03",
-    "2026-09-04"
+    "2026-09-04",
+    "2026-09-05"
   ],
   "rosterSummary": {
     "teamCount": 21,
