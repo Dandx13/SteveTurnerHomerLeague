@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-06T16:59:28.483Z",
+  "updatedAt": "2026-09-06T19:02:29.680Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29693,6 +29693,71 @@
       "distance": 379,
       "launchSpeed": 103.5,
       "launchAngle": 26
+    },
+    {
+      "key": "682829-824469-37-37",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 824469,
+      "atBatIndex": 37,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 402,
+      "launchSpeed": 105.5,
+      "launchAngle": 34
+    },
+    {
+      "key": "691718-823822-34-34",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 823822,
+      "atBatIndex": 34,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 403,
+      "launchSpeed": 111.2,
+      "launchAngle": 27
+    },
+    {
+      "key": "670541-824142-5-5",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 824142,
+      "atBatIndex": 5,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 337,
+      "launchSpeed": 90.7,
+      "launchAngle": 37
+    },
+    {
+      "key": "686469-824065-5-5",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 824065,
+      "atBatIndex": 5,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 406,
+      "launchSpeed": 103.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "521692-824065-21-21",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 824065,
+      "atBatIndex": 21,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 392,
+      "launchSpeed": 103.8,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
