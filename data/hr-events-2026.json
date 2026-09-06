@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-06T21:16:07.298Z",
+  "updatedAt": "2026-09-06T22:55:21.974Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29875,6 +29875,19 @@
       "distance": 416,
       "launchSpeed": 109.2,
       "launchAngle": 18
+    },
+    {
+      "key": "608369-822848-76-76",
+      "season": 2026,
+      "date": "2026-09-06",
+      "gamePk": 822848,
+      "atBatIndex": 76,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 396,
+      "launchSpeed": 101.7,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
