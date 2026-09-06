@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-06T01:22:05.999Z",
+  "updatedAt": "2026-09-06T06:10:38.482Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29628,6 +29628,71 @@
       "distance": 443,
       "launchSpeed": 107.2,
       "launchAngle": 27
+    },
+    {
+      "key": "680574-824468-56-56",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 824468,
+      "atBatIndex": 56,
+      "playerId": 680574,
+      "playerName": "Matt McLain",
+      "fantasyTeam": "John Fournier",
+      "distance": 352,
+      "launchSpeed": 99.5,
+      "launchAngle": 38
+    },
+    {
+      "key": "666018-822850-71-71",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 822850,
+      "atBatIndex": 71,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 409,
+      "launchSpeed": 100.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "606466-824145-59-59",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 824145,
+      "atBatIndex": 59,
+      "playerId": 606466,
+      "playerName": "Ketel Marte",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 388,
+      "launchSpeed": 101.1,
+      "launchAngle": 33
+    },
+    {
+      "key": "691777-823094-8-8",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 823094,
+      "atBatIndex": 8,
+      "playerId": 691777,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Fournier",
+      "distance": 428,
+      "launchSpeed": 108.3,
+      "launchAngle": 28
+    },
+    {
+      "key": "671732-823094-54-54",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 823094,
+      "atBatIndex": 54,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 379,
+      "launchSpeed": 103.5,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
