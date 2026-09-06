@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-05T23:48:16.627Z",
+  "updatedAt": "2026-09-06T01:22:05.999Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29576,17 +29576,69 @@
       "distance": 372,
       "launchSpeed": 112.3,
       "launchAngle": 24
+    },
+    {
+      "key": "663586-823419-55-55",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 823419,
+      "atBatIndex": 55,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 428,
+      "launchSpeed": 103.1,
+      "launchAngle": 28
+    },
+    {
+      "key": "668804-823335-64-64",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 823335,
+      "atBatIndex": 64,
+      "playerId": 668804,
+      "playerName": "Bryan Reynolds",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 421,
+      "launchSpeed": 108.8,
+      "launchAngle": 32
+    },
+    {
+      "key": "592518-823257-32-32",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 823257,
+      "atBatIndex": 32,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 391,
+      "launchSpeed": 99.4,
+      "launchAngle": 29
+    },
+    {
+      "key": "671056-824310-32-32",
+      "season": 2026,
+      "date": "2026-09-05",
+      "gamePk": 824310,
+      "atBatIndex": 32,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 443,
+      "launchSpeed": 107.2,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-08-30",
     "2026-08-31",
     "2026-09-01",
     "2026-09-02",
     "2026-09-03",
     "2026-09-04",
-    "2026-09-05"
+    "2026-09-05",
+    "2026-09-06"
   ],
   "rosterSummary": {
     "teamCount": 21,
