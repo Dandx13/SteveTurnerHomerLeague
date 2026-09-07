@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-07T16:00:45.572Z",
+  "updatedAt": "2026-09-07T19:52:28.479Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29901,6 +29901,32 @@
       "distance": 384,
       "launchSpeed": 101.4,
       "launchAngle": 30
+    },
+    {
+      "key": "656941-823415-53-53",
+      "season": 2026,
+      "date": "2026-09-07",
+      "gamePk": 823415,
+      "atBatIndex": 53,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 415,
+      "launchSpeed": 107.8,
+      "launchAngle": 29
+    },
+    {
+      "key": "680776-824715-14-14",
+      "season": 2026,
+      "date": "2026-09-07",
+      "gamePk": 824715,
+      "atBatIndex": 14,
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "fantasyTeam": "Tom",
+      "distance": 425,
+      "launchSpeed": 111.7,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
