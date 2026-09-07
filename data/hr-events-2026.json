@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-07T19:52:28.479Z",
+  "updatedAt": "2026-09-07T22:25:43.887Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -29927,6 +29927,32 @@
       "distance": 425,
       "launchSpeed": 111.7,
       "launchAngle": 25
+    },
+    {
+      "key": "691718-823742-69-69",
+      "season": 2026,
+      "date": "2026-09-07",
+      "gamePk": 823742,
+      "atBatIndex": 69,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 400,
+      "launchSpeed": 107.9,
+      "launchAngle": 25
+    },
+    {
+      "key": "682985-824229-43-43",
+      "season": 2026,
+      "date": "2026-09-07",
+      "gamePk": 824229,
+      "atBatIndex": 43,
+      "playerId": 682985,
+      "playerName": "Riley Greene",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 417,
+      "launchSpeed": 106.7,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
