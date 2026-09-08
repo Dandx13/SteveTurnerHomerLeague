@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-08T20:20:06.158Z",
+  "updatedAt": "2026-09-08T22:46:36.683Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30018,6 +30018,19 @@
       "distance": 423,
       "launchSpeed": 109.8,
       "launchAngle": 31
+    },
+    {
+      "key": "596019-823821-0-0",
+      "season": 2026,
+      "date": "2026-09-08",
+      "gamePk": 823821,
+      "atBatIndex": 0,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 405,
+      "launchSpeed": 103.5,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
