@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-11T17:20:10.755Z",
+  "updatedAt": "2026-09-11T19:52:04.408Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30538,6 +30538,19 @@
       "distance": 433,
       "launchSpeed": 117.4,
       "launchAngle": 25
+    },
+    {
+      "key": "608324-824631-37-37",
+      "season": 2026,
+      "date": "2026-09-11",
+      "gamePk": 824631,
+      "atBatIndex": 37,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 371,
+      "launchSpeed": 102.4,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
