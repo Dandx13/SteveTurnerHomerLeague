@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-11T00:24:14.073Z",
+  "updatedAt": "2026-09-11T04:58:48.257Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30525,6 +30525,19 @@
       "distance": 410,
       "launchSpeed": 112.4,
       "launchAngle": 18
+    },
+    {
+      "key": "665833-824550-20-20",
+      "season": 2026,
+      "date": "2026-09-10",
+      "gamePk": 824550,
+      "atBatIndex": 20,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 433,
+      "launchSpeed": 117.4,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
