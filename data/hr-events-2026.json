@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-12T17:53:26.852Z",
+  "updatedAt": "2026-09-12T20:07:20.374Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30759,6 +30759,71 @@
       "distance": 359,
       "launchSpeed": 102.3,
       "launchAngle": 23
+    },
+    {
+      "key": "678662-824224-72-72",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824224,
+      "atBatIndex": 72,
+      "playerId": 678662,
+      "playerName": "Ezequiel Tovar",
+      "fantasyTeam": "Adam/Nick",
+      "distance": 355,
+      "launchSpeed": 107.3,
+      "launchAngle": 23
+    },
+    {
+      "key": "641355-823496-47-47",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823496,
+      "atBatIndex": 47,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 364,
+      "launchSpeed": 97.9,
+      "launchAngle": 29
+    },
+    {
+      "key": "665742-823496-51-51",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823496,
+      "atBatIndex": 51,
+      "playerId": 665742,
+      "playerName": "Juan Soto",
+      "fantasyTeam": "Tom",
+      "distance": 400,
+      "launchSpeed": 106.7,
+      "launchAngle": 34
+    },
+    {
+      "key": "596019-823496-63-63",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823496,
+      "atBatIndex": 63,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 365,
+      "launchSpeed": 104.3,
+      "launchAngle": 41
+    },
+    {
+      "key": "683737-824630-6-6",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824630,
+      "atBatIndex": 6,
+      "playerId": 683737,
+      "playerName": "Michael Busch",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 415,
+      "launchSpeed": 101.6,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
