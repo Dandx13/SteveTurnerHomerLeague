@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-12T15:47:32.607Z",
+  "updatedAt": "2026-09-12T17:53:26.852Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30733,6 +30733,32 @@
       "distance": 388,
       "launchSpeed": 101.7,
       "launchAngle": 21
+    },
+    {
+      "key": "696100-824224-20-20",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824224,
+      "atBatIndex": 20,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "596019-823496-0-0",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823496,
+      "atBatIndex": 0,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 359,
+      "launchSpeed": 102.3,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
