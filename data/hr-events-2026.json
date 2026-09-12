@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-11T22:07:04.298Z",
+  "updatedAt": "2026-09-12T00:15:45.351Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30564,17 +30564,56 @@
       "distance": 364,
       "launchSpeed": 99.6,
       "launchAngle": 28
+    },
+    {
+      "key": "545361-822684-1-1",
+      "season": 2026,
+      "date": "2026-09-11",
+      "gamePk": 822684,
+      "atBatIndex": 1,
+      "playerId": 545361,
+      "playerName": "Mike Trout",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 416,
+      "launchSpeed": 104.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "641355-823498-18-18",
+      "season": 2026,
+      "date": "2026-09-11",
+      "gamePk": 823498,
+      "atBatIndex": 18,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 377,
+      "launchSpeed": 100.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "621566-824873-5-5",
+      "season": 2026,
+      "date": "2026-09-11",
+      "gamePk": 824873,
+      "atBatIndex": 5,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 352,
+      "launchSpeed": 97.2,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-05",
     "2026-09-06",
     "2026-09-07",
     "2026-09-08",
     "2026-09-09",
     "2026-09-10",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-12"
   ],
   "rosterSummary": {
     "teamCount": 21,
