@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-12T20:07:20.374Z",
+  "updatedAt": "2026-09-12T22:15:03.402Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30824,6 +30824,97 @@
       "distance": 415,
       "launchSpeed": 101.6,
       "launchAngle": 27
+    },
+    {
+      "key": "624413-822768-57-57",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 822768,
+      "atBatIndex": 57,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 387,
+      "launchSpeed": 106.5,
+      "launchAngle": 27
+    },
+    {
+      "key": "646240-823170-6-6",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823170,
+      "atBatIndex": 6,
+      "playerId": 646240,
+      "playerName": "Rafael Devers",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 389,
+      "launchSpeed": 108.1,
+      "launchAngle": 33
+    },
+    {
+      "key": "701538-823170-22-22",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823170,
+      "atBatIndex": 22,
+      "playerId": 701538,
+      "playerName": "Jackson Merrill",
+      "fantasyTeam": "John Eames",
+      "distance": 405,
+      "launchSpeed": 102.2,
+      "launchAngle": 31
+    },
+    {
+      "key": "665487-823170-45-45",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823170,
+      "atBatIndex": 45,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 421,
+      "launchSpeed": 112,
+      "launchAngle": 27
+    },
+    {
+      "key": "605141-823819-2-2",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823819,
+      "atBatIndex": 2,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 399,
+      "launchSpeed": 103.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "571970-823819-3-3",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823819,
+      "atBatIndex": 3,
+      "playerId": 571970,
+      "playerName": "Max Muncy",
+      "fantasyTeam": "John Eames",
+      "distance": 393,
+      "launchSpeed": 105.6,
+      "launchAngle": 34
+    },
+    {
+      "key": "670623-822927-1-1",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 822927,
+      "atBatIndex": 1,
+      "playerId": 670623,
+      "playerName": "Isaac Paredes",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 391,
+      "launchSpeed": 97.3,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
