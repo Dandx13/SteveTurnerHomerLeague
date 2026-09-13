@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-13T19:33:40.699Z",
+  "updatedAt": "2026-09-13T21:40:08.468Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31162,6 +31162,97 @@
       "distance": 451,
       "launchSpeed": 116.8,
       "launchAngle": 29
+    },
+    {
+      "key": "621566-824869-82-82",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 824869,
+      "atBatIndex": 82,
+      "playerId": 621566,
+      "playerName": "Matt Olson",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 400,
+      "launchSpeed": 101.9,
+      "launchAngle": 30
+    },
+    {
+      "key": "666018-822928-63-63",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 822928,
+      "atBatIndex": 63,
+      "playerId": 666018,
+      "playerName": "Jonathan Aranda",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 415,
+      "launchSpeed": 103,
+      "launchAngle": 32
+    },
+    {
+      "key": "682663-823815-75-75",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 823815,
+      "atBatIndex": 75,
+      "playerId": 682663,
+      "playerName": "Agustín Ramírez",
+      "fantasyTeam": "Austin",
+      "distance": 407,
+      "launchSpeed": 108.6,
+      "launchAngle": 32
+    },
+    {
+      "key": "553993-823734-40-40",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 823734,
+      "atBatIndex": 40,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 389,
+      "launchSpeed": 105.3,
+      "launchAngle": 32
+    },
+    {
+      "key": "671732-824952-6-6",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 824952,
+      "atBatIndex": 6,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 405,
+      "launchSpeed": 106,
+      "launchAngle": 25
+    },
+    {
+      "key": "668227-824952-20-20",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 824952,
+      "atBatIndex": 20,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": null,
+      "launchSpeed": null,
+      "launchAngle": null
+    },
+    {
+      "key": "608369-825033-1-1",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 825033,
+      "atBatIndex": 1,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 458,
+      "launchSpeed": 110.3,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
