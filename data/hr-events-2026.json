@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-12T22:15:03.402Z",
+  "updatedAt": "2026-09-13T00:02:31.373Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30915,17 +30915,56 @@
       "distance": 391,
       "launchSpeed": 97.3,
       "launchAngle": 30
+    },
+    {
+      "key": "668930-823737-5-5",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823737,
+      "atBatIndex": 5,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 400,
+      "launchSpeed": 103.3,
+      "launchAngle": 26
+    },
+    {
+      "key": "553993-823737-12-12",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823737,
+      "atBatIndex": 12,
+      "playerId": 553993,
+      "playerName": "Eugenio Suárez",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 402,
+      "launchSpeed": 104,
+      "launchAngle": 34
+    },
+    {
+      "key": "547180-824870-2-2",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824870,
+      "atBatIndex": 2,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 426,
+      "launchSpeed": 108.2,
+      "launchAngle": 26
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-06",
     "2026-09-07",
     "2026-09-08",
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
-    "2026-09-12"
+    "2026-09-12",
+    "2026-09-13"
   ],
   "rosterSummary": {
     "teamCount": 21,
