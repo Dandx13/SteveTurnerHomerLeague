@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-13T00:02:31.373Z",
+  "updatedAt": "2026-09-13T04:38:41.374Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -30954,6 +30954,71 @@
       "distance": 426,
       "launchSpeed": 108.2,
       "launchAngle": 26
+    },
+    {
+      "key": "661388-823737-41-41",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 823737,
+      "atBatIndex": 41,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 381,
+      "launchSpeed": 101,
+      "launchAngle": 26
+    },
+    {
+      "key": "660670-824870-25-25",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824870,
+      "atBatIndex": 25,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 353,
+      "launchSpeed": 108,
+      "launchAngle": 44
+    },
+    {
+      "key": "671739-824870-69-69",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824870,
+      "atBatIndex": 69,
+      "playerId": 671739,
+      "playerName": "Michael Harris II",
+      "fantasyTeam": "Austin",
+      "distance": 367,
+      "launchSpeed": 101.5,
+      "launchAngle": 30
+    },
+    {
+      "key": "694671-825035-28-28",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 825035,
+      "atBatIndex": 28,
+      "playerId": 694671,
+      "playerName": "Wyatt Langford",
+      "fantasyTeam": "John Fournier",
+      "distance": 435,
+      "launchSpeed": 105.5,
+      "launchAngle": 24
+    },
+    {
+      "key": "668227-824955-15-15",
+      "season": 2026,
+      "date": "2026-09-12",
+      "gamePk": 824955,
+      "atBatIndex": 15,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 411,
+      "launchSpeed": 102.8,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
