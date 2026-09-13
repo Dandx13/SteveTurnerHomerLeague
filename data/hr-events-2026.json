@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-13T21:40:08.468Z",
+  "updatedAt": "2026-09-13T23:32:10.018Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31253,6 +31253,32 @@
       "distance": 458,
       "launchSpeed": 110.3,
       "launchAngle": 31
+    },
+    {
+      "key": "668227-824952-71-71",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 824952,
+      "atBatIndex": 71,
+      "playerId": 668227,
+      "playerName": "Randy Arozarena",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 375,
+      "launchSpeed": 101.6,
+      "launchAngle": 29
+    },
+    {
+      "key": "671732-824952-82-82",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 824952,
+      "atBatIndex": 82,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 402,
+      "launchSpeed": 107.6,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
