@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-13T23:32:10.018Z",
+  "updatedAt": "2026-09-14T01:34:32.705Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31279,17 +31279,30 @@
       "distance": 402,
       "launchSpeed": 107.6,
       "launchAngle": 36
+    },
+    {
+      "key": "592518-823171-14-14",
+      "season": 2026,
+      "date": "2026-09-13",
+      "gamePk": 823171,
+      "atBatIndex": 14,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 392,
+      "launchSpeed": 104.1,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-07",
     "2026-09-08",
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
     "2026-09-12",
-    "2026-09-13"
+    "2026-09-13",
+    "2026-09-14"
   ],
   "rosterSummary": {
     "teamCount": 21,
