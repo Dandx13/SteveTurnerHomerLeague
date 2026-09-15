@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-14T22:27:34.301Z",
+  "updatedAt": "2026-09-15T00:50:43.759Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31292,17 +31292,56 @@
       "distance": 392,
       "launchSpeed": 104.1,
       "launchAngle": 27
+    },
+    {
+      "key": "663656-824465-6-6",
+      "season": 2026,
+      "date": "2026-09-14",
+      "gamePk": 824465,
+      "atBatIndex": 6,
+      "playerId": 663656,
+      "playerName": "Kyle Tucker",
+      "fantasyTeam": "Pat T",
+      "distance": 398,
+      "launchSpeed": 104,
+      "launchAngle": 31
+    },
+    {
+      "key": "606192-824465-22-22",
+      "season": 2026,
+      "date": "2026-09-14",
+      "gamePk": 824465,
+      "atBatIndex": 22,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 383,
+      "launchSpeed": 104.2,
+      "launchAngle": 25
+    },
+    {
+      "key": "592518-824308-2-2",
+      "season": 2026,
+      "date": "2026-09-14",
+      "gamePk": 824308,
+      "atBatIndex": 2,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 388,
+      "launchSpeed": 94.1,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-08",
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
     "2026-09-12",
     "2026-09-13",
-    "2026-09-14"
+    "2026-09-14",
+    "2026-09-15"
   ],
   "rosterSummary": {
     "teamCount": 21,
