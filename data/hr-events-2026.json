@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-15T22:07:07.009Z",
+  "updatedAt": "2026-09-16T00:16:28.799Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31461,17 +31461,95 @@
       "distance": 423,
       "launchSpeed": 108.4,
       "launchAngle": 28
+    },
+    {
+      "key": "606192-824466-21-21",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 824466,
+      "atBatIndex": 21,
+      "playerId": 606192,
+      "playerName": "Teoscar Hernández",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 374,
+      "launchSpeed": 109.3,
+      "launchAngle": 21
+    },
+    {
+      "key": "666176-824384-6-6",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 824384,
+      "atBatIndex": 6,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 442,
+      "launchSpeed": 110.1,
+      "launchAngle": 27
+    },
+    {
+      "key": "656941-822683-35-35",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 822683,
+      "atBatIndex": 35,
+      "playerId": 656941,
+      "playerName": "Kyle Schwarber",
+      "fantasyTeam": "Austin",
+      "distance": 366,
+      "launchSpeed": 98.3,
+      "launchAngle": 33
+    },
+    {
+      "key": "679529-822762-28-28",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 822762,
+      "atBatIndex": 28,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 379,
+      "launchSpeed": 102.7,
+      "launchAngle": 38
+    },
+    {
+      "key": "641355-823654-1-1",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 823654,
+      "atBatIndex": 1,
+      "playerId": 641355,
+      "playerName": "Cody Bellinger",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 399,
+      "launchSpeed": 100.9,
+      "launchAngle": 32
+    },
+    {
+      "key": "676475-823007-9-9",
+      "season": 2026,
+      "date": "2026-09-15",
+      "gamePk": 823007,
+      "atBatIndex": 9,
+      "playerId": 676475,
+      "playerName": "Alec Burleson",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 376,
+      "launchSpeed": 110.3,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-09",
     "2026-09-10",
     "2026-09-11",
     "2026-09-12",
     "2026-09-13",
     "2026-09-14",
-    "2026-09-15"
+    "2026-09-15",
+    "2026-09-16"
   ],
   "rosterSummary": {
     "teamCount": 21,
