@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-16T21:25:52.527Z",
+  "updatedAt": "2026-09-16T23:44:32.561Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31656,6 +31656,32 @@
       "distance": 455,
       "launchSpeed": 106.5,
       "launchAngle": 29
+    },
+    {
+      "key": "682829-824467-25-25",
+      "season": 2026,
+      "date": "2026-09-16",
+      "gamePk": 824467,
+      "atBatIndex": 25,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 391,
+      "launchSpeed": 106.4,
+      "launchAngle": 24
+    },
+    {
+      "key": "624413-823576-1-1",
+      "season": 2026,
+      "date": "2026-09-16",
+      "gamePk": 823576,
+      "atBatIndex": 1,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 410,
+      "launchSpeed": 108.4,
+      "launchAngle": 38
     }
   ],
   "lastScanMode": "rolling-7-day",
