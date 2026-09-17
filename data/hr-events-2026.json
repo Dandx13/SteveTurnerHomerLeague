@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-17T01:45:57.009Z",
+  "updatedAt": "2026-09-17T06:45:24.967Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31773,6 +31773,19 @@
       "distance": 403,
       "launchSpeed": 105.7,
       "launchAngle": 25
+    },
+    {
+      "key": "673237-824140-73-73",
+      "season": 2026,
+      "date": "2026-09-16",
+      "gamePk": 824140,
+      "atBatIndex": 73,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 381,
+      "launchSpeed": 104.9,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
