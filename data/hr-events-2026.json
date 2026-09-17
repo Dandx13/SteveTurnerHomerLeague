@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-17T17:01:47.901Z",
+  "updatedAt": "2026-09-17T20:13:35.180Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31799,6 +31799,32 @@
       "distance": 401,
       "launchSpeed": 99.9,
       "launchAngle": 27
+    },
+    {
+      "key": "701398-824464-37-37",
+      "season": 2026,
+      "date": "2026-09-17",
+      "gamePk": 824464,
+      "atBatIndex": 37,
+      "playerId": 701398,
+      "playerName": "Sal Stewart",
+      "fantasyTeam": "Nate",
+      "distance": 380,
+      "launchSpeed": 104.3,
+      "launchAngle": 25
+    },
+    {
+      "key": "671732-822924-43-43",
+      "season": 2026,
+      "date": "2026-09-17",
+      "gamePk": 822924,
+      "atBatIndex": 43,
+      "playerId": 671732,
+      "playerName": "Lawrence Butler",
+      "fantasyTeam": "Pat T",
+      "distance": 437,
+      "launchSpeed": 109.3,
+      "launchAngle": 33
     }
   ],
   "lastScanMode": "rolling-7-day",
