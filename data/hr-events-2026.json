@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-17T22:52:25.853Z",
+  "updatedAt": "2026-09-18T00:55:29.829Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31825,17 +31825,56 @@
       "distance": 437,
       "launchSpeed": 109.3,
       "launchAngle": 33
+    },
+    {
+      "key": "662139-824141-13-13",
+      "season": 2026,
+      "date": "2026-09-17",
+      "gamePk": 824141,
+      "atBatIndex": 13,
+      "playerId": 662139,
+      "playerName": "Daulton Varsho",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 407,
+      "launchSpeed": 105.5,
+      "launchAngle": 22
+    },
+    {
+      "key": "670541-824141-36-36",
+      "season": 2026,
+      "date": "2026-09-17",
+      "gamePk": 824141,
+      "atBatIndex": 36,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 385,
+      "launchSpeed": 107.2,
+      "launchAngle": 37
+    },
+    {
+      "key": "808959-824548-7-7",
+      "season": 2026,
+      "date": "2026-09-17",
+      "gamePk": 824548,
+      "atBatIndex": 7,
+      "playerId": 808959,
+      "playerName": "Munetaka Murakami",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 423,
+      "launchSpeed": 109.1,
+      "launchAngle": 35
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-11",
     "2026-09-12",
     "2026-09-13",
     "2026-09-14",
     "2026-09-15",
     "2026-09-16",
-    "2026-09-17"
+    "2026-09-17",
+    "2026-09-18"
   ],
   "rosterSummary": {
     "teamCount": 21,
