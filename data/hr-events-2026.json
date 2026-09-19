@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-18T22:30:47.153Z",
+  "updatedAt": "2026-09-19T00:34:20.758Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -31877,17 +31877,95 @@
       "distance": 394,
       "launchSpeed": 108.2,
       "launchAngle": 21
+    },
+    {
+      "key": "664023-824463-22-22",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 824463,
+      "atBatIndex": 22,
+      "playerId": 664023,
+      "playerName": "Ian Happ",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 366,
+      "launchSpeed": 100.6,
+      "launchAngle": 25
+    },
+    {
+      "key": "686469-823331-2-2",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 823331,
+      "atBatIndex": 2,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 395,
+      "launchSpeed": 106.7,
+      "launchAngle": 25
+    },
+    {
+      "key": "664040-823331-23-23",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 823331,
+      "atBatIndex": 23,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 417,
+      "launchSpeed": 105.6,
+      "launchAngle": 33
+    },
+    {
+      "key": "694192-824790-13-13",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 824790,
+      "atBatIndex": 13,
+      "playerId": 694192,
+      "playerName": "Jackson Chourio",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 419,
+      "launchSpeed": 107.5,
+      "launchAngle": 28
+    },
+    {
+      "key": "624413-824790-25-25",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 824790,
+      "atBatIndex": 25,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 353,
+      "launchSpeed": 106,
+      "launchAngle": 21
+    },
+    {
+      "key": "701350-822923-0-0",
+      "season": 2026,
+      "date": "2026-09-18",
+      "gamePk": 822923,
+      "atBatIndex": 0,
+      "playerId": 701350,
+      "playerName": "Roman Anthony",
+      "fantasyTeam": "Nate (2)",
+      "distance": 438,
+      "launchSpeed": 107.7,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-12",
     "2026-09-13",
     "2026-09-14",
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-19"
   ],
   "rosterSummary": {
     "teamCount": 21,
