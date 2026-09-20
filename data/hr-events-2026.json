@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-20T21:55:35.918Z",
+  "updatedAt": "2026-09-20T23:55:27.133Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32475,6 +32475,19 @@
       "distance": 388,
       "launchSpeed": 107.6,
       "launchAngle": 20
+    },
+    {
+      "key": "665487-823247-54-54",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823247,
+      "atBatIndex": 54,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 406,
+      "launchSpeed": 111.1,
+      "launchAngle": 31
     }
   ],
   "lastScanMode": "rolling-7-day",
