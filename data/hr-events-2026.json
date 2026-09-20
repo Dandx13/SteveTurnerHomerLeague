@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-20T19:47:53.279Z",
+  "updatedAt": "2026-09-20T21:55:35.918Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32397,6 +32397,84 @@
       "distance": 395,
       "launchSpeed": 106.7,
       "launchAngle": 37
+    },
+    {
+      "key": "673548-824462-62-62",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824462,
+      "atBatIndex": 62,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 440,
+      "launchSpeed": 108.9,
+      "launchAngle": 24
+    },
+    {
+      "key": "596115-822922-61-61",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 822922,
+      "atBatIndex": 61,
+      "playerId": 596115,
+      "playerName": "Trevor Story",
+      "fantasyTeam": "Pat T",
+      "distance": 405,
+      "launchSpeed": 102.7,
+      "launchAngle": 37
+    },
+    {
+      "key": "673237-824139-65-65",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824139,
+      "atBatIndex": 65,
+      "playerId": 673237,
+      "playerName": "Yainer Diaz",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 377,
+      "launchSpeed": 102.5,
+      "launchAngle": 25
+    },
+    {
+      "key": "671056-823001-60-60",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823001,
+      "atBatIndex": 60,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 439,
+      "launchSpeed": 111.1,
+      "launchAngle": 25
+    },
+    {
+      "key": "696100-824300-63-63",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824300,
+      "atBatIndex": 63,
+      "playerId": 696100,
+      "playerName": "Hunter Goodman",
+      "fantasyTeam": "Peyton B",
+      "distance": 389,
+      "launchSpeed": 97.8,
+      "launchAngle": 34
+    },
+    {
+      "key": "671218-825028-20-20",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 825028,
+      "atBatIndex": 20,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 388,
+      "launchSpeed": 107.6,
+      "launchAngle": 20
     }
   ],
   "lastScanMode": "rolling-7-day",
