@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-20T01:03:11.588Z",
+  "updatedAt": "2026-09-20T06:08:10.625Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32228,6 +32228,84 @@
       "distance": 435,
       "launchSpeed": 106.8,
       "launchAngle": 35
+    },
+    {
+      "key": "664040-823330-70-70",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 823330,
+      "atBatIndex": 70,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 401,
+      "launchSpeed": 103.7,
+      "launchAngle": 30
+    },
+    {
+      "key": "660670-824137-52-52",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 824137,
+      "atBatIndex": 52,
+      "playerId": 660670,
+      "playerName": "Ronald Acuña Jr.",
+      "fantasyTeam": "Peyton B",
+      "distance": 411,
+      "launchSpeed": 105.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "671218-825029-40-40",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 825029,
+      "atBatIndex": 40,
+      "playerId": 671218,
+      "playerName": "Heliot Ramos",
+      "fantasyTeam": "Dan/Larry",
+      "distance": 373,
+      "launchSpeed": 102.1,
+      "launchAngle": 26
+    },
+    {
+      "key": "669224-825029-42-42",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 825029,
+      "atBatIndex": 42,
+      "playerId": 669224,
+      "playerName": "Austin Wells",
+      "fantasyTeam": "Nate",
+      "distance": 393,
+      "launchSpeed": 104.8,
+      "launchAngle": 39
+    },
+    {
+      "key": "665487-823249-41-41",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 823249,
+      "atBatIndex": 41,
+      "playerId": 665487,
+      "playerName": "Fernando Tatis Jr.",
+      "fantasyTeam": "Dan/Joe",
+      "distance": 410,
+      "launchSpeed": 107.4,
+      "launchAngle": 30
+    },
+    {
+      "key": "669257-823899-26-26",
+      "season": 2026,
+      "date": "2026-09-19",
+      "gamePk": 823899,
+      "atBatIndex": 26,
+      "playerId": 669257,
+      "playerName": "Will Smith",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 422,
+      "launchSpeed": 105.4,
+      "launchAngle": 32
     }
   ],
   "lastScanMode": "rolling-7-day",
