@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-20T17:42:31.431Z",
+  "updatedAt": "2026-09-20T19:47:53.279Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32306,6 +32306,97 @@
       "distance": 422,
       "launchSpeed": 105.4,
       "launchAngle": 32
+    },
+    {
+      "key": "666182-823570-47-47",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823570,
+      "atBatIndex": 47,
+      "playerId": 666182,
+      "playerName": "Bo Bichette",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 419,
+      "launchSpeed": 105.6,
+      "launchAngle": 31
+    },
+    {
+      "key": "665833-823329-29-29",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823329,
+      "atBatIndex": 29,
+      "playerId": 665833,
+      "playerName": "Oneil Cruz",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 420,
+      "launchSpeed": 104.5,
+      "launchAngle": 32
+    },
+    {
+      "key": "686469-823329-53-53",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823329,
+      "atBatIndex": 53,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 390,
+      "launchSpeed": 99.3,
+      "launchAngle": 29
+    },
+    {
+      "key": "691718-824462-43-43",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824462,
+      "atBatIndex": 43,
+      "playerId": 691718,
+      "playerName": "Pete Crow-Armstrong",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 411,
+      "launchSpeed": 105.3,
+      "launchAngle": 33
+    },
+    {
+      "key": "514888-824139-29-29",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824139,
+      "atBatIndex": 29,
+      "playerId": 514888,
+      "playerName": "Jose Altuve",
+      "fantasyTeam": "Peyton B",
+      "distance": 335,
+      "launchSpeed": 89.5,
+      "launchAngle": 32
+    },
+    {
+      "key": "671056-823001-5-5",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 823001,
+      "atBatIndex": 5,
+      "playerId": 671056,
+      "playerName": "Iván Herrera",
+      "fantasyTeam": "Nate (2)",
+      "distance": 375,
+      "launchSpeed": 107.5,
+      "launchAngle": 22
+    },
+    {
+      "key": "669394-822844-32-32",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 822844,
+      "atBatIndex": 32,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 395,
+      "launchSpeed": 106.7,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
