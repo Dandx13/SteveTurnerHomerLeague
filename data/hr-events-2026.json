@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-20T23:55:27.133Z",
+  "updatedAt": "2026-09-21T03:52:23.211Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32488,17 +32488,30 @@
       "distance": 406,
       "launchSpeed": 111.1,
       "launchAngle": 31
+    },
+    {
+      "key": "661388-824789-22-22",
+      "season": 2026,
+      "date": "2026-09-20",
+      "gamePk": 824789,
+      "atBatIndex": 22,
+      "playerId": 661388,
+      "playerName": "William Contreras",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 403,
+      "launchSpeed": 106.9,
+      "launchAngle": 43
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-14",
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
     "2026-09-18",
     "2026-09-19",
-    "2026-09-20"
+    "2026-09-20",
+    "2026-09-21"
   ],
   "rosterSummary": {
     "teamCount": 21,
