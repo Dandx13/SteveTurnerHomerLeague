@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-21T23:27:29.172Z",
+  "updatedAt": "2026-09-22T01:45:48.065Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32501,17 +32501,69 @@
       "distance": 403,
       "launchSpeed": 106.9,
       "launchAngle": 43
+    },
+    {
+      "key": "624413-824787-9-9",
+      "season": 2026,
+      "date": "2026-09-21",
+      "gamePk": 824787,
+      "atBatIndex": 9,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 363,
+      "launchSpeed": 101.4,
+      "launchAngle": 26
+    },
+    {
+      "key": "683002-824787-44-44",
+      "season": 2026,
+      "date": "2026-09-21",
+      "gamePk": 824787,
+      "atBatIndex": 44,
+      "playerId": 683002,
+      "playerName": "Gunnar Henderson",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 372,
+      "launchSpeed": 106.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "624413-824787-59-59",
+      "season": 2026,
+      "date": "2026-09-21",
+      "gamePk": 824787,
+      "atBatIndex": 59,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 400,
+      "launchSpeed": 112.9,
+      "launchAngle": 22
+    },
+    {
+      "key": "679529-824221-44-44",
+      "season": 2026,
+      "date": "2026-09-21",
+      "gamePk": 824221,
+      "atBatIndex": 44,
+      "playerId": 679529,
+      "playerName": "Spencer Torkelson",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 380,
+      "launchSpeed": 97.1,
+      "launchAngle": 36
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-15",
     "2026-09-16",
     "2026-09-17",
     "2026-09-18",
     "2026-09-19",
     "2026-09-20",
-    "2026-09-21"
+    "2026-09-21",
+    "2026-09-22"
   ],
   "rosterSummary": {
     "teamCount": 21,
