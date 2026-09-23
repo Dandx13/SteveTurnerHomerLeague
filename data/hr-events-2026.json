@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-23T15:32:31.913Z",
+  "updatedAt": "2026-09-23T19:11:50.600Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32696,6 +32696,19 @@
       "distance": 396,
       "launchSpeed": 101.9,
       "launchAngle": 30
+    },
+    {
+      "key": "624413-824785-40-40",
+      "season": 2026,
+      "date": "2026-09-22",
+      "gamePk": 824785,
+      "atBatIndex": 40,
+      "playerId": 624413,
+      "playerName": "Pete Alonso",
+      "fantasyTeam": "Nate (2)",
+      "distance": 412,
+      "launchSpeed": 109.2,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
