@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-23T22:18:41.441Z",
+  "updatedAt": "2026-09-24T00:36:13.710Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32709,17 +32709,82 @@
       "distance": 412,
       "launchSpeed": 109.2,
       "launchAngle": 24
+    },
+    {
+      "key": "664040-823327-11-11",
+      "season": 2026,
+      "date": "2026-09-23",
+      "gamePk": 823327,
+      "atBatIndex": 11,
+      "playerId": 664040,
+      "playerName": "Brandon Lowe",
+      "fantasyTeam": "Nate",
+      "distance": 434,
+      "launchSpeed": 108.4,
+      "launchAngle": 29
+    },
+    {
+      "key": "668930-823410-2-2",
+      "season": 2026,
+      "date": "2026-09-23",
+      "gamePk": 823410,
+      "atBatIndex": 2,
+      "playerId": 668930,
+      "playerName": "Brice Turang",
+      "fantasyTeam": "Tom",
+      "distance": 406,
+      "launchSpeed": 108.4,
+      "launchAngle": 22
+    },
+    {
+      "key": "592885-823410-10-10",
+      "season": 2026,
+      "date": "2026-09-23",
+      "gamePk": 823410,
+      "atBatIndex": 10,
+      "playerId": 592885,
+      "playerName": "Christian Yelich",
+      "fantasyTeam": "Ryan/Paul",
+      "distance": 378,
+      "launchSpeed": 106.1,
+      "launchAngle": 38
+    },
+    {
+      "key": "700250-823492-4-4",
+      "season": 2026,
+      "date": "2026-09-23",
+      "gamePk": 823492,
+      "atBatIndex": 4,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 379,
+      "launchSpeed": 108.4,
+      "launchAngle": 36
+    },
+    {
+      "key": "700250-823492-34-34",
+      "season": 2026,
+      "date": "2026-09-23",
+      "gamePk": 823492,
+      "atBatIndex": 34,
+      "playerId": 700250,
+      "playerName": "Ben Rice",
+      "fantasyTeam": "Austin",
+      "distance": 383,
+      "launchSpeed": 101.1,
+      "launchAngle": 30
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-17",
     "2026-09-18",
     "2026-09-19",
     "2026-09-20",
     "2026-09-21",
     "2026-09-22",
-    "2026-09-23"
+    "2026-09-23",
+    "2026-09-24"
   ],
   "rosterSummary": {
     "teamCount": 21,
