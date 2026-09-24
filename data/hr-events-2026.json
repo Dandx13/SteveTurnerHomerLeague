@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-24T19:17:48.824Z",
+  "updatedAt": "2026-09-24T22:32:11.672Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32904,6 +32904,45 @@
       "distance": 395,
       "launchSpeed": 104.6,
       "launchAngle": 33
+    },
+    {
+      "key": "521692-824059-38-38",
+      "season": 2026,
+      "date": "2026-09-24",
+      "gamePk": 824059,
+      "atBatIndex": 38,
+      "playerId": 521692,
+      "playerName": "Salvador Perez",
+      "fantasyTeam": "Tom",
+      "distance": 419,
+      "launchSpeed": 110.1,
+      "launchAngle": 20
+    },
+    {
+      "key": "673548-824623-39-39",
+      "season": 2026,
+      "date": "2026-09-24",
+      "gamePk": 824623,
+      "atBatIndex": 39,
+      "playerId": 673548,
+      "playerName": "Seiya Suzuki",
+      "fantasyTeam": "Nate (2)",
+      "distance": 408,
+      "launchSpeed": 106.1,
+      "launchAngle": 29
+    },
+    {
+      "key": "608369-822842-41-41",
+      "season": 2026,
+      "date": "2026-09-24",
+      "gamePk": 822842,
+      "atBatIndex": 41,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 374,
+      "launchSpeed": 107.5,
+      "launchAngle": 24
     }
   ],
   "lastScanMode": "rolling-7-day",
