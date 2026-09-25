@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-24T22:32:11.672Z",
+  "updatedAt": "2026-09-25T00:45:33.657Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -32943,17 +32943,43 @@
       "distance": 374,
       "launchSpeed": 107.5,
       "launchAngle": 24
+    },
+    {
+      "key": "682829-824866-24-24",
+      "season": 2026,
+      "date": "2026-09-24",
+      "gamePk": 824866,
+      "atBatIndex": 24,
+      "playerId": 682829,
+      "playerName": "Elly De La Cruz",
+      "fantasyTeam": "Peyton B",
+      "distance": 402,
+      "launchSpeed": 108,
+      "launchAngle": 25
+    },
+    {
+      "key": "663586-824866-32-32",
+      "season": 2026,
+      "date": "2026-09-24",
+      "gamePk": 824866,
+      "atBatIndex": 32,
+      "playerId": 663586,
+      "playerName": "Austin Riley",
+      "fantasyTeam": "John Fournier",
+      "distance": 421,
+      "launchSpeed": 106.4,
+      "launchAngle": 29
     }
   ],
   "lastScanMode": "rolling-7-day",
   "lastScanDates": [
-    "2026-09-18",
     "2026-09-19",
     "2026-09-20",
     "2026-09-21",
     "2026-09-22",
     "2026-09-23",
-    "2026-09-24"
+    "2026-09-24",
+    "2026-09-25"
   ],
   "rosterSummary": {
     "teamCount": 21,
