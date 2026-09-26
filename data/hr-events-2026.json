@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-26T18:26:29.442Z",
+  "updatedAt": "2026-09-26T21:24:06.672Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -33229,6 +33229,19 @@
       "distance": 416,
       "launchSpeed": 104.7,
       "launchAngle": 31
+    },
+    {
+      "key": "605141-823165-18-18",
+      "season": 2026,
+      "date": "2026-09-26",
+      "gamePk": 823165,
+      "atBatIndex": 18,
+      "playerId": 605141,
+      "playerName": "Mookie Betts",
+      "fantasyTeam": "Nate (2)",
+      "distance": 378,
+      "launchSpeed": 102.2,
+      "launchAngle": 27
     }
   ],
   "lastScanMode": "rolling-7-day",
