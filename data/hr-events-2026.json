@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-26T21:24:06.672Z",
+  "updatedAt": "2026-09-26T23:44:40.615Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -33242,6 +33242,32 @@
       "distance": 378,
       "launchSpeed": 102.2,
       "launchAngle": 27
+    },
+    {
+      "key": "669394-823653-36-36",
+      "season": 2026,
+      "date": "2026-09-26",
+      "gamePk": 823653,
+      "atBatIndex": 36,
+      "playerId": 669394,
+      "playerName": "Jake Burger",
+      "fantasyTeam": "Ryan/Paul (2)",
+      "distance": 415,
+      "launchSpeed": 105.5,
+      "launchAngle": 23
+    },
+    {
+      "key": "686948-823813-72-72",
+      "season": 2026,
+      "date": "2026-09-26",
+      "gamePk": 823813,
+      "atBatIndex": 72,
+      "playerId": 686948,
+      "playerName": "Drake Baldwin",
+      "fantasyTeam": "Dan/Connor",
+      "distance": 407,
+      "launchSpeed": 103.5,
+      "launchAngle": 23
     }
   ],
   "lastScanMode": "rolling-7-day",
