@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-27T17:48:21.504Z",
+  "updatedAt": "2026-09-27T20:28:10.048Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -33385,6 +33385,84 @@
       "distance": 401,
       "launchSpeed": 106.7,
       "launchAngle": 22
+    },
+    {
+      "key": "596019-822679-14-14",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 822679,
+      "atBatIndex": 14,
+      "playerId": 596019,
+      "playerName": "Francisco Lindor",
+      "fantasyTeam": "Pete/Zack",
+      "distance": 409,
+      "launchSpeed": 110.8,
+      "launchAngle": 22
+    },
+    {
+      "key": "547180-823408-39-39",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 823408,
+      "atBatIndex": 39,
+      "playerId": 547180,
+      "playerName": "Bryce Harper",
+      "fantasyTeam": "Dan/Joe (2)",
+      "distance": 366,
+      "launchSpeed": 111.6,
+      "launchAngle": 20
+    },
+    {
+      "key": "608324-824705-1-1",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824705,
+      "atBatIndex": 1,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 417,
+      "launchSpeed": 104,
+      "launchAngle": 27
+    },
+    {
+      "key": "608324-824705-20-20",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824705,
+      "atBatIndex": 20,
+      "playerId": 608324,
+      "playerName": "Alex Bregman",
+      "fantasyTeam": "Austin",
+      "distance": 402,
+      "launchSpeed": 102.6,
+      "launchAngle": 28
+    },
+    {
+      "key": "686469-824055-42-42",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824055,
+      "atBatIndex": 42,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 434,
+      "launchSpeed": 106,
+      "launchAngle": 26
+    },
+    {
+      "key": "605137-823650-21-21",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 823650,
+      "atBatIndex": 21,
+      "playerId": 605137,
+      "playerName": "Josh Bell",
+      "fantasyTeam": "Dan/Larry (2)",
+      "distance": 366,
+      "launchSpeed": 102.9,
+      "launchAngle": 25
     }
   ],
   "lastScanMode": "rolling-7-day",
