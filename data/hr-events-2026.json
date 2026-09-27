@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-27T01:53:00.443Z",
+  "updatedAt": "2026-09-27T07:28:42.680Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -33359,6 +33359,32 @@
       "distance": 350,
       "launchSpeed": 98.9,
       "launchAngle": 32
+    },
+    {
+      "key": "592518-823245-39-39",
+      "season": 2026,
+      "date": "2026-09-26",
+      "gamePk": 823245,
+      "atBatIndex": 39,
+      "playerId": 592518,
+      "playerName": "Manny Machado",
+      "fantasyTeam": "Payton/Matt",
+      "distance": 351,
+      "launchSpeed": 99.6,
+      "launchAngle": 24
+    },
+    {
+      "key": "670541-824949-34-34",
+      "season": 2026,
+      "date": "2026-09-26",
+      "gamePk": 824949,
+      "atBatIndex": 34,
+      "playerId": 670541,
+      "playerName": "Yordan Alvarez",
+      "fantasyTeam": "Pat T",
+      "distance": 401,
+      "launchSpeed": 106.7,
+      "launchAngle": 22
     }
   ],
   "lastScanMode": "rolling-7-day",
