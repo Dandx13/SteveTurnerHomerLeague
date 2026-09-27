@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-09-27T20:28:10.048Z",
+  "updatedAt": "2026-09-27T23:20:06.246Z",
   "events": [
     {
       "key": "664040-823649-1-1",
@@ -33463,6 +33463,84 @@
       "distance": 366,
       "launchSpeed": 102.9,
       "launchAngle": 25
+    },
+    {
+      "key": "572233-824948-41-41",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824948,
+      "atBatIndex": 41,
+      "playerId": 572233,
+      "playerName": "Christian Walker",
+      "fantasyTeam": "Dan/Connor (2)",
+      "distance": 386,
+      "launchSpeed": 100.1,
+      "launchAngle": 31
+    },
+    {
+      "key": "681624-823164-75-75",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 823164,
+      "atBatIndex": 75,
+      "playerId": 681624,
+      "playerName": "Andy Pages",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 399,
+      "launchSpeed": 102.8,
+      "launchAngle": 26
+    },
+    {
+      "key": "666176-824055-46-46",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824055,
+      "atBatIndex": 46,
+      "playerId": 666176,
+      "playerName": "Jo Adell",
+      "fantasyTeam": "John Eames",
+      "distance": 440,
+      "launchSpeed": 112,
+      "launchAngle": 24
+    },
+    {
+      "key": "686469-824055-64-64",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 824055,
+      "atBatIndex": 64,
+      "playerId": 686469,
+      "playerName": "Vinnie Pasquantino",
+      "fantasyTeam": "Mike/Nick/Evan (2)",
+      "distance": 378,
+      "launchSpeed": 104.2,
+      "launchAngle": 28
+    },
+    {
+      "key": "668904-823650-60-60",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 823650,
+      "atBatIndex": 60,
+      "playerId": 668904,
+      "playerName": "Royce Lewis",
+      "fantasyTeam": "Pat T",
+      "distance": 412,
+      "launchSpeed": 105.2,
+      "launchAngle": 22
+    },
+    {
+      "key": "608369-823650-68-68",
+      "season": 2026,
+      "date": "2026-09-27",
+      "gamePk": 823650,
+      "atBatIndex": 68,
+      "playerId": 608369,
+      "playerName": "Corey Seager",
+      "fantasyTeam": "Mike/Nick/Evan",
+      "distance": 387,
+      "launchSpeed": 104,
+      "launchAngle": 37
     }
   ],
   "lastScanMode": "rolling-7-day",
